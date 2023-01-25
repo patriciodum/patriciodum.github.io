@@ -1,2 +1,1 @@
-# patriciodum.github.io
-Mi sitio web
+Repositorio público para mi sitio web.
