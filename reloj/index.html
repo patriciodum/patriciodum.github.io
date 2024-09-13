@@ -29,7 +29,7 @@ body {
 		if (minutes != newminutes)
 		{
 			minutes = newminutes;
-			document.getElementById("texto").innerHTML = "<b><span id=\"texto\">"+(date.getHours())+":"+minutes+"</span></b>";
+			document.getElementById("texto").innerHTML = "<b><span id=\"texto\">"+(date.getHours())+(minutes<10?":0":":")+minutes+"</span></b>";
 		}
 	}, 1000)
 </script>
