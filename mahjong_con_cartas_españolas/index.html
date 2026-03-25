@@ -1,0 +1,1914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Mahjong con Cartas Españolas</title></head>
+
+<body style="font-size: 11pt; font-family: &quot;Segoe UI&quot;,sans-serif; color: rgb(51, 61, 66);">
+<style>
+body {
+  max-width: 800px;
+  margin: 0 auto; 
+}
+</style>
+<h1>Mahjong con cartas españolas.</h1>
+<p class="MsoSubtitle">Revisión 24-3-2026</p>
+
+<h1>Armado del mazo</h1>
+
+<h2>Construyendo
+el mazo de cartas</h2>
+
+<p class="MsoNormal" style="margin-left: 35.4pt; text-indent: -35.4pt;">El mazo está
+compuesto de <b>136 cartas</b>. Se construye con cuatro barajas españolas de 50
+cartas. Hay que quitar todas las <b>copas</b>, los <b>comodines</b>, y las <b>sotas
+</b>(los 10), pero dejar los reyes de copas. De forma que queden cuatro mazos
+con las siguientes cartas:</p>
+
+
+<p class="MsoNormal"><img src="tiles\1o.png" width="26"><img src="tiles\2o.png" width="26"><img src="tiles\3o.png" width="26"><img src="tiles\4o.png" width="26"><img src="tiles\5o.png" width="26"><img src="tiles\6o.png" width="26"><img src="tiles\7o.png" width="26"><img src="tiles\8o.png" width="26"><img src="tiles\9o.png" width="26"><img src="tiles\11o.png" width="26"><img src="tiles\12o.png" width="26"><br>
+<img src="tiles\1b.png" width="26"><img src="tiles\2b.png" width="26"><img src="tiles\3b.png" width="26"><img src="tiles\4b.png" width="26"><img src="tiles\5b.png" width="26"><img src="tiles\6b.png" width="26"><img src="tiles\7b.png" width="26"><img src="tiles\8b.png" width="26"><img src="tiles\9b.png" width="26"><img src="tiles\11b.png" width="26"><img src="tiles\12b.png" width="26"><br>
+<img src="tiles\1e.png" width="26"><img src="tiles\2e.png" width="26"><img src="tiles\3e.png" width="26"><img src="tiles\4e.png" width="26"><img src="tiles\5e.png" width="26"><img src="tiles\6e.png" width="26"><img src="tiles\7e.png" width="26"><img src="tiles\8e.png" width="26"><img src="tiles\9e.png" width="26"><img src="tiles\11e.png" width="26"><img src="tiles\12e.png" width="26"> - <img src="tiles\12c.png" width="26"></p>
+
+
+<p class="MsoNormal">Adicionalmente, hay que tomar un cinco de oros, un cinco de
+bastos, y un cinco de espadas, y pintarlos de rojo, o hacerles una marca roja
+en algún lado:<br><img src="tiles\5er.png"><img src="tiles\5or.png"><img src="tiles\5br.png"></p>
+
+
+<p class="MsoNormal">De esta forma el mazo está compuesto por cartas numeradas
+del 1 al 9 de tres palos distintos (oros, espadas, y bastos), y las cartas
+negras, que son los caballos y los reyes. Hay reyes de 4 palos, y caballos de 3
+palos (no hay caballos de copas).</p>
+
+
+<h1>Inicio del juego</h1>
+
+
+<p class="MsoNormal">Este juego se juega de a <b>cuatro</b> jugadores, pero se
+puede adaptar para jugarse de a <b>dos</b> o a <b>tres</b> jugadores.</p>
+
+
+<p class="MsoNormal">Al principio del juego, cada jugador empieza con <b>26000</b>
+puntos en su haber.</p>
+
+
+<p class="MsoNormal">En este juego, el jugador que es <b>mano</b> baraja y
+reparte las cartas. Se reparten <b>13 cartas</b> a los 4 jugadores, y el
+repartidor recibe una carta más (para descartar una en su primer turno).</p>
+
+
+<p class="MsoNormal">Luego se hace un pozo aparte con <b>14 cartas</b>. Este es
+el &#8220;pozo muerto&#8221;, y de ese pozo se da vuelta la carta de más arriba, para ser
+la primera carta del indicador de bonus.</p>
+
+
+<p class="MsoNormal">Los jugadores se identifican con los siguientes reyes:</p>
+
+
+<p class="MsoNormal" style="text-align: center;" align="center">Espadas (juega 3°)<br>
+<img src="tiles\12e.png"><br>
+Bastos (juega 4°) <img src="tiles\12b.png"><img src="tiles\c.png"><img src="tiles\12c.png"> Copas (juega 2°)<br>
+<img src="tiles\12o.png"><br>
+Oros (mano, juega 1°)</p>
+
+
+<p class="MsoNormal">El orden de los turnos es siempre <b>oro</b>, <b>copas</b>, <b>espadas</b>,
+<b>bastos</b>. Así que el jugador que es mano es siempre el oro (también es el
+que reparte), y los turnos se siguen en sentido antihorario (el jugador de la
+derecha sigue).</p>
+
+
+<p class="MsoNormal">En cada turno un jugador roba una carta del pozo y descarta
+una carta en su zona de descarte, boca arriba. La zona de descarte se ordena de
+izquierda a derecha, de arriba abajo, en una cuadrícula de 6x3, al frente del
+jugador, para que se vean todas las cartas descartadas en orden.</p>
+
+
+<p class="MsoNormal">El objetivo del juego es ser el primer jugador en lograr
+obtener una mano válida, completa, compuesta por <b>4 juegos y un par</b>. La
+mano completa se hace con las 13 cartas propias (cuentan las que están en mano
+y las que están en mesa) mas 1 carta robada del pozo, o del último descarte de
+otro jugador.</p>
+
+
+<div style="border: 1pt solid black; padding: 1pt 4pt; margin-left: 35.4pt; margin-right: 42.45pt;">
+
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;">Un juego puede ser una <b>escalera </b><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png">,<br>una <b>pierna </b><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png">,<br>o un <b>cuarteto </b><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><b>,
+<u>todas del mismo palo</u></b>. Los cuartetos también cuentan como piernas,
+salvo que se aclare lo contrario.</p>
+
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;">Las piernas y escaleras
+son <b><u>siempre</u></b> de <b>3</b> cartas, y esas 3 cartas deben ser del <b><u>mismo
+palo</u></b>. Los palos son oros, bastos, y espadas.</p>
+
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;">En el caso de los <b>reyes</b>,
+hay reyes de oros, copas, espadas y bastos.<br>
+<img src="tiles\12o.png">
+<img src="tiles\12c.png">
+<img src="tiles\12e.png">
+<img src="tiles\12b.png"></p>
+
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;">En el caso de los <b>caballos</b>,
+hay caballos de oros, bastos y espadas.<br>
+<img src="tiles\11o.png">
+<img src="tiles\11b.png">
+<img src="tiles\11e.png"></p>
+
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;">El <b>par</b> es
+sencillamente <b>dos cartas iguales,</b> de cualquier tipo. <img src="tiles\5o.png"><img src="tiles\5o.png"></p>
+
+</div>
+
+
+<p class="MsoNormal">Un ejemplo de mano válida completa:</p>
+
+
+<p class="MsoNormal"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
+<img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"> <img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png">
+<img src="tiles\12b.png"><img src="tiles\12b.png"><img src="tiles\12b.png"> <img src="tiles\11e.png"><img src="tiles\11e.png"></p>
+
+
+<p class="MsoNormal">Dos escaleras, dos piernas, y un par (caballos).</p>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;"><i>Nota: no hay ninguna
+correlación entre el palo de los reyes y los palos de las cartas numeradas del
+1 al 9. Tampoco se pueden hacer escaleras de caballos o reyes, porque no hay
+sotas, y <b><u>no</u></b> se puede hacer una escalera con caballos, reyes, y
+ases.</i></p>
+
+
+<h3>Robar de descarte / bajar juegos</h3>
+
+
+<p class="MsoNormal">Ahora bien, en vez de robar del pozo, un jugador puede optar
+por robar <b>la última carta descartada</b> pero sólo si esta carta <b>completa
+un juego</b> de su mano. Al hacer esto debe bajar el juego completo en la mesa
+(incluyendo la carta robada, que se agrega al juego) para demostrar que lo
+puede robar, y este queda expuesto para toda la ronda.</p>
+
+
+<p class="MsoNormal">Esto puede hacerse <b><u>fuera de su turno</u></b> <b>SÓLO</b>
+si es para completar una <b>pierna</b> o un <b>cuarteto</b>. Si es para
+completar una <b>escalera</b>, <b><u>solamente se puede hacer durante su turno</u></b>
+(O sea que <b><i>solo se puede robar una escalera del jugador de la izquierda</i></b>,
+y no de cualquiera). </p>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;">Solamente se puede robar la carta
+descartada por el último jugador que acaba de jugar, <u>no se pueden robar
+cartas descartadas en turnos anteriores</u>.</p>
+
+
+<p class="MsoNormal">El procedimiento es el siguiente:</p>
+
+
+<p class="MsoNormal">Si un jugador roba una carta de un descarte, debe anunciarlo
+en voz alta (diciendo <b>escalera</b>, <b>pierna</b>, o <b>cuarteto</b>),
+mostrar y bajar el juego completo en la mesa, incluyendo la carta robada del
+descarte, y<b> automáticamente pasa a ser su turno</b>, o sea que le toca
+descartar a él. La ronda ahora continúa con el jugador a su derecha, como si
+hubiera sido su turno. Estos juegos se bajan sobre el borde de la mesa, <u>lejos
+de la zona de descarte</u>, para no confundir los juegos bajados con las cartas
+descartadas.</p>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;"><b><i>Importante:</i></b> ¡Los
+juegos <i><u>no necesitan</u></i> ser bajados para otorgar puntos! Se explicará
+más adelante en la sección &#8220;Lista de Tantos&#8221; que, por lo general, una mano
+oculta vale más que una mano en mesa. Así que los juegos formados por cartas
+robadas del pozo, valen más que los juegos armados con cartas robadas de
+descarte.</p>
+
+
+<h3>Bajando cuartetos</h3>
+
+
+<p class="MsoNormal">Salvo excepciones, una mano <i><u>tiene</u></i> que estar
+siempre compuesta por <b>4 juegos</b> (de 3 cartas cada uno) y <b>un par</b>,
+14 cartas en total.</p>
+
+
+<p class="MsoNormal"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"></p>
+
+
+<p class="MsoNormal">Los cuartetos son una excepción porque son juegos de 4
+cartas en vez de 3. Por eso, cada vez que se baje un <b>cuarteto</b>, se debe
+obtener una carta extra para poder compensar la carta que &#8220;falta&#8221; para hacer
+los juegos que faltan en la mano. </p>
+
+
+<p class="MsoNormal">Cuando se baja un <b>cuarteto</b>, se coloca a un costado la
+carta boca arriba en el pozo muerto, y el jugador roba una carta del pozo
+muerto (boca abajo) y la agrega a su mano. Después se pone boca arriba la carta
+arriba del todo del pozo muerto. De esta forma debe haber ahora 2 cartas boca
+arriba en el indicador de bonus (una apartada, y la otra apoyada del pozo).
+Cada vez que se haga un cuarteto se deberá apartar esta carta apoyada en el
+pozo muerto, y dar vuelta una nueva, de forma tal que todas las cartas boca
+arriba en esta área se puedan ver claramente. Esta área se denomina el <b>indicador
+de bonus</b>.</p>
+
+
+<p class="MsoNormal">También puede ocurrir que se tenga un cuarteto <b>en mano</b>
+(sin haber robado de ningún descarte). En ese caso, se lo puede considerar un
+cuarteto &#8220;propio&#8221;, bajar el cuarteto en la mesa, y este <b>no se considera</b>
+un juego bajado por un descarte (la mano se sigue considerando oculta a pesar
+de que está este juego en mesa). Para distinguir un cuarteto &#8220;propio&#8221; de uno
+&#8220;robado&#8221;, se debe colocar con las dos cartas de los extremos boca abajo, de
+esta forma:<br><img src="tiles\c.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\c.png"></p>
+
+
+<p class="MsoNormal">También puede ocurrir que el jugador haya bajado una <b>pierna
+</b>en algún turno anterior, y eventualmente robe del pozo <i>la cuarta carta</i>
+faltante. En este caso, puede <b>agregar</b> la carta a la pierna para
+convertirla en un <b>cuarteto</b>, y hacer todo el procedimiento como si
+hubiera bajado un cuarteto (apartar la carta boca arriba del área de bonus,
+robar una carta del pozo muerto, y dar vuelta una nueva carta de bonificación).
+Como la pierna fue bajada anteriormente con un descarte, este cuarteto se
+considera &#8220;robado&#8221;.</p>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;">Cabe aclarar que todo esto es <b>opcional.</b>
+El jugador <b><i>no</i></b> está obligado a bajar un cuarteto en mano si estas
+cartas le convienen más para formar <i>otros juegos distintos</i>, por ejemplo,
+una escalera y una pierna <br><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\4o.png"><img src="tiles\4o.png"><img src="tiles\4o.png">.</p>
+
+
+<h3>Cantar Mahjong (mano completada)</h3>
+
+
+<p class="MsoNormal">Finalmente, en <b><u>cualquier momento</u></b> (fuera del
+turno) si un descarte sirve para completar una mano y ganar la ronda, o si la
+carta que justo se acaba de robar del pozo <u>completa la mano</u>, se puede
+cantar <b>Mahjong </b>(se pronuncia &#8220;Mayón&#8221;)<b> </b>o &#8220;<b>¡Gané!&#8221;</b> y mostrar
+la mano completa en la mesa para demostrar que con ese descarte se consigue una
+mano ganadora.</p>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;">Si varios jugadores hacen varios
+cantos a la vez, cantar <b>Mahjong</b> tiene prioridad sobre cantar <b>pierna</b>
+o <b>cuarteto</b>, y cantar <b>pierna</b> o <b>cuarteto</b> tiene prioridad
+sobre cantar <b>escalera</b>.</p>
+
+
+<p class="MsoNormal">Si alguien canta <b>Mahjong</b>, la ronda <u>termina</u> y
+se procede a contar los puntos de la mano ganadora. <b><i><u>Las manos de los
+otros jugadores no cuentan</u></i></b>; sólo el ganador gana puntos. Consultar
+la sección &#8220;Cómo calcular los puntos&#8221; para más información.</p>
+
+
+<h1>Lista de Tantos</h1>
+
+
+<p class="MsoNormal">Una mano solo se considera válida si tiene al menos <b>1
+tanto</b>. Esta lista muestra todas las situaciones que otorgan tantos. Nótese que la mayoría de las manos valen más cuando los juegos están ocultos en la mano (mano cerrada), que cuando están en mesa por robar de un descarte (mano abierta). Con una mano sin tantos no se puede cantar Mahjong, hay que buscar juegos y cartas que logren formar una mano que de al menos 1 tanto para poder cantar Mahjong y ganar la ronda. El primero que cante Mahjong en la ronda será el único que reciba puntos.</p>
+
+<p class="MsoNormal">Los tantos de una mano se acumulan, por ejemplo se puede obtener 1 tanto por haber cantado envido, 1 tanto por tener una pierna de dragones, y 1 tanto por tener dos escaleras idénticas, haciendo que la mano entera valga 3 tantos.</p>
+
+<p class="MsoNormal">Denuevo, sólamente se cuentan los puntos de la mano del jugador que cantó Mahjong. Las manos de los demás jugadores no cuentan para nada, y todo el calculo de puntaje se basa en <u>esa</u> mano.</p>
+
+<p class="MsoNormal">Cabe recordar que, salvando las <u>manos especiales</u> como la mano de
+&#8220;todos pares&#8221;, todas las manos deben estar compuestas por 4 juegos y 1 par. Y <u>cada
+juego</u> tiene que estar formado por 3 cartas del <b><u>mismo palo</u></b> ).</p>
+
+<h2><b>1</b> tanto</h2>
+
+
+<p class="MsoNormal"><b>Solo intermedias </b><span class="MsoIntenseEmphasis">(Tanyao)
+</span>&#8211; Mano sin puntas ni cartas negras. O sea, formado solo por cartas del <b>2</b>
+al <b>8</b>, de cualquier palo.</p>
+
+
+<p class="MsoNormal"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"></p>
+
+
+<p class="MsoNormal"><b>Pierna de caballos </b>&#8211; Tres del mismo caballo.</p>
+
+
+<p class="MsoNormal"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"></p>
+
+
+<p class="MsoNormal"><b>Pierna de Rey propio</b> &#8211; Tres del rey propio. Por
+ejemplo, tres reyes de oro, si soy mano esta ronda. O tres reyes de basto, si
+soy el pie (cuarto en el orden de turnos). </p>
+
+
+<p class="MsoNormal"><img src="tiles\12b.png"><img src="tiles\12b.png"><img src="tiles\12b.png"></p>
+
+
+<p class="MsoNormal"><b>Pierna de Rey de ronda</b> &#8211; Tres del rey de la ronda.
+Por ejemplo, tres reyes de oro, si es la primera ronda. O tres reyes de copa si
+es la quinta ronda. (Ver la sección <u>Siguiente ronda</u> para más
+información)</p>
+
+
+<p class="MsoNormal"><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12o.png"></p>
+
+
+
+
+
+<h2><b>1</b> tanto (sólo con mano cerrada)</h2>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;"><u>Estas manos solo valen si el jugador nunca robó <b>ningún</b>
+descarte de otro jugador en esta ronda.</u> Esto se llama tener una <b>mano cerrada</b>. Robar una carta de un descarte de otro jugador para completar un juego convierte la mano actual en una <b>mano abierta</b>, y anula la posbilidad de que estas manos otorguen un tanto.</p>
+
+
+<p class="MsoNormal"><b>Mano sin puntos </b><span class="MsoIntenseEmphasis">(Pinfu)
+</span>&#8211; Mano compuesta solo por escaleras, sin puntas ni negras, y tiene que
+estar esperando para completar una escalera en los extremos (no la del medio).</p>
+
+
+<p class="MsoNormal"><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\8o.png"><img src="tiles\8o.png">
+<br>&#8211; y
+necesito <img src="tiles\6o.png" width="26"> ó <img src="tiles\3o.png" width="26"></p>
+
+
+<p class="MsoNormal"><b>Escaleras idénticas </b>&#8211; Dos escaleras idénticas (mismo
+palo y mismos números) en mano.</p>
+
+
+<p class="MsoNormal"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"></p>
+
+
+<p class="MsoNormal"><b>Envido </b><span class="MsoIntenseEmphasis">(Riichi)</span>
+&#8211; Ganar habiendo cantado <u>envido</u><i>.</i></p>
+
+
+<p class="MsoNormal"><img src="tiles\riichi.png"></p>
+
+
+<p class="MsoNormal">El envido se puede cantar cuando solo falta <b>una carta</b>
+para ganar. Al cantar envido, se apuestan 1000 puntos extras, y la mano <b>ya
+no se puede tocar, ni se pueden bajar juegos de ningún tipo</b>. Para indicar
+el envido, se enuncia en voz alta, el jugador coloca una ficha de 1000 puntos
+en su área de descarte, y la carta descartada en ese turno se coloca de forma
+horizontal, en vez de vertical. Cada jugador puede cantar envido solo una vez
+por ronda.</p>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;"><i><u>Nota</u></i>: La ficha es
+sólo simbólica. Estos 1000 puntos solo se descuentan del jugador <u>al final de
+la ronda</u> en caso de <b>empate</b> (ver más abajo), o en caso de que esta
+ronda la gane <b>otro jugador</b> (se le pagan los 1000 puntos al ganador). Si
+gana un jugador que había cantado envido, estos 1000 puntos vuelven a su dueño.</p>
+
+
+<p class="MsoNormal"><b>Doble Envido </b><span class="MsoIntenseEmphasis">(Doble
+Riichi)</span> &#8211; Cantar envido (riichi) con el primer descarte de la ronda.</p>
+
+
+<p class="MsoNormal"><b>Todo propio </b><span class="MsoIntenseEmphasis">(Menzen
+Tsumo)</span> &#8211; Ganar robando del pozo, sin nunca haber robado ningún descarte
+de nadie.</p>
+
+
+<p class="MsoNormal"><b>Victoria rápida </b><span class="MsoIntenseEmphasis">(Ippatsu)
+</span>&#8211; Ganar habiendo cantado envido (<i>riichi)</i> antes de volver a
+descartar y sin que nadie haya robado un descarte en el medio. Si alguien roba
+un descarte y baja un juego, este tanto ya no cuenta.</p>
+
+
+<h2><b>2</b> tantos en mano (<b>1</b> tanto en mesa)</h2>
+
+
+<p class="MsoNormal"><b>Escalera triple</b> &#8211; La misma escalera en los tres palos
+distintos.<span style="">&nbsp; </span><u>Vale <b>solo 1 tanto</b>
+si se consigue habiendo robado descartes</u> (Mano abierta).</p>
+
+
+<p class="MsoNormal"><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\1e.png"><img src="tiles\2e.png"><img src="tiles\3e.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"></p>
+
+
+<p class="MsoNormal"><b>Escalera completa</b> &#8211; Tres escaleras, formando
+1-2-3-4-5-6-7-8-9. <u>Vale <b>solo 1 tanto</b> si se consigue habiendo robado
+descartes</u> (Mano abierta).</p>
+
+
+<p class="MsoNormal"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\6o.png"><img src="tiles\7o.png"><img src="tiles\8o.png"><img src="tiles\9o.png"></p>
+
+
+<h2><b>2</b> tantos siempre</h2>
+
+
+<p class="MsoNormal"><b>Siete pares</b> &#8211; Mano especial compuesta por siete pares
+cualquiera. <u>Sólo vale en mano</u>, porque no se pueden bajar pares. Nótese
+que <u>se puede cantar envido con esta mano</u> a pesar de no ser una mano
+estándar.</p>
+
+
+<p class="MsoNormal"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\3o.png"><img src="tiles\3o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\12o.png"><img src="tiles\12o.png"></p>
+
+
+<p class="MsoNormal"><b>Pierna triple</b> &#8211; Tres piernas del mismo número, en los
+tres palos distintos.</p>
+
+
+<p class="MsoNormal"><img src="tiles\3b.png"><img src="tiles\3b.png"><img src="tiles\3b.png"><img src="tiles\3e.png"><img src="tiles\3e.png"><img src="tiles\3e.png"><img src="tiles\3o.png"><img src="tiles\3o.png"><img src="tiles\3o.png"></p>
+
+
+<p class="MsoNormal"><b>Tres piernas en mano </b>&#8211; Tres piernas en mano, sin
+robar de descarte.</p>
+
+
+<p class="MsoNormal"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"></p>
+
+
+<p class="MsoNormal"><b>Tres cuartetos </b>&#8211; Tres cuartetos en mesa, ya sean
+robados de descarte o bajados de la mano. </p>
+
+
+<p class="MsoNormal"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"> <img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"> <img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"></p>
+
+
+<p class="MsoNormal"><b>Todas piernas </b>&#8211; Cuatro piernas o cuartetos.</p>
+
+
+<p class="MsoNormal"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"></p>
+
+
+<p class="MsoNormal"><b>Todo puntas y negras </b>&#8211; Mano formada únicamente por
+puntas (unos y nueves) y cartas negras (Reyes y caballos).</p>
+
+
+<p class="MsoNormal"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\9e.png"><img src="tiles\9e.png"><img src="tiles\9e.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\1b.png"><img src="tiles\1b.png"><img src="tiles\1b.png"><img src="tiles\11e.png"><img src="tiles\11e.png"></p>
+
+
+<p class="MsoNormal"><b>Dos caballos y medio </b>&#8211; Dos piernas de caballos y un
+par de caballos. </p>
+
+
+<p class="MsoNormal"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11o.png"><img src="tiles\11o.png"></p>
+
+
+<h2><b>3</b> tantos</h2>
+
+
+<p class="MsoNormal"><b>Doble Escaleras Idénticas</b> &#8211; Dos pares de escaleras
+idénticas (mismo palo y mismos números) en mano, <u>sin haber robado ningún
+descarte</u>.</p>
+
+
+<p class="MsoNormal"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4b.png"><img src="tiles\5b.png"><img src="tiles\6b.png"><img src="tiles\4b.png"><img src="tiles\5b.png"><img src="tiles\6b.png"></p>
+
+
+<p class="MsoNormal"><b>Color y negras </b>&#8211; Mano compuesta exclusivamente de
+cartas de <b>un solo palo</b>, y además reyes y caballos de <b>cualquier palo</b>.</p>
+
+
+<p class="MsoNormal"><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\6b.png"><img src="tiles\6b.png"></p>
+
+
+<p class="MsoNormal"><b>Puntas en todo </b>&#8211; Mano donde todos los juegos
+contienen puntas. O sea, todas las escaleras (si las hay) tienen al menos un
+uno o un nueve, todas las piernas (si las hay) son de unos o nueves, y el par
+es un par de unos o un par de nueves. <u>Vale <b>solo 1 tanto</b> si se
+consigue robando descartes.</u></p>
+
+
+<p class="MsoNormal"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\9e.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\9e.png"><img src="tiles\9e.png"></p>
+
+
+<h2><b>6</b> tantos</h2>
+
+
+<p class="MsoNormal"><b>Color puro </b>&#8211; Mano compuesta únicamente por cartas de
+un solo palo, <b>sin usar cartas negras</b>. Vale solo 5 tantos si se consigue
+habiendo bajando juegos.</p>
+
+
+<p class="MsoNormal"><img src="tiles\1e.png"><img src="tiles\2e.png"><img src="tiles\3e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\9e.png"><img src="tiles\9e.png"></p>
+
+
+<h2>Tantos <b>máximos</b> (<b>13</b> tantos, <i>Yakuman</i>)</h2>
+
+
+<p class="MsoNormal">Hacer cualquiera de estas manos inmediatamente otorga al
+jugador la <b>puntuación máxima</b> de la mano.</p>
+
+
+<p class="MsoNormal"><b>Bendición</b> &#8211; Ganar con la primera carta robada del
+pozo, o en caso de ser mano, en el primer turno, sin descartar ninguna carta.</p>
+
+
+<p class="MsoNormal"><b>Todas piernas en mano </b>&#8211; Cuatro piernas, o cuartetos,
+sin haber robado ningún descarte.</p>
+
+
+<p class="MsoNormal"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"></p>
+
+
+<p class="MsoNormal"><b>Todo cuartetos</b> &#8211; Cuatro cuartetos en mesa, ya sean
+robados de descarte o bajados de la mano.<br><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png">
+<img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png">
+<img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png">
+<img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"></p>
+
+
+<p class="MsoNormal"><b>Tres caballos</b> &#8211; Tres piernas de caballos.</p>
+
+
+<p class="MsoNormal"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\11o.png"></p>
+
+
+<p class="MsoNormal"><b>Tres reyes y medio </b>&#8211; Tres piernas de reyes y un par
+de reyes.</p>
+
+
+<p class="MsoNormal"><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12e.png"><img src="tiles\12e.png"><img src="tiles\12e.png"><img src="tiles\12b.png"><img src="tiles\12b.png"></p>
+
+
+<p class="MsoNormal"><b>Cuatro reyes </b>&#8211; Cuatro piernas de reyes.</p>
+
+
+<p class="MsoNormal"><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12e.png"><img src="tiles\12e.png"><img src="tiles\12e.png"><img src="tiles\12b.png"><img src="tiles\12b.png"><img src="tiles\12b.png"></p>
+
+
+<p class="MsoNormal"><b><i>Trece huérfanos </i></b>&#8211; Mano especial formada por un
+uno y un nueve de cada uno de los tres palos, más los cuatro reyes distintos, y
+los tres caballos distintos, y una extra que puede ser cualquiera de las ya
+nombradas.</p>
+
+
+<p class="MsoNormal"><img src="tiles\1b.png"><img src="tiles\9b.png"><img src="tiles\1o.png"><img src="tiles\9o.png"><img src="tiles\1e.png"><img src="tiles\9e.png"><img src="tiles\11e.png"><img src="tiles\11b.png"><img src="tiles\11o.png"><img src="tiles\12o.png"><img src="tiles\12c.png"><img src="tiles\12e.png"><img src="tiles\12b.png">
++ <img src="tiles\1b.png"></p>
+
+
+<p class="MsoNormal"><b>Todas negras </b>&#8211; Mano formada exclusivamente por
+caballos y reyes.</p>
+
+
+<p class="MsoNormal"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12e.png"><img src="tiles\12e.png"><img src="tiles\12e.png"><img src="tiles\12b.png"><img src="tiles\12b.png"></p>
+
+
+<p class="MsoNormal"><b>Todas puntas</b> &#8211; Mano formada exclusivamente por puntas
+(solo unos y nueves).</p>
+
+
+<p class="MsoNormal"><img src="tiles\1b.png"><img src="tiles\1b.png"><img src="tiles\1b.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\9o.png"><img src="tiles\9o.png"><img src="tiles\9o.png"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\9b.png"><img src="tiles\9b.png"></p>
+
+
+<p class="MsoNormal"><b><i>&#8220;Todas verdes&#8221; </i></b>&#8211; Mano formada exclusivamente
+por 2,3,4,6,8 de bastos, y caballo de bastos. Nótese que estas cartas <b><i>no
+son</i></b> todas verdes, pero en el Mahjong original, estas fichas son todas
+verdes, mientas que el 1,5,7,9 no lo son.</p>
+
+
+<p class="MsoNormal"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\8b.png"><img src="tiles\8b.png"></p>
+
+
+<p class="MsoNormal"><b><i>Nueve puertas</i></b> &#8211; Mano especial formada por
+1,1,1,2,3,4,5,6,7,8,9,9,9 del mismo palo, más una carta cualquiera del 1 al 9
+del mismo palo.</p>
+
+
+<p class="MsoNormal"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\6o.png"><img src="tiles\7o.png"><img src="tiles\8o.png"><img src="tiles\9o.png"><img src="tiles\9o.png"><img src="tiles\9o.png">
++ <img src="tiles\2o.png"></p>
+
+
+<h2>Otros tantos especiales (1 tanto)</h2>
+
+
+<p class="MsoNormal"><b>Con la última </b>&#8211; Ganar justo con la última carta del
+pozo, o con el último descarte del juego (con el pozo vacío).</p>
+
+
+<p class="MsoNormal"><b>Desde el muerto </b>&#8211; Ganar inmediatamente con la carta
+extra obtenida del pozo muerto, luego de bajar un cuarteto.</p>
+
+
+<h2>Otros tantos especiales (5 tantos)</h2>
+
+
+<p class="MsoNormal"><b>Solo puntas y negras en descarte </b>&#8211; Ganar habiendo
+descartado únicamente unos, nueves, caballos, y reyes.</p>
+
+
+<p class="MsoNormal"><b>Mano servida </b>&#8211; Ganar con el descarte de otro jugador,
+sin haber bajado ningún juego ni haber robado nunca del pozo.</p>
+
+
+<h1>Cómo calcular los puntos</h1>
+
+
+<p class="MsoNormal">Los tantos y los puntos <u>SOLO</u> cuentan para el <b>ganador</b>
+de la ronda. Los demás jugadores no deben contar nada.</p>
+
+
+<h2>Bonificaciones (<i>Dora</i>)</h2>
+
+<img src="tiles\5or.png"><img src="tiles\5br.png"><img src="tiles\5er.png">
+<p class="MsoNormal">Primero que nada, hay que añadir un tanto por cada
+carta
+bonus que se tenga en la mano. Las cartas bonus son los cincos rojos (son únicos y no tienen copias), y
+las cartas que sean <b>la
+siguiente</b> de las del indicador de bonus, o sea las cartas boca arriba en el
+área del pozo muerto.</p>
+
+
+<p class="MsoNormal">Por ejemplo, si en el indicador de bonus hay un <img src="tiles\3o.png" width="26">
+entonces la carta <img src="tiles\4o.png" width="26"> es una carta bonus, y si está en la mano del ganador de
+la ronda, se suma 1 tanto extra por cada <img src="tiles\4o.png" width="26"> que tenga en la mano (nota: si el
+bonus es <img src="tiles\4o.png" width="26"> y se tiene <img src="tiles\5or.png" width="26"> en la mano, ¡esta vale 2 tantos!).</p>
+
+<p class="MsoNormal">Si hay un <b>nueve</b> en el indicador de bonus, la carta bonus es el uno.</p>
+
+
+<p class="MsoNormal">Si hay una carta negra en el indicador de bonus, el orden a
+seguir de los reyes es:<br><img src="tiles\12o.png"> &rarr; <img src="tiles\12c.png"> &rarr; <img src="tiles\12e.png"> &rarr; <img src="tiles\12b.png"> &rarr; <img src="tiles\12o.png"> <br>y el orden de los caballos es<br><img src="tiles\11b.png"> &rarr; <img src="tiles\11e.png"> &rarr; <img src="tiles\11o.png"> &rarr; <img src="tiles\11b.png">.</p>
+
+
+<p class="MsoNormal">Si el ganador de la ronda había cantado <b>envido</b>
+(riichi), entonces se deben dar vuelta del pozo muerto tantas cartas como
+indicadores de bonificación ya haya boca arriba, para que acaben habiendo el <b>doble
+de cartas bonus</b>. Por ejemplo si había solo 1 carta bonus, ahora deben haber
+2. Si habían 2, ahora deben haber 4, etc., hasta un máximo de 10.</p>
+
+
+<h2>Yapas (<i>Fu</i>)</h2>
+
+
+<p class="MsoNormal">En el Mahjong Riichi original, las yapas se llaman <i>Fu</i>,
+o mini puntos. Se suman para calcular cuantos puntos tienen que pagarle los
+demás jugadores al ganador, en base a una tabla.</p>
+
+
+<h3>Yapas base</h3>
+
+
+<table class="MsoNormalTable" style="width: 424.7pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="566">
+
+ <tbody><tr style="">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Por ganar</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">20</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Siete pares</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>(Mano
+  especial, vale siempre 25 y no se suma ninguna otra yapa de estas tablas)</b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>25</b></p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Ganar robando
+  del pozo</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+2</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Ganar con un descarte,
+  sin haber bajado ningún juego con un descarte.</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+10</p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<h3>Yapas por juego</h3>
+
+
+<table class="MsoNormalTable" style="width: 424.7pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="566">
+
+ <tbody><tr style="">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 184.05pt;" valign="top" width="245">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 4cm;" valign="top" width="151">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>En mesa
+  (Robado)</b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 127.25pt;" valign="top" width="170">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>Oculta (En
+  mano)</b></p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 184.05pt;" valign="top" width="245">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Escalera</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 4cm;" valign="top" width="151">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+0</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 127.25pt;" valign="top" width="170">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+0</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 184.05pt;" valign="top" width="245">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Pierna común
+  (del 2 al 8)</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 4cm;" valign="top" width="151">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+2</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 127.25pt;" valign="top" width="170">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+4</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 184.05pt;" valign="top" width="245">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Pierna de
+  puntas o negras</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 4cm;" valign="top" width="151">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+4</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 127.25pt;" valign="top" width="170">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+8</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 184.05pt;" valign="top" width="245">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Cuarteto
+  común (del 2 al 8)</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 4cm;" valign="top" width="151">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+8</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 127.25pt;" valign="top" width="170">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+16</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 184.05pt;" valign="top" width="245">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Cuarteto de
+  puntas o negras</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 4cm;" valign="top" width="151">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+16</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 127.25pt;" valign="top" width="170">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+32</p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<h3>Yapa por par</h3>
+
+
+<table class="MsoNormalTable" style="width: 424.7pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="566">
+
+ <tbody><tr style="">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>Par</b> de
+  negras (Caballos o reyes)</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+2</p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<h3>Yapas por espera</h3>
+
+
+<table class="MsoNormalTable" style="width: 424.7pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="566">
+
+ <tbody><tr style="">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Esperando el
+  extremo de una escalera</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+2</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Esperando el
+  centro de una escalera</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+2</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Esperando
+  para completar un par</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+2</p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<h2>Repartida de puntos</h2>
+
+
+<p class="MsoNormal">Luego de sumar las yapas, usar la siguiente tabla para
+calcular cuantos puntos le corresponde ganar al ganador de la ronda. Nótese que
+el jugador que <b>es mano </b>(el repa, si gana, recibe un plus de 50% más de
+puntos que los jugadores que ganan sin ser mano.</p>
+
+
+<table class="MsoNormalTable" style="width: 424.2pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="566">
+
+ <tbody><tr style="height: 13.2pt;">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >1 tanto</span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >2 tantos</span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >3 tantos</span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >4 tantos</span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >Si no se es mano</span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >Si se es mano</span></b></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >30 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >1000</span></b><span > (300)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >1500</span></b><span > (500)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >40 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >20 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >1300</span></b><span > (400)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >2000</span></b><span > (700)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >50 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >25 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >1600</span></b><span > (400)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >2400</span></b><span > (800)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >60 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >30 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >2000</span></b><span > (500)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >2900</span></b><span > (1000)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.8pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.8pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >70 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.8pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.8pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.8pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.8pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >2300</span></b><span > (600)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.8pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >3400</span></b><span > (1200)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >80 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >40 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >20 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >2600</span></b><span > (700)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >3900</span></b><span > (1300)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >90 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >2900</span></b><span > (800)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >4400</span></b><span > (1500)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >100 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >50 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >25 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >3200</span></b><span > (800)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >4800</span></b><span > (1600)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >110 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >3600</span></b><span > (900)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >5300</span></b><span > (1800)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >60 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >30 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >3900</span></b><span > (1000)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >5800</span></b><span > (2000)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >70 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >4500</span></b><span > (1200)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >6800</span></b><span > (2300)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >80 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >40 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >20 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >5200</span></b><span > (1300)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >7700</span></b><span > (2600)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >90 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >5800</span></b><span > (1500)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >8700</span></b><span > (2900)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.8pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.8pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.8pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >100 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.8pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >50 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.8pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >25 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.8pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >6400</span></b><span > (1600)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.8pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >9600</span></b><span > (3200)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >110 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >7100</span></b><span > (1800)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >10600</span></b><span > (3600)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >60 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >30 yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.05pt; height: 13.2pt;" valign="top" width="131">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >7700</span></b><span > (2000)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 81.45pt; height: 13.2pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >11600</span></b><span > (3900)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 13.2pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span ><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 60.4pt; height: 13.2pt;" valign="top" width="81">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt; font-family: &quot;Times New Roman&quot;,serif;"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >70+ yapas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 61.95pt; height: 13.2pt;" valign="top" width="83">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >40+ yapas</span></p>
+  </td>
+  <td colspan="2" style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 179.5pt; height: 13.2pt;" valign="top" width="239">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><i><u><span >5 tantos</span></u></i></b><i><span > (ver abajo)</span></i></p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<p class="MsoNormal"><br>
+El número en negrita corresponde al puntaje a pagar si el ganador ganó gracias
+a un descarte. El jugador que descartó la carta que lo hizo ganar <b>paga el
+100%</b>, o sea que el jugador que hizo ganar al ganador <b><u>de descuenta</u></b>
+todos los puntos que el ganador gana.</p>
+
+
+<p class="MsoNormal">El número entre paréntesis corresponde al puntaje a pagar si
+el ganador ganó robando del pozo. Los demás jugadores se dividen el pago en
+iguales cantidades y le pagan al ganador. O sea que todos los demás jugadores
+se descuentan un tercio de los puntos que el ganador gana.</p>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;"><b><i>Nota</i></b>: los puntos
+por envido no se incluyen en esta división, y son siempre pagados por la
+persona que los apostó, al ganador de la ronda.</p>
+
+
+<p class="MsoNormal">Si una mano de <b>3 tantos</b> supera las 70 yapas, o si una
+mano de<b> 4 tantos</b> supera las 40 yapas, la mano se considera de <b>5
+tantos</b>.</p>
+
+
+<p class="MsoNormal">Y si una mano tiene <b>5 tantos o más</b>, las yapas no se
+necesitan calcular, y se usa esta tabla:</p>
+
+
+<table class="MsoNormalTable" style="width: 424.3pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="566">
+
+ <tbody><tr style="height: 14.55pt;">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 183.3pt; height: 14.55pt;" valign="top" width="244">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span ><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 130.45pt; height: 14.55pt;" valign="top" width="174">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >Si no se es mano</span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 110.55pt; height: 14.55pt;" valign="top" width="147">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >Si se es mano</span></b></p>
+  </td>
+ </tr>
+ <tr style="height: 14.55pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 183.3pt; height: 14.55pt;" valign="top" width="244">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >5 tantos (<i>Mangan</i>)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 130.45pt; height: 14.55pt;" valign="top" width="174">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >8000</span></b><span > (2000)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 110.55pt; height: 14.55pt;" valign="top" width="147">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >12000</span></b><span > (4000)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 14.55pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 183.3pt; height: 14.55pt;" valign="top" width="244">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >6-7 tantos (Haneman)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 130.45pt; height: 14.55pt;" valign="top" width="174">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >12000</span></b><span > (3000)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 110.55pt; height: 14.55pt;" valign="top" width="147">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >18000</span></b><span > (6000)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 14.55pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 183.3pt; height: 14.55pt;" valign="top" width="244">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >8-10 tantos (<i>Baiman</i>)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 130.45pt; height: 14.55pt;" valign="top" width="174">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >16000</span></b><span > (4000)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 110.55pt; height: 14.55pt;" valign="top" width="147">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >24000</span></b><span > (8000)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 14.55pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 183.3pt; height: 14.55pt;" valign="top" width="244">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >11-12 tantos (<i>Sanbaiman</i>)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 130.45pt; height: 14.55pt;" valign="top" width="174">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >24000</span></b><span > (6000)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 110.55pt; height: 14.55pt;" valign="top" width="147">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >36000</span></b><span > (12000)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 14.55pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 183.3pt; height: 14.55pt;" valign="top" width="244">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span >Tanto máximo (<i>Yakuman</i>)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 130.45pt; height: 14.55pt;" valign="top" width="174">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >32000</span></b><span > (8000)</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 110.55pt; height: 14.55pt;" valign="top" width="147">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span >48000</span></b><span > (16000)</span></p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<h2>Siguiente ronda</h2>
+
+
+<p class="MsoNormal">Al acabar la ronda, si el repartidor es el que <b>ganó</b>
+la ronda, volverá a ser el <b>repartidor</b> la ronda siguiente. Si no, pasa a
+ser <b>repartidor</b> el jugador de la derecha. Recordar que el repartidor es
+siempre mano.</p>
+
+
+<p class="MsoNormal">Normalmente el juego se termina cuando algún jugador llega a
+tener puntos negativos, o luego de que se jueguen 8 o 16 rondas. En ese
+momento, el jugador con más puntos se considera el ganador de la partida.</p>
+
+
+<p class="MsoNormal">Una partida completa está conformada por 16 rondas, <b>cuatro
+para cada rey</b>:</p>
+
+
+<table class="MsoNormalTable" style="width: 424.7pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="566">
+
+ <tbody><tr style="">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 41.8pt;" valign="top" width="56">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Ronda</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.05pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">1</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.1pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">2</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.15pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">3</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.1pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">4</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.1pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">5</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.1pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">6</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.1pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">7</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.1pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">8</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.1pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">9</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 25.25pt;" valign="top" width="34">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">10</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 25.25pt;" valign="top" width="34">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">11</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 25.25pt;" valign="top" width="34">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">12</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 25.25pt;" valign="top" width="34">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">13</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 25.25pt;" valign="top" width="34">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">14</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 25.25pt;" valign="top" width="34">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">15</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 23.5pt;" valign="top" width="31">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">16</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 41.8pt;" valign="top" width="56">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey</p>
+  </td>
+  <td colspan="4" style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 92.4pt;" valign="top" width="123">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de Oros</p>
+  </td>
+  <td colspan="4" style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 92.4pt;" valign="top" width="123">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de Copas</p>
+  </td>
+  <td colspan="4" style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 98.85pt;" valign="top" width="132">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de
+  Espadas</p>
+  </td>
+  <td colspan="4" style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 99.25pt;" valign="top" width="132">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de Bastos</p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<p class="MsoNormal">O sea que, si es la ronda 2, el rey de la ronda es el <b>rey
+de oros</b>. Entonces, <b>para cualquier jugador en esta ronda</b>, una pierna
+de rey de oros equivale a 1 tanto.</p>
+
+
+<p class="MsoNormal">Cabe aclarar que no importa cuál sea el <b>Rey de la ronda</b>,
+el jugador que reparte siempre le corresponde el Rey de Oros como Rey propio. A
+cada jugador le corresponde un rey propio, dependiendo del orden de los turnos.</p>
+
+
+<table class="MsoNormalTable" style="width: 424pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="565">
+
+ <tbody><tr style="height: 13.05pt;">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 82pt; height: 13.05pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Orden de turnos</span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 85.5pt; height: 13.05pt;" valign="top" width="114">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Primero (Mano)</span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 85.5pt; height: 13.05pt;" valign="top" width="114">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Segundo </span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 85.5pt; height: 13.05pt;" valign="top" width="114">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Tercero</span></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 85.5pt; height: 13.05pt;" valign="top" width="114">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Cuarto (Pie)</span></p>
+  </td>
+ </tr>
+ <tr style="height: 12.75pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 82pt; height: 12.75pt;" valign="top" width="109">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Rey propio</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 85.5pt; height: 12.75pt;" valign="top" width="114">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Rey de Oros</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 85.5pt; height: 12.75pt;" valign="top" width="114">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Rey de Copas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 85.5pt; height: 12.75pt;" valign="top" width="114">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Rey de Espadas</span></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 85.5pt; height: 12.75pt;" valign="top" width="114">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><span style="font-size: 10pt;">Rey de Bastos</span></p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<p class="MsoNormal">O sea que, si un jugador está sentado a la derecha de la
+mano, su rey propio es el <b>rey de copas</b>. Entonces, para <b>este jugador
+en particular</b>, una pierna de rey de copas equivale a 1 tanto.</p>
+
+
+<p class="MsoNormal">Si el rey de la ronda y el rey propio <b><u>coinciden</u></b>,
+entonces la pierna vale <b>2 tantos</b>. 1 por ser el rey de la ronda, y 1 por
+ser el rey propio.</p>
+
+
+<h2>Empate (sin ganadores)</h2>
+
+
+<p class="MsoNormal">Si se acaban las cartas del pozo, o si todos los descartes
+tienen al menos 18 cartas (tres filas de seis), la ronda termina en <b>empate</b>,
+y pasa a ser repartidor el jugador de la derecha del repartidor de esta ronda.
+Además, se agregan 300 puntos al <b>pozo vacante</b>.</p>
+
+
+<p class="MsoNormal" style="margin-left: 35.4pt;"><b><i>Nota:</i></b> si 18
+descartes es muy poco para 2 jugadores, se puede aumentar a 24 descartes
+(cuatro filas de seis) para alargar un poco más las rondas.</p>
+
+
+<p class="MsoNormal">El <b>pozo vacante</b> son puntos que permanecen entre
+rondas (empieza en cero), hasta que haya un ganador. El próximo jugador que
+gane se llevará los puntos del pozo vacante, y el pozo vacante vuelve a cero.</p>
+
+
+<p class="MsoNormal">Todos los jugadores que hayan cantado envido (<i>riichi</i>),
+deben mostrar la mano para probar que realmente solo les faltaba una carta para
+ganar. Además, todos los jugadores que sólo les falte una carta para ganar
+también deben mostrar la mano. Esto se llama tener la mano &#8220;lista&#8221; o &#8220;a punto
+de ganar&#8221; (<i>tenpai</i>). Los demás no muestran la mano.</p>
+
+
+<p class="MsoNormal">Los jugadores que no estaban a punto de ganar, deben
+pagarles 3000 puntos a los jugadores que sí, dividido equitativamente. Si todos
+o nadie mostró la mano, entonces no se reparte nada.</p>
+
+
+<table class="MsoNormalTable" style="width: 398.3pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="531">
+
+ <tbody><tr style="height: 15.35pt;">
+  <td style="border: 1pt solid rgb(191, 191, 191); padding: 0cm 5.4pt; width: 106.3pt; height: 15.35pt;" valign="top" width="142">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Manos
+  mostradas</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">A</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">B</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">C</p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">D</p>
+  </td>
+ </tr>
+ <tr style="height: 16.05pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 106.3pt; height: 16.05pt;" valign="top" width="142">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">1 jugador</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 16.05pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+3000</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 16.05pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">-1000</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 16.05pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">-1000</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 16.05pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">-1000</p>
+  </td>
+ </tr>
+ <tr style="height: 15.35pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 106.3pt; height: 15.35pt;" valign="top" width="142">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">2 jugadores</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+1500</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+1500</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">-1500</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">-1500</p>
+  </td>
+ </tr>
+ <tr style="height: 15.35pt;">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191); border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 106.3pt; height: 15.35pt;" valign="top" width="142">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">3 jugadores</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+1000</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+1000</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">+1000</p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color rgb(191, 191, 191) rgb(191, 191, 191) -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 73pt; height: 15.35pt;" valign="top" width="97">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">-3000</p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<p class="MsoNormal"><br>
+Todos los puntos por apuestas de envido, <b>se descuentan de los jugadores
+correspondientes, y se agregan al pozo vacante</b>. </p>
+
+
+<h1><span style="">Penalidades</span></h1>
+
+
+<p class="MsoNormal">Si un jugador canta <b>Mahjong</b>, pero su mano <b>no es
+válida</b>, o tiene <b>0 tantos</b>, la ronda se considera nula, y el jugador
+que cometió el error debe pagar 4000 puntos al repartidor, y 2000 puntos a los
+otros dos jugadores (pierde 8000 puntos). Si el jugador que cometió el error ES
+el repartidor, entonces debe pagarle 4000 puntos a cada jugador (pierde 12000
+puntos). Luego la ronda se vuelve a jugar.</p>
+
+
+<p class="MsoNormal">El mismo castigo se aplica si un jugador hace trampa, o si
+baja un juego de forma incorrecta.</p>
+
+
+<h2>Ley de descarte (<i>furiten)</i></h2>
+
+
+<p class="MsoNormal">Un jugador no puede cantar <b>Mahjong</b> por una carta
+descartada <i>por otro jugador</i> si esa carta <b><u>YA</u></b> se encuentra
+en la <b>propia</b> zona de descarte.</p>
+
+
+<p class="MsoNormal">La razón de esta regla es para garantizar que las cartas en
+la zona de descarte de un jugador son cartas <b>seguras</b> que otros jugadores
+pueden descartar sin miedo a que <i>ese</i> jugador cante Mahjong por tales
+descartes (porque por la ley de descarte, no sería válido).</p>
+
+
+<p class="MsoNormal">Ahora bien, si esta carta es obtenida robando del pozo,
+entonces sí puede cantar Mahjong, sin ningún inconveniente.</p>
+
+
+<h2>Soplo (<i>furiten</i> temporal, o permanente)</h2>
+
+
+<p class="MsoNormal">Si un jugador podía cantar <b>Mahjong</b> con un descarte de
+otro jugador, pero <u>no se dio cuenta</u> o lo <u>dejó pasar</u>, y otro
+jugador tira <b>la misma carta</b>, el jugador en cuestión <b><i><u>NO</u></i></b>
+podrá cantar<b> Mahjong </b>con esa carta.</p>
+
+
+<p class="MsoNormal">Esto es válido hasta que vuelva a ser el turno del jugador
+en cuestión y robe una carta del pozo. A partir de este momento, la restricción
+sobre esta carta ya no cuenta, y si alguien descarta esa carta en un turno
+siguiente, ahora <i>sí</i> puede cantar Mahjong sobre ese descarte, <u>a menos
+que lo vuelva a dejar pasar</u>.</p>
+
+
+<p class="MsoNormal">Si un jugador deja pasar una chance de <b>Mahjong</b> <u>habiendo
+cantado envido</u>, entonces este jugador <b>ya no puede ganar robando un
+descarte</b>, y <i>sólo</i> podrá ganar si roba la carta que está esperando <b>desde
+el pozo</b>. Esto es válido hasta el final de la ronda.</p>
+
+
+<h1>Anexo: Notas y cambios del Mahjong Riichi</h1>
+
+
+<p class="MsoNormal">El objetivo de este juego es lograr hacer una copia lo más
+exacta posible de las reglas del Mahjong Riichi para poder jugarse con cartas
+comunes de la baraja española, y traducir todos los términos para que
+explicarlo sea lo más fácil y sencillo posible, si ya se está acostumbrado a
+jugar otros juegos con cartas españolas, como por ejemplo el Mus, la escoba, el
+truco, el chinchón, etcétera, u otros juegos basados en armar escaleras o
+piernas, como la canasta, el rummy, o el Burako.</p>
+
+
+<p class="MsoNormal">También se han simplificado varios procedimientos como la
+construcción del muro, el muro muerto, y repartir cartas de cuatro en cuatro,
+porque nacen únicamente como una forma cómoda y elegante de jugar con fichas,
+que son fáciles de apilar. A efectos de funcionalidad, hacer una única pila de
+cartas en lugar de 4 muros, y dar las cartas de una en una, es simbólicamente
+lo mismo, y no altera la jugabilidad.</p>
+
+
+<p class="MsoNormal">Los <b>oros</b> corresponden a los <b>círculos</b>, los <b>bastos</b>
+corresponden a los <b>bambúes</b>, las <b>espadas</b> corresponden a los <b>caracteres</b>.</p>
+
+
+<p class="MsoNormal">Los <b>honores </b>son representados por las <b>cartas
+&#8220;negras&#8221;</b>, es decir, los caballos y los reyes.</p>
+
+
+<p class="MsoNormal">Los <b>caballos</b> representan a los <b>dragones</b>: El
+caballo de espadas es el <b>dragón rojo</b>, el caballo de bastos es el <b>dragón
+verde</b>, y el caballo de oro es el <b>dragón blanco</b>.</p>
+
+
+<p class="MsoNormal">Los <b>reyes</b> de oro, copa, espada, y basto, representan
+respectivamente a los <b>vientos</b> del <b>este</b>, <b>sur</b>, <b>oeste</b>,
+y <b>norte</b>. Asimismo, los palos de <b>oro</b>, <b>copa</b>, <b>espada</b>,
+y <b>basto</b>, representan esos vientos en ese orden, y <b>oro</b> es la <b>mano</b>.</p>
+
+
+<p class="MsoNormal">Nótese que no hay correlación alguna entre los palos de los
+reyes y los palos de las demás cartas porque los vientos en el Mahjong original
+no tienen color alguno, pero por conveniencia, y para respetar el orden de las
+pintas (el borde de las cartas) se usa el orden oro, copa, espada, y basto.</p>
+
+
+<p class="MsoNormal">Estos son los términos que se adaptaron y localizaron para
+jugar al Mahjong con cartas de la baraja española, para hacerlo más fácil de
+explicar.</p>
+
+
+<table class="MsoNormalTable" style="border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="566">
+
+ <tbody><tr style="">
+  <td style="border-style: solid solid none; border-color: black black -moz-use-text-color; border-width: 1pt 1pt medium; padding: 0cm 5.4pt; background: black none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: white;">Mahjong Riichi</span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; background: black none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: white;">Cartas Españolas</span></b></p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Ficha</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Carta</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Honores</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Negras</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Dragones</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Dragón Rojo</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Dragón Verde</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Dragón Blanco</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Caballos</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Caballo de
+  Espadas</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Caballo de
+  Bastos</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Caballo de
+  Oros</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Vientos</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Viento Este</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Viento Sur</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Viento Oeste</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Viento
+  Norte<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Viento
+  de Ronda</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Viento
+  de Asiento</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Reyes</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de Oros</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de Copas</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de
+  Espadas</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de Bastos</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey de la
+  Ronda</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Rey Propio</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Terminales</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Puntas</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Bambúes</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Bastos</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Círculos</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Oros</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Caracteres</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Espadas</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Ojos</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Par</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Chi</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>Escalera</b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Juego de 3
+  cartas del mismo palo en secuencia, o sea 1-2-3</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Pon</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>Pierna</b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Juego de 3
+  cartas idénticas, o sea del mismo palo y el mismo número</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Kan</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>Cuarteto</b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Juego de 4
+  cartas idénticas, o sea del mismo palo y el mismo número</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Muro muerto</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Pozo muerto</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Dora</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Ura Dora</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Indicador de Dora</span></b></p>
+  </td>
+  <td style="border-style: none solid none none; border-color: -moz-use-text-color black -moz-use-text-color -moz-use-text-color; border-width: medium 1pt medium medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Carta bonus,
+  o bonificada</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Carta bonus
+  oculta</p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Indicador de
+  bonus</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Akadora</span></b></p>
+  </td>
+  <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b>Los cincos
+  rojos</b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Hay un único
+  cinco de cada palo (cinco de oros, cinco de bastos, cinco de espadas) que
+  está pintado de rojo, para indicar que son consideradas cartas bonus en todas
+  las rondas.</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Honba</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Pozo Vacante</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Yaku</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Mano</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Han</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Tanto</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Yakuman</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Tanto máximo</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Fu</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Yapas</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Riichi</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Envido
+  (Riichi)</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid; border-color: -moz-use-text-color black; border-width: medium 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Doble Riichi</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Doble Envido
+  (Doble Riichi)</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border: 1pt solid black; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Furiten</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Ley de
+  descarte</p>
+  </td>
+ </tr>
+ <tr style="">
+  <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background: white none repeat scroll 0%; width: 212.35pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Bendición del cielo</span></b></p>
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="color: black;">Bendición de la tierra</span></b></p>
+  </td>
+  <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 212.35pt;" valign="top" width="283">
+  <p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;">Bendición</p>
+  </td>
+ </tr>
+</tbody>
+</table>
+
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+
+</body></html>
