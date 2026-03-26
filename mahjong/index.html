@@ -9,7 +9,7 @@ body {
 </style>
 <h1 align="center">Mahjong con cartas españolas</h1>
 <p align="center"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\1e.png"></p>
-<p class="MsoSubtitle" align="center">Revisión 3, 25-3-2026</p>
+<p class="MsoSubtitle" align="center">Revisión 4, 26-3-2026</p>
 <hr>
 <h1>Armado del mazo</h1>
 
@@ -73,6 +73,7 @@ Oros (mano, juega 1°)</p>
 que reparte), y los turnos se siguen en sentido antihorario (el jugador de la
 derecha sigue).</p>
 
+<p>El jugador que sea mano debe colocar de su lado de la mesa el indicador de mano <img src="tiles\mano.png">, así se puede recordar a quién le corresponde cada rey.</p>
 
 <p>En su turno, el jugador roba una carta del mazo y descarta
 una carta en su zona de descarte, boca arriba. La zona de descarte se ordena de
@@ -88,7 +89,7 @@ jugador, para que se vean todas las cartas descartadas en orden.</p>
 <p><em>El objetivo del juego es ser el primer jugador en lograr
 obtener una mano <b>válida</b>, <b>completa</b>, compuesta por <b>4 juegos y un par</b>.</em></p>
 
-<p>La mano completa se hace con las 13 cartas propias (cuentan <u>tanto las que están en la mano como las que están juegos bajados</u>, se explicará más adelante) mas 1 carta robada del pozo, o robada del descarte de otro jugador. O sea que con la carta robada se completa la mano.</p>
+<p>La mano completa se hace con las 13 cartas propias (cuentan <u>tanto las que están en la mano como las que están en juegos bajados</u>, se explicará más adelante) más 1 carta robada del pozo, o robada del descarte de otro jugador. O sea que con la carta robada se completa la mano.</p>
 
 
 <div align="center" style="border: 1pt solid black; padding: 1pt 4pt; margin-left: 35.4pt; margin-right: 42.45pt;">
@@ -175,11 +176,24 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <p><img src="tiles\4e.png"><img src="tiles\5e.png"><img src="tiles\6e.png"></p>
 <p>En ese momento, se toma la carta descartada y se baja en mesa la escalera completada. Como se bajó un juego con un descarte ajeno, la mano completa pasa a ser una &ldquo;mano abierta&rdquo;. Ahora es su turno y tiene que descartarse una carta sin alzar del pozo, para volver a tener 13 cartas.</p>
 
-<p><strong>&iexcl;Pierna!</strong> <em>(pon)</em> &ndash; Igual que con la escalera, pero para cuando el descarte sirve para completar una pierna en mano (tres cartas idénticas, mismo palo y número), y además <u>se puede cantar en cualquier momento, y con el descarte de cualquier jugador</u>. Por ejemplo, el jugador en frente mío tiró un 5 de oro, y yo tengo otros dos 5 de oros en mi mano, o si tiró un caballo de espadas, y yo tengo otros dos caballos de espadas en mi mano.</p>
+<p>La carta robada debe colocarse de forma horizontal, para que sepa que esa carta correspondía al descarte del jugador de la izquierda. Las cartas robadas para bajar escaleras provienen <u>siempre</u> del jugador de la izquierda.</p>
+<table width="100%"><tr>
+<td><p align="center"><img src="tiles\4e.png"><img src="tiles\5e.png"><img src="tiles\6e.png" style="transform: rotate(90deg);"><br>Por ejemplo aquí, el 6 de espadas fue la carta <br>robada del descarte para completar la escalera.</p></td>
+<td><p align="center"><img src="tiles\1o.png"><img src="tiles\2o.png" style="transform: rotate(90deg);"><img src="tiles\3o.png"><br>Y aquí, el 2 de oro fue la carta robada.</p>
+</td></tr></table>
+<p><strong>&iexcl;Pierna!</strong> <em>(pon)</em> &ndash; Igual que con la escalera, pero para cuando el descarte sirve para completar una pierna en mano (tres cartas idénticas, mismo palo y número), y además <u>se puede cantar en cualquier momento, y con el descarte de cualquier jugador</u> (La escalera solo se puede cantar con el descarte del jugador de la izquierda). Por ejemplo, si el jugador en frente de mí tiró un 5 de oro, y yo tengo otros dos 5 de oros en mi mano, o si tiró un caballo de espadas, y yo tengo otros dos caballos de espadas en mi mano.</p>
 <p><img src="tiles\5o.png"><img src="tiles\5o.png"><img src="tiles\5o.png"></p>
-<p>De la misma forma, se toma el descarte, se baja el juego completo, y la mano ahora es una &ldquo;mano abierta&rdquo;. La diferencia con la escalera es que ahora pasa a ser el turno de la persona que cantó pierna, y le toca a él descartar. Y la ronda sigue con el jugador de la derecha a partir de ahí.</p>
+<p>Igual que con la escalera, se toma el descarte, se baja el juego completo, y la mano ahora es una &ldquo;mano abierta&rdquo;. <b>Ahora pasa a ser el turno de la persona que cantó pierna</b>, y le toca a él descartar. Y la ronda sigue con el jugador de la derecha a partir de ahí, <i>incluso si esto hace que se salteen jugadores</i>.</p>
 
-<p><strong>&iexcl;Mahjong!</strong> (<em>ron</em>, o <em>tsumo</em>) &ndash; Se canta cuando cualquier jugador descarta la última carta que falta para completar la mano del jugador. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para mostrar la mano. Ahí la ronda termina y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido y cada jugador que haya cantado envido debe pagarle 1000 puntos.</p>
+<p>La carta robada para completar la pierna debe colocarse en la posición correspondiente al jugador de quien fué tomada la carta, para poder recordar quién fué quien hizo ese descarte luego. Se hace de la siguiente manera:</p>
+
+<table width="100%"><tr>
+<td><p align="center"><img src="tiles\2b.png" style="transform: rotate(90deg);"><img src="tiles\2b.png"><img src="tiles\2b.png"><br>Robada del jugador a la izquierda</p></td>
+<td><p align="center"><img src="tiles\2b.png"><img src="tiles\2b.png" style="transform: rotate(90deg);"><img src="tiles\2b.png"><br>Robada del jugador al frente</p></td>
+<td><p align="center"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png" style="transform: rotate(90deg);"><br>Robada del jugador a la derecha</p></td>
+</tr></table>
+
+<p><strong>&iexcl;Mahjong!</strong> (<em>ron</em>, o <em>tsumo</em>) &ndash; Se canta cuando cualquier jugador descarta la última carta que falta para completar la mano del jugador. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. Ahí la ronda termina y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos.</p>
 
 <p align="center">Por ejemplo un jugador descarta... <img src="tiles\4e.png"></p>
 <p align="center">¡Y ésa carta es justo la última que faltaba para completar la mano!<br><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
@@ -188,12 +202,12 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <img src="tiles\12c.png"><img src="tiles\12c.png">
 <img src="tiles\5e.png"><img src="tiles\6e.png"></p>
 
-<p>Consultar la sección &ldquo;Cómo calcular los puntos&rdquo; para más información.</p>
+<p>Consultar la sección <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a> para más información.</p>
 <p>Si más de un jugador canta Mahjong a la vez, <strong>ambos jugadores se consideran ganadores</strong>, y los perdedores deben dividirse a la mitad los gastos para pagarle la cantidad correspondiente a cada ganador.</p>
 <p>Se pronuncia &ldquo;mayón&rdquo; pero también se puede decir simplemente &ldquo;&iexcl;gané!&rdquo; o no decir nada y simplemente mostrar la mano completa en mesa.</p>
 <p>También se puede cantar cuando la carta que falta para completar la mano se consigue robando del pozo (<em>tsumo</em>). El procedimiento es el mismo, se muestra la mano completa en mesa, y la ronda termina. La única diferencia es que como se ganó robando del mazo, los puntos los tienen que pagar <u>todos los demás jugadores</u> al ganador (se dividen la cantidad en partes iguales).</p>
 
-<p  style="margin-left: 35.4pt;"><em>Atención: </em>No sólo hace falta que la mano esté completa (cuatro juegos y un par). Es <u>muy</u> importante además que la mano valga <strong>al menos 1 tanto</strong>. Si no es así, el jugador que cante Mahjong con una mano con 0 tantos será penalizado y la ronda se deberá jugar de nuevo. Consultar la sección &ldquo;Lista de tantos&rdquo; para ver qué juegos y manos específicas cosas otorgan tantos. Una forma sencilla de garantizarse un tanto, sin tener que memorizar todos los tantos posibles, es tener o una pierna de caballos, o una pierna del rey del propio, o del rey la ronda, <em>o cantar Envido</em>.</p>
+<p  style="margin-left: 35.4pt;"><em>Atención: </em>No sólo hace falta que la mano esté completa (cuatro juegos y un par). Es <u>muy</u> importante además que la mano valga <strong>al menos 1 tanto</strong>. Si no es así, el jugador que cante Mahjong con una mano con 0 tantos será penalizado y la ronda se deberá jugar de nuevo. Consultar la sección <a href="#lista_de_tantos">&ldquo;Lista de tantos&rdquo;</a> para ver qué juegos y manos específicas cosas otorgan tantos. Una forma sencilla de garantizarse un tanto, sin tener que memorizar todos los tantos posibles, es tener o una pierna de caballos, o una pierna del rey del propio, o del rey de la ronda, <em>o cantar Envido</em>.</p>
 
 <p><strong>&iexcl;Envido!</strong> <em>(riichi)</em> &ndash; Se puede cantar al momento de descartar una carta, y <u>sólo cuando la mano es &ldquo;cerrada&rdquo;</u> (No tiene ningún juego bajado con descartes de otros jugadores). A partir de ese momento la mano de este jugador queda &ldquo;congelada&rdquo;, o sea que no se puede cambiar ningún juego ni ninguna carta de la mano (ni siquiera para bajar cuartetos).</p>
 <p>El Envido se puede hacer únicamente cuando <b>sólo falta una carta</b> para completar una mano válida, que puede ser una única, o pueden ser varias, pero debe faltar solo una.</p>
@@ -204,7 +218,7 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <img src="tiles\5o.png"><img src="tiles\12c.png"><img src="tiles\12c.png">
 <img src="tiles\5e.png"><img src="tiles\6e.png"><br>Por ejemplo en esta mano solo falta <b>una</b> carta para completar la mano, que puede ser el 4 de espadas o el 7 de espadas. Como están todas las cartas en la mano, ¡puede cantar envido!</p>
 
-<p>Sólo es cuestión de esperar ahora a robar del pozo la carta que falta, o que alguien descarte la última carta necesaria para ganar. El envido es importante porque <strong>agrega 1 tanto</strong> a la puntuación de la mano, lo cual hace que cualquier mano <u>completa</u> se a una mano <u>válida</u>.</p>
+<p>Sólo es cuestión de esperar ahora a robar del pozo la carta que falta, o que alguien descarte la última carta necesaria para ganar. El envido es importante porque <strong>agrega 1 tanto</strong> a la puntuación de la mano, lo cual hace que cualquier mano <u>completa</u> sea una mano <u>válida</u>.</p>
 
 <p>Para indicar el envido se enuncia en voz alta, y se coloca la carta descartada de ese turno de forma horizontal en la zona de descartes, y además se le coloca una ficha de 1000 puntos <img src="tiles\riichi.png"> adelante. Estos puntos vuelven al jugador si gana la ronda, y solo los pierde si otro jugador gana esa ronda, así que no hace falta descontarlos de los puntos del jugador hasta que la ronda termine.</p>
 
@@ -220,7 +234,14 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <p  style="margin-left: 35.4pt;"><em>(Nota: la carta horizontal es un descarte normal y también puede ser robado por otro jugador para completar un juego sin ninguna diferencia).</em></p>
 
 <p><strong>&iexcl;Cuarteto!</strong> <em>(kan)</em> &ndash; Igual que con la pierna, pero para juegos de cuatro cartas idénticas en vez de tres, y también se puede cantar durante el turno de cualquier jugador. El procedimiento es casi el mismo, se enuncia en voz alta, se toma el descarte, se baja el cuarteto completo en mesa todo boca arriba, y la mano se considera &ldquo;abierta&rdquo;.</p>
-<p><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"></p>
+
+<p>Al igual que con la pierna, se debe colocar una carta de forma horizontal para indicar de donde vino el descarte.</p>
+<table width="100%"><tr>
+<td><p align="center"><img src="tiles\2o.png" style="transform: rotate(90deg);"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><br>Robada del jugador a la izquierda</p></td>
+<td><p align="center"><img src="tiles\2o.png"><img src="tiles\2o.png" style="transform: rotate(90deg);"><img src="tiles\2o.png"><img src="tiles\2o.png"><br>Robada del jugador al frente</p></td>
+<td><p align="center"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png" style="transform: rotate(90deg);"><br>Robada del jugador a la derecha</p></td>
+</tr></table>
+
 <p>Ahora bien, el cuarteto es un caso especial porque un juego compuesto por 4 cartas rompe con la condición de que una mano válida tiene que ser de 14 cartas: 4 juegos de 3 cartas cada uno + 1 par de dos cartas iguales (o sea las 13 cartas de la mano y en mesa, y la última carta robada del pozo o de un descarte para cantar Mahjong).</p>
 <p align="center"><img src="tiles\3o.png"> &larr; <img src="tiles\pozo.png"></p>
 <p>Para compensar la carta que falta, hay que robar una carta del &ldquo;pozo muerto&rdquo;. Para hacer esto, se aparta a un costado la carta bonus boca arriba (sigue en juego), se roba una carta del pozo muerto y se agrega a la mano. Luego se da vuelta una nueva carta boca arriba para reemplazar a la carta apartada. Esto quiere decir que ahora hay <u>dos</u> cartas bonificadas.</p>
@@ -232,9 +253,18 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <p><strong>&iexcl;Cuarteto (en mano)!</strong> &ndash; Los juegos bajados en mesa solo se pueden realizar con descartes ajenos. La <u>única</u> excepción es tener un cuarteto completo en la mano. El jugador que tenga un cuarteto en su mano, si así lo desea, puede enunciarlo y bajarlo en la mesa en su turno, luego de robar una carta del pozo. La diferencia es que luego de bajar un cuarteto en mano la mano todavía se considera &ldquo;cerrada&rdquo;, ya que no se usó ningún descarte ajeno para completar un juego (son todas cartas propias). Para distinguirlo de un cuarteto robado, se coloca boca abajo en la mesa, con las dos cartas centrales boca arriba.</p>
 <p><img src="tiles\c.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\c.png"></p>
 <p>Luego el procedimiento para reponer la carta faltante es el mismo que si fuera un cuarteto robado (apartar la carta bonus, robar una carta del pozo muerto, y dar vuelta una nueva carta de bonus para que ahora haya una más en juego).</p>
-<p>Otra excepción es que, si un jugador tiene bajada una pierna, pero luego roba del pozo la cuarta carta, puede convertir la pierna en un cuarteto agregando esa carta a la pierna, y se considerará un cuarteto robado. Luego el procedimiento es el mismo como si hubiera robado un descarte para formar un cuarteto (carta bonus, robar del pozo muerto, etc.).</p>
+<p>Otra excepción es que, si un jugador tiene bajada una <b>pierna</b>, pero luego roba del pozo la cuarta carta, puede convertir la pierna en un cuarteto agregando esa carta a la pierna, y se considerará un cuarteto robado. Luego el procedimiento es el mismo como si hubiera robado un descarte para formar un cuarteto (carta bonus, robar del pozo muerto, etc.).</p>
 
-<p style="margin-left: 35.4pt;">Cabe aclarar que todo esto es <b>opcional.</b> Ningún jugador está obligado a bajar juegos si no quiere o si estas cartas le convienen más para formar <i>otros juegos distintos</i>, por ejemplo, una escalera y una pierna <br><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\4o.png"><img src="tiles\4o.png"><img src="tiles\4o.png">.</p>
+<p>La carta adicional debe colocarse arriba de la carta horizontal en la pierna.</p>
+<table width="100%"><tr>
+<td><p align="center">
+<img src="tiles\2b_apilados.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><br>Robada del jugador a la izquierda</p></td>
+<td><p align="center"><img src="tiles\2b.png"><img src="tiles\2b_apilados.png"><img src="tiles\2b.png"><br>Robada del jugador al frente</p></td>
+<td><p align="center"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b_apilados.png"><br>Robada del jugador a la derecha</p></td>
+</tr></table>
+
+<p>Importante: Cabe aclarar que bajar cuartetos ocultos en mano es totalemente <b>opcional</b>. Ningún jugador está obligado a bajar juegos si no quiere o si estas cartas le convienen más para formar <i>otros juegos distintos</i>, por ejemplo, una escalera y una pierna</p>
+<p align="center"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\4o.png"><img src="tiles\4o.png"><img src="tiles\4o.png">.</p>
 
 <h3>Algunas consideraciones</h3>
 
@@ -244,7 +274,7 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 
 <li>Si se canta Escalera, pero alguien canta Pierna o Cuarteto en el mismo turno, estos tienen prioridad y el canto de Escalera se ignora.</li></ul>
 
-<h1>Lista de Tantos (<em>Yakus</em>)</h1>
+<h1 id="lista_de_tantos">Lista de Tantos (<em>Yakus</em>)</h1>
 
 
 <p>Una mano puede estar <i>completa</i> (tener los cuatro juegos y el par ya formados) pero solo se considerara una <b>mano válida</b> si tiene al menos <b>1
@@ -252,13 +282,13 @@ tanto</b>.</p>
 
 <p>Esta lista muestra todas las situaciones que otorgan tantos. Nótese que la mayoría de las manos valen más cuando los juegos están ocultos en la mano y completamente formados por cartas propias <b>(mano cerrada)</b>, que cuando están en mesa por robar de un descarte <b>(mano abierta)</b>.</p>
 
-<p>Con una mano sin tantos <b>no se puede cantar Mahjong</b>, hay que buscar juegos y cartas que logren formar una mano que de al menos 1 tanto para poder cantar Mahjong y ganar la ronda.</p>
+<p>Con una mano sin tantos <b>no se puede cantar Mahjong</b>, hay que buscar juegos y cartas que logren formar una mano que dé al menos 1 tanto para poder cantar Mahjong y ganar la ronda.</p>
 
 <p>Los tantos de una mano se acumulan, por ejemplo se puede obtener 1 tanto por haber cantado envido, 1 tanto por tener una pierna de dragones, y 1 tanto por tener dos escaleras idénticas, haciendo que la mano entera valga 3 tantos.</p>
 
-<p>Denuevo, sólamente se cuentan los puntos de la mano del jugador que cantó Mahjong. Las manos de los demás jugadores no cuentan para nada, y todo el calculo de puntaje se basa en <u>esa</u> mano.</p>
+<p>De nuevo, solamente se cuentan los puntos de la mano del jugador que cantó Mahjong. Las manos de los demás jugadores no cuentan para nada, y todo el cálculo de puntaje se basa en <u>esa</u> mano.</p>
 
-<p>La mayoria de las manos que figuran en esta lista son <i>parciales</i>, o sea que el resto de las cartas de la mano puede estar formada de cualquier forma, <b>siempre y cuando la mano entera esté compuesta de 4 juegos y un par</b>. A excepción de algunas <u>manos especiales</u> como la mano de &#8220;siete pares&#8221; que tienen una conformación diferente de cartas.</p>
+<p>La mayoría de las manos que figuran en esta lista son <i>parciales</i>, o sea que el resto de los juegos de la mano pueden estar formados de cualquier manera, <b>siempre y cuando la mano entera esté compuesta de 4 juegos y un par</b>. A excepción de algunas <u>manos especiales</u> como la mano de &#8220;siete pares&#8221; que tienen una conformación diferente de cartas.</p>
 
 <p>Una versión compacta de esta lista se puede ver haciendo clic en <a href="machete.html">este enlace</a>.</p>
 
@@ -288,7 +318,7 @@ soy el pie (cuarto en el orden de turnos). </p>
 
 <p><b>Pierna de Rey de ronda</b> &#8211; Tres del rey de la ronda.
 Por ejemplo, tres reyes de oro, si es la primera ronda. O tres reyes de copa si
-es la quinta ronda. (Ver la sección <u>Siguiente ronda</u> para más
+es la quinta ronda. (Ver la sección <a href="#siguiente_ronda">Siguiente ronda</a> para más
 información)</p>
 
 
@@ -310,7 +340,7 @@ descarte de otro jugador en esta ronda.</u> Esto se llama tener una <b>mano cerr
 estar esperando para completar una escalera en dos extremos distintos. O sea, mano que no tiene ningún punto extra por yapas.</p>
 
 
-<p><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\8o.png"><img src="tiles\8o.png">
+<p><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\8o.png"><img src="tiles\8o.png">
 <br>&#8211; y
 necesito <img src="tiles\6o.png" width="26"> ó <img src="tiles\3o.png" width="26"></p>
 
@@ -357,7 +387,7 @@ si se consigue habiendo robado descartes</u> (Mano abierta).</p>
 
 
 <p><b>Escalera completa</b> &#8211; Tres escaleras, formando
-1-2-3-4-5-6-7-8-9. <u>Vale <b>solo 1 tanto</b> si se consigue habiendo robado
+1-2-3-4-5-6-7-8-9, del mismo palo. <u>Vale <b>solo 1 tanto</b> si se consigue habiendo robado
 descartes</u> (Mano abierta).</p>
 
 
@@ -450,7 +480,7 @@ consigue robando descartes.</u></p>
 
 <p><b>Color puro </b>&#8211; Mano compuesta únicamente por cartas de
 un solo palo, <b>sin usar cartas negras</b>. Vale solo 5 tantos si se consigue
-habiendo bajando juegos.</p>
+habiendo bajado juegos.</p>
 
 
 <p><img src="tiles\1e.png"><img src="tiles\2e.png"><img src="tiles\3e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\9e.png"><img src="tiles\9e.png"></p>
@@ -527,7 +557,7 @@ caballos y reyes.</p>
 <p><b><i>&#8220;Todas verdes&#8221; </i></b>&#8211; Mano formada exclusivamente
 por 2,3,4,6,8 de bastos, y caballo de bastos. Nótese que estas cartas <b><i>no
 son</i></b> todas verdes, pero en el Mahjong original, estas fichas son todas
-verdes, mientas que el 1,5,7,9 no lo son.</p>
+verdes, mientras que el 1,5,7,9 no lo son.</p>
 
 
 <p><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\8b.png"><img src="tiles\8b.png"></p>
@@ -562,9 +592,8 @@ descartado únicamente unos, nueves, caballos, y reyes.</p>
 
 <p><b>Mano servida </b>&#8211; Ganar en el primer turno con el descarte de otro jugador.</p>
 
-
-<h1>Cómo calcular los puntos</h1>
-
+<hr>
+<h1 id="como_calcular_los_puntos">Cómo calcular los puntos</h1>
 
 <p>Los tantos y los puntos <u>SOLO</u> cuentan para el <b>ganador</b>
 de la ronda. Los demás jugadores no deben contar nada.</p>
@@ -572,11 +601,24 @@ de la ronda. Los demás jugadores no deben contar nada.</p>
 
 <h2>Bonificaciones (<i>Dora</i>)</h2>
 
-<p>Primero que nada, hay que sumar <b>un tanto</b> por cada carta bonificada que se tenga en la mano. Las cartas son <b>la siguiente</b> de las que están boca arriba indicador de bonus, o sea en el área del pozo muerto.</p>
+<p>En su mano, el ganador puede tener cartas bonificadas, que suman un tanto cada una. Las cartas bonificadas correspondientes a cada ronda son <b>las cartas siguientes a las cartas que están boca arriba</b> en el área del pozo muerto, es decir, en el indicador de bonus.</p>
 
 <p align="center"><img src="tiles\3o.png">&nbsp;&nbsp;&nbsp;<img src="tiles\pozo_7.png">
-<br>En este caso el indicador de bonus es el 3 de oros, y el 7 de espadas, de modo que las cartas que dan tantos extras son las siguientes, o sea, <b>el 4 de oros</b>, y el <b>8 de espadas</b>.</p>
+<br>En este caso el indicador de bonus es el 3 de oros, y el 7 de espadas, de modo que las cartas que dan tantos extras son las siguientes de esas. O sea, <b>el 4 de oros</b>, y el <b>8 de espadas</b>.</p>
+
+<p>Esto quiere decir, que por <b>cada</b> 4 de oros, o 9 de espadas que se tenga en la mano, se añadirá <b>un tanto</b> extra al puntaje de la mano.</p>
+
+<p align="center">
+<img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
+<img src="tiles\4o.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\4o.png"  style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\4o.png"  style="outline: 2px solid red; outline-offset: -1px;">
+<img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png">
+<img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12c.png">
+<img src="tiles\2b.png"><img src="tiles\2b.png"><br>Por ejemplo, esta mano tiene tres 4 de oros, asi que se le suman TRES tantos extras.</p>
+
 <p>En caso que haya un nueve en el indicador de bonus, la carta bonificada será el uno.</p>
+
+<p><b>Ojo:</b> es muy importante aclarar que estos tantos extras solo valen si la mano YA tenía al menos 1 tanto. Las bonificaciones no sirven para hacer que una mano de 0 tantos sea una mano válida.</p>
+
 <p>Si hay una carta negra en el indicador de bonus, el orden a
 seguir es el siguiente:</p>
 <p align="center"><img src="tiles\12o.png"> &rarr; <img src="tiles\12c.png"> &rarr; <img src="tiles\12e.png"> &rarr; <img src="tiles\12b.png"> &rarr; <img src="tiles\12o.png"> ... </p>
@@ -604,7 +646,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <img src="tiles\7e.png">
 <img src="tiles\3o.png"> &nbsp;&larr;&nbsp;<img src="tiles\pozo.png"><br><img src="tiles\riichi.png"></p>
 <p align="center">¡Ahora las cartas bonificadas serían el <b>Rey de copas</b>, <b>el 3 de bastos</b>, el 8 de espadas, y el 4 de oros!<br>(Recordar el orden de los reyes)</p>
-
+<hr>
 <h2>Yapas (<i>Fu</i>)</h2>
 
 <p>Las yapas son una puntuación extra que se calcula, además de los tantos, para darle un valor adicional al puntaje de una mano.</p>
@@ -684,8 +726,10 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 	</tr>
 </tbody>
 </table></p>
-
+<hr>
 <h2>Repartida de puntos</h2>
+
+<p>A continuación se detalla las cuentas que se deben hacer para decidir cuántos puntos debe pagarle cada jugador al ganador. Para <b>saltar directamente a las tablas de puntaje</b>, ver la sección <a href="#tablas_de_puntajes">"Tablas de puntajes precalculadas"</a>.</p>
 
 <p>Luego de contar los <b>Tantos</b> (<em>Han</em>) de la mano, y de calcular el total de <b>Yapas</b> (<em>Fu</em>), si la mano vale menos de 5 tantos, los puntos finales se calculan con la siguiente formula:</p>
 
@@ -759,17 +803,22 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 		<td>El que la descartó<br>paga el cuádruple (x4)</td>
 	</tr>
 </tbody></table></p>
-
-<p>Si estas cuentas son muy complicadas, la siguiente es una tabla de puntajes para calcular los puntajes más rápido:</p>
+<hr>
+<h2 id="tablas_de_puntajes">Tablas de puntajes precalculadas</h2>
+<p>Para <b>evitar tener que hacer estas cuentas cada vez que se gane una mano</b>, la siguiente es una tabla de puntajes para calcular los puntajes más rápido:</p>
 
 <!-- TABLA DE PUNTAJES -->
 <p align="center">
 <img src="img\tablas1.png">
-&nbsp;
+<br>
+<br>
 <img src="img\tablas2.png">
 </p>
+<hr>
 
-<h2>Siguiente ronda</h2>
+<p>Nota: si el cálculo de puntuación es muy tedioso y complicado y no se está interesado en aprender la forma tradicional de calcular los puntos, el autor sugiere usar una <a href="#puntuacion_simplificada">variante con puntuación simplificada</a>.</p>
+
+<h2 id="siguiente_ronda">Siguiente ronda</h2>
 
 
 <p>Al acabar la ronda, si el repartidor es el que <b>ganó</b>
@@ -940,7 +989,7 @@ descartes (porque por la ley de descarte, no sería válido).</p>
 <p>Ahora bien, si esta carta es obtenida robando del pozo,
 entonces sí puede cantar Mahjong, sin ningún inconveniente.</p>
 
-<p>Cabe aclarar que en este ejemplo esto solo aplica para el 4 de espadas. Si alguien tira un <b>7 de espadas</b> (Que aquí también completa la escalera que falta), puedo cantar Mahjong sin problemas, porque esa carta no está en mi area de descarte.</p>
+<p>Cabe aclarar que en este ejemplo esto solo aplica para el 4 de espadas. Si alguien tira un <b>7 de espadas</b> (Que aquí también completa la escalera que falta), puedo cantar Mahjong sin problemas, porque esa carta no está en mi área de descarte.</p>
 
 <h2>Ley de alpiste (Perdiste)</h2>
 
@@ -962,7 +1011,7 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 
 <p>En el idioma japonés estas situaciones se conocen con el nombre de <i>furiten</i> temporal y <i>furiten</i> permanente, respectivamente.</p>
 
-<hr><h1>Variantes: Puntuación simplificada.</h1>
+<hr><h1 id="puntuacion_simplificada">Variantes: Puntuación simplificada.</h1>
 
 <p>Si todo esto de calcular puntajes y sumar y restar y multiplicar puntos se vuelve muy tedioso, el autor de este documento (o sea yo) propone usar un método simplificado de puntuación, similar al usado en el Truco, o en la Escoba de 15.</p>
 
@@ -1175,6 +1224,8 @@ explicar.</p>
     <td>Bendición</td>
   </tr>
 </tbody></table>
-
+<br>
+<hr>
+<p>(C) 2026 Juan Patricio Dumrauf, PatricioComputacion.com</p>
 
 </body></html>
