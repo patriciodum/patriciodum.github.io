@@ -13,8 +13,27 @@ body {
 }
 </style>
 <h1 align="center">Mahjong con cartas españolas</h1>
-<p>Esta página muestra cartas de mahjong en vez de cartas españolas. Para ver esta misma página con cartas españolas, hacer clic <a href="..">aquí</a>.</p>
-<p align="center"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\1e.png"></p>
+<p align="center">
+<img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);">
+</p>
+
+<hr>
+
+<table align="center" width="100%" style="table-layout: fixed;">
+	<tr>
+		<td colspan="3" align="center">Saltar a secciones:</td>
+	</tr>
+	<tr>
+		<td align="center"><a href="#lista_de_tantos">Lista de tantos</a> (<a href="machete.html">Compacta</a>)</td>
+		<td align="center"><a href="#tabla_de_yapas">Tabla de yapas</a></td>
+		<td align="center"><a href="#tabla_de_puntajes">Tablas de puntajes</a></td>
+	</tr>
+		<tr>
+		<td colspan="3" align="center"><a href="..">Volver a Cartas Españolas</a></td>
+	</tr>
+</table>
+
+
 <hr>
 <h1>Requisitos para jugar</h1>
 <p>Para jugar al Mahjong con cartas españolas necesitamos:</p>
@@ -176,7 +195,7 @@ jugador, para que se vean todas las cartas descartadas en orden.</p>
 
 <p align="center">Por ejemplo aquí, el jugador acaba de descartarse el 5 de bastos, y es ahora el turno del jugador de su derecha.</p>
 <p style="text-align: center;" align="center"><img src="tiles\pozo_3.png"><br><br>
-<img src="tiles\12b.png"><img src="tiles\11e.png"><img src="tiles\9o.png"><img src="tiles\5b.png" style="outline: 5px solid red; outline-offset: -5px;"><img src="tiles\v.png"><img src="tiles\v.png"><br>
+<img src="tiles\11b.png"><img src="tiles\11e.png"><img src="tiles\9o.png"><img src="tiles\5b.png" style="outline: 5px solid red; outline-offset: -5px;"><img src="tiles\v.png"><img src="tiles\v.png"><br>
 <img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><br>
 <img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"></p>
 
@@ -324,7 +343,7 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <p align="center">
 <img src="tiles\12c.png"><img src="tiles\12e.png"><img src="tiles\11e.png">
 <img src="tiles\9o.png"><img src="tiles\2e.png"><img src="tiles\12c.png"><br>
-<img src="tiles\9e.png"><img src="tiles\3e.png"><img src="tiles\5b.png" style="transform: rotate(90deg);">
+<img src="tiles\9e.png"><img src="tiles\3e.png"><img src="tiles\5b.png" style="transform: translateY(-14px)  rotate(90deg);">
 <img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><br>
 </p>
 
@@ -852,7 +871,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <img src="tiles\3o.png"> &nbsp;&larr;&nbsp;<img src="tiles\pozo.png"><br><img src="tiles\riichi.png"></p>
 <p align="center">¡Ahora las cartas bonificadas serían el <b>Rey de copas</b>, <b>el 3 de bastos</b>, el 8 de espadas, y el 4 de oros!<br>(Recordar el orden de los reyes)</p>
 <hr>
-<h2>Yapas (<i>Fu</i>)</h2>
+<h2 id="tabla_de_yapas">Yapas (<i>Fu</i>)</h2>
 
 <p>Las yapas son una puntuación extra que se calcula, además de los tantos, para darle un valor adicional al puntaje de una mano.</p>
 
@@ -1017,13 +1036,1114 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <h2 id="tablas_de_puntajes">Tablas de puntajes precalculadas</h2>
 <p>Para <b>evitar tener que hacer estas cuentas cada vez que se gane una mano</b>, la siguiente es una tabla de puntajes para calcular los puntajes más rápido:</p>
 
-<!-- TABLA DE PUNTAJES -->
+
+
+
+<span align="center" id="tabla_de_puntajes">
+<!-- TABLA DE PUNTAJES         ->
 <p align="center">
 <img src="img\tablas1.png">
 <br>
 <br>
 <img src="img\tablas2.png">
+</p> <!-- -->
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="800" cellpadding="5" cellspacing="0">
+	<col width="125"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<tr>
+		<td colspan="11" width="671" height="25" valign="bottom" style="border: none; padding: 0in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="5" style="font-size: 20pt"><b>Puntos por ganar robando un descarte <span class="jp">(ron)</span></b></font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="11" width="671" height="39" bgcolor="#ed7d31" style="background: #ed7d31; border: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000" size="2" style="font-size: 11pt"><font size="5" style="font-size: 20pt"><b>Si ganó el REPARTIDOR.</b></font><br>
+			El número es la cantidad que le paga el perdedor al ganador</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="15" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>Yapas</b></font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">10</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">20</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">30</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">40</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">50</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">60</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">70</font></font></p>
+		</td>
+		<td width="45" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">80</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>1
+			tanto</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1500</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2400</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3400</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">4400</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">4800</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>2
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2400</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">4800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">6800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">7700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">8700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">9600</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>3
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">4800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">7700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">9600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">11600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>4
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">9600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">11600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">12000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>5
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">12000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>6-7
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">18000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>8-10
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">24000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>11-12
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">36000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="31" bgcolor="#f4b084" style="background: #f4b084; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>+13
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">48000</font></font></p>
+		</td>
+	</tr>
+</table>
+<p lang="es-AR" class="western" style="line-height: 116%; margin-bottom: 0.11in">
+
 </p>
+<table width="800" cellpadding="5" cellspacing="0">
+	<col width="124"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="44"/>
+	<tr>
+		<td colspan="11" width="669" height="62" bgcolor="#4472c4" style="background: #4472c4; border: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"  size="5" style="font-size: 20pt"><b>Si ganó cualquier OTRO JUGADOR.</b></font><br><font color="#000000"  size="2" style="font-size: 11pt">El
+			número es la cantidad que le paga el perdedor al ganador.</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="15" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>Yapas</b></font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5</font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">10</font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">20</font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">30</font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">40</font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">50</font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">60</font></font></p>
+		</td>
+		<td width="45" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">70</font></font></p>
+		</td>
+		<td width="44" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">80</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="30" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>1
+			tanto</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2900</font></font></p>
+		</td>
+		<td width="44" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3200</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="30" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>2
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">4500</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5100</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5800</font></font></p>
+		</td>
+		<td width="44" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">6400</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="30" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>3
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5100</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">6400</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">7700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="44" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="30" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>4
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">6400</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">7700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+		<td width="44" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">8000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="32" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>5
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">8000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="32" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>6-7
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">12000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="32" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>8-10
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">16000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="32" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>11-12
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">24000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="31" bgcolor="#8ea9db" style="background: #8ea9db; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>+13
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">32000</font></font></p>
+		</td>
+	</tr>
+</table>
+<p lang="es-AR" class="western" style="line-height: 116%; margin-bottom: 0.11in">
+
+</p>
+<table width="800" cellpadding="5" cellspacing="0">
+	<col width="125"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<tr>
+		<td colspan="11" width="671" height="25" valign="bottom" style="border: none; padding: 0in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="5" style="font-size: 20pt"><b>Puntos por ganar robando del Pozo <span class="jp">(tsumo)</span></b></font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="11" width="671" height="39" bgcolor="#ffc000" style="background: #ffc000; border: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"  size="5" style="font-size: 20pt"><b>Si ganó el REPARTIDOR.</b></font><font color="#000000"><font color="#000000"  size="2" style="font-size: 11pt"><br/>
+El
+			número es la cantidad que paga cada jugador.</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="15" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>Yapas</b></font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">10</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">20</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">30</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">40</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">50</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">60</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">70</font></font></p>
+		</td>
+		<td width="45" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">80</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>1
+			tanto</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">500</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1500</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1600</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>2
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3200</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>3
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>4
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">3900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">4000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>5
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">4000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>6-7
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">6000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>8-10
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">8000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="32" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>11-12
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">12000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="125" height="31" bgcolor="#fff2cc" style="background: #fff2cc; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>+13
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="537" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">16000</font></font></p>
+		</td>
+	</tr>
+</table>
+<p lang="es-AR" class="western" style="line-height: 116%; margin-bottom: 0.11in">
+
+</p>
+<table width="800" cellpadding="5" cellspacing="0">
+	<col width="124"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="45"/>
+	<col width="44"/>
+	<tr>
+		<td colspan="11" width="669" height="62" bgcolor="#70ad47" style="background: #70ad47; border: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font  color="#000000" size="5" style="font-size: 20pt"><b>Si ganó cualquier OTRO JUGADOR.</b></font><font color="#000000"  size="2" style="font-size: 11pt"><br/>
+El
+			segundo número es lo que paga el </font><font size="2"  color="#000000" style="font-size: 11pt"><u><b>repartidor</b></u></font><font  color="#000000" size="2" style="font-size: 11pt">,<br/>
+y
+			el primero es lo que pagan </font><font  color="#000000" size="2" style="font-size: 11pt"><u><b>los
+			otros dos jugadores</b></u></font><font  color="#000000" size="2" style="font-size: 11pt">.</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="15" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>Yapas</b></font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">0</font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">5</font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">10</font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">20</font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">30</font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">40</font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">50</font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">60</font></font></p>
+		</td>
+		<td width="45" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">70</font></font></p>
+		</td>
+		<td width="44" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">80</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="30" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>1
+			tanto</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">300<br/>
+500</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">400<br/>
+700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">400<br/>
+800</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">500<br/>
+1000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">600<br/>
+1200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">700<br/>
+1300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">800<br/>
+1500</font></font></p>
+		</td>
+		<td width="44" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">800<br/>
+1600</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="30" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>2
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">400<br/>
+700</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000">&nbsp;</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">500<br/>
+1000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">700<br/>
+1300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">800<br/>
+1600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1000<br/>
+2000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1200<br/>
+2300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1300<br/>
+2600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1500<br/>
+2900</font></font></p>
+		</td>
+		<td width="44" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1600<br/>
+3200</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="30" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>3
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">700<br/>
+1300</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">800<br/>
+1600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1000<br/>
+2000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1300<br/>
+2600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1600<br/>
+3200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">2000<br/>
+3900</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="44" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="30" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>4
+			tantos</b></font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1300<br/>
+2600</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="2" style="font-size: 11pt">1600<br/>
+3200</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font size="2" style="font-size: 11pt">2000<br/>
+3900</font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="45" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+		<td width="44" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="2" style="font-size: 11pt">2000<br/>
+4000</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="32" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>5
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">2000
+			(4000)</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="32" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>6-7
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">3000
+			(6000)</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="32" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>8-10
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">4000
+			(8000)</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="32" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>11-12
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">6000
+			(12000)</font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="124" height="31" bgcolor="#a9d08e" style="background: #a9d08e; border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0in 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#000000"><font size="4" style="font-size: 14pt"><b>+13
+			tantos</b></font></font></p>
+		</td>
+		<td colspan="10" width="536" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.05in"><p lang="es-AR" class="western" align="center">
+			<font color="#ff0000"><font size="6" style="font-size: 24pt">8000
+			(16000)</font></font></p>
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Hasta aquí tabla de puntajes-->
+</span>
+
+
+
+<hr>
+
+
+
+
+
 
 <p>Nota: si el cálculo de puntuación es muy tedioso y complicado y no se está interesado en aprender la forma tradicional de calcular los puntos, el autor sugiere usar una <a href="#puntuacion_simplificada">variante con puntuación simplificada</a>.</p>
 <hr>
@@ -1290,6 +2410,21 @@ que son fáciles de apilar. A efectos de funcionalidad, hacer una única pila de
 cartas en lugar de 4 muros, y dar las cartas de una en una, es simbólicamente
 lo mismo, y no altera la jugabilidad.</p>
 
+<table align="center" width="100%" style="table-layout: fixed;">
+<tr>
+<td>
+<p><img src="..\tiles\1o.png" width="27"><img src="..\tiles\2o.png" width="27"><img src="..\tiles\3o.png" width="27"><img src="..\tiles\4o.png" width="27"><img src="..\tiles\5o.png" width="27"><img src="..\tiles\6o.png" width="27"><img src="..\tiles\7o.png" width="27"><img src="..\tiles\8o.png" width="27"><img src="..\tiles\9o.png" width="27"> <img src="..\tiles\11o.png" width="27"><img src="..\tiles\12o.png" width="27"><br>
+<img src="..\tiles\1b.png" width="27"><img src="..\tiles\2b.png" width="27"><img src="..\tiles\3b.png" width="27"><img src="..\tiles\4b.png" width="27"><img src="..\tiles\5b.png" width="27"><img src="..\tiles\6b.png" width="27"><img src="..\tiles\7b.png" width="27"><img src="..\tiles\8b.png" width="27"><img src="..\tiles\9b.png" width="27"> <img src="..\tiles\11b.png" width="27"><img src="..\tiles\12b.png" width="27"><br>
+<img src="..\tiles\1e.png" width="27"><img src="..\tiles\2e.png" width="27"><img src="..\tiles\3e.png" width="27"><img src="..\tiles\4e.png" width="27"><img src="..\tiles\5e.png" width="27"><img src="..\tiles\6e.png" width="27"><img src="..\tiles\7e.png" width="27"><img src="..\tiles\8e.png" width="27"><img src="..\tiles\9e.png" width="27"> <img src="..\tiles\11e.png" width="27"><img src="..\tiles\12e.png" width="27"> - <img src="..\tiles\12c.png" width="27"></p>
+</td>
+
+<td>
+<p><img src="tiles\1o.png" width="27"><img src="tiles\2o.png" width="27"><img src="tiles\3o.png" width="27"><img src="tiles\4o.png" width="27"><img src="tiles\5o.png" width="27"><img src="tiles\6o.png" width="27"><img src="tiles\7o.png" width="27"><img src="tiles\8o.png" width="27"><img src="tiles\9o.png" width="27"> <img src="tiles\11o.png" width="27"><img src="tiles\12o.png" width="27"><br>
+<img src="tiles\1b.png" width="27"><img src="tiles\2b.png" width="27"><img src="tiles\3b.png" width="27"><img src="tiles\4b.png" width="27"><img src="tiles\5b.png" width="27"><img src="tiles\6b.png" width="27"><img src="tiles\7b.png" width="27"><img src="tiles\8b.png" width="27"><img src="tiles\9b.png" width="27"> <img src="tiles\11b.png" width="27"><img src="tiles\12b.png" width="27"><br>
+<img src="tiles\1e.png" width="27"><img src="tiles\2e.png" width="27"><img src="tiles\3e.png" width="27"><img src="tiles\4e.png" width="27"><img src="tiles\5e.png" width="27"><img src="tiles\6e.png" width="27"><img src="tiles\7e.png" width="27"><img src="tiles\8e.png" width="27"><img src="tiles\9e.png" width="27"> <img src="tiles\11e.png" width="27"><img src="tiles\12e.png" width="27"> - <img src="tiles\12c.png" width="27"></p>
+</td>
+
+</tr></table>
 
 <p>Los <b>oros</b> corresponden a los <b>círculos</b>, los <b>bastos</b>
 corresponden a los <b>bambúes</b>, las <b>espadas</b> corresponden a los <b>caracteres</b>.</p>
@@ -1436,8 +2571,9 @@ explicar.</p>
     <td>Bendición</td>
   </tr>
 </tbody></table>
+<p>Para ver esta misma página con cartas españolas, hacer clic <a href="..">aquí</a>.</p>
 <br>
 <hr>
-<p>Versión 1.1.7, (16:01, 26-3-2026) - (C) 2026 Juan Patricio Dumrauf, PatricioComputacion.com</p>
+<p>Versión 1.1.10, (19:18, 26-3-2026) - (C) 2026 Juan Patricio Dumrauf, PatricioComputacion.com</p>
 
 </body></html>
