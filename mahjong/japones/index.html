@@ -13,7 +13,7 @@ body {
 }
 .jp
 {
-  color: #AAAADD;
+  color: #8888EE;
   font-style: italic;
 }
 th{
@@ -25,7 +25,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.1.15, (12:11, 27-3-2026)</small></p>
+<p align="right"><small>Versión 1.2.0, (14:25, 27-3-2026)</small></p>
 
 <hr>
 
@@ -44,11 +44,11 @@ th{
 			<p>Calculadora de tantos<br>¡Próximamente!</p>
 		</td>
 		<td align="center">	
-			<p><a href=".\japones">Cambiar a fichas de Mahjong</a>.</p>
+			<p><a href="..">Cambiar a cartas españolas</a>.</p>
 		</td>
 		
 		<td align="center">	
-			<p><a href="EMA_Riichi_Rules_2008_es.pdf">Reglas oficiales de<br>Mahjong Japonés</a></p>
+			<p><a href="..\EMA_Riichi_Rules_2008_es.pdf">Reglas oficiales de<br>Mahjong Japonés</a></p>
 		</td>
 	</tr>
 </table>
@@ -347,7 +347,8 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <p  style="margin-left: 35.4pt;"><em>Atención: </em>No sólo hace falta que la mano esté completa (cuatro juegos y un par). Es <u>muy</u> importante además que la mano valga <strong>al menos 1 tanto</strong>. Si no es así, el jugador que cante Mahjong con una mano con 0 tantos será penalizado y la ronda se deberá jugar de nuevo. Consultar la sección <a href="#por_que_no_robar">&ldquo;¿Por qué no robar todos los juegos posibles?&rdquo;</a> y <a href="#lista_de_tantos">&ldquo;Lista de tantos&rdquo;</a> para más información.</p>
 
 <p><strong>&iexcl;Envido!</strong> <span class="jp">(riichi)</span> &ndash; Se puede cantar al momento de descartar una carta, y <u>sólo cuando la mano es &ldquo;cerrada&rdquo;</u> (No tiene ningún juego bajado con descartes de otros jugadores). A partir de ese momento la mano de este jugador queda &ldquo;congelada&rdquo;, o sea que no se puede cambiar ningún juego ni ninguna carta de la mano (ni siquiera para bajar cuartetos).</p>
-<p>El Envido se puede hacer únicamente cuando <b>sólo falta una carta</b> para completar una mano válida, que puede ser una única, o pueden ser varias, pero debe faltar solo una.</p>
+
+<p>El Envido se puede hacer únicamente cuando <b>sólo falta una carta</b> para completar una mano válida, que puede ser una única, o pueden ser varias, pero debe faltar solo una. Esta situación se llama tener la <a href="#esperas">mano lista</a>.</p>
 
 <p align="center"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
 <img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
@@ -520,7 +521,7 @@ entonces la pierna vale <b>2 tantos</b>. 1 por ser el rey de la ronda, y 1 por
 ser el rey propio. Por ejemplo, si en la ronda uno yo soy el repartidor, una pierna del <b>rey de Oros</b> equivale a 2 tantos.</p>
 
 <hr>
-<h1 id="lista_de_tantos">Lista de Tantos (<em>Yakus</em>)</h1>
+<h1 id="lista_de_tantos">Lista de Tantos <span class="jp">(Yakus)</span></h1>
 
 <p>Una mano puede estar <i>completa</i> (tener los cuatro juegos y el par ya formados) pero solo se considerara una <b>mano válida</b> si tiene al menos <b>1
 tanto</b>.</p>
@@ -732,7 +733,7 @@ habiendo bajado juegos.</p>
 <p><img src="tiles\1e.png"><img src="tiles\2e.png"><img src="tiles\3e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\9e.png"><img src="tiles\9e.png"></p>
 
 
-<h2>Tantos <b>máximos</b> (<b>13</b> tantos, <i>Yakuman</i>)</h2>
+<h2>Tantos <b>máximos</b> (<b>13</b> tantos, <span class="jp">Yakuman</span>)</h2>
 
 
 <p>Hacer cualquiera de estas manos inmediatamente otorga al
@@ -776,7 +777,7 @@ de reyes.</p>
 <p><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12e.png"><img src="tiles\12e.png"><img src="tiles\12e.png"><img src="tiles\12b.png"><img src="tiles\12b.png"><img src="tiles\12b.png"></p>
 
 
-<p><b><i>Trece huérfanos </i></b>&#8211; Mano especial formada por un
+<p id="trece_huerfanos"><b><i>Trece huérfanos </i></b>&#8211; Mano especial formada por un
 uno y un nueve de cada uno de los tres palos, más los cuatro reyes distintos, y
 los tres caballos distintos, más una carta extra repetida. Como es una mano especial, solo se puede hacer con mano cerrada, <u>pero se puede cantar envido si te falta solo una carta</u>.</p>
 
@@ -808,7 +809,7 @@ verdes, mientras que el 1,5,7,9 no lo son. Esta mano <b>puede</b> ser abierta.</
 <p><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\8b.png"><img src="tiles\8b.png"></p>
 
 
-<p><b><i>Nueve puertas</i></b> &#8211; Mano especial formada por
+<p id="nueve_puertas"><b><i>Nueve puertas</i></b> &#8211; Mano especial formada por
 1,1,1,2,3,4,5,6,7,8,9,9,9 del mismo palo, más una carta cualquiera del 1 al 9 del mismo palo. Esta mano es especial, y sólo se puede hacer con mano cerrada (¡No se pueden bajar ni piernas ni escaleras!), pero se puede cantar envido.</p>
 
 
@@ -834,11 +835,85 @@ descartado únicamente unos, nueves, caballos, y reyes.</p>
 
 <p><b>Mano servida </b>&#8211; Ganar en el primer turno con el descarte de otro jugador.</p>
 
+
+<br>
+
+<hr>
+
+
+<h2 id="esperas">Mano lista, y Esperas</h2>
+
+<p>Cuando una mano está "casi completa", o sea que le falta solo 1 carta para completar los cuatro juegos y el par (o una mano especial), se dice que tiene una <b>mano lista</b> <span class="jp">(Tenpai)</span>.</p>
+
+<p>Las situaciones en las que la mano puede estar lista se denominan "esperas", y  las siguientes son las más comunes, denominadas "esperas simples" (Las cartas ocultas en estos ejemplos pueden ser cualquiera mientras completen la mano):</p>
+
+<p><b>Espera abierta</b> <span class="jp">(Ryanmen)</span> &ndash; Mano dónde solo falta completar una escalera por cualquiera de los dos lados.</p>
+
+<p><img src="tiles\5o.png"><img src="tiles\6o.png">
+<img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"></p>
+
+<p>Necesita un <img src="tiles\4o.png"> o un <img src="tiles\7o.png"> para cantar Mahjong.</p>
+
+<p><b>Espera de par doble</b> <span class="jp">(Shanpon)</span> &ndash; Mano dónde solo falta completar una pierna que puede ser cualquiera de los dos pares.</p>
+
+<p><img src="tiles\4e.png"><img src="tiles\4e.png">
+<img src="tiles\11b.png"><img src="tiles\11b.png">
+<img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"></p>
+
+<p>Necesita un <img src="tiles\4e.png"> o un <img src="tiles\11b.png"> para cantar Mahjong.</p>
+
+<p><b>Espera cerrada</b> <span class="jp">(Kanchan)</span> &ndash; Mano dónde solo falta completar el centro de una escalera.</p>
+
+<p><img src="tiles\2e.png"><img src="tiles\4e.png">
+<img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"></p>
+
+<p>Necesita un <img src="tiles\3e.png"> para cantar Mahjong.</p>
+
+<p><b>Espera de punta</b> <span class="jp">(Penchan)</span> &ndash; Mano dónde solo falta completar una escalera que <u>sólo se puede completar por un lado</u> y no por el otro. O sea que ya tiene una punta en su juego (1 o 9).</p>
+
+<p><img src="tiles\8o.png"><img src="tiles\9o.png">
+<img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"></p>
+
+<p>Necesita un <img src="tiles\7o.png"> para cantar Mahjong.</p>
+
+<p><b>Espera de par</b> <span class="jp">(Tanki)</span> &ndash; Mano dónde están todos los juegos completos y solo falta completar el par.</p>
+
+<p><img src="tiles\12o.png"> <img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"></p>
+
+<p>Necesita un <img src="tiles\12o.png"> para cantar Mahjong.</p>
+
+<p>Es importante destacar estas esperas porque la Espera Cerrada, la Espera de Punta, y la Espera de Par, son todas esperas en donde una única carta puede completar la mano. Por eso, estas esperas <b>otorgan +2 yapas a la mano ganadora</b>, si se logra cantar Mahjong. (Ver la seccion <a href="#tabla_de_yapas">Yapas</a> a continuación)</p>
+
+<p>Existen otros tipos de esperas más complejos en los que se puede completar una mano con dos o más cartas distintas. Todos <a href="https://riichi.wiki/Machi#Named_combinations">tienen nombres específicos</a> pero no los vamos a contemplar en este manual.</p>
+
+<p>Por ejemplo...</p>
+<p>
+<img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\6o.png"><img src="tiles\7o.png"><img src="tiles\7o.png"><img src="tiles\7o.png">
+<img src="tiles\c.png"><img src="tiles\c.png"><img src="tiles\c.png"></p>
+
+<p>¡Cualquier carta del 1 al 8 de oros sirve para <u>completar</u> esta mano! <span class="jp">(Happoubijin)</span>:</p><p> 
+Necesita un <img src="tiles\1o.png">, ó un  
+<img src="tiles\2o.png">, ó un
+<img src="tiles\3o.png">, ó un 
+<img src="tiles\4o.png">, ó un
+<img src="tiles\5o.png">, ó un
+<img src="tiles\6o.png">, ó un
+<img src="tiles\7o.png">, ó un
+<img src="tiles\8o.png"> para cantar Mahjong.
+</p>
+
+<p>También hay otros casos de esperas para manos especiales como los <a href="#trece_huerfanos">Trece Huérfanos</a>, o las <a href="#nueve_puertas">Nueve Puertas</a>, que se llaman así porque, si se arma de una forma específica, <i>¡puede resultar en una espera de cualquiera de 13 cartas distintas, o cualquiera de 9 cartas distintas!</i></p>
+
+
+
+
+
 <hr>
 <h1 id="como_calcular_los_puntos">Cómo calcular los puntos</h1>
 
 <p>Los tantos y los puntos <u>SOLO</u> cuentan para el <b>ganador</b>
 de la ronda. Los demás jugadores no deben contar nada.</p>
+
 
 
 <h2>Bonificaciones (<i>Dora</i>)</h2>
@@ -889,6 +964,12 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <img src="tiles\3o.png"> &nbsp;&larr;&nbsp;<img src="tiles\pozo.png"><br><img src="tiles\riichi.png"></p>
 <p align="center">¡Ahora las cartas bonificadas serían el <b>Rey de copas</b>, <b>el 3 de bastos</b>, el 8 de espadas, y el 4 de oros!<br>(Recordar el orden de los reyes)</p>
 <hr>
+
+
+
+
+
+<hr>
 <h2 id="tabla_de_yapas">Yapas (<i>Fu</i>)</h2>
 
 <p>Las yapas son una puntuación extra que se calcula, además de los tantos, para darle un valor adicional al puntaje de una mano.</p>
@@ -925,21 +1006,26 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 		<th colspan="3">Si la última carta robada fue...</th>
 	</tr>
 	<tr>
-		<td>El <b>centro</b> de una escalera</td>
+		<td>El <b>centro</b> de una escalera <span class="jp">(Kanchan)</span></td>
 		<td colspan="2">+2</td>
 	</tr>
 	<tr>
-		<td>El <b>3</b> o el <b>7</b> de una escalera con puntas</td>
+		<td>El <b>3</b> o el <b>7</b> de una escalera con puntas <span class="jp">(Penchan)</span></td>
 		<td colspan="2">+2</td>
 	</tr>
 	<tr>
-		<td>La carta faltante para el par</td>
+		<td>La carta faltante para el par <span class="jp">(Tanki)</span></td>
 		<td colspan="2">+2</td>
 	</tr>
 	<tr>
 		<th>Por cada...</th>
 		<th>En mesa<br></th>
 		<th>En mano<br></th>
+	</tr>
+	<tr>
+		<td>Escalera</td>
+		<td>0</td>
+		<td>0</td>
 	</tr>
 	<tr>
 		<td>Pierna común (del 2 al 8)</td>
@@ -2214,11 +2300,8 @@ rondas (empieza en cero), hasta que haya un ganador. El próximo jugador que
 gane se llevará los puntos del pozo vacante, y el pozo vacante vuelve a cero. Este pozo puede representarse con fichitas de 100 puntos <img src="tiles\honba.png">, o anotando en la hoja de puntajes como si fuera un quinto jugador.</p>
 
 
-<p>Todos los jugadores que hayan cantado envido (<span class="jp">riichi</span>),
-deben mostrar la mano para probar que realmente solo les faltaba una carta para
-ganar. Además, todos los jugadores que sólo les falte una carta para ganar
-también deben mostrar la mano. Esto se llama tener la mano &#8220;lista&#8221; o &#8220;a punto
-de ganar&#8221; (<i>tenpai</i>). Los demás no muestran la mano.</p>
+<p>Todos los jugadores que hayan cantado envido <span class="jp">(riichi)</span>,
+deben mostrar la mano para probar que realmente tenían la <b>mano lista</b> (solo les faltaba una carta para ganar). Además, todos los jugadores que no hayan cantado envido pero también tengan la mano lista deberán mostrar su mano. Los demás no muestran la mano.</p>
 
 
 <p>Los jugadores que no tengan la mano lista, deben
@@ -2282,11 +2365,11 @@ correspondientes, y se agregan al pozo vacante</b> (O sea que permanecen entre p
 <h1 id="penalizaciones"><span>Penalidades y equivocaciones</span></h1>
 
 <p>Si un jugador canta <b>Mahjong</b>, pero su mano <b>no es
-válida</b>, o tiene <b>0 tantos</b>, la ronda se considera nula, y el jugador
-que cometió el error debe pagar 4000 puntos al repartidor, y 2000 puntos a los
+válida</b>, o tiene <b>0 tantos</b>, la ronda actual se anula y el jugador es penalizado <span class="jp">(Chombo)</span>
+Este jugador debe pagarle 4000 puntos al repartidor, y 2000 puntos a los
 otros dos jugadores (pierde 8000 puntos). Si el jugador que cometió el error ES
 el repartidor, entonces debe pagarle 4000 puntos a cada jugador (pierde 12000
-puntos). Luego la ronda se vuelve a jugar.</p>
+puntos). Luego la ronda se vuelve a jugar (No se pasa a la que sigue sino que se repite).</p>
 
 <p>El mismo castigo se aplica si un jugador hace trampa, o si
 baja un juego de forma incorrecta.</p>
@@ -2316,7 +2399,7 @@ descartes (porque por la ley de descarte, no sería válido).</p>
 <img src="tiles\12c.png"><img src="tiles\12c.png">
 <img src="tiles\5e.png"><img src="tiles\6e.png"></p>
 
-<p>Si alguien tira un 4 de espadas, yo <b>NO</b> puedo cantar Mahjong en ese momento, porque el 4 de espadas está en mi propia zona de descarte. Entonces decimos que el 4 lo tengo bloqueado por la ley de descarte (o, en japonés, está en <em>Furiten</em>).</p>
+<p>Si alguien tira un 4 de espadas, yo <b>NO</b> puedo cantar Mahjong en ese momento, porque el 4 de espadas está en mi propia zona de descarte. Entonces decimos que el 4 lo tengo bloqueado por la ley de descarte (o, en japonés, está en <span class="jp">Furiten</span>).</p>
 
 <p>Ahora bien, si esta carta es obtenida robando del pozo,
 entonces sí puede cantar Mahjong, sin ningún inconveniente.</p>
@@ -2603,6 +2686,10 @@ explicar.</p>
   <tr>
     <td>Furiten</td>
     <td>Ley de descarte<br>o Ley de alpiste</td>
+  </tr>
+  <tr>
+    <td>Tenpai</td>
+    <td>Mano lista</td>
   </tr>
   <tr>
     <td>Bendición del cielo<br>Bendición de la tierra</td>
