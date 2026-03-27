@@ -44,7 +44,7 @@ th{
 			<p>Calculadora de tantos<br>¡Próximamente!</p>
 		</td>
 		<td align="center">	
-			<p><a href="..">Cambiar a cartas españolas</a>.</p>
+			<p><a href="..">Cambiar a cartas Españolas</a>.</p>
 		</td>
 		
 		<td align="center">	
@@ -541,13 +541,6 @@ tanto</b>.</p>
 
 <h2><b>1</b> tanto</h2>
 
-<p><b>Solo intermedias </b><span class="jp">(Tanyao)
-</span>&#8211; Mano sin puntas ni cartas negras. O sea, formado solo por cartas del <b>2</b>
-al <b>8</b>, de cualquier palo.</p>
-
-<p><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"></p>
-
-
 <p id="pierna_de_caballos"><b>Pierna de caballos </b>&#8211; Tres del mismo caballo.</p>
 
 
@@ -571,6 +564,12 @@ información)</p>
 <p><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12o.png"></p>
 
 
+<p><b>Todo intermedias </b><span class="jp">(Tanyao)
+</span>&#8211; Mano sin puntas ni caballos ni reyes. O sea, formado solo por cartas del <b>2</b> al <b>8</b>, de cualquier palo.</p>
+
+<p><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"></p>
+
+
 
 
 
@@ -582,13 +581,13 @@ descarte de otro jugador en esta ronda.</u> Esto se llama tener una <b>mano cerr
 
 
 <p><b>Cero yapas </b><span class="jp">(Pinfu)
-</span>&#8211; Mano compuesta solo por escaleras, sin puntas ni negras, y tiene que
-estar esperando para completar una escalera en dos extremos distintos. O sea, mano que no tiene ningún punto extra por yapas.</p>
+</span>&#8211; Mano compuesta solo por escaleras, sin caballos ni reyes, y tiene que
+estar esperando para completar una escalera por cualquiera de los dos lados. Llamada así porque <a href="#tabla_de_yapas">otorga 0 yapas por juegos</a>.</p>
 
 
-<p><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\8o.png"><img src="tiles\8o.png">
+<p><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"> <img src="tiles\4o.png"><img src="tiles\5o.png"> <img src="tiles\8b.png"><img src="tiles\8b.png">
 <br>&#8211; y
-necesito <img src="tiles\6o.png" width="26"> ó <img src="tiles\3o.png" width="26"></p>
+necesito <img src="tiles\6o.png" width="39"> ó <img src="tiles\3o.png" width="39"></p>
 
 
 <p id="escaleras_identicas"><b>Escaleras idénticas </b>&#8211; Dos escaleras idénticas (mismo
@@ -984,8 +983,10 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 
 <p align="center"><table class="MsoNormalTable" border="1">
 <tbody>
-	<tr>
-		<th colspan="1">Juego</th>
+
+	</tr>
+		<tr>
+		<th colspan="1"></th>
 		<th colspan="2">Yapas</th>
 	</tr>
 	<tr>
@@ -996,8 +997,12 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 		<td>Por ganar robando un descarte</td>
 		<td colspan="2">+10</td>
 	</tr>
+		<tr>
+		<th colspan="1">Juego</th>
+		<th colspan="2"></th>
+	</tr>
 	<tr>
-		<td>Si <em>el par</em> es de negras</td>
+		<td>Si <em>el par</em> es de caballos o reyes</td>
 		<td colspan="2">+2</td>
 	</tr>
 	<tr>
@@ -2569,6 +2574,8 @@ reyes y los palos de las demás cartas porque los vientos en el Mahjong original
 no tienen color alguno, pero por conveniencia, y para respetar el orden de las
 pintas (el borde de las cartas) se usa el orden oro, copa, espada, y basto.</p>
 
+<p>El cálculo de Yapas en el Mahjong Japones se denomina Fu, y parten de 20 en vez de 0. Esto reemplaza el "20+" que se encuentra en la fórmula para calcular los puntos base.</p>
+
 <p>Recomiendo siempre usar los términos españolizados, para hacer más sencilla la explicación del juego, pero también puse en gris clarito varios de los términos originales utilizados en japones para hacer la eventual transición a Mahjong Riichi lo más directa posible.</p>
 
 <p>Estos son los términos que se adaptaron y localizaron para
@@ -2695,6 +2702,17 @@ explicar.</p>
   </tr>
 </tbody></table>
 
+<hr>
+<p><small>Errata:<br>v1.2.1 y anteriores
+<ul><li>Cero yapas (Pinfu): Erróneamente estaba anotado que no podía tener puntas. Se puede tener puntas sin ningún problema, siempre y cuando no afecten la espera.</li>
+<li>El puntaje inicial es 25000, no 26000.</li>
+<li>Cambiados algunos nombres de manos para hacerlos más entendibles.</li>
+<li>Agregadas excepciones al cantar envido (riichi) si se reclama el descarte para cantar Mahjong.</li>
+<li>Los caballos estaban mal ordenados.</li>
+<li>Corregida la sección de yapas (Los puntos estaban mal clasificados).</li>
+<li>Se han arreglado las tablas para mostrar los valores adecuados.</li>
+<li>Agregadas condiciones de empate.</li></ul>
+</small></p>
 <hr>
 <p>(C) 2026 Juan Patricio Dumrauf, PatricioComputacion.com</p>
 
