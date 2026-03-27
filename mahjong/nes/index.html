@@ -1,0 +1,54 @@
+<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>Mahjong Family Game</title>
+
+<link rel="icon" type="image/x-icon" href="../oro.ico">
+<meta name="description" content="Mahjong de 4 jugadores de la Family Game.">
+<meta name="keywords" content="Cartas,Españolas,Mahjong,Riichi,麻雀計算機">
+</head>
+
+<body>
+<style>
+body
+{
+	font-size: 11pt;
+	font-family: 'Segoe UI',sans-serif;
+	color: rgb(51, 61, 66);
+	color: white;
+	background-color: green;
+}
+table
+{
+	width: 100%;
+}
+</style>
+
+<table>
+	<tr>
+		<td  align="center" >
+			<div id="nes" style="width: 512px; height: 480px"></div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" >
+			<b>Controles:</b> X (aceptar), Z (cancelar), ENTER (Start), CTRL (Select).
+		</td>
+	</tr>
+</table>
+
+<script src="https://unpkg.com/jsnes@2/dist/jsnes.min.js"></script>
+<script>
+  var browser = new jsnes.Browser({
+    container: document.getElementById("nes"),
+    onError: function (e) {
+      console.error(e);
+    },
+  });
+  jsnes.Browser.loadROMFromURL("http://patriciocomputacion.com/mahjong/nes/4nin_eng.nes", function (err, data) {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    browser.loadROM(data);
+  });
+</script>
+
+</body>
