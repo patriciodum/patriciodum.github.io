@@ -9,19 +9,72 @@ body {
 <style>
 table
 {
+	width:800px;
 	border-collapse: collapse;
 	border: 3pt solid rgb(128, 128, 128);
 }
-th,td{
+td{
+	padding: 5px;
+}
+th{
+	color: white;
+	background-color: black;
 	padding: 5px;
 }
 </style>
+<h1  align="center">Mahjong con Cartas Españolas - Hoja de Referencia</h1>
+<hr>
+<h2 align="center">Orden de los reyes y los caballos</h2>
+
+<p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
+	<tr>
+		<th>Ronda &rarr;</th>
+		<th>1</th><th>2</th><th>3</th><th>4</th>
+		<th>5</th><th>6</th><th>7</th><th>8</th>
+		<th>9</th><th>10</th><th>11</th><th>12</th>
+		<th>13</th><th>14</th><th>15</th><th>16</th>
+	</tr>
+	<tr>
+		<th>Rey de la ronda&nbsp;</th>
+		<td colspan="4">&nbsp;<img src="tiles\12o.png"><br>Rey de Oros&nbsp;</td>
+		<td colspan="4">&nbsp;<img src="tiles\12c.png"><br>Rey de Copas&nbsp;</td>
+		<td colspan="4">&nbsp;<img src="tiles\12e.png"><br>Rey de Espadas&nbsp;</td>
+		<td colspan="4">&nbsp;<img src="tiles\12b.png"><br>Rey de Bastos&nbsp;</td>
+	</tr>
+</tbody></table></p>
+
+<p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
+	<tr>
+		<th>Turno &rarr;</th>
+		<th>Primero<br>(Repartidor/Mano)</th><th>Segundo</th><th>Tercero</th><th>Cuarto<br>(Pie)</th>
+	</tr>
+	<tr>
+		<th>Rey propio&nbsp;</th>
+		<td>&nbsp;<img src="tiles\12o.png"><br>Rey de Oros&nbsp;</td>
+		<td>&nbsp;<img src="tiles\12c.png"><br>Rey de Copas&nbsp;</td>
+		<td>&nbsp;<img src="tiles\12e.png"><br>Rey de Espadas&nbsp;</td>
+		<td>&nbsp;<img src="tiles\12b.png"><br>Rey de Bastos&nbsp;</td>
+	</tr>
+</tbody></table></p>
+
+<p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
+	<tr>
+		<th>
+			<p align="center">Orden de los caballos (Al revés que los reyes)</p>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<p align="center"><img src="tiles\11b.png"> &rarr; <img src="tiles\11e.png"> &rarr; <img src="tiles\11o.png"> &rarr; <img src="tiles\11b.png"> &rarr; ... </p>
+		</td>
+	</tr>
+</tbody></table></p>
 
 <h1  align="center">Lista de manos</h1>
 <p>
 <table border="1" align="center">
 	<tr align="center">
-		<th colspan="4">1 tanto</th>
+		<th colspan="4">+1 tanto</th>
 	</tr>
 	<tr align="center">
 		<td>
@@ -44,21 +97,21 @@ th,td{
 		<br>Solo intermedias<br><small>Sin puntas ni negras</small></td>
 	</tr>
 	<tr align="center">
-		<th colspan="4">1 tanto (circunstancial)</th>
+		<th colspan="4">+1 tanto (circunstancial)</th>
 	</tr>
 	<tr align="center">
 		<td colspan="2">Con la última<br><small>Ganar con la última carta del pozo, ya sea robándola<br>directamente, o tomándola del descarte de otro.</small></td>
-		<td colspan="2">Desde el muerto<br><small>Ganar con la carta obtenida del pozo muerto,<br>después de bajar un cuarteto.</small></td>
+		<td colspan="2">Con la del cuarteto<br><small>Ganar con la carta obtenida del pozo muerto,<br>después de bajar un cuarteto.</small></td>
 	</tr>
 	
 	
 	<tr align="center">
-		<th colspan="4">1 tanto (sólo mano cerrada)</th>
+		<th colspan="4">+1 tanto (sólo mano cerrada)</th>
 	</tr>
 	<tr align="center">
 		<td>
 		<img src="tiles\2o.png" width="52"> ... <img src="tiles\8b.png" width="52"><br>
-		Cero Yapas<br><small>Solo escaleras<br>sin puntas ni negras<br>y espera doble.</small></td>
+		Cero Yapas<br><small>Solo escaleras<br>sin puntas ni negras<br>y <u>esperando a completar<br>una escalera por los dos lados</u>.</small></td>
 		<td>
 		<img src="tiles\1o.png" width="39">
 		<img src="tiles\2o.png" width="39">
@@ -66,22 +119,22 @@ th,td{
 		<img src="tiles\1o.png" width="39">
 		<img src="tiles\2o.png" width="39">
 		<img src="tiles\3o.png" width="39"><br>
-		Escaleras Idénticas</td>
+		Dos escaleras Idénticas</td>
 		<td>
 		<img src="tiles\riichi.png" width="80"><br>
-		Envido<br>
-		Doble Envido<br>Victoria Rápida</td>
+		Envido<br><small>(Congela la mano)</small><hr>
+		Doble Envido <b>+1</b><br><small>(Cantar envido en el 1er turno)</small><hr>Victoria Rápida <b>+1</b><br><small>(Ganar envido sin que nadie<br>robe un descarte,<br>antes de tu sig. turno)<small></td>
 		<td>
 		<img src="tiles\c.png" width="52">
 		<img src="tiles\c.png" width="52">
 		<img src="tiles\c.png" width="52"><br>
-		Todo Propio
+		Todo Propio<br><small>(Sin robar <u>ningún</u> descarte)</small>
 		</td>
 	</tr>
 	
 	
 	<tr align="center">
-		<th colspan="4">2 tantos (1 tanto si la mano es abierta)</th>
+		<th colspan="4">+2 tantos (+1 tanto si la mano es abierta)</th>
 	</tr>
 	<tr align="center">
 		<td colspan="2">
@@ -110,12 +163,11 @@ th,td{
 </table>
 </p>
 <p>
-<table border="1" align="center">
+<table border="1" align="center" style="table-layout: fixed;">
 	<tr align="center">
-		<th colspan="7">2 tantos</th>
+		<th colspan="3">+2 tantos</th>
 	</tr>
 	<tr align="center">
-		<td>Siete pares</td>
 		<td>
 		<img src="tiles\4b.png" width="26">
 		<img src="tiles\4b.png" width="26">
@@ -153,7 +205,34 @@ th,td{
 		<img src="tiles\8o.png" width="26">
 		<img src="tiles\8o.png" width="26">
 		<br>Tres Cuartetos</td>
+	</tr>
+	<tr align="center">
+		<td colspan="3">
+		<img src="tiles\1b.png" width="39">
+		<img src="tiles\1b.png" width="39">
 		
+		<img src="tiles\2b.png" width="39">
+		<img src="tiles\2b.png" width="39">
+		
+		<img src="tiles\5b.png" width="39">
+		<img src="tiles\5b.png" width="39">
+		
+		<img src="tiles\8e.png" width="39">
+		<img src="tiles\8e.png" width="39">
+		
+		<img src="tiles\7o.png" width="39">
+		<img src="tiles\7o.png" width="39">
+		
+		<img src="tiles\11b.png" width="39">
+		<img src="tiles\11b.png" width="39">
+		
+		<img src="tiles\12c.png" width="39">
+		<img src="tiles\12c.png" width="39">
+		
+		<br>Siete pares<br><small>(Mano especial: Solo se puede hacer con mano cerrada)</small></td>
+		
+	</tr>
+	<tr align="center">
 		<td><img src="tiles\2b.png" width="26">
 		<img src="tiles\2b.png" width="26">
 		<img src="tiles\2b.png" width="26"><br>
@@ -165,7 +244,7 @@ th,td{
 		<img src="tiles\11b.png" width="26"><br>
 		<img src="tiles\7b.png" width="26">
 		<img src="tiles\7b.png" width="26">
-		<img src="tiles\7b.png" width="26"><br>Todas Piernas</td>
+		<img src="tiles\7b.png" width="26"><br>Todas Piernas<br><small>(<u>Sin escaleras</u>)</small></td>
 		
 		<td><img src="tiles\1e.png">&nbsp;
 		<img src="tiles\9b.png"><br>
@@ -182,14 +261,11 @@ th,td{
 		<img src="tiles\11e.png" width="26"><br>
 		<img src="tiles\11o.png" width="26">
 		<img src="tiles\11o.png" width="26">
-		<br>Dos Caballos y medio</td>
+		<br>Dos Caballos y medio<br><small>(Se suma a los tantos<br>por Piernas de caballos)</small></td>
 	</tr>
-</table>
-</p>
-<p>
-<table border="1" align="center">
+
 	<tr align="center">
-		<th colspan="3">3 tantos</th>
+		<th colspan="3">+3 tantos</th>
 	</tr>
 	<tr align="center">
 		<td>
@@ -227,14 +303,17 @@ th,td{
 		<img src="tiles\3e.png" width="26">...
 		<img src="tiles\7o.png" width="26">
 		<img src="tiles\8o.png" width="26">
-		<img src="tiles\9o.png" width="26">...
+		<img src="tiles\9o.png" width="26">...<br>
 		<img src="tiles\1b.png" width="26">
 		<img src="tiles\1b.png" width="26">
-		<img src="tiles\1b.png" width="26">
-		<br>Puntas en todo<br><small>Todos los juegos con al menos un 1 o un 9<br>incluyendo el par.<br>Vale 1 tanto si la mano es abierta</small></td>
+		<img src="tiles\1b.png" width="26">...
+		<img src="tiles\9b.png" width="26">
+		<img src="tiles\9b.png" width="26">
+		<img src="tiles\9b.png" width="26">...
+		<br>Puntas en todo<br><small>Todos los juegos con al menos<br>un 1 o un 9, <b>incluyendo el par.</b><br>Vale <b>1 tanto</b> si la mano es abierta</small></td>
 	</tr>
 	<tr align="center">
-		<th colspan="3">6 tantos (5 si la mano es abierta)</th>
+		<th colspan="3">+6 tantos (+5 si la mano es abierta)</th>
 	</tr>
 	<tr align="center">
 		<td colspan="3">
@@ -246,7 +325,7 @@ th,td{
 <p>
 <table border="1" align="center">
 	<tr align="center">
-		<th colspan="4">5 tantos (circunstancial)</th>
+		<th colspan="4">+5 tantos (circunstancial)</th>
 	</tr>
 	<tr align="center">
 		<td colspan="2">Solo puntas y negras en descarte<br><small>Ganar habiendo descartado únicamente<br>unos, nueves, caballos, y reyes.</small></td>
@@ -255,25 +334,25 @@ th,td{
 </table>
 </p>
 <p>
-<table border="1" align="center">
+<table border="1" align="center" style="table-layout: fixed;">
 	<tr align="center">
-		<th colspan="6">13 tantos (Tantos máximos)</th>
+		<th colspan="3">13 tantos (Tantos máximos)</th>
 	</tr>
 	<tr align="center">
 		<td><img src="tiles\pozo_3.png" width="100"><br>Bendición<br><small>Ganar en el primer<br>turno con la mano servida,<br>o robando del pozo.</small></td>
 		<td>
-		<img src="tiles\2b.png" width="18">
-		<img src="tiles\2b.png" width="18">
-		<img src="tiles\2b.png" width="18">
-		<img src="tiles\1e.png" width="18">
-		<img src="tiles\1e.png" width="18">
-		<img src="tiles\1e.png" width="18"><br>
-		<img src="tiles\11b.png" width="18">
-		<img src="tiles\11b.png" width="18">
-		<img src="tiles\11b.png" width="18">
-		<img src="tiles\7b.png" width="18">
-		<img src="tiles\7b.png" width="18">
-		<img src="tiles\7b.png" width="18">
+		<img src="tiles\2b.png" width="26">
+		<img src="tiles\2b.png" width="26">
+		<img src="tiles\2b.png" width="26">
+		<img src="tiles\1e.png" width="26">
+		<img src="tiles\1e.png" width="26">
+		<img src="tiles\1e.png" width="26"><br>
+		<img src="tiles\11b.png" width="26">
+		<img src="tiles\11b.png" width="26">
+		<img src="tiles\11b.png" width="26">
+		<img src="tiles\7b.png" width="26">
+		<img src="tiles\7b.png" width="26">
+		<img src="tiles\7b.png" width="26">
 		<br>Todas piernas <b>en mano</b></td>
 		
 		<td><img src="tiles\2b.png" width="26">
@@ -293,35 +372,36 @@ th,td{
 		<img src="tiles\7b.png" width="26">
 		<img src="tiles\7b.png" width="26">
 		<br>Todo Cuartetos</td>
+	</tr>
+	<tr align="center">
+		<td>
+		<img src="tiles\12b.png" width="26">
+		<img src="tiles\12b.png" width="26">
+		<img src="tiles\12b.png" width="26">
+		<img src="tiles\12e.png" width="26">
+		<img src="tiles\12e.png" width="26">
+		<img src="tiles\12e.png" width="26"><br>
+		<img src="tiles\12o.png" width="26">
+		<img src="tiles\12o.png" width="26">
+		<img src="tiles\12o.png" width="26">
+		<img src="tiles\12c.png" width="26">
+		<img src="tiles\12c.png" width="26">
+		<br>Tres reyes y medio<br><small>(Tres piernas/cuartetos de reyes<br>y un par de reyes)</small></td>
 		
 		<td>
 		<img src="tiles\12b.png" width="26">
 		<img src="tiles\12b.png" width="26">
-		<img src="tiles\12b.png" width="26"><br>
+		<img src="tiles\12b.png" width="26">
 		<img src="tiles\12e.png" width="26">
 		<img src="tiles\12e.png" width="26">
 		<img src="tiles\12e.png" width="26"><br>
 		<img src="tiles\12o.png" width="26">
 		<img src="tiles\12o.png" width="26">
-		<img src="tiles\12o.png" width="26"><br>
-		<img src="tiles\12c.png" width="26">
-		<img src="tiles\12c.png" width="26">
-		<br>Tres reyes y medio</td>
-		
-				<td>
-		<img src="tiles\12b.png" width="26">
-		<img src="tiles\12b.png" width="26">
-		<img src="tiles\12b.png" width="26"><br>
-		<img src="tiles\12e.png" width="26">
-		<img src="tiles\12e.png" width="26">
-		<img src="tiles\12e.png" width="26"><br>
 		<img src="tiles\12o.png" width="26">
-		<img src="tiles\12o.png" width="26">
-		<img src="tiles\12o.png" width="26"><br>
 		<img src="tiles\12c.png" width="26">
 		<img src="tiles\12c.png" width="26">
 		<img src="tiles\12c.png" width="26">
-		<br>Cuatro Reyes</td>
+		<br>Cuatro Reyes<br><small>(Cuatro piernas/cuartetos de reyes)</small></td>
 		
 		<td>
 		<img src="tiles\11b.png" width="26">
@@ -336,24 +416,24 @@ th,td{
 		<br>Tres caballos</td>
 	</tr>
 	<tr align="center">
-		<td colspan="6"><img src="tiles\1b.png" width="39"><img src="tiles\9b.png" width="39"><img src="tiles\1o.png" width="39"><img src="tiles\9o.png" width="39"><img src="tiles\1e.png" width="39"><img src="tiles\9e.png" width="39"><img src="tiles\11e.png" width="39"><img src="tiles\11b.png" width="39"><img src="tiles\11o.png" width="39"><img src="tiles\12o.png" width="39"><img src="tiles\12c.png" width="39"><img src="tiles\12e.png" width="39"><img src="tiles\12b.png" width="39">
-+ <img src="tiles\9b.png">
-		<br>Trece Huérfanos : <small>1 y 9 de cada palo, cuatro reyes distintos, tres caballos distintos, y una repetida.</small></td>
+		<td colspan="3"><img src="tiles\1b.png" width="39"><img src="tiles\9b.png" width="39"><img src="tiles\1o.png" width="39"><img src="tiles\9o.png" width="39"><img src="tiles\1e.png" width="39"><img src="tiles\9e.png" width="39"><img src="tiles\11e.png" width="39"><img src="tiles\11b.png" width="39"><img src="tiles\11o.png" width="39"><img src="tiles\12o.png" width="39"><img src="tiles\12c.png" width="39"><img src="tiles\12e.png" width="39"><img src="tiles\12b.png" width="39">
++ <img src="tiles\9b.png"  width="26">
+		<br>Trece Huérfanos : <small>1 y 9 de cada palo, cuatro reyes distintos, tres caballos distintos, y una repetida.<br>Mano especial: Sólo vale si la mano es cerrada. Se puede cantar Envido.</small></td>
 	</tr>
 	<tr align="center" >
-		<td colspan="6"><img src="tiles\1o.png" width="39"><img src="tiles\1o.png" width="39"><img src="tiles\1o.png" width="39"><img src="tiles\2o.png" width="39"><img src="tiles\3o.png" width="39"><img src="tiles\4o.png" width="39"><img src="tiles\5o.png" width="39"><img src="tiles\6o.png" width="39"><img src="tiles\7o.png" width="39"><img src="tiles\8o.png" width="39"><img src="tiles\9o.png" width="39"><img src="tiles\9o.png" width="39"><img src="tiles\9o.png" width="39">
+		<td colspan="3"><img src="tiles\1o.png" width="39"><img src="tiles\1o.png" width="39"><img src="tiles\1o.png" width="39"><img src="tiles\2o.png" width="39"><img src="tiles\3o.png" width="39"><img src="tiles\4o.png" width="39"><img src="tiles\5o.png" width="39"><img src="tiles\6o.png" width="39"><img src="tiles\7o.png" width="39"><img src="tiles\8o.png" width="39"><img src="tiles\9o.png" width="39"><img src="tiles\9o.png" width="39"><img src="tiles\9o.png" width="39">
 + <img src="tiles\2o.png"  width="26">
-		<br>Nueve Puertas : <small>1-1-1-2-3-4-5-6-7-8-9-9-9, mas una más del mismo palo del 1 al 9</small></td>
+		<br>Nueve Puertas : <small>1-1-1-2-3-4-5-6-7-8-9-9-9, mas una más del mismo palo del 1 al 9<br>Mano especial: Sólo vale si la mano es cerrada. Se puede cantar Envido.</small></td>
 	</tr>
 	<tr align="center">
-		<td colspan="6">
+		<td colspan="3">
 		<img src="tiles\2b.png" width="39">, 
 		<img src="tiles\3b.png" width="39">, 
 		<img src="tiles\4b.png" width="39">, 
 		<img src="tiles\6b.png" width="39">, 
 		<img src="tiles\8b.png" width="39">, 
 		<img src="tiles\11b.png" width="39">
-		<br>"Todas Verdes"<br>Cualquier mano completa formada únicamente por estas cartas.</td>
+		<br>"Todas Verdes"<br><small>Cualquier mano <u>completa</u> (4 juegos y 1 par) formada únicamente por estas cartas.<br><b>Puede ser mano abierta</b>.</small></td>
 	</tr>
 </table>
 </p>
@@ -365,12 +445,20 @@ th,td{
 {
 	border-collapse: collapse;
 	border: 3pt solid rgb(128, 128, 128);
+}.YapasTable
+{
+	width:450px;
+	border-collapse: collapse;
+	border: 3pt solid rgb(128, 128, 128);
 }
 </style>
 
 <h1 id="yapas" align="center">Tabla de Yapas</h1>
-<p align="center"><table class="MsoNormalTable" border="1">
+<p align="center"><table class="YapasTable" border="1">
 <tbody>
+	<tr>
+		<td colspan="3" align="center"><b>Siete pares</b> vale sólo 5 y no se cuenta ninguna otra yapa</td>
+	</tr>
 	<tr>
 		<th colspan="1">Juego</th>
 		<th colspan="2">Yapas</th>
@@ -430,7 +518,7 @@ th,td{
 </tbody>
 </table></p>
 
-<p><br><br><br><br><br></p>
+<p><br><br><br><br><br><br><br><br><br></p>
 
 <h1 id="puntajes" align="center">Tabla de puntajes</h1>
 <p align="center"><img src="img\puntajes_compacta.png"></p>

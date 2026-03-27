@@ -16,22 +16,40 @@ body {
   color: #AAAADD;
   font-style: italic;
 }
+th{
+	color: black;
+	background-color: rgb(200,200,255);
+}
 </style>
 <h1 align="center">Mahjong con cartas españolas</h1>
 <p align="center">
-<img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);">
-</p>
+<img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
+
+<p align="right"><small>Versión 1.1.15, (12:11, 27-3-2026)</small></p>
 
 <hr>
 
 <table align="center" width="100%" style="table-layout: fixed;">
 	<tr>
-		<td colspan="3" align="center">Saltar a secciones:</td>
+		<th colspan="4" align="center">Menú Rápido:</th>
 	</tr>
 	<tr>
-		<td align="center"><a href="#lista_de_tantos">Lista de tantos</a> (<a href="machete.html">Compacta</a>)</td>
-		<td align="center"><a href="#tabla_de_yapas">Tabla de yapas</a> (<a href="machete.html#yapas">Compacta</a>)</td>
-		<td align="center"><a href="#tabla_de_puntajes">Tablas de puntajes</a> (<a href="machete.html#puntajes">Compacta</a>)</td>
+		<td align="center"><a href="machete.html"><b>Hoja de Referencia</b> <small>(Machete simplificado)</small></a></td>
+		<td align="center"><a href="#lista_de_tantos">Lista de tantos</a></td>
+		<td align="center"><a href="#tabla_de_yapas">Tabla de yapas</a></td>
+		<td align="center"><a href="#tabla_de_puntajes">Tablas de puntajes</a></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">	
+			<p>Calculadora de tantos<br>¡Próximamente!</p>
+		</td>
+		<td align="center">	
+			<p><a href=".\japones">Cambiar a fichas de Mahjong</a>.</p>
+		</td>
+		
+		<td align="center">	
+			<p><a href="EMA_Riichi_Rules_2008_es.pdf">Reglas oficiales de<br>Mahjong Japonés</a></p>
+		</td>
 	</tr>
 </table>
 
@@ -350,7 +368,7 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 </p>
 
 <p>Cada jugador puede cantar envido una única vez por ronda.</p>
-<p  style="margin-left: 35.4pt;"><em>(Nota: la carta horizontal es un descarte normal y también puede ser robado por otro jugador para completar un juego sin ninguna diferencia).</em></p>
+<p  style="margin-left: 35.4pt;"><em>Importante: Si alguien canta Mahjong sobre <b><u>ese</u></b> descarte, inmediatamente después, el Envido no cuenta y la ficha vuelve al jugador sin pérdida. Por eso la costumbre es colocar la ficha luego de que el siguiente jugador robe del pozo, o si roba ese descarte para bajar un juego. Si esta carta es robada, entonces el siguiente descarte que haga el jugador que cantó Envido se deberá poner de forma horizontal en reemplazo de esta.</em></p>
 
 <p><strong>&iexcl;Cuarteto!</strong> <span class="jp">(kan)</span> &ndash; Igual que con la pierna, pero para juegos de cuatro cartas idénticas en vez de tres, y también se puede cantar durante el turno de cualquier jugador. El procedimiento es casi el mismo, se enuncia en voz alta, se toma el descarte, se baja el cuarteto completo en mesa todo boca arriba, y la mano se considera &ldquo;abierta&rdquo;.</p>
 
@@ -801,12 +819,10 @@ verdes, mientras que el 1,5,7,9 no lo son. Esta mano <b>puede</b> ser abierta.</
 <h2>Otros tantos especiales (1 tanto)</h2>
 
 
-<p><b>Con la última </b>&#8211; Ganar justo con la última carta del
-pozo, o con el último descarte del juego (con el pozo vacío).</p>
+<p><b>Con la última </b>&#8211; Completar la mano justo con la última carta del pozo, o con el último descarte del juego (con el pozo vacío).</p>
 
 
-<p><b>Desde el muerto </b>&#8211; Ganar inmediatamente con la carta
-extra obtenida del pozo muerto, luego de bajar un cuarteto.</p>
+<p><b>Con la del cuarteto </b>&#8211; Completar la mano justo con la carta extra obtenida del pozo muerto, luego de bajar un cuarteto.</p>
 
 
 <h2>Otros tantos especiales (5 tantos)</h2>
@@ -950,7 +966,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <hr>
 <h2>Repartida de puntos</h2>
 
-<p>A continuación se detalla las cuentas que se deben hacer para decidir cuántos puntos debe pagarle cada jugador al ganador. Para <b>saltar directamente a las tablas de puntaje</b>, ver la sección <a href="#tablas_de_puntajes">"Tablas de puntajes precalculadas"</a>.</p>
+<p>A continuación se detalla las cuentas que se deben hacer para decidir cuántos puntos debe pagarle cada jugador al ganador. Para <b>saltar directamente a las tablas de puntaje</b>, ver la sección <a href="#tabla_de_puntajes">"Tablas de puntajes precalculadas"</a>.</p>
 
 <p>Luego de contar los <b>Tantos</b> <span class="jp">(Han)</span> de la mano, y de calcular el total de <b>Yapas</b> <span class="jp">(Fu)</span>, si la mano vale menos de 5 tantos, los puntos finales se calculan con la siguiente formula:</p>
 
@@ -1030,20 +1046,16 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <p>En caso de que haya más de un ganador en una ronda, los puntos de envido y del pozo vacante serán todos para el jugador ganador de más a la izquierda de la ronda (más cerca del repartidor).</p>
 
 <hr>
-<h2 id="tablas_de_puntajes">Tablas de puntajes precalculadas</h2>
-<p>Para <b>evitar tener que hacer estas cuentas cada vez que se gane una mano</b>, la siguiente es una tabla de puntajes para calcular los puntajes más rápido. Puede verse una versión compacta <a href="machete.html#puntajes">haciendo clic aquí</a>.</p>
+<h2 id="tabla_de_puntajes">Tablas de puntajes precalculadas</h2>
+<p>Para <b>evitar tener que hacer estas cuentas cada vez que se gane una mano</b>, la siguiente es una tabla con todos los puntajes precalculados. Para ver esta tabla, junto con la lista de tantos, y la tabla de yapas, <a href="machete.html">ver la Hoja de Referencia</a>.</p>
 
-
-
-
-<span align="center" id="tabla_de_puntajes">
-<!-- TABLA DE PUNTAJES         ->
 <p align="center">
-<img src="img\tablas1.png">
-<br>
-<br>
-<img src="img\tablas2.png">
-</p> <!-- -->
+<img src="img\puntajes_compacta.png">
+</p>
+
+<p>La siguiente tabla tiene la misma información pero desglosada.</p>
+
+<span align="center">
 
 
 
@@ -2407,21 +2419,50 @@ que son fáciles de apilar. A efectos de funcionalidad, hacer una única pila de
 cartas en lugar de 4 muros, y dar las cartas de una en una, es simbólicamente
 lo mismo, y no altera la jugabilidad.</p>
 
+<!-- ESPAÑOLAS -->
+<span id="cartas_esp">
 <table align="center" width="100%" style="table-layout: fixed;">
+<tr><th>Cartas Españolas</th>
+<th>Fichas de Mahjong</th></tr>
 <tr>
 <td>
 <p><img src="tiles\1o.png" width="27"><img src="tiles\2o.png" width="27"><img src="tiles\3o.png" width="27"><img src="tiles\4o.png" width="27"><img src="tiles\5o.png" width="27"><img src="tiles\6o.png" width="27"><img src="tiles\7o.png" width="27"><img src="tiles\8o.png" width="27"><img src="tiles\9o.png" width="27"> <img src="tiles\11o.png" width="27"><img src="tiles\12o.png" width="27"><br>
 <img src="tiles\1b.png" width="27"><img src="tiles\2b.png" width="27"><img src="tiles\3b.png" width="27"><img src="tiles\4b.png" width="27"><img src="tiles\5b.png" width="27"><img src="tiles\6b.png" width="27"><img src="tiles\7b.png" width="27"><img src="tiles\8b.png" width="27"><img src="tiles\9b.png" width="27"> <img src="tiles\11b.png" width="27"><img src="tiles\12b.png" width="27"><br>
 <img src="tiles\1e.png" width="27"><img src="tiles\2e.png" width="27"><img src="tiles\3e.png" width="27"><img src="tiles\4e.png" width="27"><img src="tiles\5e.png" width="27"><img src="tiles\6e.png" width="27"><img src="tiles\7e.png" width="27"><img src="tiles\8e.png" width="27"><img src="tiles\9e.png" width="27"> <img src="tiles\11e.png" width="27"><img src="tiles\12e.png" width="27"> - <img src="tiles\12c.png" width="27"></p>
 </td>
-
 <td>
-<p><img src="japones\tiles\1o.png" width="27"><img src="japones\tiles\2o.png" width="27"><img src="japones\tiles\3o.png" width="27"><img src="japones\tiles\4o.png" width="27"><img src="japones\tiles\5o.png" width="27"><img src="japones\tiles\6o.png" width="27"><img src="japones\tiles\7o.png" width="27"><img src="japones\tiles\8o.png" width="27"><img src="japones\tiles\9o.png" width="27"> <img src="japones\tiles\11o.png" width="27"><img src="japones\tiles\12o.png" width="27"><br>
-<img src="japones\tiles\1b.png" width="27"><img src="japones\tiles\2b.png" width="27"><img src="japones\tiles\3b.png" width="27"><img src="japones\tiles\4b.png" width="27"><img src="japones\tiles\5b.png" width="27"><img src="japones\tiles\6b.png" width="27"><img src="japones\tiles\7b.png" width="27"><img src="japones\tiles\8b.png" width="27"><img src="japones\tiles\9b.png" width="27"> <img src="japones\tiles\11b.png" width="27"><img src="japones\tiles\12b.png" width="27"><br>
+<p><img src="japones\tiles\1o.png" width="27"><img src="japones\tiles\2o.png" width="27"><img src="japones\tiles\3o.png" width="27"><img src="japones\tiles\4o.png" width="27"><img src="japones\tiles\5o.png" width="27"><img src="japones\tiles\6o.png" width="27"><img src="japones\tiles\7o.png" width="27"><img src="japones\tiles\8o.png" width="27"><img src="japones\tiles\9o.png" width="27"> <img src="japones\tiles\11o.png" width="27"><img src="japones\tiles\12o.png" width="27">&larr;Este<br>
+<img src="japones\tiles\1b.png" width="27"><img src="japones\tiles\2b.png" width="27"><img src="japones\tiles\3b.png" width="27"><img src="japones\tiles\4b.png" width="27"><img src="japones\tiles\5b.png" width="27"><img src="japones\tiles\6b.png" width="27"><img src="japones\tiles\7b.png" width="27"><img src="japones\tiles\8b.png" width="27"><img src="japones\tiles\9b.png" width="27"> <img src="japones\tiles\11b.png" width="27"><img src="japones\tiles\12b.png" width="27">&larr;Norte<br>
 <img src="japones\tiles\1e.png" width="27"><img src="japones\tiles\2e.png" width="27"><img src="japones\tiles\3e.png" width="27"><img src="japones\tiles\4e.png" width="27"><img src="japones\tiles\5e.png" width="27"><img src="japones\tiles\6e.png" width="27"><img src="japones\tiles\7e.png" width="27"><img src="japones\tiles\8e.png" width="27"><img src="japones\tiles\9e.png" width="27"> <img src="japones\tiles\11e.png" width="27"><img src="japones\tiles\12e.png" width="27"> - <img src="japones\tiles\12c.png" width="27"></p>
 </td>
 
 </tr></table>
+</span>
+<!-- -->
+
+
+
+<!-- JAPONES ->
+<span id="cartas_jap">
+<table align="center" width="100%" style="table-layout: fixed;">
+<tr><th>Cartas Españolas</th>
+<th>Fichas de Mahjong</th></tr>
+<tr>
+<td>
+<p><img src="..\tiles\1o.png" width="27"><img src="..\tiles\2o.png" width="27"><img src="..\tiles\3o.png" width="27"><img src="..\tiles\4o.png" width="27"><img src="..\tiles\5o.png" width="27"><img src="..\tiles\6o.png" width="27"><img src="..\tiles\7o.png" width="27"><img src="..\tiles\8o.png" width="27"><img src="..\tiles\9o.png" width="27"> <img src="..\tiles\11o.png" width="27"><img src="..\tiles\12o.png" width="27"><br>
+<img src="..\tiles\1b.png" width="27"><img src="..\tiles\2b.png" width="27"><img src="..\tiles\3b.png" width="27"><img src="..\tiles\4b.png" width="27"><img src="..\tiles\5b.png" width="27"><img src="..\tiles\6b.png" width="27"><img src="..\tiles\7b.png" width="27"><img src="..\tiles\8b.png" width="27"><img src="..\tiles\9b.png" width="27"> <img src="..\tiles\11b.png" width="27"><img src="..\tiles\12b.png" width="27"><br>
+<img src="..\tiles\1e.png" width="27"><img src="..\tiles\2e.png" width="27"><img src="..\tiles\3e.png" width="27"><img src="..\tiles\4e.png" width="27"><img src="..\tiles\5e.png" width="27"><img src="..\tiles\6e.png" width="27"><img src="..\tiles\7e.png" width="27"><img src="..\tiles\8e.png" width="27"><img src="..\tiles\9e.png" width="27"> <img src="..\tiles\11e.png" width="27"><img src="..\tiles\12e.png" width="27"> - <img src="..\tiles\12c.png" width="27"></p>
+</td>
+
+<td>
+<p><img src="tiles\1o.png" width="27"><img src="tiles\2o.png" width="27"><img src="tiles\3o.png" width="27"><img src="tiles\4o.png" width="27"><img src="tiles\5o.png" width="27"><img src="tiles\6o.png" width="27"><img src="tiles\7o.png" width="27"><img src="tiles\8o.png" width="27"><img src="tiles\9o.png" width="27"> <img src="tiles\11o.png" width="27"><img src="tiles\12o.png" width="27">&larr;Este<br>
+<img src="tiles\1b.png" width="27"><img src="tiles\2b.png" width="27"><img src="tiles\3b.png" width="27"><img src="tiles\4b.png" width="27"><img src="tiles\5b.png" width="27"><img src="tiles\6b.png" width="27"><img src="tiles\7b.png" width="27"><img src="tiles\8b.png" width="27"><img src="tiles\9b.png" width="27"> <img src="tiles\11b.png" width="27"><img src="tiles\12b.png" width="27">&larr;Norte<br>
+<img src="tiles\1e.png" width="27"><img src="tiles\2e.png" width="27"><img src="tiles\3e.png" width="27"><img src="tiles\4e.png" width="27"><img src="tiles\5e.png" width="27"><img src="tiles\6e.png" width="27"><img src="tiles\7e.png" width="27"><img src="tiles\8e.png" width="27"><img src="tiles\9e.png" width="27"> <img src="tiles\11e.png" width="27"><img src="tiles\12e.png" width="27"> - <img src="tiles\12c.png" width="27"></p>
+</td>
+
+</tr></table>
+</span>
+<!-- -->
 
 <p>Los <b>oros</b> corresponden a los <b>círculos</b>, los <b>bastos</b>
 corresponden a los <b>bambúes</b>, las <b>espadas</b> corresponden a los <b>caracteres</b>.</p>
@@ -2568,9 +2609,8 @@ explicar.</p>
     <td>Bendición</td>
   </tr>
 </tbody></table>
-<p>Para ver esta misma página con símbolos de fichas de Mahjong Riichi, en vez de cartas españolas, hacer clic <a href=".\japones">aquí</a>.</p>
-<br>
+
 <hr>
-<p>Versión 1.1.14, (00:16, 27-3-2026) - (C) 2026 Juan Patricio Dumrauf, PatricioComputacion.com</p>
+<p>(C) 2026 Juan Patricio Dumrauf, PatricioComputacion.com</p>
 
 </body></html>
