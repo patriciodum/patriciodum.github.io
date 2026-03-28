@@ -78,7 +78,8 @@ table
     },
   });
   
-  var rompath = "https://patriciocomputacion.com/mahjong/nes/4nin_eng.nes";
+  var rompath = "https://patriciocomputacion.com/mahjong/nes/4nin_esp.nes";
+  if (hayParametro("english")) rompath = "https://patriciocomputacion.com/mahjong/nes/2p_eng.nes";
   if (hayParametro("japones")) rompath = "https://patriciocomputacion.com/mahjong/nes/4nin_jap.nes";
   if (hayParametro("2p_eng")) rompath = "https://patriciocomputacion.com/mahjong/nes/2p_eng.nes";
   if (hayParametro("2p_jap")) rompath = "https://patriciocomputacion.com/mahjong/nes/2p_jap.nes";
