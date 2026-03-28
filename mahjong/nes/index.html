@@ -4,32 +4,7 @@
 <meta name="description" content="Mahjong de 4 jugadores de la Family Game.">
 <meta name="keywords" content="Cartas,Españolas,Mahjong,Riichi,麻雀計算機">
 
-<script>
-		//Codigo para obtener parametros de URL
-		function getParametro(variable) {
-		    var query = window.location.search.substring(1);
-		    var vars = query.split('&');
-		    for (var i = 0; i < vars.length; i++) {
-		        var pair = vars[i].split('=');
-		        if (decodeURIComponent(pair[0]) == variable) {
-		            return decodeURIComponent(pair[1]);
-		        }
-		    }
-		    console.log('No se encontro el parametro %s', variable);
-		}
-		
-		function hayParametro(variable) {
-		    var query = window.location.search.substring(1);
-		    var vars = query.split('&');
-		    for (var i = 0; i < vars.length; i++) {
-		        var pair = vars[i].split('=');
-		        if (decodeURIComponent(pair[0]) == variable) {
-		            return true;
-		        }
-		    }
-		    return false;
-		}
-</script>
+
 
 </head>
 
@@ -67,6 +42,35 @@ table
 
 <script src="https://unpkg.com/jsnes@2/dist/jsnes.min.js"></script>
 <script>
+
+		//Codigo para obtener parametros de URL
+		function getParametro(variable) {
+		    var query = window.location.search.substring(1);
+		    var vars = query.split('&');
+		    for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+		        if (decodeURIComponent(pair[0]) == variable) {
+		            return decodeURIComponent(pair[1]);
+		        }
+		    }
+		    console.log('No se encontro el parametro %s', variable);
+		}
+		
+		function hayParametro(variable) {
+		    var query = window.location.search.substring(1);
+		    var vars = query.split('&');
+		    for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+		        if (decodeURIComponent(pair[0]) == variable) {
+		            return true;
+		        }
+		    }
+		    return false;
+		}
+
+
+
+
   var browser = new jsnes.Browser({
     container: document.getElementById("nes"),
     onError: function (e) {
@@ -75,9 +79,9 @@ table
   });
   
   var rompath = "https://patriciocomputacion.com/mahjong/nes/4nin_eng.nes";
-  if hayParametro("japones") rompath = "https://patriciocomputacion.com/mahjong/nes/4nin_jap.nes";
-  if hayParametro("2p_eng") rompath = "https://patriciocomputacion.com/mahjong/nes/2p_eng.nes";
-  if hayParametro("2p_jap") rompath = "https://patriciocomputacion.com/mahjong/nes/2p_jap.nes";
+  if (hayParametro("japones")) rompath = "https://patriciocomputacion.com/mahjong/nes/4nin_jap.nes";
+  if (hayParametro("2p_eng")) rompath = "https://patriciocomputacion.com/mahjong/nes/2p_eng.nes";
+  if (hayParametro("2p_jap")) rompath = "https://patriciocomputacion.com/mahjong/nes/2p_jap.nes";
   
   jsnes.Browser.loadROMFromURL(rompath, function (err, data) {
     if (err) {
