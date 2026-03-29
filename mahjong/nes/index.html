@@ -12,38 +12,100 @@
 <style>
 body
 {
-	font-size: 11pt;
 	font-family: 'Segoe UI',sans-serif;
 	color: rgb(51, 61, 66);
 	color: white;
-	background-color: green;
+	background-color: #038C00;
 }
 table
 {
+	font-size: 12pt;
 	width: 100%;
 }
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Safari, Chrome, Opera, Android */
+  -khtml-user-select: none;    /* Konqueror HTML */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Standard syntax */
+  cursor: default;             /* Optional: ensures the cursor doesn't change to a text selection caret */
+}
+
 </style>
+
 
 <table>
 	<tr>
 		<td  align="center" >
-			<div id="nes" style="width: 512px; height: 480px"></div>
+			<div id="nes" style="width: 512px; height: 480px;outline:16px solid #038C00; outline-offset: -16px;"></div>
 		</td>
 	</tr>
+</table>
+<!-- onscreen CONTROLS-->
+<table class="unselectable" id="controles" hidden align="center" style="width: 512px; height: 160px;font-size:16pt;">
+		<tbody align="center">
+		<tr>
+		<td>&nbsp;</td>
+		<td width="48" style="background-color:green;" onmousedown="browser.nes.buttonDown(1, jsnes.Controller.BUTTON_UP);"
+					onmouseleave="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_UP);"
+					onmouseup="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_UP);">&uarr;</td>
+		<td colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+		<td width="48" style="background-color:green;" onmousedown="browser.nes.buttonDown(1, jsnes.Controller.BUTTON_LEFT);"
+					onmouseleave="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_LEFT);"
+					onmouseup="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_LEFT);">&larr;</td>
+		<td>&nbsp;</td>
+		<td width="48" style="background-color:green;" onmousedown="browser.nes.buttonDown(1, jsnes.Controller.BUTTON_RIGHT);"
+					onmouseleave="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_RIGHT);"
+					onmouseup="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_RIGHT);">&rarr;</td>
+		<td width="144" style="background-color:green;" onmousedown="browser.nes.buttonDown(1, jsnes.Controller.BUTTON_SELECT);"
+					onmouseleave="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_SELECT);"
+					onmouseup="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_SELECT);">SELECT</td>
+		<td width="144" style="background-color:green;" onmousedown="browser.nes.buttonDown(1, jsnes.Controller.BUTTON_A);"
+					onmouseleave="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_A);"
+					onmouseup="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_A);"><b>A</b></td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td width="48" style="background-color:green;" onmousedown="browser.nes.buttonDown(1, jsnes.Controller.BUTTON_DOWN);"
+					onmouseleave="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_DOWN);"
+					onmouseup="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_DOWN);">&darr;</td>
+		<td>&nbsp;</td>
+		<td width="144" style="background-color:green;"onmousedown="browser.nes.buttonDown(1, jsnes.Controller.BUTTON_START);"
+					onmouseleave="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_START);"
+					onmouseup="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_START);">START</td>
+		<td width="144" style="background-color:green;" onmousedown="browser.nes.buttonDown(1, jsnes.Controller.BUTTON_B);"
+					onmouseleave="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_B);"
+					onmouseup="browser.nes.buttonUp(1, jsnes.Controller.BUTTON_B);">B</td>
+		
+		</tr>
+		</tbody>
+</table>
+
+<table>	
 	<tr>
 		<td align="center" >
-			<b>Controles de Family:</b> <b>Z/X</b> (Aceptar), <b>ENTER</b> (Start), <b>CTRL</b> (Select). Arriba/Abajo: Elegir acción, Izquierda/Derecha: Elegir ficha.<br>
-			<small>Pulsar CTRL durante el juego para espiar la mano de los oponentes (es trampa!).<br><b>Kuitan Invalid</b> quiere decir que se permite la mano <b>Todo intermedias</b> con mano abierta. Descargar ROM <a href="4nin_esp.nes">aquí (24kb)</a></small>
+			<b>Z/X</b>:Aceptar, <b>Arriba/Abajo</b>:Elegir acción, <b>ENTER</b> (Start), <b>CTRL</b> (Select).<br>
+			<small>Pulsar CTRL durante el juego para espiar la mano de los oponentes (es trampa!).<br><b>Kuitan Invalid</b> quiere decir que se permite la mano <b>Todo intermedias</b> con mano abierta.<br>Descargar ROM <a href="4nin_esp.nes">aquí (24kb)</a>, <a href="#" onclick="getElementById('controles').hidden = !getElementById('controles').hidden;">Mostrar/Ocultar controles táctiles.</a></small>
 		</td>
 	</tr>
 	<tr align="center" >
 		<td>Espadas: <img src="palos1.png">
-		Bastos: <img src="palos2.png"><br>
+		Bastos: <img src="palos2.png">
 		Oros: <img src="palos3.png">
-		Reyes: <img src="palos4.png"> (E-S-W-N)
+		Reyes: <img src="palos4.png"> (Oros, Copas, Espadas, Bastos)
 		Caballos: <img src="palos5.png"></td>
 	</tr>
 </table>
+
+<script>
+//If any element is hoverable by the mouse cursor
+if (window.matchMedia("(any-hover:none)").matches) {getElementById('controles').hidden = false;};
+</script>
+
 
 <script src="https://unpkg.com/jsnes@2/dist/jsnes.min.js"></script>
 <script>
