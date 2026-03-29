@@ -25,7 +25,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.4.2, (21:41, 28-3-2026)</small></p>
+<p align="right"><small>Versión 1.4.4, (00:14, 28-3-2026)</small></p>
 
 <hr>
 
@@ -65,8 +65,32 @@ th{
 <li>Fichas para el pozo vacante. <span class="jp">(Opcionales)</span></li>
 </ul>
 
-<h2>Construyendo
-el mazo de cartas</h2>
+<hr>
+<h2>Tabla de contenidos</h2>
+<ol>
+<li><a href="#construyendo_el_mazo">Construyendo el Mazo</a></li>
+<li><a href="#inicio_del_juego">Inicio del juego</a></li>
+<li><a href="#su_turno">Su turno</a></li>
+<li><a href="#cantos_y_juegos">Cantos y juegos</a></li>
+<li><a href="#por_que_no_robar">¿Por qué no robar todos los juegos posibles?</a></li>
+<li><a href="#lista_de_tantos">Lista de tantos</a></li>
+<li><a href="#esperas">Mano lista y Esperas</a></li>
+<li><a href="#como_calcular_los_puntos">Cómo calcular los puntos</a></li>
+<li><a href="#tabla_de_yapas">Yapas</a></li>
+<li><a href="#repartida_de_puntos">Repartida de puntos</a></li>
+<li><a href="#tabla_de_puntajes">Tablas de puntajes precalculadas</a></li>
+<li><a href="#siguiente_ronda">Siguiente ronda</a></li>
+<li><a href="#empate">Empate</a></li>
+<li><a href="#penalizaciones">Penalizaciones y equivocaciones</a></li>
+<li><a href="#puntuacion_simplificada">Variantes: Puntuación simplificada</a></li>
+<li><a href="#2o3_jugadores">Variantes: jugando de a 2 o 3 jugadores</a></li>
+<li><a href="#anexo">Anexo: Notas y cambios del Mahjong Riichi</a></li>
+</ol>
+<hr>
+<h3>Prefacio</h3>
+<p>El objetivo de este documento es poder jugar al Mahjong Riichi con cuatro mazos de 50 cartas españolas comunes y corrientes, sin tener que tener un set de fichas de Mahjong ni ninguna clase de equipamiento especializado; poder enseñar a jugar a otras personas sin tener que andar explicando los números en chino, o símbolos y palabras extranjeras, tomando conceptos de juegos más conocidos para hacer el juego más fácil de explicar; pero a su vez manteniendo todas las reglas originales del Mahjong Riichi, garantizando que se pueda luego aprender a jugar Mahjong Riichi real, sin cambios en las dinámicas.</p>
+
+<h2 id="construyendo_el_mazo">Construyendo el mazo de cartas</h2>
 
 <p>El mazo está compuesto de <b>136 cartas</b>. Se construye con <b>cuatro mazos de cartas españolas</b> de <b>50 cartas</b> (Los mazos de 40 no sirven porque necesitamos que hayan ochos y nueves). Hay que quitar todas las <b>copas del 1 al 11</b> (Los reyes de copas se quedan), los <b>comodines</b>, y las <b>sotas </b>(los 10). De forma que queden cuatro mazos con las siguientes cartas:</p>
 
@@ -88,7 +112,7 @@ palos (no hay caballos de copas).</p>
 <img src="tiles\2e.png"><img src="tiles\2e.png"><img src="tiles\2e.png"><img src="tiles\2e.png">, 
 <img src="tiles\3e.png"><img src="tiles\3e.png"><img src="tiles\3e.png"><img src="tiles\3e.png"> ... </p>
 
-<p>Adicionalmente, hay que tomar un cinco de oros, un cinco de
+<p>Opcionalmente, hay que tomar además un cinco de oros, un cinco de
 bastos, y un cinco de espadas, y pintarlos de rojo, o hacerles una marca roja
 en algún lado:</p>
 <p><img src="tiles\5er.png"> <img src="tiles\5or.png"> <img src="tiles\5br.png"></p>
@@ -122,9 +146,7 @@ en algún lado:</p>
 <p><img src="tiles\10o.png"><img src="tiles\10c.png"><img src="tiles\10e.png"><img src="tiles\10b.png"> 
 <img src="tiles\10o.png"><img src="tiles\10c.png"><img src="tiles\10e.png"><img src="tiles\10b.png"> 
 </p>
-<p>Las primeras cuatro se van a usar como indicador de Rey de ronda. Se arma una pila con esas cuatro sotas distintas, ordenadas como está en la imagen (el diez de oro arriba del todo, seguido por el diez de copas, el diez de espadas, y el diez de bastos abajo del todo), de forma tal que sirva como recordatorio de cuál es el palo del rey de la ronda. Se pone boca arriba al lado del pozo.</p>
-<p><img src="tiles\pozo_3.png"> <img src="tiles\10o.png"></p>
-<p>Las otras cuatro sotas son para colocarlas adelante de cada jugador, para que recuerden cual es su rey propio. Se le entrega la sota de oros al repartidor, la sota de copas al que va segundo, la sota de espadas al que va tercero, y la sota de bastos al que va último. Estas se van a ir pasando al jugador de la derecha cada vez que cambie la ronda y cambie el repartidor.</p>
+<p>Las primeras cuatro se van a usar como indicador de Rey de ronda. Las otras cuatro sotas son para colocarlas adelante de cada jugador, para que recuerden cual es su rey propio.</p>
 
 <p>Si no se quiere usar las sotas, se puede usar un indicador de mano en su lugar <img src="tiles\mano.png"> colocado al frente del repartidor (Esto puede ser cualquier cosa, una tapita, una coronita, cualquier cosa que no se vuele o estorbe al juego), pero hacen más fácil determinar cuales son los reyes que dan tantos cada ronda para cada jugador.</p>
 
@@ -134,7 +156,7 @@ en algún lado:</p>
 <br>
 <img src="tiles\10e.png" style="transform: rotate(90deg);">
 &nbsp;&nbsp;&nbsp;
-<img src="tiles\pozo_7.png"> <img src="tiles\10o.png">
+<img src="tiles\pozo.png"> <img src="tiles\10o.png">
 &nbsp;&nbsp;&nbsp;
 <img src="tiles\10c.png" style="transform: rotate(270deg);">
 <br>
@@ -146,16 +168,20 @@ en algún lado:</p>
 <hr>
 
 <h1>Cómo jugar al Mahjong con Cartas Españolas</h1>
-<h2>Inicio del juego</h2>
+
+
+<h2 id="inicio_del_juego">Inicio del juego</h2>
 
 <p>Este juego se juega de a <b>cuatro</b> jugadores, pero se
 puede adaptar para jugar de a <b>dos</b> o a <b>tres</b> jugadores. Ver el <a href="#2o3_jugadores">anexo</a> al final para más información.</p>
 
 <p>Recomendamos leer todas las instrucciones con tiempo para entender bien el funcionamiento del juego, sin saltearse ninguna sección.</p>
 
-<p>Para decidir quién va a ser el <b>mano</b> al principio de juego, se barajan cuatro sotas distintas y se reparten una a cada jugador. Al que le toque la sota de oro será mano. Luego se toman esas cuatro sotas, y se colocan al lado del pozo en una pila ordenada boca arriba. La sota de oros arriba del todo, seguido de Copas, Espadas, Bastos. Esta pila será el <b>indicador del Rey de la Ronda</b>.</p>
+<p>Para decidir quién va a ser el <b>mano</b> al principio de juego, se barajan cuatro sotas distintas y se reparten una a cada jugador. Al que le toque la sota de oro será mano en la primera ronda.</p>
 
-<p align="center"><img src="tiles\c.png"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="tiles\10o.png"></p>
+<p>Luego se toman esas cuatro sotas, y se colocan al lado del pozo en una pila ordenada boca arriba. La <b>sota de oros arriba del todo</b>, seguido de la sota de <b>Copas</b>, <b>Espadas</b>, y <b>Bastos</b>. Esta pila será el <b>indicador del Rey de la Ronda</b>.</p>
+
+<p align="center"><img src="tiles\pozo_s.png"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="tiles\10o.png"></p>
 
 <p>Los puntos se deben ir anotando con papel y lápiz, como en el chinchón.</p>
 
@@ -200,7 +226,7 @@ puede adaptar para jugar de a <b>dos</b> o a <b>tres</b> jugadores. Ver el <a hr
 	</table>
 </p>
 
-<p>Al principio del juego, cada jugador empieza con <b>25000</b> puntos en su haber, y estos puntos se irán contando y descontando a medida que el juego avance (El perdedor le paga al ganador). Cuando el puntaje de algún jugador llegue a cero (o luego de 8 o 16 rondas) el juego termina. El que tenga más puntos al final del juego gana.</p>
+<p>Al principio del juego, cada jugador empieza con <b>25000</b> puntos en su haber, y estos puntos se irán contando y descontando a medida que el juego avance (El <u>perdedor</u> le paga al <u>ganador</u>). Cuando el puntaje de algún jugador llegue a cero (o luego de 8 o 16 rondas) el juego termina. El que tenga más puntos al final del juego <b>gana</b>.</p>
 
 <hr>
 
@@ -208,6 +234,8 @@ puede adaptar para jugar de a <b>dos</b> o a <b>tres</b> jugadores. Ver el <a hr
 reparte las cartas. Se lo llamará el <b>repartidor</b> a partir de ahora.</p>
 
 <p>Al principio de cada nueva ronda se reparten las <u>OTRAS</u> cuatro sotas (<i>no</i> las del indicador de rey de ronda) a cada jugador para que las coloquen boca arriba delante suyo, así se puede recordar a quién le corresponde cada <b>"Rey propio"</b>.</p>
+
+<p>El repartidor se entrega a si mismo la sota de oros, luego la sota de copas al jugador de su derecha, la sota de espadas al jugador de enfrente, y la sota de bastos al jugador de la izquierda (el último jugador de la ronda). Todos colocan su sota correspondiente en algún lugar de su lado de la mesa para así recordar cuál es el palo de su Rey Propio.</p>
 
 <p style="text-align: center;" align="center">Espadas (juega 3°)<br>
 <img src="tiles\10e.png"><br>
@@ -223,15 +251,14 @@ Oros (mano, juega 1°)</p>
 
 <p>Luego se hace un pozo aparte con <b>14 cartas</b>. Este es
 el &#8220;pozo muerto&#8221;, y de ese pozo se da vuelta la carta de más arriba, y se deja apoyada boca arriba encima de ese pozo, para ser
-la primera carta del indicador de bonus.</p>
+la primera carta del <b>indicador de bonus</b>. Este pozo va colocado al lado del pozo principal.</p>
 
-<p align="center"><img src="tiles\pozo_3.png"> <img src="tiles\10o.png"></p>
+<p align="center"><img src="tiles\pozo_3.png"> <img src="tiles\10o.png"><br><small>En esta imagen, el indicador de bonus tiene un 3 de oros encima.</small></p>
 
-<p>Recordar que ademas de la sota de cada jugador, está la segunda pila con sotas al lado del pozo, que indica cual es el "Rey de la ronda". Empieza siendo la sota de oros, y solamente se pasa a la siguiente cuando se hace una vuelta completa y el repartidor vuelve a ser el mismo que cuando se empezó la partida.</p>
-
-<p>Entonces, cada jugador tiene asociados <u>2 palos de reyes</u> distintos que les vienen bien para hacer juegos, se explicará esto más adelante.</p>
+<p>Recordar que ademas de la sota de cada jugador, está la segunda pila con sotas al lado del pozo, que indica cual es el "Rey de la ronda". Empieza siendo la sota de oros, y solamente se pasa a la siguiente cuando se hace una <i>vuelta completa</i> (4 rondas) y el repartidor vuelve a ser el mismo que cuando se empezó la partida.</p>
 <hr>
-<p>En su turno, un jugador puede o bien robar <u>una carta del pozo</u>, o bien <u>bajar un juego robando el último descarte del jugador de su izquierda</u>. Luego de hacer cualquiera de estas dos cosas, descarta una carta en su zona de descarte, boca arriba, y pasa a ser el turno del jugador de su derecha. La zona de descarte se ordena de izquierda a derecha, de arriba abajo, en una cuadrícula de 6x3, al frente del
+<h2 id="su_turno">Su turno</h2>
+<p>En su turno, un jugador puede o bien <b>robar una carta del pozo</b>, o bien <b>bajar un juego robando el último descarte del jugador de su izquierda</b> (<a href="#cantos_y_juegos">anunciándolo como corresponda</a>). Luego de hacer cualquiera de estas dos cosas, se debe descartar una carta en su zona de descarte, boca arriba, y pasa a ser el turno del jugador de su derecha.</p><p>La zona de descarte se ordena de izquierda a derecha, de arriba abajo, en una cuadrícula de 6x3, al frente del
 jugador, para que se vean todas las cartas descartadas en orden.</p>
 
 <p align="center">Por ejemplo aquí, el jugador acaba de descartarse el 5 de bastos, y es ahora el turno del jugador de su derecha.<br></p>
@@ -239,12 +266,12 @@ jugador, para que se vean todas las cartas descartadas en orden.</p>
 <img src="tiles\11b.png"><img src="tiles\11e.png"><img src="tiles\9o.png"><img src="tiles\5b.png" style="outline: 5px solid red; outline-offset: -5px;"><img src="tiles\v.png"><img src="tiles\v.png"><br>
 <img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><br>
 <img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"></p>
-<p align="center"><small>Nota: Omitimos la sota que indica el <u>Rey Propio</u> en este diagrama para simplificar la imagen.<br>Lo que se ve al lado del pozo es la pila de sotas que indica el <u>Rey de la Ronda</u>.</small></p>
+<p align="center"><small>Nota: Omitimos la sota que indica el <u>Rey Propio</u> en este diagrama para simplificar la imagen.<br>Recordar que lo que se ve al lado del pozo es la pila de sotas que indica el <u>Rey de la Ronda</u>.</small></p>
 
-<p><em>El objetivo del juego es ser el primer jugador en lograr
-obtener una mano <b>válida</b>, <b>completa</b>, compuesta por <b>4 juegos y un par</b>.</em></p>
-
-<p>La mano completa se hace con las 13 cartas propias (cuentan <u>tanto las que están en la mano como las que están en juegos bajados</u>, se explicará más adelante) más 1 carta robada del pozo, o robada del descarte de otro jugador. O sea que con la carta robada se completa la mano.</p>
+<hr>
+<p align="center"><em>El objetivo es ser el primer jugador en lograr obtener una mano <b>válida</b>, <b>completa</b>, compuesta por <b>4 juegos y un par</b>.</em></p>
+<hr>
+<p>Una mano <i>completa</i> se hace con 13 cartas (cuentan <u>tanto las que están en la mano como las que están en juegos bajados</u>, se explicará más adelante) más 1 carta robada del pozo, o robada del descarte de otro jugador. O sea que con la carta robada se completa la mano, de 14 cartas en total (Cuatro juegos de 3 cartas cada uno, mas 2 cartas que hacen el par).</p>
 
 
 <div align="center" style="border: 1pt solid black; padding: 1pt 4pt; margin-left: 35.4pt; margin-right: 42.45pt;">
@@ -268,20 +295,35 @@ Los juegos pueden ser de estos tres tipos:
 </table>
 
 <p style="border: medium none ; padding: 0cm;">Las piernas y escaleras
-son <b><u>siempre</u></b> de <b>3</b> cartas, y esas 3 cartas deben ser del <b><u>mismo
+son <b><u>siempre</u></b> de <b>3</b> cartas, y <b><u>las 3 cartas deben ser del mismo
 palo</u></b>.<br>Los palos son tres: oros, bastos, y espadas (no hay copas, salvo los reyes).<br><i>¡No se puede hacer una pierna con cartas de palos distintos!</i></p>
+
+
+<table width="100%" align="center">
+	<tr>
+		<td align="center"><b>Esta es una Pierna válida</b><br>
+		<img src="tiles\3b.png"><img src="tiles\3b.png"><img src="tiles\3b.png"><br>
+		Son todas del mismo palo.
+		</td>
+		
+		<td align="center"><b>¡Esta <u>NO</u> es una pierna válida!</b><br>
+		<img src="tiles\3b.png"><img src="tiles\3o.png"><img src="tiles\3e.png"><br>
+		¡Tienen que ser del mismo palo!
+		</td>
+	</tr>
+</table>
 <hr>
 <p style="border: medium none ; padding: 0cm;">En el caso de los <b>reyes</b>,
 hay reyes de oros, copas, espadas y bastos.</p><p>
-<img src="tiles\12o.png">
-<img src="tiles\12c.png">
-<img src="tiles\12e.png">
+<img src="tiles\12o.png">, 
+<img src="tiles\12c.png">, 
+<img src="tiles\12e.png">, 
 <img src="tiles\12b.png"></p>
 <hr>
 <p style="border: medium none ; padding: 0cm;">En el caso de los <b>caballos</b>,
 hay caballos de oros, bastos y espadas.</p><p>
-<img src="tiles\11o.png">
-<img src="tiles\11b.png">
+<img src="tiles\11o.png">, 
+<img src="tiles\11b.png">, 
 <img src="tiles\11e.png"></p>
 <p>Con los reyes y los caballos sólo se pueden formar piernas, o cuartetos. No se pueden hacer escaleras.</p>
 <hr>
@@ -289,7 +331,7 @@ hay caballos de oros, bastos y espadas.</p><p>
 sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5o.png"><img src="tiles\5o.png"><br>Todas las manos tienen que tener un par.</p>
 
 </div>
-<p>Nótese que no hay ninguna correlación entre el palo de los reyes y los palos de las cartas numeradas del 1 al 9. Tampoco se pueden hacer escaleras de caballos o reyes, porque no hay sotas, y <b><u>no</u></b> se puede hacer una escalera con caballos, reyes, y ases. Solo se pueden hacer escaleras con las cartas del uno al nueve.</p>
+<p>Nótese que no hay ninguna correlación entre el palo de los reyes y los palos de las cartas numeradas del 1 al 9. Tampoco se pueden hacer escaleras de caballos o reyes, porque las sotas no se usan como cartas en juego, y <b><u>no</u></b> se puede hacer una escalera con caballos, reyes, y ases. <b>Solo se pueden hacer escaleras con las cartas del uno al nueve.</b></p>
 
 <p>Un ejemplo de mano completa:</p>
 
@@ -311,7 +353,7 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 
 <p>Hay dos escaleras, una pierna de caballos, y un par de reyes, pero falta terminar una escalera (la de espadas).<br>(Aquí se acaba de alzar un dos de bastos)</p>
 
-<p>Otro ejemplo de mano completa:</p>
+<p>Otro ejemplo de mano completa, un poquito más compleja:</p>
 
 <p>En mesa: <img src="tiles\c.png"><img src="tiles\7b.png"><img src="tiles\7b.png"><img src="tiles\c.png">  <img src="tiles\12o.png"><img src="tiles\12o.png"  style="transform: rotate(90deg);"><img src="tiles\12o.png"><br>
 <br>
@@ -323,11 +365,12 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 
 <p>En la siguiente sección se explicará como funciona el mecanismo de bajar juegos en mesa. Su única función es poder formar juegos con los descartes de otros jugadores, o para bajar cuartetos de la mano.</p>
 
-<h2>Cantos y juegos</h2>
+<h2 id="cantos_y_juegos">Cantos y juegos</h2>
 
 
 <p>Estos son los distintos <b>cantos</b> que se pueden hacer. Entre paréntesis está el nombre original utilizado en japonés, pero para hacerlo más sencillo es mejor usar los nombres españolizados.</p>
-<p><strong>&iexcl;Escalera! </strong><span class="jp">(chi)</span> &ndash; Se puede cantar solo cuando el jugador de la izquierda se descartó una carta que sirve para completar una escalera en mano. Por ejemplo, si tiró el 3 de basto y yo tengo 4 y 5 de basto en mi mano, o si tiró el 5 de espadas y yo tengo 4 y 6 de espadas.</p>
+
+<p><strong>&iexcl;Escalera! </strong><span class="jp">(chii)</span> &ndash; Se puede cantar solo cuando el jugador de la izquierda se descartó una carta que sirve para completar una escalera en mano. Por ejemplo, si tiró el 3 de basto y yo tengo 4 y 5 de basto en mi mano, o si tiró el 5 de espadas y yo tengo 4 y 6 de espadas.</p>
 <p><img src="tiles\4e.png"><img src="tiles\5e.png"><img src="tiles\6e.png"></p>
 <p>En ese momento, se toma la carta descartada y se baja en mesa la escalera completada. Como se bajó un juego con un descarte ajeno, la mano completa pasa a ser una &ldquo;mano abierta&rdquo;. Ahora es su turno y tiene que descartarse una carta sin alzar del pozo, para volver a tener 13 cartas.</p>
 
@@ -352,7 +395,7 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 
 
 
-<p><strong>&iexcl;Mahjong!</strong> <span class="jp">(ron, ó tsumo)</span> &ndash; Se canta cuando cualquier otro jugador descarta la última carta que falta para completar la mano del jugador. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. Ahí <b>la ronda termina</b> y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos (Ver <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a>).</p>
+<p><strong>&iexcl;Mahjong!</strong> <span class="jp">(ron, ó tsumo)</span> &ndash; Se canta cuando cualquier otro jugador descarta la última carta que falta para completar la mano del jugador. Al igual que la pierna, <u>se puede cantar durante el turno de cualquier jugador</u>. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. Ahí <b>la ronda termina</b> y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos (Ver <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a>).</p>
 
 <p align="center">Por ejemplo un jugador descarta... <img src="tiles\4e.png"></p>
 <p align="center">¡Y ésa carta es justo la última que faltaba para completar la mano!<br>
@@ -585,13 +628,15 @@ información)</p>
 
 <p><img src="tiles\12o.png"><img src="tiles\12o.png"><img src="tiles\12o.png"></p>
 
+<p>Estas tres piernas son importantes, y se conocen en japonés con el nombre de <span class="jp">"Yakuhai"</span>, porque son juegos individuales que otorgan 1 tanto sin importar la circunstancia en la que fueron obtenidos.</p>
+
 
 <p><b>Todo intermedias </b><span class="jp">(Tanyao)
 </span>&#8211; Mano sin puntas ni caballos ni reyes. O sea, formado solo por cartas del <b>2</b> al <b>8</b>, de cualquier palo.</p>
 
 <p><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"></p>
 
-
+<p>Algunas variantes establecen que esta mano solo vale si la <i>mano es cerrada</i>, pero esta en particular suele ser la excepción. A diferencia de las manos que figuran en la siguiente sección.</p>
 
 
 
@@ -1074,8 +1119,11 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 	</tr>
 </tbody>
 </table></p>
+
+<p>Nótese que si la mano se completó cantando Mahjong para completar una pierna, esta cuenta como un juego en mesa.</p>
+
 <hr>
-<h2>Repartida de puntos</h2>
+<h2 id="repartida_de_puntos">Repartida de puntos</h2>
 
 <p>A continuación se detalla las cuentas que se deben hacer para decidir cuántos puntos debe pagarle cada jugador al ganador. Para <b>saltar directamente a las tablas de puntaje</b>, ver la sección <a href="#tabla_de_puntajes">"Tablas de puntajes precalculadas"</a>.</p>
 
@@ -1152,7 +1200,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 	</tr>
 </tbody></table></p>
 
-<p>Luego de hacer todas estas cuentas y contar y descontar los puntos de la mano de los puntajes de cada jugador correspondiente, hay que descontar 1000 puntos de cada jugador que haya cantado envido <img src="tiles\riichi.png"> y agregárselos al jugador que haya ganado. Obviamente si el jugador que ganó también había cantado envido, esos puntos que corresponden a su apuesta no se tocan porque vuelven a su dueño. El jugador que haya ganado también se lleva los puntos del pozo vacante <img src="tiles\honba.png">, estos no se descuentan de nadie y se agregan directamente al puntaje del ganador.</p>
+<p>Luego de hacer todas estas cuentas y contar y descontar los puntos de la mano de los puntajes de cada jugador correspondiente, hay que descontar 1000 puntos de cada jugador que haya cantado envido <img src="tiles\riichi.png"> y agregárselos al jugador que haya ganado. Obviamente si el jugador que ganó también había cantado envido, esos puntos que corresponden a su apuesta no se tocan porque vuelven a su dueño. El jugador que haya ganado también se lleva los puntos del pozo vacante <img src="tiles\honba.png"> que se hayan ido acumulando <a href="#siguiente_ronda">por cada vez que la ronda se repitió</a>.</p>
 
 <p>En caso de que haya más de un ganador en una ronda, los puntos de envido y del pozo vacante serán todos para el jugador ganador de más a la izquierda de la ronda (más cerca del repartidor).</p>
 
@@ -2272,12 +2320,11 @@ y
 
 <h2 id="siguiente_ronda">Siguiente ronda</h2>
 
-<p>Al acabar la ronda, si el repartidor <b>ganó</b>
-la ronda, o si la ronda <a href="#empate">termina en empate</a>, se aumenta el pozo vacante <span class="jp">(Honba)</span> y la <u>ronda se vuelve a jugar</u> (El repartidor vuelve a ser repartidor) <span class="jp">(Renchan)</span>.</p>
+<p>Al acabar la ronda, si el repartidor <b>ganó</b> la ronda, o si la ronda <a href="#empate">termina en empate</a>, se debe aumentar el pozo vacante <span class="jp">(Honba)</span>.</p>
 
 <p style="margin-left: 35.4pt;">El <b>pozo vacante</b> son puntos que permanecen entre rondas.</p>
 
-<p style="margin-left: 35.4pt;">Cada vez que se <b>repita una ronda</b> (Por empate, o por que gane el repartidor), este pozo se aumenta en 300 puntos. El próximo jugador que gane se llevará puntos extras equivalentes a los puntos del pozo vacante. <b>El pozo vacante solo se vuelve a cero cuando el repartidor cambia.</b></p>
+<p style="margin-left: 35.4pt;">Cada vez que se <b>ocurra un empate</b>, o <b>gane el repartidor</b>, este pozo se aumenta en 300 puntos. El próximo jugador que gane se llevará puntos extras equivalentes a los puntos del pozo vacante. <b>El pozo vacante solo se vuelve a cero cuando gane algún jugador que no sea el repartidor de la ronda.</b></p>
 
 <p style="margin-left: 35.4pt;">Este pozo representa colocando tres fichitas de 100 puntos <img src="tiles\honba.png">, o anotando en la hoja de puntajes como si fuera un quinto jugador.</p>
 
@@ -2285,7 +2332,9 @@ la ronda, o si la ronda <a href="#empate">termina en empate</a>, se aumenta el p
 
 <p style="margin-left: 35.4pt;">Si el ganador de la ronda ganó robando de un descarte de otro jugador, este otro jugador deberá pagar el total del pozo vacante (300 en este caso). Si no, si el ganador gana robando del pozo, los otros tres jugadores deberán pagar un tercio cada uno (100). Cabe aclarar que estos puntos se contabilizan al final como puntos extras, luego de haber sacado las cuentas de los tantos y yapas de la mano.</p>
 
-<p>Ahora bien, si la ronda la gana cualquier otro jugador que no sea el repartidor, entonces, luego de que se calculen y se descuenten los puntos correspondientes, el pozo vacante vuelve a cero y <b>se pasa a la siguiente ronda</b>.</p>
+<p>Si el repartidor gana la ronda, el repartidor <u>sigue siendo repartidor y la ronda se vuelve a jugar</u> <span class="jp">(Agari Renchan)</span>. En la mayoría de las variantes de Mahjong Riichi, si la partida termina en empate, <u>esto también ocurre</u> (Se repite la ronda con el mismo repartidor) <span class="jp">(Ryuukyoku Renchan)</span>. Pero para evitar que esto resulte en partidas muy largas (especialmente si ningún jugador se acerca a los cero puntos) se puede optar por hacer que la ronda avance de todas formas (el repartidor pasa al jugador de la derecha) sin importar como termine la ronda. Esto hará que la partida dure 16 rondas como máximo, ya que no se repetirá ninguna ronda.</p>
+
+<p>Ahora bien, si la ronda la gana cualquier otro jugador que no sea el repartidor, entonces, luego de que se calculen y se descuenten los puntos correspondientes, <u>el pozo vacante vuelve a cero</u> y <b>se pasa a la siguiente ronda</b>.</p>
 
 <p>Pasa a ser <b>repartidor</b> el jugador de la derecha, y las sotas de cada jugador se pasan al jugador de su derecha.</p>
 
@@ -2342,19 +2391,14 @@ la ronda, o si la ronda <a href="#empate">termina en empate</a>, se aumenta el p
 	</tr>
 </tbody></table></p>
 
-<h2 id="empate">Empate (sin ganadores)</h2>
+<h2 id="empate">Empate</h2>
 
-<p>Existen determinadas situaciones que hacen que una ronda termine en empate.</p>
-
-<h3>Pozo vacío</h3>
-
-<p>Si se acaban las cartas del pozo, o si todos los descartes
+<p>Si se acaban las cartas del pozo <span class="jp">(Ryuukyoku)</span>, o si todos los descartes
 tienen al menos 18 cartas (tres filas de seis), la ronda termina en <b>empate</b>,
-y pasa a ser repartidor el jugador de la derecha del repartidor de esta ronda.
+y pasa a ser repartidor el jugador de la derecha del repartidor actual (Se pasa a la siguiente ronda).
 Además, se agregan 300 puntos al <b>pozo vacante</b>.</p>
 
 <p style="margin-left: 35.4pt;"><b><i>Nota:</i></b> si 18 descartes es muy poco para 2 jugadores, se puede aumentar a 24 descartes (cuatro filas de seis) para alargar un poco más las rondas.</p>
-
 
 <p>Todos los jugadores que hayan cantado envido <span class="jp">(riichi)</span>,
 deben mostrar la mano para probar que realmente tenían la <b>mano lista</b> (solo les faltaba una carta para ganar). Además, todos los jugadores que no hayan cantado envido pero también tengan la mano lista deberán mostrar su mano. Los demás no muestran la mano.</p>
@@ -2393,6 +2437,8 @@ o nadie mostró la mano, entonces no se reparte nada.</p>
 </tbody></table></p>
 
 <p>Si la ronda termina en empate, todas las apuestas de envido vuelven a los respectivos jugadores.</p>
+
+<p>Existen determinadas situaciones que hacen que una ronda termine en un empate técnico <span class="jp">(Tochuu Ryuukyoku)</span>, que terminan la ronda antes de que se acaben las cartas del pozo (o se alcancen los 18 descartes de cada jugador). </p>
 
 <h3>Cuatro reyes idénticos en el primer descarte</h3>
 <p>Otra situación que resulta en <b>empate</b> es si los <b>primeros cuatro descartes</b> del juego son <u>el mismo rey del mismo palo</u>. Esto tradicionalmente se considera mal augurio, y se pasa a la siguiente ronda automáticamente. El repartidor vuelve a ser el mismo.</p>
@@ -2595,7 +2641,7 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 
 <hr>
 
-<h1>Anexo: Notas y cambios del Mahjong Riichi</h1>
+<h1 id="anexo">Anexo: Notas y cambios del Mahjong Riichi</h1>
 
 
 <p>El objetivo de este juego es lograr hacer una copia lo más
@@ -2813,12 +2859,13 @@ explicar.</p>
 
 <hr>
 <p><small>Changelog:
-<br>v1.4.2
-<ul><li>Se agregaron flechas al indicador de siguiente ronda, y se añadió Family Game en español para jugar desde el navegador (traducción parcial).</li>
-</ul>
-
-<br>v1.4.0
-<ul><li>Se agregaron las sotas para utilizarse como indicadores de Rey de ronda y rey propio.</li>
+<br>v1.4.4
+<ul>
+<li>Agregado tabla de contenidos.</li>
+<li>Error, la apuesta del pozo vacante decía que los puntos venian de la nada. Pero los puntos deben venir siempre de otros jugadores, nunca de generación espontánea</li>
+<li>Aclaración, renchan (repeticion de ronda) es opcional, y puede optarse por avanzar a la siguiente ronda a pesar de que la ronda termine en empate o gane el repartidor (WRC)</li>
+<li>Se agregaron flechas al indicador de siguiente ronda, y se añadió Family Game en español para jugar desde el navegador (traducción parcial).</li>
+<li>Se agregaron las sotas para utilizarse como indicadores de Rey de ronda y rey propio.</li>
 </ul>
 
 <br>v1.3.0
