@@ -25,7 +25,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.4.1, (13:55, 28-3-2026)</small></p>
+<p align="right"><small>Versión 1.4.2, (21:41, 28-3-2026)</small></p>
 
 <hr>
 
@@ -2290,15 +2290,16 @@ la ronda, o si la ronda <a href="#empate">termina en empate</a>, se aumenta el p
 <p>Pasa a ser <b>repartidor</b> el jugador de la derecha, y las sotas de cada jugador se pasan al jugador de su derecha.</p>
 
 <p style="text-align: center;" align="center">
-<img src="tiles\10e.png"  style="transform: rotate(180deg);">
+<img src="tiles\arrowupright.png" style="transform: rotate(180deg);"> <img src="tiles\10e.png"  style="transform: rotate(180deg);"> <img src="tiles\arrowdownright.png" style="transform: rotate(180deg);">
 <br>
 <img src="tiles\10c.png" style="transform: rotate(90deg);">
 &nbsp;&nbsp;&nbsp;
 <img src="tiles\pozo_7.png"> <img src="tiles\10o.png">
 &nbsp;&nbsp;&nbsp;
-<img src="tiles\10o.png" style="transform: rotate(270deg);" >
+<img src="tiles\10o.png" style="transform: rotate(270deg);outline: 4px solid red; outline-offset: -2px;">
 <br>
-<img src="tiles\10b.png" ></p>
+<br>
+<img src="tiles\arrowdownright.png"> <img src="tiles\10b.png"> <img src="tiles\arrowupright.png"></p>
 
 <p><b>La ronda <u>cambia</u> cuando cambia el repartidor.</b> Una partida completa de 16 rondas son 4 rotaciones completas (Se puede jugar nada más a 8 si se hace muy largo).</p><p>Además, cada 4 rondas <u>cambia el rey de la ronda</u> (O sea cuando el repartidor vuelve a ser el mismo que cuando arrancó la partida).</p>
 
@@ -2308,7 +2309,7 @@ la ronda, o si la ronda <a href="#empate">termina en empate</a>, se aumenta el p
 <br>
 <img src="tiles\10e.png" style="transform: rotate(90deg);">
 &nbsp;&nbsp;&nbsp;
-<img src="tiles\pozo_7.png"> <img src="tiles\10c.png" style="outline: 2px solid red; outline-offset: -1px;">
+<img src="tiles\pozo_7.png"> <img src="tiles\10c.png" style="outline: 4px solid red; outline-offset: -2px;">
 &nbsp;&nbsp;&nbsp;
 <img src="tiles\10c.png" style="transform: rotate(270deg);">
 <br>
@@ -2812,6 +2813,10 @@ explicar.</p>
 
 <hr>
 <p><small>Changelog:
+<br>v1.4.2
+<ul><li>Se agregaron flechas al indicador de siguiente ronda, y se añadió Family Game en español para jugar desde el navegador (traducción parcial).</li>
+</ul>
+
 <br>v1.4.0
 <ul><li>Se agregaron las sotas para utilizarse como indicadores de Rey de ronda y rey propio.</li>
 </ul>
