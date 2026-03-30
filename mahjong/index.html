@@ -399,6 +399,8 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 
 <p><strong>&iexcl;Mahjong!</strong> <span class="jp">(ron, ó tsumo)</span> &ndash; Se canta cuando cualquier otro jugador descarta la última carta que falta para completar la mano del jugador. Al igual que la pierna, <u>se puede cantar durante el turno de cualquier jugador, inclusive si es para completar una <b>última</b> escalera</u>. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. Ahí <b>la ronda termina</b> y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos (Ver <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a>).</p>
 
+<p><i>Importante:</i> Cantar Mahjong <b>no</b> hace que una mano cerrada se vuelva abierta, como ocurre con los otros cantos.</p>
+
 <p align="center">Por ejemplo un jugador descarta... <img src="tiles\4e.png"></p>
 <p align="center">¡Y ésa carta es justo la última que faltaba para completar la mano!<br>
 <img src="tiles\1o.png"   style="transform: rotate(90deg);"><img src="tiles\2o.png"><img src="tiles\3o.png"> .. 
@@ -1233,7 +1235,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 
 <p>Luego de hacer todas estas cuentas y contar y descontar los puntos de la mano de los puntajes de cada jugador correspondiente, hay que descontar 1000 puntos de cada jugador que haya cantado envido <img src="tiles\riichi.png"> y agregárselos al jugador que haya ganado. Obviamente si el jugador que ganó también había cantado envido, esos puntos que corresponden a su apuesta no se tocan porque vuelven a su dueño. El jugador que haya ganado también se lleva los puntos del pozo vacante <img src="tiles\honba.png"> que se hayan ido acumulando <a href="#siguiente_ronda">por cada vez que la ronda se repitió</a>.</p>
 
-<p>En caso de que haya más de un ganador en una ronda, los puntos de envido y del pozo vacante serán todos para el jugador ganador de más a la izquierda de la ronda (más cerca del repartidor).</p>
+<p>En caso de que haya más de un ganador en una ronda, los puntos de envido y del pozo vacante serán todos para el jugador ganador que tenga la mano con mayor puntaje, o bien al jugador de más a la izquierda de la ronda (más cerca del repartidor).</p>
 
 <hr>
 <h2 id="tabla_de_puntajes">Tablas de puntajes precalculadas</h2>
@@ -2912,6 +2914,7 @@ explicar.</p>
 <hr>
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.4.14) Cantar mahjong con una mano cerrada no la vuelve abierta.</li>
 <li>(v1.4.13) Formato y errores de tipeo varios.</li>
 <li>(v1.4.9) Error, cuando mas de un jugador canta mahjong a la vez, es el unico perdedor el que tiene que pagarle a los dos ganadores.</li>
 <li>(v1.4.8) Gramática</li>
