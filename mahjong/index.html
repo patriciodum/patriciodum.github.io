@@ -25,7 +25,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.4.8, (12:11, 30-3-2026)</small></p>
+<p align="right"><small>Versión 1.4.10, (12:24, 30-3-2026)</small></p>
 
 <hr>
 
@@ -364,7 +364,7 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png">
 <img src="tiles\2o.png"><img src="tiles\2o.png"> + <img src="tiles\3e.png"></p>
 
-<p>Hay una pierna de reyes y un cuarteto de sietes en mesa (con dos boca abajo para indicar que es todo cartas propias), dos escaleras en mano, y un par de dos de oros. Aquí se acaba de alzar un <b>tres de espadas</b>, completando la escalera que faltaba. <em>Nótese que a pesar de que el cuarteto tiene 4 cartas en vez de 3, igual se considera <b>un</b> juego, cumpliendo así el requisito de tener 4 juegos y span data-ssml-sub-alias="un par">1 par</span>.</em></p>
+<p>Hay una pierna de reyes y un cuarteto de sietes en mesa (con dos boca abajo para indicar que es todo cartas propias), dos escaleras en mano, y un par de dos de oros. Aquí se acaba de alzar un <b>tres de espadas</b>, completando la escalera que faltaba. <em>Nótese que a pesar de que el cuarteto tiene 4 cartas en vez de 3, igual se considera <b>un</b> juego, cumpliendo así el requisito de tener 4 juegos y <span data-ssml-sub-alias="un par">1 par</span>.</em></p>
 
 <p>En la siguiente sección se explicará como funciona el mecanismo de bajar juegos en mesa. Su única función es poder formar juegos con los descartes de otros jugadores, o para bajar cuartetos de la mano.</p>
 
@@ -448,13 +448,13 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <td><p align="center"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png" style="transform: rotate(90deg);"><br>Robada del jugador a la derecha</p></td>
 </tr></table>
 
-<p>Ahora bien, el cuarteto es un caso especial porque un juego compuesto por 4 cartas rompe con la condición de que una mano válida tiene que ser de 14 cartas: 4 juegos de 3 cartas cada uno + span data-ssml-sub-alias="un par">1 par</span> de dos cartas iguales (o sea las 13 cartas de la mano y en mesa, y la última carta robada del pozo o de un descarte para cantar Mahjong).</p>
+<p>Ahora bien, el cuarteto es un caso especial porque un juego compuesto por 4 cartas rompe con la condición de que una mano válida tiene que ser de 14 cartas: 4 juegos de 3 cartas cada uno + <span data-ssml-sub-alias="un par">1 par</span> de dos cartas iguales (o sea las 13 cartas de la mano y en mesa, y la última carta robada del pozo o de un descarte para cantar Mahjong).</p>
 <p align="center"><img src="tiles\3o.png"> &larr; <img src="tiles\pozo.png"> <img src="tiles\10o.png"></p>
 <p>Para compensar la carta que falta, hay que robar una carta del &ldquo;pozo muerto&rdquo;. Para hacer esto, se aparta a un costado la carta bonus boca arriba (sigue en juego), se roba una carta del pozo muerto y se agrega a la mano. Luego se da vuelta una nueva carta boca arriba para reemplazar a la carta apartada. Esto quiere decir que ahora hay <u>dos</u> cartas bonificadas.</p>
 <p align="center"><img src="tiles\3o.png">&nbsp;&nbsp;&nbsp;<img src="tiles\pozo_7.png"> <img src="tiles\10o.png"></p>
 <p>Puede pasar que la carta robada del pozo muerto justo complete la mano, en cuyo caso se puede cantar Mahjong, si la mano es válida.</p>
 <p>Finalmente, le toca descartar una carta y el juego continúa con el jugador de la derecha.</p>
-<p>Sólo puede haber un máximo de 5 cartas bonificadas por ronda, si se bajan más de 4 cuartetos en la misma ronda, la ronda por lo general se considera nula y se reinicia. O se puede hacer una excepción y robar del pozo normal en su lugar.</p>
+<p>Sólo puede haber un máximo de 5 cartas bonificadas por ronda, si se bajan más de 4 cuartetos en la misma ronda, la ronda por lo general se considera nula y se reinicia. O se puede hacer una excepción si es un juego casual y robar del pozo normal en su lugar, pero no se dan vuelta más cartas bonificadas.</p>
 
 <p><strong>&iexcl;Cuarteto (en mano)!</strong> &ndash; Los juegos bajados en mesa solo se pueden realizar con descartes ajenos. La <u>única</u> excepción es tener un cuarteto completo en la mano. El jugador que tenga un cuarteto en su mano, si así lo desea, puede enunciarlo y bajarlo en la mesa en su turno, luego de robar una carta del pozo. La diferencia es que luego de bajar un cuarteto en mano la mano todavía se considera &ldquo;cerrada&rdquo;, ya que no se usó ningún descarte ajeno para completar un juego (son todas cartas propias). Para distinguirlo de un cuarteto robado, se coloca boca abajo en la mesa, con las dos cartas centrales boca arriba.</p>
 <p><img src="tiles\c.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\c.png"></p>
@@ -736,7 +736,7 @@ descartes</u> (Mano abierta).</p>
 <p id="siete_pares"><b>Siete pares</b> &#8211; Mano <u>especial</u> compuesta por siete pares
 cualquiera. <u>Sólo vale en mano</u>, porque no se pueden bajar pares. Nótese
 que <u>se puede cantar envido con esta mano</u> a pesar de no ser una mano
-estándar (No está formada por 4 juegos y span data-ssml-sub-alias="un par">1 par</span>).</p>
+estándar (No está formada por 4 juegos y <span data-ssml-sub-alias="un par">1 par</span>).</p>
 
 
 <p><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\3o.png"><img src="tiles\3o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\12o.png"><img src="tiles\12o.png"></p>
@@ -2616,7 +2616,7 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 </p>
 <hr><h3 id="ronda_de_practica">Ronda de práctica sin tantos.</h3>
 
-<p>Para aprender la dinámica del juego, los jugadores principiantes pueden optar primero por hacer una ronda de práctica en donde no importa si la mano llega a tener un tanto o no, y en donde el objetivo es simplemente ser el primero en obtener una mano compuesta por 4 juegos y span data-ssml-sub-alias="un par">1 par</span> (Se ignora por completo la lista de tantos y el cálculo de puntajes). Esto es útil para aprender como hacer cantos, y como bajar juegos, y como se altera el orden de los turnos si alguien canta pierna o cuarteto.</p>
+<p>Para aprender la dinámica del juego, los jugadores principiantes pueden optar primero por hacer una ronda de práctica en donde no importa si la mano llega a tener un tanto o no, y en donde el objetivo es simplemente ser el primero en obtener una mano compuesta por 4 juegos y <span data-ssml-sub-alias="un par">1 par</span> (Se ignora por completo la lista de tantos y el cálculo de puntajes). Esto es útil para aprender como hacer cantos, y como bajar juegos, y como se altera el orden de los turnos si alguien canta pierna o cuarteto.</p>
 
 <hr>
 <h2 id="2o3_jugadores">Jugando de a 2 o 3 jugadores</h2>
@@ -2908,6 +2908,7 @@ explicar.</p>
 <hr>
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.4.10) Formato.</li>
 <li>(v1.4.9) Error, cuando mas de un jugador canta mahjong a la vez, es el unico perdedor el que tiene que pagarle a los dos ganadores.</li>
 <li>(v1.4.8) Gramática</li>
 <li>(v1.4.7) Cambiado el diagrama de cuatro reyes idénticos en descarte para que se entienda mejor la orientación de los descartes</li>
