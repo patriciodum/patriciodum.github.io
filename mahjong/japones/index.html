@@ -25,7 +25,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.4.13, (13:05, 30-3-2026)</small></p>
+<p align="right"><small>Versión 1.5.0, (9:25, 31-3-2026)</small></p>
 
 <hr>
 
@@ -41,14 +41,14 @@ th{
 	</tr>
 	<tr>
 		<td colspan="2" align="center">	
-			<p><a href="..\nes\libreria\">Jugar en la Family Game</a></p>
+			<p><a href="..\nes\libreria\" target="_blank">Jugar en la Family Game</a></p>
 		</td>
 		<td align="center">	
-			<p><a href="..">Cambiar a cartas españolas</a>.</p>
+			<p><a href="..">Cambiar a cartas Españolas</a>.</p>
 		</td>
 		
 		<td align="center">	
-			<p><a href="..\EMA_Riichi_Rules_2008_es.pdf">Reglas oficiales de<br>Mahjong Japonés</a></p>
+			<p><a href="..\EMA_Riichi_Rules_2008_es.pdf" target="_blank">Reglas oficiales de<br>Mahjong Japonés</a></p>
 		</td>
 	</tr>
 </table>
@@ -73,9 +73,11 @@ th{
 <li><a href="#su_turno">Su turno</a></li>
 <li><a href="#cantos_y_juegos">Cantos y juegos</a></li>
 <li><a href="#por_que_no_robar">¿Por qué no robar todos los juegos posibles?</a></li>
+<li><a href="#ejemplo_de_partida">Ejemplo de partida en curso</a></li>
 <li><a href="#lista_de_tantos">Lista de tantos</a></li>
 <li><a href="#esperas">Mano lista y Esperas</a></li>
 <li><a href="#como_calcular_los_puntos">Cómo calcular los puntos</a></li>
+<li><a href="#bonificaciones">Bonificaciones</a></li>
 <li><a href="#tabla_de_yapas">Yapas</a></li>
 <li><a href="#repartida_de_puntos">Repartida de puntos</a></li>
 <li><a href="#tabla_de_puntajes">Tablas de puntajes precalculadas</a></li>
@@ -171,6 +173,7 @@ en algún lado:</p>
 <hr>
 
 <h1>Cómo jugar al Mahjong con Cartas Españolas</h1>
+
 
 
 <h2 id="inicio_del_juego">Inicio del juego</h2>
@@ -373,14 +376,20 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 
 <p>Estos son los distintos <b>cantos</b> que se pueden hacer. Entre paréntesis está el nombre original utilizado en japonés, pero para hacerlo más sencillo es mejor usar los nombres españolizados.</p>
 
-<p><strong>&iexcl;Escalera! </strong><span class="jp">(chii)</span> &ndash; Se puede cantar solo cuando el jugador de la izquierda se descartó una carta que sirve para completar una escalera en mano. Por ejemplo, si tiró el 3 de basto y yo tengo 4 y 5 de basto en mi mano, o si tiró el 5 de espadas y yo tengo 4 y 6 de espadas.</p>
-<p><img src="tiles\4e.png"><img src="tiles\5e.png"><img src="tiles\6e.png"></p>
+<p><strong>&iexcl;Escalera! </strong><span class="jp">(chii)</span> &ndash; Se puede cantar solo cuando el jugador de la izquierda se descartó una carta que sirve para completar una escalera en mano. Por ejemplo, si tiró el 3 de basto y yo tengo 4 y 5 de basto en mi mano, o si tiró el 8 de espadas y yo tengo 7 y 9 de espadas en mi mano.</p>
+<p><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\5b.png"></p>
 <p>En ese momento, se toma la carta descartada y se baja en mesa la escalera completada. Como se bajó un juego con un descarte ajeno, la mano completa pasa a ser una &ldquo;mano abierta&rdquo;. Ahora es su turno y tiene que descartarse una carta sin alzar del pozo, para volver a tener 13 cartas.</p>
 
 <p>La carta robada debe colocarse de forma horizontal, para que sepa que esa carta correspondía al descarte del jugador de la izquierda. Las cartas robadas para bajar escaleras provienen <u>siempre</u> del jugador de la izquierda.</p>
 <table width="100%"><tr>
 <td><p align="center"><img src="tiles\4e.png"><img src="tiles\5e.png"><img src="tiles\6e.png" style="transform: rotate(90deg);"><br>Por ejemplo aquí, el 6 de espadas fue la carta <br>robada del descarte para completar la escalera.</p></td>
 <td><p align="center"><img src="tiles\1o.png"><img src="tiles\2o.png" style="transform: rotate(90deg);"><img src="tiles\3o.png"><br>Y aquí, el 2 de oro fue la carta robada.</p>
+</td></tr></table>
+
+<p>Algunos jugadores prefieren colocar siempre la carta robada a la izquierda del juego, a pesar de que queden desordenadas, para que quede bien en claro que el descarte proviene del jugador de la izquierda. De la siguiente forma:</p>
+<table width="100%"><tr>
+<td><p align="center"><img src="tiles\6e.png" style="transform: rotate(90deg);"><img src="tiles\4e.png"><img src="tiles\5e.png"></p></td>
+<td><p align="center"><img src="tiles\2o.png" style="transform: rotate(90deg);"><img src="tiles\1o.png"><img src="tiles\3o.png"></p></td>
 </td></tr></table>
 
 <p>Los juegos bajados se bajan <a href="#contra_el_borde_de_la_mesa">contra el borde de la mesa, para que no se confundan con el descarte</a>.</p>
@@ -398,6 +407,8 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 </tr></table>
 
 <p><strong>&iexcl;Mahjong!</strong> <span class="jp">(ron, ó tsumo)</span> &ndash; Se canta cuando cualquier otro jugador descarta la última carta que falta para completar la mano del jugador. Al igual que la pierna, <u>se puede cantar durante el turno de cualquier jugador, inclusive si es para completar una <b>última</b> escalera</u>. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. Ahí <b>la ronda termina</b> y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos (Ver <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a>).</p>
+
+<p><i>Importante:</i> Cantar Mahjong <b>no</b> hace que una mano cerrada se vuelva abierta, como ocurre con los otros cantos.</p>
 
 <p align="center">Por ejemplo un jugador descarta... <img src="tiles\4e.png"></p>
 <p align="center">¡Y ésa carta es justo la última que faltaba para completar la mano!<br>
@@ -475,21 +486,20 @@ En mano: <img src="tiles\4e.png"><img src="tiles\5e.png">
 <li>Si se canta Escalera, o Pierna, o Cuarteto, pero alguien canta Mahjong en el mismo turno, el Mahjong tiene prioridad y los demás cantos se ignoran.</li>
 <li>Si se canta Escalera, pero alguien canta Pierna o Cuarteto en el mismo turno, estos tienen prioridad y el canto de Escalera se ignora.</li></ul>
 
-<p id="contra_el_borde_de_la_mesa"><b>Los juegos bajados se bajan contra el borde de la mesa</b>, para que no se confundan con el descarte. Como se puede ver en este diagrama:</p>
+<p id="contra_el_borde_de_la_mesa"><b>Los juegos bajados se bajan contra el borde de la mesa, del lado derecho</b>, para que no se confundan con el descarte. Como se puede ver en este diagrama:</p>
 
 <p align="center"><img src="tiles\pozo_3.png"> <img src="tiles\10o.png"></p>
 <p align="center">
 <img src="tiles\11b.png"><img src="tiles\9e.png"><img src="tiles\1e.png"><img src="tiles\5o.png"><img src="tiles\11b.png"><img src="tiles\4b.png"><br>
 <img src="tiles\9e.png"><img src="tiles\3e.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><br>
 <img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><br>
-&uarr; Esta es la zona de descartes</p>
+&uarr; &uarr; &uarr; Esta es la zona de descartes</p>
 
 <table width="100%"><tr>
-<td align="left">
-<img src="tiles\11o.png" style="transform: rotate(90deg);"><img src="tiles\11o.png"><img src="tiles\11o.png"> &larr; Aquí se colocan los juegos bajados
+<td style="text-align:right;">
+Aquí se colocan los juegos bajados<br>&darr; &darr; &darr;<br><img src="tiles\11o.png" style="transform: rotate(90deg);"><img src="tiles\11o.png"><img src="tiles\11o.png">
 </td>
-<td align="right">
- Y aquí puede ir la<br>sota del Rey Propio &darr;<br><img src="tiles\10c.png">
+<td align="right" width="100px">Sota de Rey propio &darr;<br><img src="tiles\10c.png">
 </td>
 </tr></table>
 
@@ -612,7 +622,34 @@ de rey de copas le otorgará <span data-ssml-sub-alias="un tanto">1 tanto</span>
 entonces la pierna vale <b>2 tantos</b>. 1 por ser el rey de la ronda, y 1 por
 ser el rey propio. Por ejemplo, si en la ronda uno yo soy el repartidor, una pierna del <b>rey de Oros</b> equivale a 2 tantos.</p>
 
+
 <hr>
+
+<h2 id="ejemplo_de_partida">Ejemplo de partida en curso</h2>
+
+
+
+
+<p>Así es como se podría ver la mesa completa durante una partida, desde el punto de vista de el jugador Oro (identificado con la sota de oros a la derecha de su lado de la mesa).</p>
+
+<p>Hacer clic <a href="img\ejemplo.png" target="_blank">aquí para ver una imagen completa</a>, si el diagrama no se muestra correctamente.</p>
+
+
+<!-- Partida con cartas de Mahjong --> <p align="center"><img src="img\ejemplo.png"></p> <!-- -->
+
+
+
+
+
+
+
+<p>Véase que hay varios juegos bajados en mesa: oro (el jugador de abajo, cuya mano esta visible en el diagrama) bajó una escalera de espadas y una pierna de caballos, y copa (jugador de la derecha) bajó una pierna de bastos y una pierna de oros. Incluso el jugador de la izquierda (Bastos) ha cantado envido hace un par de vueltas y ahora está esperando la última carta para completar su mano. La carta en el indicador de bonus es un 6 de bastos, o sea que la <a href="#bonificaciones">carta bonificada</a> es el 7 de bastos (La siguiente del 6 de bastos).</p>
+
+<p>En este momento es el turno del jugador Espadas (al frente) y tiene que hacer un descarte. Nótese que tiene 14 cartas en mano, y la de mas a su derecha es la que acaba de alzar del pozo.</p>
+
+
+<hr>
+
 <h1 id="lista_de_tantos">Lista de Tantos <span class="jp">(Yakus)</span></h1>
 
 <p>Una mano puede estar <i>completa</i> (tener los cuatro juegos y el par ya formados) pero solo se considerara una <b>mano válida</b> si tiene al menos <b>1
@@ -767,7 +804,7 @@ robados de descarte o bajados de la mano. </p>
 <p><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"> <img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"> <img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"></p>
 
 
-<p><b>Todas piernas </b>&#8211; Cuatro piernas o cuartetos.</p>
+<p><b>Todas piernas </b>&#8211; Mano completa <u>sin escaleras</u>. Cuatro piernas o cuartetos.</p>
 
 
 <p><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"></p>
@@ -1011,7 +1048,7 @@ de la ronda. Los demás jugadores no deben contar nada.</p>
 
 
 
-<h2>Bonificaciones <span class="jp">(Dora)</span></h2>
+<h2 id="bonificaciones">Bonificaciones <span class="jp">(Dora)</span></h2>
 
 <p>En su mano, el ganador puede tener cartas bonificadas, que suman un tanto cada una. Las cartas bonificadas correspondientes a cada ronda son <b>las cartas siguientes a las cartas que están boca arriba</b> en el área del pozo muerto, es decir, en el indicador de bonus.</p>
 
@@ -1233,7 +1270,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 
 <p>Luego de hacer todas estas cuentas y contar y descontar los puntos de la mano de los puntajes de cada jugador correspondiente, hay que descontar 1000 puntos de cada jugador que haya cantado envido <img src="tiles\riichi.png"> y agregárselos al jugador que haya ganado. Obviamente si el jugador que ganó también había cantado envido, esos puntos que corresponden a su apuesta no se tocan porque vuelven a su dueño. El jugador que haya ganado también se lleva los puntos del pozo vacante <img src="tiles\honba.png"> que se hayan ido acumulando <a href="#siguiente_ronda">por cada vez que la ronda se repitió</a>.</p>
 
-<p>En caso de que haya más de un ganador en una ronda, los puntos de envido y del pozo vacante serán todos para el jugador ganador de más a la izquierda de la ronda (más cerca del repartidor).</p>
+<p>En caso de que haya más de un ganador en una ronda, los puntos de envido y del pozo vacante serán todos para el jugador ganador que tenga la mano con mayor puntaje, o bien al jugador de más a la izquierda de la ronda (más cerca del repartidor).</p>
 
 <hr>
 <h2 id="tabla_de_puntajes">Tablas de puntajes precalculadas</h2>
@@ -2563,6 +2600,7 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 <p>En el idioma japonés estas situaciones se conocen con el nombre de <i>furiten</i> temporal y <i>furiten</i> permanente, respectivamente.</p>
 
 <hr><h1 id="puntuacion_simplificada">Variantes: Puntuación simplificada.</h1>
+<h2>Puntuación con tantos</h2>
 
 <p>Si todo esto de calcular puntajes y sumar y restar y multiplicar puntos se vuelve muy tedioso, el autor de este documento (o sea yo) propone usar un método simplificado de puntuación, similar al usado en el Truco, o en la Escoba de 15.</p>
 
@@ -2618,6 +2656,23 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 		</tr>
 	</table>
 </p>
+<h2>Puntuación con fichas o palitos <span class="jp">(Tenbou)</span></h2>
+
+<p>Si se tienen fichas de póquer, se pueden usar fichas para llevar el recuento de puntos en lugar de usar papel y lápiz. Es práctico porque los puntos siempre van de un jugador a otro según quien gane o pierda, y no es necesaria una banca.</p>
+
+<table  width="100%" style="table-layout: fixed;">
+<tr>
+<td align="center"><img src="tiles\honba.png"><br>100 puntos</td>
+<td align="center"><img src="tiles\riichi.png"><br>1000 puntos</td>
+<td align="center"><img src="tiles\5000.png"><br>5000 puntos</td>
+<td align="center"><img src="tiles\10000.png"><br>10000 puntos</td>
+</tr>
+</table>
+
+<p>Con esto, la suma de todas las fichas en juego siempre es 100000 (25000 para cada jugador al inicio del juego). Como excepción, las fichas de 100 <img src="tiles\honba.png"> que se usan para indicar el pozo vacante provienen de la banca, y sólo se usan para indicar cuantos puntos extra deben pagar los perdedores al ganador de la ronda, pero nadie gana <u>esas</u> fichas en particular, sino que vuelven a la banca.</p>
+
+<p>No es necesario que estas fichas sean palitos. Pueden ser fichas de póquer redondas, o cualquier cosa que pueda indicar 100 puntos (que es el valor mínimo de puntos), el único requisito es que cada jugador tenga siempre al menos una ficha de 1000 puntos que se pueda usar para cantar envido <span class="jp">(Riichi)</span>, o en su defecto, tener una ficha distinta para indicar el envido que no provenga de las reservas propias.</p>
+
 <hr><h3 id="ronda_de_practica">Ronda de práctica sin tantos.</h3>
 
 <p>Para aprender la dinámica del juego, los jugadores principiantes pueden optar primero por hacer una ronda de práctica en donde no importa si la mano llega a tener un tanto o no, y en donde el objetivo es simplemente ser el primero en obtener una mano compuesta por 4 juegos y <span data-ssml-sub-alias="un par">1 par</span> (Se ignora por completo la lista de tantos y el cálculo de puntajes). Esto es útil para aprender como hacer cantos, y como bajar juegos, y como se altera el orden de los turnos si alguien canta pierna o cuarteto.</p>
@@ -2912,6 +2967,10 @@ explicar.</p>
 <hr>
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.5.0) Agregado diagrama de partida de ejemplo, con la mesa completa.</li>
+<li>Los enlaces en la barra de navegacion ahora se abren en pestañas nuevas.</li>
+<li>Agregadas fichas de póquer, y sección explicando que se puede llevar el recuento de puntos con fichas.</li>
+<li>(v1.4.14) Cantar mahjong con una mano cerrada no la vuelve abierta.</li>
 <li>(v1.4.13) Formato y errores de tipeo varios.</li>
 <li>(v1.4.9) Error, cuando mas de un jugador canta mahjong a la vez, es el unico perdedor el que tiene que pagarle a los dos ganadores.</li>
 <li>(v1.4.8) Gramática</li>
