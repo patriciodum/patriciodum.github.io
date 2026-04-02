@@ -7,9 +7,16 @@
 
 <body style="font-size: 11pt; font-family: &quot;Segoe UI&quot;,sans-serif; color: rgb(51, 61, 66);">
 <style>
+.imprimir {
+	display: none; 
+}
+
 @media print {
   .no-imprimir {
     display: none;
+  }
+  .imprimir {
+	display: block; 
   }
 }
 
@@ -43,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.6.0, (00:15, 2-4-2026)</small></p>
+<p align="right"><small>Versión 1.6.1, (08:51, 2-4-2026)</small></p>
 
 <hr>
 
@@ -74,6 +81,17 @@ th{
 	</tr>
 </table>
 
+<div  class="imprimir">
+<table width="100%"><tr>
+<td>
+	Para ver la versión en linea de esta pagima, visitar<br>
+	https://patriciocomputacion.com/mahjong 
+</td>
+<td width="140">
+	<img src="img\qr-code.png" width="128">
+</td>
+</tr></table>
+</div>
 
 <hr>
 <h1 style="break-before: auto;">Requisitos para jugar</h1>
@@ -3112,6 +3130,7 @@ explicar.</p>
 <hr>
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.6.1) Agregado codigo qr para imprimir</li>
 <li>(v1.6.0) Agregada versión para imprimir</li>
 <li>(v1.5.3) Errores gramaticales</li>
 <li>Agregado diagrama de partida de ejemplo, con la mesa completa.</li>
