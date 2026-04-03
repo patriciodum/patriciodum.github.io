@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.6.3, (18:12, 2-4-2026)</small></p>
+<p align="right"><small>Versión 1.6.4, (09:02, 3-4-2026)</small></p>
 
 <hr>
 
@@ -72,7 +72,7 @@ th{
 			<p><a href="#" onclick="window.print()">🖨 Versión para Imprimir</a></p>
 		</td>
 		<td align="center">	
-			<p><a href="..">Cambiar a fichas de Mahjong</a>.</p>
+			<p><a href="..">Cambiar a cartas Españolas</a>.</p>
 		</td>
 		
 		<td align="center">	
@@ -208,7 +208,7 @@ en algún lado:</p>
 
 <p><b>Es muy importante que no se mezclen las sotas con el resto del mazo, ya que no son cartas para jugar, sino solamente indicadores para saber quien es quién. </b>El autor recomienda ponerlas en una bolsita aparte, o pintar el dorso, para evitar barajarlas junto con las otras por accidente.</p>
 
-<p>Nótese que estas fichas y sotas no son <i>esenciales</i> para jugar, y se puede compensar usando papel y lápiz para ir llevando la cuenta de quién es mano, y qué ronda se está jugando. Pero tenerlas hace que sea más fácil jugar.</p>
+<p>Nótese que estas fichas y sotas no son <i>esenciales</i> para jugar, y se puede compensar usando papel y lápiz para ir llevando la cuenta de quién es repartidor, y qué ronda se está jugando. Pero tenerlas hace que sea más fácil jugar.</p>
 
 <p>Si no se quiere usar las sotas, se puede usar un indicador de mano en su lugar <img src="tiles\mano.png"> colocado al frente del repartidor. Esto puede ser cualquier cosa, una tapita, una coronita, cualquier cosa que no se vuele o estorbe al juego.</p>
 
@@ -291,8 +291,8 @@ Bastos (juega <span data-ssml-sub-alias="cuarto">4°</span>) <img src="tiles\10b
 <img src="tiles\10o.png"><br>
 Oros (mano, juega <span data-ssml-sub-alias="primero">1°</span>)</p>
 
-<p>Estos palos también se usan para identificar a cada jugador en cada ronda. El oro siempre es mano y repartidor, y el orden de los turnos es siempre <b>oro</b>, <b>copas</b>, <b>espadas</b>, y <b>bastos</b>.</p>
-</div>
+<p>Estos palos también se usan para identificar a cada jugador en cada ronda. El oro siempre es el repartidor (juega primero), y el orden de los turnos es siempre <b>oro</b>, <b>copas</b>, <b>espadas</b>, y <b>bastos</b>.</p>
+</div><div class="noseparar">
 <hr>
 <p>Una vez que todos saben quién es quién, se reparten <b>13 cartas</b> a los 4 jugadores, empezando por el repartidor, y siguiendo en sentido antihorario, y el repartidor recibe una carta más (para descartar una en su primer turno).</p>
 
@@ -305,10 +305,11 @@ la primera carta del <b>indicador de bonus</b>. Este pozo va colocado al lado de
 
 <p>Recordar que ademas de la sota de cada jugador, está la segunda pila con sotas al lado del pozo, que indica cual es el "Rey de la ronda". Empieza siendo la sota de oros, y solamente se pasa a la siguiente cuando se hace una <i>vuelta completa</i> (4 rondas) y el repartidor vuelve a ser el mismo que cuando se empezó la partida.</p>
 <hr>
+</div><div class="noseparar">
 <h2 id="su_turno">Su turno</h2>
 <p>En su turno, un jugador puede o bien <b>robar una carta del pozo</b>, o bien <b>bajar un juego robando el último descarte del jugador de su izquierda</b> (<a href="#cantos_y_juegos">anunciándolo como corresponda</a>). Luego de hacer cualquiera de estas dos cosas, se debe descartar una carta en su zona de descarte, boca arriba, y pasa a ser el turno del jugador de su derecha.</p><p>La zona de descarte se ordena de izquierda a derecha, de arriba abajo, en una cuadrícula de 6x3, al frente del
 jugador, para que se vean todas las cartas descartadas en orden.</p>
-<div class="noseparar">
+
 <p align="center">Por ejemplo aquí, el jugador acaba de descartarse el 5 de bastos, y es ahora el turno del jugador de su derecha.<br></p>
 <p style="text-align: center;" align="center"><img src="tiles\pozo_3.png"> <img src="tiles\10o.png"><br><br>
 <img src="tiles\11b.png"><img src="tiles\11e.png"><img src="tiles\9o.png"><img src="tiles\5b.png" style="outline: 5px solid red; outline-offset: -5px;"><img src="tiles\v.png"><img src="tiles\v.png"><br>
@@ -316,12 +317,13 @@ jugador, para que se vean todas las cartas descartadas en orden.</p>
 <img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"></p>
 <p align="center"><small>Nota: Omitimos la sota que indica el <u>Rey Propio</u> en este diagrama para simplificar la imagen.<br>Recordar que lo que se ve al lado del pozo es la pila de sotas que indica el <u>Rey de la Ronda</u>.</small></p>
 </div>
-<hr class="pagina-nueva">
+<hr>
+<div class="noseparar">
 <p align="center"><em>El objetivo es ser el primer jugador en lograr obtener una mano <b>válida</b>, <b>completa</b>, compuesta por <b>4 juegos y un par</b>.</em></p>
 <hr>
 <p>Una mano <i>completa</i> se hace con 13 cartas (cuentan <u>tanto las que están en la mano como las que están en juegos bajados</u>, se explicará más adelante) más 1 carta robada del pozo, o robada del descarte de otro jugador. O sea que con la carta robada se completa la mano, de 14 cartas en total (Cuatro juegos de 3 cartas cada uno, mas 2 cartas que hacen el par).</p>
 
-<div class="noseparar">
+
 <div align="center" style="border: 1pt solid black; padding: 1pt 4pt; margin-left: 35.4pt; margin-right: 42.45pt;">
 
 
@@ -562,7 +564,7 @@ Aquí se colocan los juegos bajados<br>&darr; &darr; &darr;<br><img src="tiles\1
 <p>Los jugadores principiantes pueden verse tentados a bajar siempre la mayor cantidad de juegos posibles, pensando que esto les dará más puntos, pero esto no es así. Muchas manos pierden completamente su valor si la mano se vuelve <b>abierta</b>, como se explicará luego en la sección <a href="#lista_de_tantos">"Lista de tantos"</a>. Por eso es importante conservar la calma, y procurar que la mayoría de los juegos estén en mano, salvo que tengamos la fe o la certeza de que nuestra mano vale o valdrá al menos un tanto.</p>
 
 <p>Por ejemplo, hay una mano llamada <a href="#escaleras_identicas">"Escaleras Idénticas"</a> que otorga <span data-ssml-sub-alias="un tanto">1 tanto</span> si se tienen dos escaleras idénticas (mismo palo y números), <b>pero sólo si la mano es cerrada</b>. O sea, que es un requisito que no se tenga ningún juego bajado con descartes ajenos.</p>
-
+<div class="noseparar">
 <p>Veamos esta mano de ejemplo:</p>
 
 <p align="center">
@@ -574,7 +576,7 @@ Aquí se colocan los juegos bajados<br>&darr; &darr; &darr;<br><img src="tiles\1
 <p>Esta mano de aquí arriba contiene dos escaleras idénticas del mismo palo y del mismo número (1-2-3 de oros). Y está esperando por o un 5 o un 8 de bastos para completar la mano. Esta mano ya vale <span data-ssml-sub-alias="un tanto">1 tanto</span>, así que si alguien tira un 5 o un 8 de bastos, se puede cantar Mahjong y se gana la ronda.</p>
 
 <p  style="margin-left: 35.4pt;">Incluso, por ser mano cerrada, y como sólo falta una carta para <u>completar</u> la mano, <b>se puede cantar envido</b> en el próximo descarte posible, para que valga un tanto más.</p>
-
+</div><div class="noseparar">
 <p>Ahora veamos esta otra mano:</p>
 
 <p align="center">
@@ -588,7 +590,7 @@ Aquí se colocan los juegos bajados<br>&darr; &darr; &darr;<br><img src="tiles\1
 <p>Es más, si alguien tira un 3 de oros, y se canta Mahjong con esta mano (que no es válida, porque vale 0 tantos) se le dará una <a href="penalizaciones">penalización</a>, y la ronda deberá jugarse de nuevo porque legalmente no se puede seguir jugando con la mano ya revelada.</p>
 
 <p><small>Cabe aclarar que en este caso no importa si las dos escaleras idénticas están en la mano. Si hay un juego cualquiera bajado en mesa, la mano se considera abierta y el tanto de Escaleras Idénticas ya no vale.</small></p>
-
+</div>
 <p>En reglas generales, casi todas las manos compuestas por escaleras que otorgan tantos <b>sólo cuentan si la mano es cerrada</b> (O sea que no se bajó ningún juego con descartes ajenos). Esto no afecta las manos más complejas como "<a href="#color_y_negras">Color y negras"</a> que si bien pueden contener escaleras, otorgan tantos por otras razones y no necesariamente por estar formado por escaleras (En este caso, porque la mano entera está compuesta por todas cartas del mismo palo, y caballos y reyes de cualquier palo).</p>
 <div class="noseparar">
 <p>Ahora veamos esta otra situación...</p>
@@ -642,7 +644,7 @@ Aquí se colocan los juegos bajados<br>&darr; &darr; &darr;<br><img src="tiles\1
 de copas</b>. Entonces, <b>para cualquier jugador en esta ronda</b>, una pierna
 de rey de copas le otorgará <span data-ssml-sub-alias="un tanto">1 tanto</span> a su mano.</p>
 
-<p>Además, a cada jugador le corresponde un "Rey Propio" según su ubicación en la mesa, relativo al repartidor. Recordar que cada jugador tiene de su lado de la mesa la sota que representa el rey propio, como recordatorio (Si no se juega con sotas, el repartidor tiene al frente suyo la ficha de repartidor <img src="tiles\mano.png"> para saber que es mano.).</p>
+<p>Además, a cada jugador le corresponde un "Rey Propio" según su ubicación en la mesa, relativo al repartidor. Recordar que cada jugador tiene de su lado de la mesa la sota que representa el rey propio, como recordatorio (Si no se juega con sotas, el repartidor tiene al frente suyo la ficha de repartidor <img src="tiles\mano.png">, que juega primero).</p>
 
 <p>A él le corresponde el rey de oros como rey propio. Al jugador de su derecha le corresponde el rey de copas, al que sigue le corresponde el rey de espadas, y al pie (el que va último en el orden de los turnos) le corresponde el rey de bastos como rey propio.</p>
 
@@ -928,7 +930,7 @@ descartes</u> (Mano abierta).</p>
 <p><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\6o.png"><img src="tiles\7o.png"><img src="tiles\8o.png"><img src="tiles\9o.png"></p>
 
 
-</div><div class="pagina-nueva"><h2><b>2</b> tantos siempre</h2>
+</div><div class="noseparar"><h2><b>2</b> tantos siempre</h2>
 
 
 </div><div class="noseparar"><p id="siete_pares"><b>Siete pares</b> &#8211; Mano <u>especial</u> compuesta por siete pares
@@ -1019,9 +1021,10 @@ un solo palo, <b>sin usar cartas negras</b>. Vale solo 5 tantos si se consigue
 habiendo bajado juegos.</p>
 
 
-<p><img src="tiles\1e.png"><img src="tiles\2e.png"><img src="tiles\3e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\9e.png"><img src="tiles\9e.png"></p></div>
+<p><img src="tiles\1e.png"><img src="tiles\2e.png"><img src="tiles\3e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\9e.png"><img src="tiles\9e.png"></p>
 
 
+</div><div class="noseparar">
 <h2>Tantos <b>máximos</b> (<b>13</b> tantos, <span class="jp">Yakuman</span>)</h2>
 
 
@@ -1033,21 +1036,21 @@ jugador la <b>puntuación máxima</b> de la mano.</p>
 pozo, o en caso de ser mano, en el primer turno, sin descartar ninguna carta.</p>
 
 
-<div class="noseparar"><p><b>Todas piernas en mano </b>&#8211; Cuatro piernas, o cuartetos,
+<p><b>Todas piernas en mano </b>&#8211; Cuatro piernas, o cuartetos,
 sin haber robado ningún descarte.</p>
 
 
 <p><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"></p>
 
 
-</div><div class="noseparar"><p><b>Todo cuartetos</b> &#8211; Cuatro cuartetos en mesa, ya sean
+<p><b>Todo cuartetos</b> &#8211; Cuatro cuartetos en mesa, ya sean
 robados de descarte o bajados de la mano.<br><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png">
 <img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><br>
 <img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\8o.png">
 <img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"></p>
 
 
-</div><div class="noseparar"><p><b>Tres caballos</b> &#8211; Tres piernas de caballos.</p>
+<p><b>Tres caballos</b> &#8211; Tres piernas de caballos.</p>
 
 
 <p><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\11o.png"></p></div>
@@ -1236,6 +1239,8 @@ seguir es el siguiente:</p>
 <p align="center"><img src="tiles\5or.png"> <img src="tiles\5br.png"> <img src="tiles\5er.png"></p>
 
 <p><em>Nota:</em> ¡si el indicador bonus es el cuatro de oros y se tiene el cinco de oros rojo en la mano, los bonuses se acumulan y esta carta vale 2 tantos!</p>
+
+<div class="noseparar">
 <h3>Bonificaciones ocultas</h3>
 <p>Si el ganador de la ronda había cantado <b>envido</b> <img src="tiles\riichi.png">
 <span class="jp">(riichi)</span>, entonces se deben dar vuelta del pozo muerto tantas cartas como
@@ -1243,7 +1248,6 @@ indicadores de bonificación ya haya boca arriba, para que acaben habiendo el <b
 de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 2. Si habían 2, ahora deben haber 4, etc., hasta un máximo de 10 cartas bonus.</p>
 
-<div class="noseparar">
 <p align="center">Por ejemplo aquí hay 2 cartas en el área de bonificaciones...</p>
 <p align="center"><img src="tiles\v.png">
 <img src="tiles\v.png">
@@ -1257,10 +1261,8 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <p align="center">¡Ahora las cartas bonificadas serían el <b>Rey de copas</b>, <b>el 3 de bastos</b>, el 8 de espadas, y el 4 de oros!<br>(Recordar el orden de los reyes)</p>
 </div>
 
-
-
 <hr>
-<h2 id="tabla_de_yapas">Yapas <span class="jp">(Fu)</span></h2>
+<div class="noseparar"><h2 id="tabla_de_yapas">Yapas <span class="jp">(Fu)</span></h2>
 
 <p>Las yapas son una puntuación extra que se calcula, además de los tantos, para darle un valor adicional al puntaje de una mano.</p>
 
@@ -1352,7 +1354,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <p>Luego de obtener esta suma, se redondea el valor hacia arriba a la decena (número terminado en cero). O sea que si la cuenta da 12, el valor redondeado es 20, si la cuenta da 6, el valor redondeado es 10, si la cuenta da 0, el valor redondeado es 0 (<a href="#cero_yapas">Cero yapas</a>).</p>
 
 <p>Hay una excepción, si la mano ganadora es la de <a href="#siete_pares">Siete Pares</a>, la yapa vale siempre 5 y no se calcula ninguna otra yapa ni se redondea el valor. Vale siempre 5, como valor fijo.</p>
-
+</div>
 <hr>
 <h1 id="repartida_de_puntos">Repartida de puntos</h1>
 
@@ -1407,9 +1409,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 
 <p>En caso de que sea <em>el repartidor</em> quien ganó la ronda, <u>TODOS</u> deben pagarle el doble de esa cantidad. De modo que el repartidor gana el puntaje de la mano, multiplicado por seis.</p>
 
-<p>Ahora bien, si la victoria no vino de robar del pozo, sino de completar la mano con un descarte de otro jugador, entonces <i>solamente ese jugador</i> será quién pierda puntos (¡los otros dos jugadores no pagan nada!).</p>
-
-<p>El jugador que descartó la carta que llevó al ganador a ganar la ronda, deberá pagarle cuatro veces el puntaje al ganador. Si el ganador también es el repartidor de la ronda, entonces en vez de cuatro deberá pagar <b>SEIS</b> veces el valor.</p>
+<p>Ahora bien, si la victoria no vino de robar del pozo, sino de completar la mano con un descarte de otro jugador, entonces <i>solamente ese jugador</i> será quién pierda puntos (¡los otros dos jugadores no pagan nada!). El jugador que descartó la carta que llevó al ganador a ganar la ronda, deberá pagarle cuatro veces el puntaje al ganador. Si el ganador también es el repartidor de la ronda, entonces en vez de cuatro deberá pagar <b>SEIS</b> veces el valor.</p>
 
 <p>En resumen:</p>
 <p align="center"><table class="MsoNormalTable" border="1">
@@ -1436,7 +1436,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <p>En caso de que haya más de un ganador en una ronda, los puntos de envido y del pozo vacante serán todos para el jugador ganador que tenga la mano con mayor puntaje, o bien al jugador de más a la izquierda de la ronda (más cerca del repartidor).</p>
 
 <hr>
-<h1 id="tabla_de_puntajes">Tablas de puntajes precalculadas</h1>
+<h2 id="tabla_de_puntajes">Tablas de puntajes precalculadas</h2>
 <p>Para <b>evitar tener que hacer estas cuentas cada vez que se gane una mano</b>, la siguiente es una tabla con todos los puntajes precalculados. Para ver esta tabla, junto con la lista de tantos, y la tabla de yapas, <a href="machete.html">ver la Hoja de Referencia</a>.</p>
 
 <p align="center">
@@ -3134,8 +3134,10 @@ explicar.</p>
 </tbody></table>
 <br>
 <hr>
+<div class="no-imprimir">
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.6.4) Quito nombre de mano</li>
 <li>(v1.6.2) Aclaración con Tres Ganadores. Si hay dos ganadores, el tercer jugador debe mostrar su mano para confirmar que no puede ganar.</li>
 <li>(v1.6.1) Agregado código qr para imprimir</li>
 <li>(v1.6.0) Agregada versión para imprimir</li>
@@ -3172,7 +3174,7 @@ explicar.</p>
 <li>Corregida la sección de yapas (Los puntos estaban mal clasificados).</li>
 <li>Se han arreglado las tablas para mostrar los valores adecuados.</li>
 <li>Agregadas condiciones de empate.</li></ul>
-</font></p>
+</font></p></div>
 <hr>
 <p>(C) 2026, PatricioComputacion.com</p>
 

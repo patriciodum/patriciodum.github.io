@@ -2,6 +2,31 @@
 
 <body style="font-size: 11pt; font-family: &quot;Segoe UI&quot;,sans-serif; color: rgb(51, 61, 66);">
 <style>
+.imprimir {
+	display: none; 
+}
+
+@media print {
+  .no-imprimir {
+    display: none;
+  }
+  .imprimir {
+	display: block; 
+  }
+}
+
+@media print {
+  table, img, .noseparar {
+    break-inside: avoid;
+  }
+  h1, .pagina-nueva {
+    break-before: page;
+  }
+  .saltar-de-pagina {
+	break-after: page;
+  }
+}
+
 body {
 
 }
@@ -24,6 +49,18 @@ th{
 </style>
 <h1  align="center">Mahjong con Cartas Españolas - Hoja de Referencia</h1>
 <hr>
+<div  class="imprimir">
+<table width="100%"><tr>
+<td>
+	Para ver la versión en linea de esta pagima, visitar<br>
+	<b>https://patriciocomputacion.com/mahjong</b>
+</td>
+<td width="140">
+	<img src="img\qr-code.png" width="128">
+</td>
+</tr></table>
+</div>
+
 <h2 align="center">Orden de los reyes y los caballos</h2>
 
 <p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
@@ -46,7 +83,7 @@ th{
 <p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
 	<tr>
 		<th>Turno &rarr;</th>
-		<th>Primero<br>(Repartidor/Mano)</th><th>Segundo</th><th>Tercero</th><th>Cuarto<br>(Pie)</th>
+		<th>Primero<br>(Repartidor)</th><th>Segundo</th><th>Tercero</th><th>Cuarto<br>(Pie)</th>
 	</tr>
 	<tr>
 		<th>Rey propio&nbsp;</th>
@@ -66,6 +103,11 @@ th{
 	<tr>
 		<td>
 			<p align="center"><img src="tiles\11b.png"> &rarr; <img src="tiles\11e.png"> &rarr; <img src="tiles\11o.png"> &rarr; <img src="tiles\11b.png"> &rarr; ... </p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="center">Caballo de Bastos &rarr; Caballo de Espadas &rarr; Caballo de Oros &rarr; Caballo de Bastos &rarr; y así siguiendo... </p>
 		</td>
 	</tr>
 </tbody></table></p>
@@ -537,6 +579,6 @@ th{
 <h1 id="puntajes_2j" align="center">Tabla de puntajes (2 Jugadores)</h1>
 <p align="center"><img src="img\puntajes_2j.png"></p>
 
-<p><br><br><br></p>
-<h1 align="center"><a href=".">Volver...</a></h1>
+<div class="no-imprimir"><br><br><br>
+<h1 align="center"><a href=".">Volver...</a></h1></div>
 </body></html>
