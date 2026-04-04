@@ -30,8 +30,7 @@
 body {
 
 }
-</style>
-<style>
+
 table
 {
 	width:800px;
@@ -156,7 +155,7 @@ th{
 	<tr align="center">
 		<td>
 		<img src="tiles\1o.png" width="52"><img src="tiles\2o.png" width="52"> ... <img src="tiles\9b.png" width="52"><br>
-		<b>Cero Yapas</b><br><small><i>Todo escaleras</i><br>Sin negras<br>y <u>esperando completar<br>una escalera por los dos lados</u>.</small></td>
+		<small>Cero Yapas</small><br><i>Todo escaleras</i>, <b>sin negras</b><br>y <u>esperando completar<br>una escalera por los dos lados</u>.</td>
 		<td>
 		<img src="tiles\1o.png" width="39">
 		<img src="tiles\2o.png" width="39">
@@ -173,7 +172,7 @@ th{
 		<img src="tiles\c.png" width="52">
 		<img src="tiles\c.png" width="52">
 		<img src="tiles\c.png" width="52"><br>
-		Todo Propio<br><small>(Sin robar <u>ningún</u> descarte)</small>
+		Todo Propio<br><small>(Ganar <b>robando del pozo</b>,<br>y <b>sin robar descartes</b>)</small>
 		</td>
 	</tr>
 	
@@ -192,7 +191,7 @@ th{
 		<img src="tiles\1o.png" width="26">
 		<img src="tiles\2o.png" width="26">
 		<img src="tiles\3o.png" width="26"><br>
-		Escalera Triple<br><small>En tres palos distintos</small></td>
+		Escalera Triple<br><small>Mismos números, en tres palos distintos</small></td>
 		<td colspan="2">
 		<img src="tiles\1e.png" width="26">
 		<img src="tiles\2e.png" width="26">
@@ -214,16 +213,16 @@ th{
 	</tr>
 	<tr align="center">
 		<td>
-		<img src="tiles\4b.png" width="26">
-		<img src="tiles\4b.png" width="26">
-		<img src="tiles\4b.png" width="26"><br>
-		<img src="tiles\4e.png" width="26">
-		<img src="tiles\4e.png" width="26">
-		<img src="tiles\4e.png" width="26"><br>
-		<img src="tiles\4o.png" width="26">
-		<img src="tiles\4o.png" width="26">
-		<img src="tiles\4o.png" width="26">
-		<br>Pierna Triple</td>
+		<img src="tiles\1b.png" width="26">
+		<img src="tiles\1b.png" width="26">
+		<img src="tiles\1b.png" width="26"><br>
+		<img src="tiles\1e.png" width="26">
+		<img src="tiles\1e.png" width="26">
+		<img src="tiles\1e.png" width="26"><br>
+		<img src="tiles\1o.png" width="26">
+		<img src="tiles\1o.png" width="26">
+		<img src="tiles\1o.png" width="26">
+		<br>Pierna Triple<br><small>Tres piernas del <b>mismo número</b>.</small></td>
 		
 		<td>
 		<img src="tiles\2e.png" width="18">
@@ -234,7 +233,7 @@ th{
 		<img src="tiles\6e.png" width="18"><br>
 		<img src="tiles\4b.png" width="18">
 		<img src="tiles\4b.png" width="18">
-		<img src="tiles\4b.png" width="18"><br>Tres piernas <b>en mano</b></td>
+		<img src="tiles\4b.png" width="18"><br>Tres piernas <u><b>en mano</b></u><br><small>Puede ser mano abierta<br>pero con las 3 piernas en mano</small></td>
 		
 		<td>
 		<img src="tiles\2b.png" width="26">
@@ -274,7 +273,7 @@ th{
 		<img src="tiles\12c.png" width="39">
 		<img src="tiles\12c.png" width="39">
 		
-		<br>Siete pares<br><small>(Mano especial: Solo se puede hacer con mano cerrada)</small></td>
+		<br>Siete pares<br><small>(Mano especial: Solo se puede hacer con <b>mano cerrada</b>. Se puede cantar envido)</small></td>
 		
 	</tr>
 	<tr align="center">
@@ -376,7 +375,7 @@ th{
 		<td colspan="2">
 		<img src="tiles\12e.png" width="39"><img src="tiles\9b.png" width="39"><img src="tiles\12e.png" width="39"><img src="tiles\12c.png" width="39"><img src="tiles\1o.png"width="39"><img src="tiles\11o.png" width="39"><br>
 		<img src="tiles\11b.png" width="39"><img src="tiles\9o.png" width="39"><img src="tiles\9e.png" width="39"><img src="tiles\1e.png" width="39"><img src="tiles\v.png" width="39"><img src="tiles\v.png" width="39">
-		<br>Solo puntas y negras en descarte<br><small>Ganar habiendo descartado únicamente<br>unos, nueves, caballos, y reyes.</small></td>
+		<br>Solo puntas y negras en descarte<br><small><b>Empatar</b> (pozo agotado) habiendo descartado únicamente<br>unos, nueves, caballos, y reyes, sin que nadie te haya robado un descarte.</small></td>
 		<td colspan="2">Mano servida<br><small>Ganar en el primer turno con el descarte de otro jugador.</small></td>
 	</tr>
 </table>
@@ -495,7 +494,7 @@ th{
 	border: 3pt solid rgb(128, 128, 128);
 }.YapasTable
 {
-	width:450px;
+	width:400px;
 	border-collapse: collapse;
 	border: 3pt solid rgb(128, 128, 128);
 }
@@ -504,70 +503,55 @@ th{
 <h1 id="yapas" align="center">Tabla de Yapas</h1>
 <p align="center"><table class="YapasTable" border="1">
 <tbody>
-	<tr>
-		<td colspan="3" align="center"><b>Siete pares</b> vale sólo 5 y no se cuenta ninguna otra yapa</td>
+
 	</tr>
-	<tr>
-		<td colspan="3" align="center">En cualquier otro caso, la yapa se redondea para arriba a 10, 20, 30, 40, etc.</td>
-	</tr>
-	<tr>
-		<th colspan="1">Juego</th>
-		<th colspan="2">Yapas</th>
-	</tr>
-	<tr>
-		<td>Por ganar robando del pozo</td>
-		<td colspan="2">+2</td>
+		<tr>
+		<th>Tabla de yapas</th>
+		<th>Yapas</th>
 	</tr>	
 	<tr>
-		<td>Por ganar robando un descarte</td>
-		<td colspan="2">+10</td>
-	</tr>
-	<tr>
-		<td>Si <em>el par</em> es de negras</td>
-		<td colspan="2">+2</td>
-	</tr>
-	<tr>
-		<th colspan="3">Bonus por <u>espera simple</u></th>
-	</tr>
-	<tr>
-		<th colspan="3">Si la última carta robada fue...</th>
-	</tr>
-	<tr>
-		<td>El <b>centro</b> de una escalera</td>
-		<td colspan="2">+2</td>
-	</tr>
-	<tr>
-		<td>El <b>3</b> o el <b>7</b> de una escalera con puntas</td>
-		<td colspan="2">+2</td>
-	</tr>
-	<tr>
-		<td>La carta faltante para el par</td>
-		<td colspan="2">+2</td>
-	</tr>
-	<tr>
-		<th>Por cada...</th>
-		<th>En mesa<br></th>
-		<th>En mano<br></th>
-	</tr>
-	<tr>
-		<td>Pierna común (del 2 al 8)</td>
+		<td>Por ganar robando del pozo</td>
 		<td>+2</td>
-		<td>+4</td>
+	</tr>	
+	<tr>
+		<td>Por ganar robando un descarte<br>con <b>mano cerrada</b></td>
+		<td>+10</td>
 	</tr>
 	<tr>
-		<td>Pierna de puntas o negras</td>
-		<td>+4</td>
-		<td>+8</td>
+		<td>Par de negras</td>
+		<td>+2</td>
 	</tr>
 	<tr>
-		<td>Cuarteto común (del 2 al 8)</td>
-		<td>+8</td>
-		<td>+16</td>
+		<th>Espera simple</th>
+		<th align="left">+2</th>
 	</tr>
 	<tr>
-		<td>Cuarteto de puntas o negras</td>
-		<td>+16</td>
-		<td>+32</td>
+		<td colspan="2"><b>Centro</b> de una escalera <span class="jp">(Kanchan)</span><br>
+		<b>3</b> o el <b>7</b> de una escalera con puntas <span class="jp">(Penchan)</span><br>
+		La carta faltante para el par <span class="jp">(Tanki)</span></td>
+	</tr>
+	<tr>
+		<th>Por cada pierna (o cuarteto)</th>
+		<th align="left">+2  ↘</th>
+	</tr>
+	<tr>
+		<td>Si son todas cartas propias...</td>
+		<td align="right">×2</td>
+	</tr>
+	<tr>
+		<td>Si es de puntas o negras...</td>
+		<td align="right">×2</td>
+	</tr>
+	<tr>
+		<td>Si es un <i>cuarteto...</i></td>
+		<td align="right">×2</td>
+	</tr>
+	</tr>
+		<tr>
+		<th colspan="2">Se redondea para arriba a la decena<br>(0, 10, 20, 30, 40, 50)</th>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">Siete Pares vale <u>SIEMPRE</u> 5</td>
 	</tr>
 </tbody>
 </table></p>
