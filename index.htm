@@ -46,13 +46,22 @@ a:hover {
 </head>
 
 <body>
-	
+	<style>
+	.scalable_text {
+	  /* min: 2rem, dynamic: 5vw, max: 4rem */
+	  font-size: 3vw;
+	}
+	.scalable_title {
+	  /* min: 2rem, dynamic: 5vw, max: 4rem */
+	  font-size: 6vw;
+	}
+	</style>
 	
 	<div id="movil" hidden>
-	<p><b>¡Por favor entre a esta Página web desde la computadora y no desde el celular!</b></p>
-	<p>Abra Google Chrome, o el navegador de internet que use, y escriba:</p>
-	<h1>patriciocomputacion.com</h1>
-	<p>todo junto, sin espacios ni acentos ni mayúsculas, y presione ENTER &#9166;</p>
+	<p class="scalable_text"><b>¡Por favor entre a esta Página web<br>desde la <u>computadora</u> y no desde el celular!</b></p>
+	<p class="scalable_text">Abra Google Chrome en la computadora, o el navegador de internet que usted tenga, y escriba:</p>
+	<h1 class="scalable_title">patriciocomputacion.com</h1>
+	<p class="scalable_text">todo junto, sin espacios ni acentos<br>ni mayúsculas, y presione ENTER &#9166;</p>
 	<p>Si está en la computadora y esto es un error, haga <a href="?desktop" >clic aquí</a>.</p>
 	</div>
 	
