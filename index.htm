@@ -47,6 +47,16 @@ a:hover {
 
 <body>
 	
+	
+	<div id="movil" hidden>
+	<p><b>¡Por favor entre a esta Página web desde la computadora y no desde el celular!</b></p>
+	<p>Abra Google Chrome, o el navegador de internet que use, y escriba:</p>
+	<h1>patriciocomputacion.com</h1>
+	<p>todo junto, sin espacios ni acentos ni mayúsculas, y presione ENTER &#9166;</p>
+	<p>Si está en la computadora y esto es un error, haga <a href="?desktop" >clic aquí</a>.</p>
+	</div>
+	
+	<div id="cuerpo">
 	<h1>¡Bienvenido a mi sitio web!</h1>
 	<table>
 	<tr>
@@ -60,16 +70,45 @@ a:hover {
 		</td>
 	</tr>	
 	</table>
+	</div>
+	
+	<script>
+	//getParametro
+	function getParametro(variable) {
+		    var query = window.location.search.substring(1);
+		    var vars = query.split('&');
+		    for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+		        if (decodeURIComponent(pair[0]) == variable) {
+		            return decodeURIComponent(pair[1]);
+		        }
+		    }
+		    console.log('No se encontro el parametro %s', variable);
+		}
+		
+		function hayParametro(variable) {
+		    var query = window.location.search.substring(1);
+		    var vars = query.split('&');
+		    for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+		        if (decodeURIComponent(pair[0]) == variable) {
+		            return true;
+		        }
+		    }
+		    return false;
+		}
+	
+	//Ocultar sitio web si se está accediendo desde el celular, para contarle a la gente que tiene que ingresar desde la pc.
+	window.isMobile = function(){ return (window.matchMedia("(any-hover:none)").matches) };
+	
+	if (!(hayParametro("desktop"))&&(hayParametro("mobile") || window.isMobile())){
+		document.getElementById("cuerpo").hidden = true;
+		document.getElementById("movil").hidden = false;
+		}
+	</script>
+	
 	
 	<!-- Sitio web en construcción :(-->
-	<div hidden align=left><hr>
-	<h4>Instrucciones:</h4>
-	<ol>
-		<li>La paz mundial</li>
-		<li>?????</li>
-		<li>Beneficios adicionales</li>
-	</ol>
-	</div>
 	
 </body>
 </html>
