@@ -1,0 +1,70 @@
+
+<html>
+<head><title>Chequeo Mobile</title>
+
+
+<style>
+body {
+  background-color: #202020;
+  text-align: center;
+  color: white;
+  font-family: system-ui;
+}
+
+.wide {
+	width: 100%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+img {
+	width: 100%;
+	max-height: 288px;
+	object-fit: scale-down;
+}
+
+a {
+  color: #65a1e6;
+}
+a:visited {
+  color: #9d6fd1;
+}
+a:hover {
+  color: #ffffff;
+}
+
+
+</style>
+</head>
+
+<body>
+	
+	<script>
+	
+	window.isMobile = function(){ return (window.matchMedia("(any-hover:none)").matches) };
+	
+	if (window.isMobile()){
+		document.write("<h1 style='color: lime;'>SI. Este es un telefono celular o tablet</h1>");
+		}else{
+		document.write("<h1 style='color: red;'>NO. Este NO es un telefono celular o tablet</h1>");
+		}
+	</script>
+	
+	<table>
+	<tr>
+		<td>
+			 ¡Qué interesante!
+		</td>
+	</tr>	
+	</table>
+	
+</body>
+</html>
