@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.7.2, (20:01, 5-4-2026)</small></p>
+<p align="right"><small>Versión 1.7.3, (10:11, 6-4-2026)</small></p>
 
 <hr>
 
@@ -59,7 +59,7 @@ th{
 		<th colspan="4" align="center">Menú Rápido:</th>
 	</tr>
 	<tr>
-		<td align="center"><a href="machete.html"><b>Hoja de Referencia</b> <small>(Machete simplificado)</small></a></td>
+		<td align="center"><a href="machete.html"><b>Hoja de Referencia</b><br><small>(Machete simplificado)</small></a></td>
 		<td align="center"><a href="#lista_de_tantos">Lista de tantos</a></td>
 		<td align="center"><a href="#tabla_de_yapas">Tabla de yapas</a></td>
 		<td align="center"><a href="#tabla_de_puntajes">Tablas de puntajes</a></td>
@@ -3465,8 +3465,9 @@ explicar.</p>
 
 
 <div class="no-imprimir">
-<p style="font-size:7pt;">Lista de cambios:
-<ul style="font-size:7pt;">
+<p style="font-size:6pt;">Lista de cambios:
+<ul style="font-size:6pt;">
+<li>(v1.7.3) Agregada función secreta de ?Zoom y ?Wide para acomodar para pantallas pequeñas.</li>
 <li>(v1.7.2) Error: El ejemplo de carta bonificada estaba con errores de tipeo.</li>
 <li>Aclaradas manos todas piernas, y puntas y negras.</li>
 <li>Tabla de yapas corregida, los cuartetos valen 8 no 4</li>
@@ -3519,5 +3520,18 @@ explicar.</p>
 </font></p></div>
 <hr>
 <p>(C) 2026, PatricioComputacion.com</p>
+
+<script src="parametros.js"></script>
+<script>
+console.log("Script loaded successfully");
+if (hayParametro("wide"))
+{
+	document.children[0].children[1].style.maxWidth = "98%";
+}
+if (hayParametro("zoom"))
+{
+	document.children[0].children[1].style.zoom = "160%";
+}
+</script>
 
 </body></html>
