@@ -12,14 +12,14 @@
   "background_color": "#f4f4f4",
   "icons": [
     {
-      "src": "/img/windguru-icon-192x192.png",
+      "src": "img/windguru-icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "/img/screen.png",
+      "src": "img/screen.png",
       "sizes": "476x356",
       "type": "image/png",
       "form_factor": "wide"
