@@ -72,15 +72,14 @@
 	Canales Argentinos que transmiten en vivo gratis de forma oficial por Youtube<br>
 	Hacé clic en una de las miniaturas para abrir la app de youtube.<hr>
 	<p id="desdeFacebook">Nota: Si estás en un celular y abriste este enlace desde Facebook, hacé clic en los 3 puntitos de arriba a la derecha ⋮ y seleccionar "🌐 Abrir en navegador externo" para que los links se abran en la app de Youtube.</p>
-	<p id="desdeFacebook2" hidden><a href="." target="_blank">Haga clic aquí para abrir en navegador externo</a></p>
+	<p id="desdeFacebook2" hidden>Para una mejor experiencia en este sitio web, hacé clic en los 3 puntitos de arriba a la derecha ⋮ y seleccioná "🌐 Abrir en navegador externo" para hacer que los videos se abran en la app de YouTube.</p>
 	<script>
-		const facebook = /FBAN|FBAV/i.test(navigator.userAgent)
-		const desdefacebook = document.getElementById("desdeFacebook")
-		const desdefacebook2 = document.getElementById("desdeFacebook2")
+		const facebook = /FBAN|FBAV/i.test(navigator.userAgent);
+		const desdefacebook = document.getElementById("desdeFacebook");
+		const desdefacebook2 = document.getElementById("desdeFacebook2");
 		if (facebook){
-				console.log("Hit!")
-				desdefacebook.style.fontSize = "2rem";
-				desdefacebook2.hidden = false
+				console.log("Hit!");
+				desdefacebook.hidden = true;desdefacebook2.hidden = false;
 				//desdefacebook.style.font-size: 1rem;
 			}
 	</script>
