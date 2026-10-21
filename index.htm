@@ -17,6 +17,7 @@ body {
 
 table {
   width: 100%;
+  table-layout: fixed;
   text-align: center;
 }
 
@@ -25,10 +26,22 @@ td
 	vertical-align: top;
 }
 
-img {
+.imagen {
 	width: 100%;
+	max-width: 512px;
 	max-height: 288px;
 	object-fit: scale-down;
+	border: 1px solid #fff; 
+	border-radius: 16px;
+}
+
+.imagen2 {
+	width: 100%;
+	max-width: 214px;
+	max-height: 120px;
+	object-fit: scale-down;
+	border: 1px solid #fff; 
+	border-radius: 16px;
 }
 
 a {
@@ -41,6 +54,28 @@ a:hover {
   color: #ffffff;
 }
 
+.reloj {
+
+	object-fit: scale-down;
+	border: 1px solid #fff; 
+	border-radius: 16px;
+	background-color: black;
+	font-size:	clamp(1rem,3.8cqi,5rem);
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.subtitulo
+{
+	font-size:	1rem;
+	font-weight: lighter;
+}
+
+.footer
+{
+	vertical-align: center;
+}
 
 </style>
 </head>
@@ -58,27 +93,57 @@ a:hover {
 	</style>
 	
 	<div id="movil" hidden>
-	<p class="scalable_text"><b>¡Por favor entre a esta Página web<br>desde la <u>computadora</u> y no desde el celular!</b></p>
-	<p class="scalable_text">Abra Google Chrome en la computadora, o el navegador de internet que usted tenga, y escriba:</p>
-	<h1 class="scalable_title">patriciocomputacion.com</h1>
-	<p class="scalable_text">todo junto, sin espacios ni acentos<br>ni mayúsculas, y presione ENTER &#9166;</p>
-	<p>Si está en la computadora y esto es un error, haga <a href="?desktop" >clic aquí</a>.</p>
+		<p class="scalable_text"><b>¡Por favor entre a esta Página web<br>desde la <u>computadora</u> y no desde el celular!</b></p>
+		<p class="scalable_text">Abra Google Chrome en la computadora, o el navegador de internet que usted tenga, y escriba:</p>
+		<h1 class="scalable_title">patriciocomputacion.com</h1>
+		<p class="scalable_text">todo junto, sin espacios ni acentos<br>ni mayúsculas, y presione ENTER &#9166;</p>
+		<p>Si todavía desea ver el sitio web normal, haga <a href="?desktop" >clic aquí</a>.</p>
 	</div>
 	
 	<div id="cuerpo">
-	<h1>¡Bienvenido a mi sitio web!</h1>
-	<table>
-	<tr>
-		<td>
-			Hacé clic en esta imagen para descargar Anydesk:<br>
-			<a target="_blank" href="https://download.anydesk.com/AnyDesk.exe"><img src="img/descargaranydesk.png"></a>
-		</td>
-		<td>
-			Hacé clic en esta imagen para descargar Zoom:<br>
-			<a target="_blank" href="https://zoom.us/client/5.14.0.13888/ZoomInstallerFull.exe"><img src="img/descargarzoom.png"></a><br>Si el botón de arriba no funciona, <a href="https://zoom.us/download">hacer clic<br>aquí para descargar desde el sitio web de zoom</a>.
-		</td>
-	</tr>	
-	</table>
+		<h1>PatricioComputacion.com<br><span class="subtitulo">Soporte técnico en <b>El Perdido</b>.</span></h1>
+		<table>
+			<tr>
+				<td>
+					Hacé clic en esta imagen para descargar Anydesk:<br>
+					<a target="_blank" href="https://download.anydesk.com/AnyDesk.exe"><img class="imagen" src="img/descargaranydesk.png"></a>
+				</td>
+				<td>
+					Hacé clic en esta imagen para descargar Zoom:<br>
+					<a target="_blank" href="https://zoom.us/client/5.14.0.13888/ZoomInstallerFull.exe"><img class="imagen" src="img/descargarzoom.png"></a><br>Si el botón de arriba no funciona, <a href="https://zoom.us/download">hacer clic<br>aquí para descargar desde el sitio web de zoom</a>.
+				</td>
+			</tr>	
+		</table>
+		<!-- --><br>&nbsp;<hr>
+		<b>Otros servicios:</b>
+		<table>
+			<tr>
+				<td>&nbsp;</td><td>&nbsp;</td>
+				<td colspan="2" class="footer">
+					<a target="_blank" href="https://patriciocomputacion.com/tv/">📺 Televisión Argentina en <b>Youtube</b><br>
+					<img hidden class="imagen2"  src="https://patriciocomputacion.com/tv/tv.jpg"></a>
+				</td>
+				<td colspan="2"  class="footer">
+					<a target="_blank" href="https://patriciocomputacion.com/r/windguru">🌀 <b>Windguru</b> El Perdido<br>
+					<img hidden class="imagen2"  src="https://patriciocomputacion.com/r/windguru/img/screenshot.png"></a>
+				</td>
+				<td colspan="2"  class="footer">
+					<a target="_blank" href="https://patriciocomputacion.com/mahjong/">🀄 <b>Mahjong</b> con Cartas Españolas</a>
+				</td>
+				<td colspan="2"  class="footer">
+					<a target="_blank" href="https://patriciocomputacion.com/reloj">⌚ <b>Reloj</b> en pantalla completa<br>
+					<div hidden id="reloj" class="reloj" >00:00</div></a>
+					<script>
+						var date = new Date();
+						var minutes = date.getMinutes();
+						document.getElementById("reloj").innerHTML = ""+(date.getHours())+(minutes<10?":0":":")+minutes+""
+					</script>
+				</td>
+				<td>&nbsp;</td><td>&nbsp;</td>
+			</tr>
+		</table>
+	<!-- -->
+	
 	</div>
 	
 	<script>
@@ -117,7 +182,7 @@ a:hover {
 	</script>
 	
 	
-	<!-- Sitio web en construcción :(-->
+	<!-- Sitio web permanentemente en construcción :)-->
 	
 </body>
 </html>
