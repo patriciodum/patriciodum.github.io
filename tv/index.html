@@ -68,8 +68,8 @@
 	
 	<h1>Televisión Argentina en Youtube</h1>
 	Canales Argentinos que transmiten en vivo gratis de forma oficial por Youtube
-	<p id="desdecelular" hidden>Es recomendable instalar la app para más fácil acceso, o añadir esta página a favoritos ⭐ , o agregar a la pantalla principal del teléfono tocando en los 3 puntitos de arriba a la derecha ⋮ y seleccionando "📲Instalar y crear acceso directo" o "📲Añadir a pantalla de inicio".</p>
-	<p id="desdeFacebook" hidden>Para una mejor experiencia en este sitio web, tocá en los 3 puntitos de arriba a la derecha ⋮ y seleccioná "🌐 Abrir en navegador externo" para hacer que los videos se abran en la app de YouTube.</p>
+	<p id="desdecelular" hidden>Es recomendable instalar la app para más fácil acceso, o añadir esta página a favoritos ⭐ , o agregar a la pantalla principal del teléfono tocando en los 3 puntitos de arriba a la derecha ⋮ y seleccionando "📲Instalar&nbsp;y&nbsp;crear&nbsp;acceso&nbsp;directo" o "📲Añadir&nbsp;a&nbsp;pantalla&nbsp;de&nbsp;inicio".</p>
+	<p id="desdeFacebook" hidden>Para una mejor experiencia en este sitio web, tocá en el menú de los 3 puntitos ⋮ y seleccioná "🌐Abrir&nbsp;en&nbsp;navegador&nbsp;externo" para hacer que los videos se abran en la app de YouTube.</p>
 	<p id="desdepc">Es recomendable instalar la app para más fácil acceso, o añadir esta página a favoritos ⭐. Para hacer esto pulsar <code>CTRL+D</code>.</p>
 	<script>
 		function esPWA() {
@@ -84,7 +84,7 @@
 		}
 	
 		window.isMobile = function(){ return (window.matchMedia("(any-hover:none)").matches) };
-		const facebook = /FBAN|FBAV/i.test(navigator.userAgent);
+		const facebook = /FBAN|FBAV|Twitter/i.test(navigator.userAgent);
 		
 		const desdefacebook = document.getElementById("desdeFacebook");
 		const desdecelular = document.getElementById("desdecelular");
@@ -216,7 +216,8 @@
 		<hr><p>Para ver los demás canales de Televisión paga yo recomiendo contratar un proveedor de TV digital como <a href="https://www.directvgo.com/ar/home#planes">DirectvGO (DGO)</a>. Consultar con <a href="https://dgo.eternet.com.ar/">Eternet Sistemas</a>.</p>
 		<a href="https://dgo.eternet.com.ar/"><img src="https://dgo.eternet.com.ar/dgo-campaign/eternet-logo.png" width="188"></a>
 		<hr>
-		<p class="footer">Este sitio web no está afiliado con eternet sistemas, ni con DirecTV, ni Flow, ni con ninguno de los canales o servicios mostrados en esta página. Última actualización 22/10/2026 12:21. Un servicio de <a href="https://patriciocomputacion.com/">PatricioComputacion.com</a></p>
+		<p class="footer">Este sitio web no está afiliado con eternet sistemas, ni con DirecTV, ni Flow, ni con ninguno de los canales o servicios mostrados en esta página. Última actualización 22/10/2026 12:21. Un servicio de <a href="https://patriciocomputacion.com/">PatricioComputacion.com</a><br>
+		<span style="font-size: 0.5rem">UserAgent: <script>document.write(navigator.userAgent)</script></span></p>
 	</div>
 </body>
 </html>
