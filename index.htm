@@ -1,208 +1,188 @@
-<!-- -->
-
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Televisión Argentina por YouTube</title>
-	<link rel="icon" type="image/x-icon" href="tv.ico">
-	<meta name="description" content="Guía de canales Argentinos que transmiten en vivo gratis de forma oficial por Youtube.">
-	<meta name="keywords" content="TV, argentina, televisión, gratis, youtube, la nacion, LA NACION+, telefe, todo noticias, arg, el trece, nat geo, 24h, en vivo, broadcast, c5n, ver online, en vivo, en linea, por internet">
-	
-	<meta property="og:title" content="Televisión Argentina por YouTube" />
-	<meta property="og:description" content="Guía de canales Argentinos que transmiten en vivo gratis de forma oficial por Youtube." />
-	<meta property="og:image" content="https://patriciocomputacion.com/tv/tv.jpg" />
-	<meta property="og:url" content="https://patriciocomputacion.com/tv/" />
-	<meta property="og:type" content="website" />
+<title>PatricioComputacion.com</title>
+<style>
+
+
+body {
+  background-color: #202020;
+  text-align: center;
+  color: white;
+  font-family: system-ui;
+}
+
+.wide {
+	width: 100%;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+.imagen {
+	width: 100%;
+	max-width: 512px;
+	max-height: 288px;
+	object-fit: scale-down;
+	border: 1px solid #fff; 
+	border-radius: 16px;
+}
+
+.imagen2 {
+	width: 100%;
+	max-width: 214px;
+	max-height: 120px;
+	object-fit: scale-down;
+	border: 1px solid #fff; 
+	border-radius: 16px;
+}
+
+a {
+  color: #65a1e6;
+}
+a:visited {
+  color: #9d6fd1;
+}
+a:hover {
+  color: #ffffff;
+}
+
+.reloj {
+
+	object-fit: scale-down;
+	border: 1px solid #fff; 
+	border-radius: 16px;
+	background-color: black;
+	font-size:	clamp(1rem,3.8cqi,5rem);
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.subtitulo
+{
+	font-size:	1rem;
+	font-weight: lighter;
+}
+
+.footer
+{
+	vertical-align: center;
+}
+
+</style>
 </head>
 
 <body>
 	<style>
-	body
-	{
-		background-color: #1F2A3E;
-		color: #ffffff;
-		font-family: Segoe UI;
-		text-align: center;
+	.scalable_text {
+	  /* min: 2rem, dynamic: 5vw, max: 4rem */
+	  font-size: 3vw;
 	}
-	
-	a:link 		{color: #fff;}
-	a:visited 	{color: #fff;}
-	a:hover 	{color: #7ff;}
-	a:active 	{color: #ff0;}	
-	
-	table
-	{
-		width: 100%;
-		table-layout: fixed;
-	}
-	td,th
-	{	
-		vertical-align: top;
-		border: 8px solid transparent;
-		text-align: center;
-	}
-	.channel
-	{
-		width: 100%;
-		border: 1px solid #fff; 
-		border-radius: 16px;
-	}
-	.advertencia
-	{
-		color: #FF0; 
-		font-weight: bolder;
-		text-shadow: 2px 2px #F00;
-	}
-	.footer
-	{
-		color: #90959C; 
-	}
-	#desdeFacebook
-	{
-		font-size: 2rem;
-		font-weight: bolder;
+	.scalable_title {
+	  /* min: 2rem, dynamic: 5vw, max: 4rem */
+	  font-size: 6vw;
 	}
 	</style>
 	
-	<h1>Televisión Argentina en Youtube</h1>
-	Canales Argentinos que transmiten en vivo gratis de forma oficial por Youtube
-	<p id="desdecelular" hidden>Es recomendable añadir esta página a favoritos ⭐ para más fácil acceso, o agregar a la pantalla principal del teléfono tocando en los 3 puntitos de arriba a la derecha ⋮ y seleccionando "📲Instalar y crear acceso directo" o "📲Añadir a pantalla de inicio".</p>
-	<p id="desdeFacebook" hidden>Para una mejor experiencia en este sitio web, tocá en los 3 puntitos de arriba a la derecha ⋮ y seleccioná "🌐 Abrir en navegador externo" para hacer que los videos se abran en la app de YouTube.</p>
-	<p id="desdepc">Es recomendable añadir esta página a marcadores ⭐ para más fácil acceso. Para hacer esto pulsar <code>CTRL+D</code>.</p>
-	<script>
-		window.isMobile = function(){ return (window.matchMedia("(any-hover:none)").matches) };
-		const facebook = /FBAN|FBAV/i.test(navigator.userAgent);
-		
-		const desdefacebook = document.getElementById("desdeFacebook");
-		const desdecelular = document.getElementById("desdecelular");
-		const desdepc = document.getElementById("desdepc");
-		
-		if (window.isMobile()) {document.getElementsByTagName("body")[0].style = "zoom: 2;"}
-		
-		if (facebook){
-				desdefacebook.hidden = false;
-				desdepc.hidden = true;
-			}
-		else if (window.isMobile())
-			{
-				desdecelular.hidden = false;
-				desdepc.hidden = true;
-			}
-	</script>
-	<hr>
-	<table>
-		<tr>
-			<td><a href="https://www.youtube.com/live/FEWZjXJ7M0c?si=wVPWK52encSrbasi"><img class="channel" src="thumbs/lanacion.jpg"><br>LA NACION+</a><sup>[1]</sup></td>
-			<td><a href="https://www.youtube.com/todonoticias/live"><img class="channel" src="thumbs/tn.jpg"><br>TN</a></td>
-			<td><a href="https://www.youtube.com/@c5n/live"><img class="channel" src="thumbs/c5n.jpg"><br>C5N</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/@cronicatv/live"><img class="channel" src="thumbs/cronica.jpg"><br>Crónica TV</a></td>
-			<td><a href="https://www.youtube.com/@A24com/live"><img class="channel" src="thumbs/a24.jpg"><br>A24</a></td>
-			<td><a href="https://www.youtube.com/@canal26/live"><img class="channel" src="thumbs/canal26.jpg"><br>Canal 26</a><sup>[3]</sup></td>
-		</tr>
-		<tr>
-			<td colspan="3">
-			<p>Puede ocurrir que los canales de noticias muestren una transmisión alternativa si hay un evento importante ocurriendo en vivo (<a href="https://www.youtube.com/@lanacion/live">LA NACION+</a> hace esto muy seguido). Si esto ocurre, <a href="#alternativos">probá con los enlaces abajo del todo</a>, o abrí el canal correspondiente desde esta lista, y toca en la foto de perfil del canal de Youtube para ir a la lista de videos y buscar el video en correspondiente a la señal en vivo del canal de televisión.</p>
-			</td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/@CanalSieteOk/live"><img class="channel" src="thumbs/canal7.jpg"><br>Canal 7</a><sup>[1]</sup></td>
-			<td><a href="https://www.youtube.com/@elnueve/live"><img class="channel" src="thumbs/elnueve.jpg"><br>El nueve</a></td>
-			<td><a href="https://www.youtube.com/@telefenoticias/live"><img class="channel" src="thumbs/telefe.jpg"><br>Telefe Noticias</a><sup>[2]</sup></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/@canalciudadba/live"><img class="channel" src="thumbs/cdlc.jpg"><br>Canal de la Ciudad</a></td>
-			<td><a href="https://www.youtube.com/@diputados.argentina/live"><img class="channel" src="thumbs/diputados.jpg"><br>Cámara de Diputados</a><sup>[5]</sup></td>
-			<td><a href="https://www.youtube.com/@SenadoTVArgentina/live"><img class="channel" src="thumbs/senadores.jpg"><br>Cámara de Senadores</a><sup>[5]</sup></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/@Telefe/live"><img class="channel" src="thumbs/telefe3.jpg"><br>Telefe Streams</a><sup>[3]</sup></td>
-			<td><a href="https://www.youtube.com/@eltrece/live"><img class="channel" src="thumbs/eltrece.jpg"><br>El trece</a><sup>[2]</sup></td>
-			<td><a href="https://www.youtube.com/@americaenvivo/live"><img class="channel" src="thumbs/america.jpg"><br>América</a><sup>[2]</sup></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/@tycsports/live"><img class="channel" src="thumbs/tyc.jpg"><br>TyC Sports</a><sup>[4]</sup></td>
-			<td><a href="https://www.youtube.com/channel/UCA5DCzl1x1oGcgZXwqgn7Dg/live"><img class="channel" src="thumbs/foxsports.jpg"><br>Fox Sports</a><sup>[3]</sup></td>
-			<td><a href="https://www.youtube.com/@quieromusicatv/live"><img class="channel" src="thumbs/q.jpg"><br>Quiero música en mi idioma</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/infobae/live"><img class="channel" src="thumbs/infobae.jpg"><br>Infobae</a></td>
-			<td><a href="https://www.youtube.com/channel/UChNnLvAeK5OzGh5VAFIyVbA/live"><img class="channel" src="thumbs/aura.jpg"><br>aura</a></td>
-			<td><a href="https://www.youtube.com/channel/UC1bBjOZieJWHbsFA0LwjjJA/live"><img class="channel" src="thumbs/ar12.jpg"><br>Ar12</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/@cnnee/live"><img class="channel" src="thumbs/cnnee.jpg"><br>CNN en Español</a></td>
-			<td><a href="https://www.youtube.com/@rtvenoticias/live"><img class="channel" src="thumbs/rtve.jpg"><br>RTVE</a></td>
-			<td><a href="https://www.youtube.com/@dwespanol/live"><img class="channel" src="thumbs/dw.jpg"><br>DW Español</a></td>
-		</tr>
-		<tr>
-			
-			<td><a href="https://www.youtube.com/@NationalGeographicEspanol/live"><img class="channel" src="thumbs/natgeo.jpg"><br>Nat Geo en Español</a></td>
-			<td><a href="https://www.youtube.com/@dnewsok/live"><img class="channel" src="thumbs/dnews.jpg"><br>DNews</a></td>
-		</tr>
-	</table>
-	<hr>
-	<table>
-		<th>
-			<tr colspan="4">📻 Radios</tr>
-		</th>
-		<tr>
-			<td><a href="https://www.youtube.com/radiorivadaviaam630/live"><img class="channel" src="thumbs/rivadavia.jpg"><br>Radio Rivadavia AM 630</a></td>
-			<td><a href="https://www.youtube.com/Radiomitre/live"><img class="channel" src="thumbs/mitre.jpg"><br>Radio Mitre</a></td>
-			<td><a href="https://www.youtube.com/@VorterixOficial/live"><img class="channel" src="thumbs/vorterix.jpg"><br>Vorterix</a></td>
-			<td><a href="https://www.youtube.com/@fmrockandpop959/live"><img class="channel" src="thumbs/rockandpop.jpg"><br>Rock And Pop 95.9 FM</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/@LU2RadioBah%C3%ADaBlanca/live"><img class="channel" src="thumbs/lu2.jpg"><br>LU2</a></td>
-			<td><a href="https://www.youtube.com/@radiocontinental590/live"><img class="channel" src="thumbs/continental.jpg"><br>Radio Continental AM 590</a></td>
-			<td><a href="https://www.youtube.com/radio10am/live"><img class="channel" src="thumbs/radio10.jpg"><br>Radio 10 AM 790</a></td>
-			<td><a href="https://www.youtube.com/@UrbanaPlayFM/live"><img class="channel" src="thumbs/urbanaplay.jpg"><br>Urbana Play 104.3 FM</a></td>
-		</tr>
-	</table>
-	<hr>
-	<table>
-		<tr>
-			<th colspan="5">▶️ Canales que transmiten en vivo fuera de Youtube</th>
-		</tr>
-		<tr>
-			<td><a href="https://www.mitelefe.com/telefe-en-vivo"><img class="channel" src="thumbs/telefe2.jpg"><br>Telefe</a><sup>[3]</sup></td>
-			<td><a href="https://www.eltrecetv.com.ar/vivo/"><img class="channel" src="thumbs/eltrece2.jpg"><br>El Trece</a><sup>[2]</sup></td>
-			<td><a href="https://www.canalnet.tv/page/senal-en-vivo"><img class="channel" src="thumbs/nettv.jpg"><br>NET TV</a></td>
-			<td><a href="https://www.canal26.com/canal26-en-vivo/"><img class="channel" src="thumbs/canal26.jpg"><br>Canal 26</a></td>
-			<td><a href="https://www.americatv.com.ar/vivo"><img class="channel" src="thumbs/america.jpg"><br>America TV</a></td>
-			
-	</table>
-	<hr>
-	<table id="alternativos">
-		<tr>
-			<th colspan="6">▶️ Enlaces alternativos</td>
-		</tr>
-		<tr>
-			<td><a href="https://www.youtube.com/@lanacion/live"><img class="channel" src="thumbs/lanacion.jpg"><br>LN+</a></td>
-			<td><a href="https://www.youtube.com/live/cb12KmMMDJA?si=dWCxYAHAPjX6RwCV"><img class="channel" src="thumbs/tn.jpg"><br>TN</a></td>
-			<td><a href="https://www.youtube.com/live/j6oh4Kqz3UM?si=hmwZQIp3BrHJrBBp"><img class="channel" src="thumbs/c5n.jpg"><br>C5N</a></td>
-			<td><a href="https://www.youtube.com/live/hw4uHyct4vg?si=ASdAJSYfu6ZhbJpP"><img class="channel" src="thumbs/cronica.jpg"><br>Crónica</a></td>
-			<td><a href="https://www.youtube.com/live/ArKbAx1K-2U?si=38p-8GY2XGmIDrCz"><img class="channel" src="thumbs/a24.jpg"><br>A24</a></td>
-			<td><a href="https://www.youtube.com/live/4tZgSlB7p2U?si=4sKDN1Piho3CPi7w"><img class="channel" src="thumbs/canal7.jpg"><br>Canal 7</a></td>
-		</tr>
-	</table>
-	
-	<hr>
-	<p align="left">
-	<span>
-	[1] Transmite en vivo las 24h pero suele tener otras transmisiones en simultáneo con programación alternativa o eventos como juicios, discursos, etc.<br>
-	[2] Sólo transmite en vivo los bloques de noticia.<br>[3] Transmite programación alternativa.<br>
-	[4] Solo transmite en vivo los bloques de noticias, y eventos deportivos alternativos. No transmite los mismos partidos que la señal de cable paga.<br>
-	[5] Solo transmite en vivo antes, después, y durante sesiones.t</span></p>
-	
-	<div>
-		<p>Los canales que se muestran en esta página web son las vías <b>oficiales</b> para ver las señales de forma gratuita (Canales de noticias), o bien los canales de Stream donde se emite contenido alternativo afiliado al canal (Streams de Telefe, FOX, TyCSports, etcétera).</p>
-		<p><span class="advertencia">¡Mucho cuidado con los métodos ilegales para ver TV gratuita!</span> Para más información <a href="https://www.clarin.com/tecnologia/alerta-tv-boxes-ver-futbol-peliculas-gratis-pueden-robar-contrasenas-tarjetas-credito_0_0eZNBwZceI.html">haga clic aquí</a>, y <a href="https://www.infobae.com/tecno/2026/10/14/por-que-no-se-debe-usar-xuper-tv-magis-tv-o-cuevana-para-ver-peliculas-series-o-futbol/">aquí</a>.</p>
-		<hr><p>Para ver los demás canales de Televisión paga yo recomiendo contratar un proveedor de TV digital como <a href="https://www.directvgo.com/ar/home#planes">DirectvGO (DGO)</a>. Consultar con <a href="https://dgo.eternet.com.ar/">Eternet Sistemas</a>.</p>
-		<a href="https://dgo.eternet.com.ar/"><img src="https://dgo.eternet.com.ar/dgo-campaign/eternet-logo.png" width="188"></a>
-		<hr>
-		<p class="footer">Este sitio web no está afiliado con eternet sistemas, ni con DirecTV, ni Flow, ni con ninguno de los canales o servicios mostrados en esta página. Última actualización 22/10/2026 10:54. Un servicio de <a href="https:/patriciocomputacion.com">PatricioComputacion.com</a></p>
+	<div id="movil" hidden>
+		<p class="scalable_text"><b>¡Por favor entre a esta Página web<br>desde la <u>computadora</u> y no desde el celular!</b></p>
+		<p class="scalable_text">Abra Google Chrome en la computadora, o el navegador de internet que usted tenga, y escriba:</p>
+		<h1 class="scalable_title">patriciocomputacion.com</h1>
+		<p class="scalable_text">todo junto, sin espacios ni acentos<br>ni mayúsculas, y presione ENTER &#9166;</p>
+		<p>Si todavía desea ver el sitio web normal, haga <a href="?desktop" >clic aquí</a>.</p>
 	</div>
+	
+	<div id="cuerpo">
+		<h1>PatricioComputacion.com<br><span class="subtitulo">Soporte técnico en <b>El Perdido</b>.</span></h1>
+		<table>
+			<tr>
+				<td>
+					Hacé clic en esta imagen para descargar Anydesk:<br>
+					<a target="_blank" href="https://download.anydesk.com/AnyDesk.exe"><img class="imagen" src="img/descargaranydesk.png"></a>
+				</td>
+				<td>
+					Hacé clic en esta imagen para descargar Zoom:<br>
+					<a target="_blank" href="https://zoom.us/client/5.14.0.13888/ZoomInstallerFull.exe"><img class="imagen" src="img/descargarzoom.png"></a><br>Si el botón de arriba no funciona, <a href="https://zoom.us/download">hacer clic<br>aquí para descargar desde el sitio web de zoom</a>.
+				</td>
+			</tr>	
+		</table>
+		<!-- --><br>&nbsp;<hr>
+		<b>Otros servicios:</b>
+		<table>
+			<tr>
+				<td>&nbsp;</td><td>&nbsp;</td>
+				<td colspan="2" class="footer">
+					<a target="_blank" href="https://patriciocomputacion.com/tv/">📺 Televisión Argentina en <b>Youtube</b><br>
+					<img hidden class="imagen2"  src="https://patriciocomputacion.com/tv/tv.jpg"></a>
+				</td>
+				<td colspan="2"  class="footer">
+					<a target="_blank" href="https://patriciocomputacion.com/r/windguru">🌀 <b>Windguru</b> El Perdido<br>
+					<img hidden class="imagen2"  src="https://patriciocomputacion.com/r/windguru/img/screenshot.png"></a>
+				</td>
+				<td colspan="2"  class="footer">
+					<a target="_blank" href="https://patriciocomputacion.com/mahjong/">🀄 <b>Mahjong</b> con Cartas Españolas</a>
+				</td>
+				<td colspan="2"  class="footer">
+					<a target="_blank" href="https://patriciocomputacion.com/reloj">⌚ <b>Reloj</b> en pantalla completa<br>
+					<div hidden id="reloj" class="reloj" >00:00</div></a>
+					<script>
+						var date = new Date();
+						var minutes = date.getMinutes();
+						document.getElementById("reloj").innerHTML = ""+(date.getHours())+(minutes<10?":0":":")+minutes+""
+					</script>
+				</td>
+				<td>&nbsp;</td><td>&nbsp;</td>
+			</tr>
+		</table>
+	<!-- -->
+	
+	</div>
+	
+	<script>
+	//getParametro
+	function getParametro(variable) {
+		    var query = window.location.search.substring(1);
+		    var vars = query.split('&');
+		    for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+		        if (decodeURIComponent(pair[0]) == variable) {
+		            return decodeURIComponent(pair[1]);
+		        }
+		    }
+		    console.log('No se encontro el parametro %s', variable);
+		}
+		
+		function hayParametro(variable) {
+		    var query = window.location.search.substring(1);
+		    var vars = query.split('&');
+		    for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+		        if (decodeURIComponent(pair[0]) == variable) {
+		            return true;
+		        }
+		    }
+		    return false;
+		}
+	
+	//Ocultar sitio web si se está accediendo desde el celular, para contarle a la gente que tiene que ingresar desde la pc.
+	window.isMobile = function(){ return (window.matchMedia("(any-hover:none)").matches) };
+	
+	if (!(hayParametro("desktop"))&&(hayParametro("mobile") || window.isMobile())){
+		document.getElementById("cuerpo").hidden = true;
+		document.getElementById("movil").hidden = false;
+		}
+	</script>
+	
+	
+	<!-- Sitio web permanentemente en construcción :)-->
+	
 </body>
 </html>
