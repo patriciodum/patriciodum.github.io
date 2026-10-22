@@ -1,7 +1,7 @@
 {
   "name": "TV Argentina en Youtube",
   "short_name": "TV Argentina en Youtube",
-  "start_url": "/",
+  "start_url": "/tv/",
   "display": "standalone",
   "background_color": "#1F2A3E",
   "theme_color": "#3F4A5E",
