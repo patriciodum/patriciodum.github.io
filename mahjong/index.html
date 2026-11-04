@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.8.1, (18:01, 3-11-2026)</small></p>
+<p align="right"><small>Versión 1.8.2, (12:06, 4-11-2026)</small></p>
 
 <hr>
 
@@ -139,7 +139,7 @@ th{
 <li><a href="#tabla_de_yapas">Yapas</a></li>
 <li><a href="#repartida_de_puntos">Repartida de puntos</a></li>
 <li><a href="#tabla_de_puntajes">Tablas de puntajes precalculadas</a></li>
-<li><a href="#siguiente_ronda">Siguiente ronda</a></li>
+<li><a href="#siguiente_ronda">Siguiente ronda, y pozo vacante</a></li>
 <li><a href="#empate">Empate</a></li>
 <li><a href="#penalizaciones">Penalizaciones y equivocaciones</a></li>
 <li><a href="#puntuacion_simplificada">Variantes: Puntuación simplificada</a></li>
@@ -329,8 +329,8 @@ la primera carta del <b>indicador de bonus</b>. Este pozo va colocado al lado de
 <hr>
 </div><div class="noseparar">
 <h2 id="su_turno">Su turno</h2>
-<p>En su turno, un jugador puede o bien <b>robar una carta del pozo</b>, o bien <b>bajar un juego robando el último descarte del jugador de su izquierda</b> (<a href="#cantos_y_juegos">anunciándolo como corresponda</a>). Luego de hacer cualquiera de estas dos cosas, se debe descartar una carta en su zona de descarte, boca arriba, y pasa a ser el turno del jugador de su derecha.</p><p>La zona de descarte se ordena de izquierda a derecha, de arriba abajo, en una cuadrícula de 6x3, al frente del
-jugador, para que se vean todas las cartas descartadas en orden.</p>
+<p>En <b>su turno</b>, un jugador puede o bien <b>robar una carta del pozo</b>, o bien <b>bajar un juego robando el último descarte del jugador de su izquierda</b> (<a href="#cantos_y_juegos">anunciándolo como corresponda</a>). Luego de hacer cualquiera de estas dos cosas, se debe descartar una carta en su zona de descarte, boca arriba, y pasa a ser el turno del jugador de su derecha.</p><p>La zona de descarte se ordena de izquierda a derecha, de arriba abajo, en una cuadrícula de 6x3, al frente del
+jugador. Se colocan así para que en todo momento se puedan ver todas las cartas descartadas por ese jugador en orden.</p>
 
 <p align="center">Por ejemplo aquí, el jugador acaba de descartarse el 5 de bastos, y es ahora el turno del jugador de su derecha.<br></p>
 <p style="text-align: center;" align="center"><img src="tiles\pozo_3.png"> <img src="tiles\10o.png"><br><br>
@@ -343,7 +343,7 @@ jugador, para que se vean todas las cartas descartadas en orden.</p>
 <div class="noseparar">
 <p align="center"><em>El objetivo es ser el primer jugador en lograr obtener una mano <b>válida</b>, <b>completa</b>, compuesta por <b>4 juegos y un par</b>.</em></p>
 <hr>
-<p>Una mano <i>completa</i> se hace con 13 cartas (cuentan <u>tanto las que están en la mano como las que están en juegos bajados</u>, se explicará más adelante) más 1 carta robada del pozo, o robada del descarte de otro jugador. O sea que con la carta robada se completa la mano, de 14 cartas en total (Cuatro juegos de 3 cartas cada uno, mas 2 cartas que hacen el par).</p>
+<p>Una mano <i>completa</i> se hace con 13 cartas (cuentan <u>tanto las que están en la mano como las que están en juegos bajados</u>, se explicará más adelante) más 1 carta robada del pozo, o robada del descarte de otro jugador. O sea que con la carta robada se completa la mano, de <b>14 cartas en total</b> (Cuatro juegos de 3 cartas cada uno, mas 2 cartas que hacen el par).</p>
 
 
 <div align="center" style="border: 1pt solid black; padding: 1pt 4pt; margin-left: 35.4pt; margin-right: 42.45pt;">
@@ -367,9 +367,9 @@ Los juegos pueden ser de estos tres tipos:
 </table>
 
 <p style="border: medium none ; padding: 0cm;">Las piernas y escaleras
-son <b><u>siempre</u></b> de <b>3</b> cartas, y <b><u>las 3 cartas deben ser del mismo
-palo</u></b>.<br>Los palos son tres: oros, bastos, y espadas (no hay copas, salvo los reyes).<br><i>¡No se puede hacer una pierna con cartas de palos distintos!</i></p>
-
+son <b><u>siempre</u></b> de <b>3</b> cartas, y <b><u>las 3 cartas deben ser del mismo palo</u></b>.
+<br><small>Los cuartetos son un caso especial que se explicará mas adelante.</small><br>
+<br>Los palos son tres: oros, bastos, y espadas (no hay copas, salvo los reyes).<br><i>¡No se puede hacer juegos con cartas de palos distintos!</i></p>
 
 <table width="100%" align="center">
 	<tr>
@@ -397,7 +397,7 @@ hay caballos de oros, bastos y espadas.</p><p>
 <img src="tiles\11o.png">, 
 <img src="tiles\11b.png">, 
 <img src="tiles\11e.png"></p>
-<p>Con los reyes y los caballos sólo se pueden formar piernas, o cuartetos. No se pueden hacer escaleras.</p>
+<p>Con los reyes y los caballos sólo se pueden formar piernas, o cuartetos. <b>No se pueden hacer escaleras</b>.</p>
 <hr>
 <p style="border: medium none ; padding: 0cm;">El <b>par</b> es
 sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5o.png"><img src="tiles\5o.png"><br>Todas las manos tienen que tener un par.</p>
@@ -479,7 +479,7 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 </tr></table>
 </div>
 </div><div class="noseparar">
-<p><strong>&iexcl;Mahjong!</strong> <span class="jp">(ron, ó tsumo)</span> &ndash; Se canta cuando cualquier otro jugador descarta la última carta que falta para completar la mano del jugador. Al igual que la pierna, <u>se puede cantar durante el turno de cualquier jugador, inclusive si es para completar una <b>última</b> escalera</u>. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. Ahí <b>la ronda termina</b> y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos (Ver <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a>).</p>
+<p><strong>&iexcl;Mahjong!</strong> <span class="jp">(ron)</span> &ndash; Se canta cuando cualquier otro jugador descarta la última carta que falta para completar la mano del jugador. Al igual que la pierna, <u>se puede cantar durante el turno de cualquier jugador, inclusive si es para completar una <b>última</b> escalera</u>. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. Ahí <b>la ronda termina</b> y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos (Ver <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a>).</p>
 
 <p><i>Importante:</i> Cantar Mahjong <b>no</b> hace que una mano cerrada se vuelva abierta, como ocurre con los otros cantos.</p>
 
@@ -499,7 +499,8 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 <p id="doble_mahjong">Si más de un jugador canta Mahjong a la vez, <strong>ambos jugadores se consideran ganadores</strong>, y el perdedor debe pagarle a AMBOS jugadores en valor de sus manos. Los puntos por apuestas de envido van a parar al jugador que tenga la mano con mayor puntaje, o bien, al jugador de más a la izquierda.</p>
 
 <p>Se pronuncia &ldquo;mayón&rdquo; pero también se puede decir simplemente &ldquo;&iexcl;gané!&rdquo; o no decir nada y simplemente mostrar la mano completa en mesa.</p>
-<p>También se puede cantar cuando la carta que falta para completar la mano se consigue robando del pozo (<span class="jp">tsumo</span>). El procedimiento es el mismo, se muestra la mano completa en mesa, y la ronda termina. La única diferencia es que como se ganó robando del mazo, los puntos los tienen que pagar <u>todos los demás jugadores</u> al ganador (se dividen la cantidad en partes iguales).</p>
+
+<p>También se puede cantar <b>¡Mahjong!</b> <span class="jp">(tsumo)</span> cuando la carta que falta para completar la mano se consigue <b>robando del pozo</b>. El procedimiento es el mismo, se muestra la mano completa en mesa, y la ronda termina. La única diferencia es que como se ganó robando del mazo, los puntos los tienen que pagar <u>todos los demás jugadores</u> al ganador (se dividen la cantidad en partes iguales).</p>
 
 <p>Consultar luego la sección <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a> para más información sobre como se reparten los puntos.</p>
 
@@ -509,13 +510,15 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 
 <p>El Envido se puede hacer únicamente cuando <b>sólo falta una carta</b> para completar una mano válida, que puede ser una única, o pueden ser varias, pero debe faltar solo una. Esta situación se llama tener la <a href="#esperas">mano lista</a>.</p>
 
+<p><u>No</u> se puede cantar envido si no se tiene la mano lista, y luego de cantar envido no se puede cambiar la mano de ninguna forma.</p>
+
 <p class="no-separar" align="center"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
 <img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
 <img src="tiles\3o.png"><img src="tiles\4o.png">
 <img src="tiles\5o.png"><img src="tiles\12c.png"><img src="tiles\12c.png">
 <img src="tiles\5e.png"><img src="tiles\6e.png"><br>Por ejemplo en esta mano solo falta <b>una</b> carta para completar la mano, que puede ser el 4 de espadas o el 7 de espadas. Como están todas las cartas en la mano, ¡puede cantar envido!</p>
 
-<p>Sólo es cuestión de esperar ahora a robar del pozo la carta que falta, o que alguien descarte la última carta necesaria para ganar. El envido es importante porque <strong>agrega <span data-ssml-sub-alias="un tanto">1 tanto</span></strong> a la puntuación de la mano, lo cual hace que cualquier mano <u>completa</u> sea una mano <u>válida</u>.</p>
+<p>Sólo es cuestión de esperar ahora a robar del pozo la carta que falta, o que alguien descarte la última carta necesaria para ganar. Alzar y tirar. El envido es importante porque <strong>agrega <span data-ssml-sub-alias="un tanto">1 tanto</span></strong> a la puntuación de la mano, lo cual hace que cualquier mano <u>completa</u> sea una mano <u>válida</u>.</p>
 
 <p>Para indicar el envido se enuncia en voz alta, y se coloca la carta descartada de ese turno de forma <u>horizontal</u> en la zona de descartes, y además se le coloca una ficha de 1000 puntos <img src="tiles\riichi.png"> adelante. Estos puntos vuelven al jugador si gana la ronda, y solo los pierde si otro jugador gana esa ronda, así que no hace falta descontarlos de los puntos del jugador hasta que la ronda termine.</p>
 
@@ -562,6 +565,8 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 <td><p align="center"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b_apilados.png"><br>Robada del jugador a la derecha</p></td>
 </tr></table>
 
+<p>Nota: Existe un tipo especial de Mahjong que se puede cantar si justo un jugador agrega una carta para convertir una pierna en mesa en un cuarteto, y esta carta sirve para completar la mano. Esto se llama <a href="#otros_tantos_especiales">Cuarteto Interrumpido</a></p>
+
 <h3>Algunas consideraciones</h3>
 
 <ul><li>Solamente se puede robar <b>UN</b> descarte por turno, y el único descarte permitido es aquella carta que fue tirada por el jugador que hizo el descarte. Las cartas de turnos anteriores que no fueron robadas, permanecen en la mesa y ya no pueden ser robadas.</li>
@@ -601,7 +606,7 @@ Aquí se colocan los juegos bajados<br>&darr; &darr; &darr;<br><img src="tiles\1
 <p>Veamos esta mano de ejemplo:</p>
 
 <p align="center">
-<img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png">
+<img src="tiles\12b.png"><img src="tiles\12b.png"><img src="tiles\12b.png">
 <img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
 <img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
 <img src="tiles\5b.png"><img src="tiles\6b.png"><img src="tiles\7b.png"><img src="tiles\8b.png">
@@ -615,7 +620,7 @@ Aquí se colocan los juegos bajados<br>&darr; &darr; &darr;<br><img src="tiles\1
 <table width="100%" align="center"><tr>
 <td align="center">
 En mano<br>
-<img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\5b.png">
+<img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png">
 <img src="tiles\2e.png"><img src="tiles\3e.png"><img src="tiles\4e.png">
 <img src="tiles\3o.png"><img src="tiles\3o.png"><img src="tiles\7o.png"><img src="tiles\7o.png">
 </td>
@@ -937,7 +942,7 @@ para ganar. Al cantar envido, se apuestan 1000 puntos extras, y la mano <b>ya
 no se puede tocar, ni se pueden bajar juegos de ningún tipo</b></p>
 
 </div><div class="noseparar"><p><b>Doble Envido </b><span class="jp">(Doble
-Riichi)</span> &#8211; Cantar envido <span class="jp">(riichi)</span> con el primer descarte de la ronda.</p>
+Riichi)</span> &#8211; Cantar envido <span class="jp">(riichi)</span> en el primer turno. Si alguien hace algún otro canto antes, el doble envido ya no cuenta.</p>
 
 </div><div class="noseparar"><p id="todo_propio"><b>Todo propio </b><span class="jp">(Menzen Tsumo)</span> &#8211; Ganar robando del pozo, sin nunca haber robado ningún descarte de nadie.</p>
 
@@ -1144,7 +1149,7 @@ verdes, mientras que el 1,5,7,9 no lo son. Esta mano <b>puede</b> ser abierta.</
 + <img src="tiles\2o.png"></p></div>
 
 
-<h2>Otros tantos especiales (<span data-ssml-sub-alias="un tanto">1 tanto</span>)</h2>
+<h2 id="otros_tantos_especiales">Otros tantos especiales (<span data-ssml-sub-alias="un tanto">1 tanto</span>)</h2>
 
 
 <p><b>Con la última </b>&#8211; Completar la mano justo con la última carta del pozo, o con el último descarte del juego (con el pozo vacío).</p>
@@ -2687,25 +2692,27 @@ y
 
 
 
-<h1 id="siguiente_ronda">Siguiente ronda</h1>
+<h1 id="siguiente_ronda">Siguiente ronda, y pozo vacante</h1>
 
 <p>Una vez que se hacen todas las cuentas y se anotan los puntajes actualizados, se toman todas las cartas del juego (menos las sotas), incluyendo las del muro muerto, y se vuelven a mezclar para la próxima ronda.</p>
 
 <p>Al acabar la ronda, si el repartidor <b>ganó</b> la ronda, o si la ronda <a href="#empate">termina en empate</a>, se debe aumentar el pozo vacante <span class="jp">(Honba)</span>.</p>
 
-<p style="margin-left: 35.4pt;">El <b>pozo vacante</b> son puntos que permanecen entre rondas.</p>
+<p>El <b>pozo vacante</b> son puntos que permanecen entre rondas.</p>
 
-<p style="margin-left: 35.4pt;">Cada vez que se <b>ocurra un empate</b>, o <b>gane el repartidor</b>, este pozo se aumenta en 300 puntos. El próximo jugador que gane se llevará puntos extras equivalentes a los puntos del pozo vacante. <b>El pozo vacante solo se vuelve a cero cuando gane algún jugador que no sea el repartidor de la ronda.</b></p>
+<p>Cada vez que se <b>ocurra un empate</b>, o <b>gane el repartidor</b>, este pozo se aumenta en 300 puntos. El próximo jugador que gane se llevará puntos extras equivalentes a los puntos del pozo vacante. <b>El pozo vacante solo se vuelve a cero cuando gane algún jugador que no sea el repartidor de la ronda.</b></p>
 
-<p style="margin-left: 35.4pt;">Este pozo representa colocando tres fichitas de 100 puntos <img src="tiles\honba.png">, o anotando en la hoja de puntajes como si fuera un quinto jugador.</p>
+<p>Este pozo representa colocando tres fichitas de 100 puntos <img src="tiles\honba.png">, o anotando en la hoja de puntajes como si fuera un quinto jugador.</p>
 
 <p align="center"><img src="tiles\pozo_3.png"> <img src="tiles\10o.png">&nbsp;<img src="tiles\honba_v.png"> <img src="tiles\honba_v.png"> <img src="tiles\honba_v.png"></p>
 
-<p style="margin-left: 35.4pt;">Si el ganador de la ronda ganó robando de un descarte de otro jugador, este otro jugador deberá pagar el <b>total del pozo vacante</b> (<b>300</b> en este caso). Si no, si el ganador gana robando del pozo, <b>los otros tres jugadores deberán pagar un tercio cada uno</b> (100). Cabe aclarar que estos puntos se contabilizan al final como puntos extras, luego de haber sacado las cuentas de los tantos y yapas de la mano.</p>
+<p>Si el ganador de la ronda ganó robando de un descarte de otro jugador, este otro jugador deberá pagar el <b>total del pozo vacante</b> (<b>300</b> en este caso). Si no, si el ganador gana robando del pozo, <b>los otros tres jugadores deberán pagar un tercio cada uno</b> (100). Cabe aclarar que estos puntos se contabilizan al final como puntos extras, luego de haber sacado las cuentas de los tantos y yapas de la mano.</p>
 
-<p>Si el repartidor gana la ronda, el repartidor <u>sigue siendo repartidor y la ronda se "vuelve a jugar"</u> <span class="jp">(Agari Renchan)</span>, o sea que <b>no se avanza el contador de rondas y no se rotan las sotas</b>. En algunas variantes de Mahjong Riichi, <u>esto también ocurre si la ronda termina en empate</u> (Se repite la ronda con el mismo repartidor) <span class="jp">(Ryuukyoku Renchan)</span>. Pero para evitar que esto resulte en partidas muy largas (especialmente si ningún jugador se acerca a los cero puntos) <b>se puede optar por hacer que la ronda avance de todas formas</b> (el repartidor pasa al jugador de la derecha) sin importar como termine la ronda. Esto hará que la partida dure el total de rondas como máximo, ya que no se repetirá ninguna ronda.</p>
+<p>Si el repartidor gana la ronda, el repartidor <u>sigue siendo repartidor y la ronda se "vuelve a jugar"</u> <span class="jp">(Renchan)</span>, o sea que <b>no se avanza el contador de rondas y no se rotan las sotas</b>.</p>
 
-<p>Ahora bien, si la ronda la gana cualquier otro jugador que no sea el repartidor, entonces, luego de que se calculen y se descuenten los puntos correspondientes, <u>el pozo vacante vuelve a cero</u> y <b>se pasa a la siguiente ronda</b>.</p>
+<p style="margin-left: 35.4pt;"><b>Nota:</b> El estándar de estas reglas es que la ronda <b>sólo</b> se repite si gana el repartidor <span class="jp">(Agari Renchan)</span> y la ronda avanza en cualquier otra situación. En algunas variantes de Mahjong Riichi, el repartidor sigue siendo el mismo <u>en caso de empate</u> <span class="jp">(Ryuukyoku Renchan)</span> pero la variante más común es que esto ocurra sólo si el repartidor tenía la mano lista al momento del empate <span class="jp">(Tenpai Renchan)</span>. La otra alternativa, para evitar que esto resulte en partidas muy largas (especialmente si ningún jugador se acerca a los cero puntos) es <b>optar por hacer que la ronda avance de todas formas</b> sin importar como termine la ronda. Esto hará que la partida dure el total de rondas como máximo, ya que no se repetirá ninguna ronda.</p>
+
+<p>Ahora bien, si la ronda la gana cualquier otro jugador que no sea el repartidor, entonces, luego de que se calculen y se descuenten los puntos correspondientes, <u>el pozo vacante vuelve a cero</u> y <b>se avanza a la siguiente ronda</b>:</p>
 
 <p>Pasa a ser <b>repartidor</b> el jugador de la derecha, y se <b>rotan</b> las sotas. O sea que las sotas de cada jugador se pasan al jugador de su derecha.</p>
 
@@ -2745,7 +2752,9 @@ y
 <br>
 <img src="tiles\10o.png" ></p>
 
-<p>El juego se termina cuando algún jugador llega a tener puntos negativos, o luego de que se jueguen el total de las rondas. En ese momento, el jugador con más puntos se considera el ganador de la partida.</p>
+<p>El juego se termina cuando algún jugador llega a tener <i>menos</i> de cero puntos (bancarrota), o luego de que se jueguen el total de las rondas. En ese momento, el jugador con más puntos se considera el ganador de la partida. Una persona que tiene <b>exactamente</b> 0 puntos puede seguir jugando.</p>
+
+<p>Algunas variantes también exigen que el ganador tiene que tener al menos 30000 puntos para ganar. Si nadie llega a tener 30000, se sigue jugando <u>hasta que un jugador alcance los 30000 puntos</u>, o un jugador entre en bancarrota (Se pasa a Copas-1).</p>
 
 <p>Es importante ir anotando por qué ronda van para saber cuál es el rey de la ronda, cuya pierna otorga un tanto extra a la mano.</p>
 <p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
@@ -2832,12 +2841,12 @@ o nadie mostró la mano, entonces no se reparte nada.</p>
 <p>Existen determinadas situaciones que hacen que una ronda termine en un empate técnico <span class="jp">(Tochuu Ryuukyoku)</span>, que terminan la ronda antes de que se acaben las cartas del pozo (o se alcancen los 18 descartes de cada jugador). </p>
 
 <div class="noseparar"><h3>Nueve puntas y nueve negras (<i>Mulligan</i>, ó <span class="jp">Kyuushu kyuuhai</span>)</h3>
-<p>Si en su primer turno, luego de alzar una carta, un jugador tiene al menos nueve cartas <b>distintas</b> en mano, y son todas puntas o negras, puede invocar esta regla para anular la ronda y dar de nuevo.</p>
+<p>Si en su primer turno, luego de alzar una carta, un jugador tiene al menos nueve cartas <b>distintas</b> que sean todas puntas o negras, puede invocar esta regla para terminar la ronda y pasar a la siguiente.</p>
 
 <p align="center">Por ejemplo si esta es mi mano en mi primer turno, luego de alzar del pozo:
 <br>
 <img src="tiles\3e.png"><img src="tiles\5e.png"><img src="tiles\8e.png"><img src="tiles\1b.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\3b.png"><img src="tiles\6b.png"><img src="tiles\9b.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\11o.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\11e.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\12o.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\12c.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\12e.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\12b.png" style="outline: 2px solid red; outline-offset: -1px;"> - <img src="tiles\9o.png" style="outline: 2px solid red; outline-offset: -1px;">
-<br>Como tengo nueve cartas que son o bien unos, nueves, reyes, o caballos, y todos distintos, entonces puedo pedir anular la ronda y repartir de nuevo.</p>
+<br>Como tengo nueve cartas distintas que son o bien unos, nueves, reyes, o caballos, entonces puedo declarar empate y se pasa a la siguiente ronda.</p>
 
 <div class="noseparar"><h3>Cuatro reyes idénticos en el primer descarte</h3>
 <p>Otra situación que resulta en <b>empate</b> es si los <b>primeros cuatro descartes</b> del juego son <u>el mismo rey del mismo palo</u>. Esto tradicionalmente se considera mal augurio, y se pasa a la siguiente ronda automáticamente. Si alguien roba un descarte, o <b>baja un cuarteto</b>, esto no cuenta y la partida sigue normalmente.</p>
@@ -2865,7 +2874,7 @@ o nadie mostró la mano, entonces no se reparte nada.</p>
 <h2 id="penalizaciones"><span>Penalidades y equivocaciones</span></h2>
 
 <p>Si un jugador canta <b>Mahjong</b>, pero su mano <b>no es
-válida</b>, o tiene <b>0 tantos</b>, la ronda actual se anula y el jugador es penalizado <span class="jp">(Chombo)</span>
+válida</b>, o tiene <b>0 tantos</b>, la ronda actual se anula y el jugador es penalizado <span class="jp">(Chombo)</span>.
 Este jugador debe pagarle 4000 puntos al repartidor, y 2000 puntos a los
 otros dos jugadores (pierde 8000 puntos). Si el jugador que cometió el error ES
 el repartidor, entonces debe pagarle 4000 puntos a cada jugador (pierde 12000
@@ -2910,7 +2919,7 @@ entonces sí puede cantar Mahjong, sin ningún inconveniente.</p>
 
 <p>Cabe aclarar que en este ejemplo esto solo aplica para el 4 de espadas. Si alguien tira un <b>7 de espadas</b> (Que aquí también completa la escalera que falta), puedo cantar Mahjong sin problemas, porque esa carta no está en mi área de descarte.</p>
 </div><div class="noseparar">
-<h2>Ley de alpiste (Perdiste)</h2>
+<h2>Ley de alpiste (<i>Perdiste</i>)</h2>
 
 <p>Si un jugador podía cantar <b>Mahjong</b> con un descarte de
 otro jugador, pero <u>no se dio cuenta</u> o lo <u>dejó pasar</u>, y otro
@@ -3149,14 +3158,17 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 <p><b>P: ¿Puedo cantar Mahjong para completar una escalera si no la descartó el jugador de la izquierda?</b>
 <br>R: <b>Sí</b>, por supuesto. <u>Se puede cantar Mahjong en el turno de cualquier jugador</u>, no importa si el Mahjong es para completar una escalera. La restricción del jugador de la izquierda es sólo para <a href="#cantos_y_juegos">cantar Escalera</a>, pero no para cantar Mahjong.</p>
 
-<p><b>P: ¿Qué pasa si un jugador canta Escalera y otro canta Pierna o Cuarteto?</b>
+<p><b>P: ¿Qué pasa si un jugador canta Escalera pero otro jugador canta Pierna o Cuarteto?</b>
 <br>R: El canto de escalera queda invalidado y sólo cuenta el de Pierna o el de Cuarteto.</p>
 
-<p><b>P: ¿Qué pasa si un jugador canta Mahjong y otro canta Pierna, Escalera, o cuarteto?</b>
+<p><b>P: ¿Qué pasa si un jugador canta Pierna, Escalera, o Cuarteto, pero otro jugador canta Mahjong al mismo tiempo o inmediatamente después?</b>
 <br>R: Estos cantos quedan invalidados y sólo cuenta el de Mahjong.</p>
 
 <p><b>P: ¿Un cuarteto cuenta si los tengo escondido en la mano?</b>
 <br>R: <b>No.</b> <a href="#cuarteto_en_mano">Sólo cuenta como cuarteto si se baja en mesa</a>. Si permanece en mano solo cuenta cuando mucho como una pierna, y una carta extra. </p>
+
+<p><b>P: ¿Puedo cantar envido si tengo un cuarteto en mesa?</b>
+<br>R: Depende. Si el cuarteto es todo propio y no fue bajado robando un descarte ajeno, entonces sí, porque la mano sigue siendo cerrada. Pero si el cuarteto es robado, entonces no, porque la mano se considera abierta por usar un descarte ajeno. Los cuartetos propios se representan en mesa con las dos cartas de los extremos puestas boca abajo.</p>
 
 <p><b>P: Si dos jugadores cantan Pierna al mismo tiempo, ¿quién se queda con la carta?</b>
 <br>R: Esto nunca puede ocurrir porque sólo hay 4 copias de cada carta. Si un jugador canta pierna pero otro canta Mahjong, tiene prioridad el Mahjong por sobre la pierna.</p>
@@ -3164,15 +3176,26 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 <p><b>P: Si dos jugadores cantan Escalera al mismo tiempo, ¿quién se queda con la carta?</b>
 <br>R: Esto nunca puede ocurrir porque sólo el jugador a la derecha del que descartó la carta puede cantar Escalera.</p>
 
+<p><b>P: Si bajo o robo un cuarteto, ¿la nueva carta bonificada se muestra antes o después de hacer el descarte?</b>
+<br>R: La carta bonificada se debe dar vuelta <b>antes</b> de hacer un descarte, o sea justo después de robar la carta del pozo muerto. En algunas variantes la carta bonificada se revela después del descarte.</p>
+
 <p><b>P: ¿Qué pasa si dos jugadores cantan Mahjong a la vez?</b>
 <br>R: Esto es válido, y ¡ambos jugadores ganan! El jugador que descartó la carta que hizo que los otros dos cantaran Mahjong <a href="#doble_mahjong">debe pagarle los puntos a ambos.</a> Además el jugador restante, que no cantó Mahjong, debe mostrar su mano porque si el también <i>podía</i> cantar Mahjong en ese instante, la ronda se anula por ser Mahjong Triple.</p>
 
 <p><b>P: ¿La mano de puntas en todo cuenta si tengo cartas negras?</b>
 <br>R: <b>No.</b> Es necesario que todos los juegos y el par tengan al menos una punta en cada uno, o sea un 1 o un 9. O sea que el par tiene que ser sí o sí un par de unos o un par de nueves.</p>
 
-
 <p><b>P: ¿Puedo bajar un cuarteto <u>propio</u> luego de cantar envido, aún si esto no cambia la mano?</b>
 <br>R: <b>No.</b> Si bien la mayoría de variantes del Mahjong Riichi permiten bajar un cuarteto cerrado luego de haber cantado envido siempre y cuanto no se modifique la estructura de la mano y no se cambie la espera, como esto es difícil de explicar y además se presta para cometer errores o hacer trampa, es preferible no permitir que se baje ningún juego luego de haber cantado envido, para asegurar que la mano quede <u>congelada</u>.</p>
+
+<p><b>P: ¿En qué situaciones pasa el repartidor a ser el jugador a su derecha?</b>
+<br>R: El repartidor pasa a la derecha cuando la ronda la gana un jugador que no sea el repartidor, o cuando la ronda termine en empate. Excepto cuando la ronda se anule por <b>penalidades</b>, en ese caso la ronda debe repetirse tal y como está. Cuando se cambia el repartidor se dice que la ronda avanza.</p>
+
+<p><b>P: ¿Puede avanzar la ronda sin que roten las sotas?</b>
+<br>R: No. Las sotas y el numero de la ronda van siempre de la mano. Justamente la posición de las sotas es la que determina en que ronda se está actualmente. El jugador que tenga la sota de oros es el repartidor. Y cuando ya todos los jugadores fueron repartidor (se dio una vuelta completa), se cambia la sota del medio si se está jugando a Copas (O sea que pasa de ser la ronda Oros-4 a ser Copas-1) o si es una partida corta la partida finaliza.</p>
+
+<p><b>P: ¿Qué ocurre si alguien baja un cuarteto pero no quedan más cartas en el pozo muerto?</b>
+<br>R: Si se acaban las cartas en el pozo muerto entonces en vez de tomar una carta del pozo muerto se toma una carta del pozo normal, no se da vuelta ninguna otra carta bonificada, y el juego continúa normalmente.</p>
 
 <hr>
 
@@ -3200,7 +3223,7 @@ lo mismo, y no altera la jugabilidad.</p>
 <p>Consideré cambiar el nombre del juego y el nombre del canto de "Mahjong" por otra cosa, y "españolizarlo" al igual que el resto de los términos japoneses (riichi pasó a ser envido, y chii-pon-kan pasó a ser escalera-pierna-cuarteto). Incluso en el juego original no se canta "Mahjong", sino "Ron" o "Tsumo" dependiendo del origen de la carta ganadora (descarte o pozo respectivamente), pero es mejor que se mencione la palabra Mahjong en el juego y no se reemplace por ninguna otra palabra. Esto es para que la gente recuerde todo el tiempo que el juego que están jugando es literalmente una variante precisa de Mahjong Riichi, que respeta las reglas originales, y no un invento raro con reglas estrafalarias.</p>
 
 
-<p>El cálculo de <b>Yapas</b> en el Mahjong Japones se denomina <b>Fu</b>, y parten de 20 en vez de 0. Esto reemplaza el "20+" que se encuentra en la fórmula para calcular los puntos base. Además, los tantos se denominan Han. La fórmula equivalente resulta entonces de la siguiente forma:</p>
+<p>El cálculo de <b>Yapas</b> en el Mahjong Japonés se denomina <b>Fu</b>, y parten de 20 en vez de 0. Esto reemplaza el "20+" que se encuentra en la fórmula para calcular los puntos base. Además, los tantos se denominan Han. La fórmula equivalente resulta entonces de la siguiente forma:</p>
 
 <p align="center" style="font-weight: bold;"><i>Puntuación de la mano = (Fu) × 2 <sup>(2 + Han)</sup></i></p>
 
@@ -3376,34 +3399,44 @@ reyes y los palos de las demás cartas porque los vientos en el Mahjong original
 no tienen color alguno, pero por conveniencia, y para respetar el orden de las
 pintas (el borde de las cartas) se usa el orden oro, copa, espada, y basto.</p>
 
-<p>Recomiendo siempre usar los términos españolizados, para hacer más sencilla la explicación del juego, pero también puse en gris clarito varios de los términos originales utilizados en japones para hacer la eventual transición a Mahjong Riichi lo más directa posible.</p>
+<p>Recomiendo siempre usar los términos españolizados, para hacer más sencilla la explicación del juego, pero también puse en gris clarito varios de los términos originales utilizados en japonés para hacer la eventual transición a Mahjong Riichi lo más directa posible.</p>
 
 <p>Para jugadores avanzados que quieran jugar Mahjong Riichi original, existe una traducción al español del libro "Riichi-Libro 1" escrito por Daina Chiba que puede leer en línea haciendo <a href="https://dainachiba.github.io/RiichiBooks/RiichiLibroI.pdf">clic aquí</a>, que contiene estrategias y métodos avanzados para jugar como un experto. Estas estrategias también aplican al Mahjong con cartas españolas. Solamente es necesario mentalmente traducir los nombres de los palos, pero la dinámica del juego es exactamente la misma.</p>
 
 <p>La siguiente tabla es para jugadores familiarizados con Mahjong Riichi, para aclarar que reglas se usan en esta variante estandarizada (Mahjong con Cartas Españolas).</p>
 <ul>
-<li><span class="jp">Ari-ari:</span> Todo intermedias (Tanyao) puede ser con mano abierta, y se puede cantar Mahjong si sólo la última carta es la que otorga 1 tanto.</li>
-<li><span class="jp">Kuitan:</span> Sí. Tanyao abierto.</li>
+<li>Se usan las reglas de <span class="jp">Ari-ari</span>, o sea <span class="jp">Kuitan</span>, <span class="jp">Atozuke</span>, <span class="jp">Kuikae</span> y <span class="jp">Tobi:</span></li>
+<li><span class="jp">Kuitan:</span> Sí. Tanyao abierto. O sea que Todo intermedias (Tanyao) también vale 1 tanto si la mano es abierta.</li>
+<li><span class="jp">Atozuke:</span> Sí. La mano se puede considerar lista aún si necesita la última carta para llegar a tener 1 tanto (Por ejemplo si está esperando para completar una pierna de caballos, y no tiene ningún otro tanto). Es decir, que se puede cantar Mahjong si sólo la última carta es la que otorga 1 tanto.</li>
 <li><span class="jp">Kuikae:</span> Swap-calling prohibido. No se puede descartar una carta idéntica a la robada para bajar un juego.</li>
+<li><span class="jp">Tobi:</span> La partida finaliza si algún jugador cae en bancarrota (Puntaje por debajo de los 0 puntos).</li>
+<br>
 <li><span class="jp">Mochiten:</span> Los jugadores comienzan con 25000 puntos.</li>
-<li><span class="jp">Oka/Uma:</span> No se calculan puntos "Oka" ni "Uma". Los puntos finales son los que quedan.</li>
+<li><span class="jp">Oka/Uma:</span> No se calculan puntos "Oka" ni "Uma". O sea que no hay "apuesta inicial" y los puntos finales son los que quedan.</li>
+<br>
 <li><span class="jp">Hanchan shuuryoutoki no riichibou:</span> Las apuestas de Envido (Riichi) no se agregan al pozo vacante en caso de empate, sino que vuelven a los jugadores.</li>
 <li><span class="jp">Tsumibou:</span> En caso de empate, el pozo vacante (Honba) aumenta en 300 (3x100)</li>
-<li><span class="jp">Noten batsufu:</span> La penalidad por no tener la mano lista son 3000 puntos, que se dividen equitativamente entre los que no tenían la mano lista, para pagarle a los que tienen la mano lista.</li>
-<li><span class="jp">Atozuke:</span> Sí. La mano se puede considerar lista aún si necesita la última carta para llegar a tener 1 tanto (Por ejemplo si está esperando para completar una pierna de caballos, y no tiene ningún otro tanto).</li>
+<li><span class="jp">Agari Renchan:</span> El repartidor solo repite si gana la ronda. Sino se pasa para la derecha.</li>
+<br>
+<li><span class="jp">Noten batsufu:</span> El costo por no tener la mano lista son 3000 puntos, que se dividen equitativamente entre los que no tenían la mano lista, para pagarle a los que tienen la mano lista.</li>
+<br>
 <li><span class="jp">Dora:</span> Se usan ura dora, kan dora, kan ura dora, y cincos rojos. Los cincos rojos <span class="jp">(Akadora)</span> son opcionales.</li>
 <li><span class="jp">Yuusen:</span> El jugador de la izquierda tiene prioridad si cantan Mahjong <span class="jp">(Ron)</span> varios a la vez.</li>
+<br>
 <li><span class="jp">Ryan cha bou:</span> Doble mahjong se permite, y ganan ambos. El tercer jugador muestra la mano para comprobar que no es triple mahjong.</li>
 <li><span class="jp">San cha bou:</span> Triple mahjong se considera empate.</li>
-<li>Empates: La ronda se considera un empate abortivo si se tiran cuatro Reyes (vientos) idénticos en los primeros 4 descartes, o si los cuatro jugadores cantaron envido, o si 3 jugadores cantaron Mahjong a la vez.</li>
+<br>
+<li><span class="jp">Tochuu ryuukyoku ari:</span> La ronda se considera un empate abortivo si se tiran cuatro Reyes (vientos) idénticos en los primeros 4 descartes, o si los cuatro jugadores cantaron envido, o si 3 jugadores cantaron Mahjong a la vez, o si un jugador pide dar de nuevo por tener 9 puntas o negras distintas en mano durante su primer turno. </li>
+<li>En caso de empate la ronda no se repite y se pasa a la siguiente. Sólo se repite si gana el repartidor.</li>
+<br>
 <li>Máximo de 5/10 cartas bonificadas. Si se bajan mas de 4 cuartetos, el quinto cuarteto robará del pozo normal y la ronda continúa.</li>
-<li>El juego termina antes si algún jugador llega a tener 0 puntos o menos.</li>
-<li>Se puede cantar envido a pesar de no tener 1000 puntos a favor.</li>
+<li>Se puede cantar envido a pesar de tener menos de 1000 puntos.</li>
+
 <li><span class="jp">Kiriage Mangan:</span> Una mano de 4 tantos y 10 yapas, o 3 tantos y 40 yapas, se puntúa como si fuera de 5 tantos. </li>
 <li><span class="jp">Kazoe Yakuman:</span> 13 tantos es el máximo. No se acumulan múltiples Yakuman.</li>
 <li><span class="jp">Furiten Riichi:</span> Se puede cantar envido aún en ley de alpiste.</li>
 <li><span class="jp">Riichi ato no ankan:</span> No se permite bajar un cuarteto luego de cantar envido, aún si esto no cambia la mano.</li>
-<li>"Todas verdes" no necesita tener caballo de basto (dragon verde)</li>
+<li>"Todas verdes" puede tener caballos de basto (dragon verde), pero no son obligatorios.</li>
 
 </ul>
 
@@ -3540,6 +3573,9 @@ explicar.</p>
 <div class="no-imprimir">
 <p style="font-size:6pt;">Lista de cambios:
 <ul style="font-size:6pt;">
+<li>(v1.8.2) Corregidos errores en empate, doble envido, y algunas aclaraciones en la sección siguiente ronda.</li>
+<li>errata: Había un error en la explicación de "Por qué no robar todos los juegos posibles", la mano de ejemplo tenía Tanyao asi que se podía usar para cantar Mahjong a pesar de ser una mano abierta.</li>
+<li>Cambios sutiles en las explicaciones de tsumo, y énfasis en palabras.</li>
 <li>(v1.8.1) Errores de formato y algunas preguntas extras.</li>
 <li>(v1.8.0) 3/11/2026: Aclaración sobre las piernas de caballos y dos caballos y medio valiendo 4 tantos (2+1+1)</li>
 <li>Agrego sección de preguntas frecuentes.</li>
