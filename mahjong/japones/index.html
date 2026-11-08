@@ -72,8 +72,8 @@ th{
 			<p><a href="#" onclick="window.print()">🖨 Versión para Imprimir<br><small>(Guardar como PDF)</small></a></p>
 		</td>
 		<td align="center">	
-			<p hidden><a href="japones">Cambiar a fichas de Mahjong &rarr;</a>.</p>
-			<p><a href="..">Cambiar a cartas Españolas &rarr;</a>.</p>
+			<p><a href="japones">Cambiar a fichas de Mahjong &rarr;</a>.</p>
+			<p hidden><a href="..">Cambiar a cartas Españolas &rarr;</a>.</p>
 		</td>
 	</tr>
 	<tr>
@@ -1040,22 +1040,21 @@ es un par de unos o un par de nueves. <u>Vale <b>solo <span data-ssml-sub-alias=
 <p><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\1e.png"><img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\9e.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\9e.png"><img src="tiles\9e.png"></p>
 
 
-</div><div class="noseparar"><h2><b>3</b> tantos siempre</h2>
-
-
-<p><b>Doble Escaleras Idénticas</b> &#8211; Dos pares de escaleras
-idénticas (mismo palo y mismos números) en mano, <u>sin haber robado ningún
-descarte</u>.</p>
-
-
-<p><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4b.png"><img src="tiles\5b.png"><img src="tiles\6b.png"><img src="tiles\4b.png"><img src="tiles\5b.png"><img src="tiles\6b.png"></p>
-
-
 </div><div class="noseparar"><p id="color_y_negras"><b>Color y negras </b>&#8211; Mano compuesta exclusivamente de
 cartas de <b>un solo palo</b>, y además reyes y caballos de <b>cualquier palo</b>.</p>
 
 
 <p><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\6b.png"><img src="tiles\6b.png"></p>
+
+
+</div><div class="noseparar"><h2><b>3</b> tantos (sólo con mano cerrada)</h2>
+
+
+<p id="doble_escaleras"><b>Doble Escaleras Idénticas</b> &#8211; Dos pares de escaleras
+idénticas (mismo palo y mismos números) en mano. Sólo vale con mano cerrada, este tanto reemplaza al tanto de Escaleras Idénticas (No se suman de forma individual).</p>
+
+
+<p><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4b.png"><img src="tiles\5b.png"><img src="tiles\6b.png"><img src="tiles\4b.png"><img src="tiles\5b.png"><img src="tiles\6b.png"></p>
 
 
 </div><div class="noseparar"><h2><b>6</b> tantos con mano cerrada (5 tantos si es abierta)</h2>
@@ -3602,6 +3601,7 @@ explicar.</p>
 <div class="no-imprimir">
 <p style="font-size:6pt;">Lista de cambios:
 <ul style="font-size:6pt;">
+<li>(v1.9.1) Corregidos valores de tantos de Escaleras idénticas.</li>
 <li>(v1.9.0) CORREGIDO ERROR, la mano CHANTA estaba mal descrita:<br>
 <span><u><b>Todo puntas y negras</b> <span class="jp">(Chanta)</span> &#8211; Mano formada únicamente por
 puntas (unos y nueves) y cartas negras (Reyes y caballos). Es también necesariamente <i>sin escaleras</i>.</u></span><br>
