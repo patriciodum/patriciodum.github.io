@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.9.0, (22:38, 7-11-2026)</small></p>
+<p align="right"><small>Versión 1.9.2, (01:02, 8-11-2026)</small></p>
 
 <hr>
 
@@ -131,7 +131,7 @@ th{
 <li><a href="#cantos_y_juegos">Cantos y juegos</a></li>
 <li><a href="#por_que_no_robar"><b>¿Por qué no robar todos los juegos posibles?</b></a></li>
 <li><a href="#ejemplo_de_partida">Ejemplo de partida en curso</a></li>
-<li><a href="#lista_de_tantos">Lista de tantos</a></li>
+<li><a href="#lista_de_tantos"><b>Lista de tantos</b></a> <i class="no-imprimir" style="color: red">←¡Actualizado (v1.9)!</i></li>
 <li><a href="#estrategias_para_principiantes"><b>Estrategias para principiantes</b></a></li>
 <li><a href="#esperas">Mano lista y Esperas</a></li>
 <li><a href="#como_calcular_los_puntos">Cómo calcular los puntos</a></li>
@@ -144,7 +144,7 @@ th{
 <li><a href="#penalizaciones">Penalizaciones y equivocaciones</a></li>
 <li><a href="#puntuacion_simplificada">Variantes: Puntuación simplificada</a></li>
 <li><a href="#2o3_jugadores">Variantes: jugando de a menos o más jugadores</a></li>
-<li><a href="#preguntas_frecuentes"><b>Preguntas frecuentes</b></a> <b style="color: red">¡Nuevo!</b></li>
+<li><a href="#preguntas_frecuentes"><b>Preguntas frecuentes</b></a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
 <li><a href="#anexo">Anexo: Notas y cambios del Mahjong Riichi</a></li>
 </ol>
 <hr>
@@ -1145,8 +1145,8 @@ verdes, mientras que el 1,5,7,9 no lo son. Esta mano <b>puede</b> ser abierta, o
 <p><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\4b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\6b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\8b.png"><img src="tiles\8b.png"></p></div>
 
 
-<div class="noseparar"><p id="nueve_puertas"><b><i>Nueve puertas</i></b> &#8211; Mano especial formada por
-1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9 del mismo palo, más una carta cualquiera del 1 al 9 del mismo palo. Esta mano es especial, y sólo se puede hacer con mano cerrada (¡No se pueden bajar ni piernas ni escaleras!), pero se puede cantar envido.</p>
+<div class="noseparar"><p id="nueve_puertas"><b><i>Nueve puertas</i></b> &#8211; Mano formada por
+1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9 del mismo palo, más una carta cualquiera del 1 al 9 del mismo palo. Esta mano es especial, y <b>sólo vale con mano cerrada</b>, pero si se abre la mano igual cuenta como Color Puro (5 tantos) ya que es una mano completa (Está compuesta por 4 juegos y 1 par).</p>
 
 
 <p><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\6o.png"><img src="tiles\7o.png"><img src="tiles\8o.png"><img src="tiles\9o.png"><img src="tiles\9o.png"><img src="tiles\9o.png">
@@ -2707,7 +2707,7 @@ y
 
 <p>Cada vez que se <b>ocurra un empate</b>, o <b>gane el repartidor</b>, este pozo se aumenta en 300 puntos. El próximo jugador que gane se llevará puntos extras equivalentes a los puntos del pozo vacante. <b>El pozo vacante solo se vuelve a cero cuando gane algún jugador que no sea el repartidor de la ronda.</b></p>
 
-<p>Este pozo representa colocando tres fichitas de 100 puntos <img src="tiles\honba.png">, o anotando en la hoja de puntajes como si fuera un quinto jugador.</p>
+<p>Este pozo se representa colocando tres fichitas de 100 puntos <img src="tiles\honba.png">, o anotando en la hoja de puntajes como si fuera un quinto jugador.</p>
 
 <p align="center"><img src="tiles\pozo_3.png"> <img src="tiles\10o.png">&nbsp;<img src="tiles\honba_v.png"> <img src="tiles\honba_v.png"> <img src="tiles\honba_v.png"></p>
 
@@ -3599,8 +3599,10 @@ explicar.</p>
 
 
 <div class="no-imprimir">
-<p style="font-size:6pt;">Lista de cambios:
-<ul style="font-size:6pt;">
+<p style="font-size:8pt;">Lista de cambios:
+<ul style="font-size:8pt;">
+<li>(v1.9.2) Errores de tipeo y curiosidad sobre nueve puertas siendo una mano completa</li>
+<li>Corregido machete, para que esten bien las explicaciones de los tantos.</li>
 <li>(v1.9.1) Corregidos valores de tantos de Escaleras idénticas.</li>
 <li>(v1.9.0) CORREGIDO ERROR, la mano CHANTA estaba mal descrita:<br>
 <span><u><b>Todo puntas y negras</b> <span class="jp">(Chanta)</span> &#8211; Mano formada únicamente por
