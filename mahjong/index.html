@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.9.3, (01:49, 8-11-2026)</small></p>
+<p align="right"><small>Versión 1.9.4, (00:57, 9-11-2026)</small></p>
 
 <hr>
 
@@ -245,7 +245,7 @@ puede adaptar para jugar de a <b>dos</b> o a <b>tres</b> jugadores. Ver el <a hr
 
 <p>Recomendamos leer todas las instrucciones con tiempo para entender bien el funcionamiento del juego, sin saltearse ninguna sección.</p>
 
-<p>Para decidir quién va a ser la <b>mano</b> al principio de juego, se barajan cuatro sotas distintas y se reparten una a cada jugador. Al que le toque la sota de oro será mano en la primera ronda.</p>
+<p>Para decidir quién va a ser la <b>mano</b> al principio del juego, se barajan cuatro sotas distintas y se reparten una a cada jugador. Al que le toque la sota de oro será mano en la primera ronda.</p>
 
 <p>Luego se toman esas cuatro sotas, y se colocan al lado del pozo en una pila ordenada boca arriba. La <b>sota de oros arriba del todo</b>, seguido de la sota de <b>Copas</b>, <b>Espadas</b>, y <b>Bastos</b>. Esta pila será el <b>indicador del Rey de la Ronda</b>.</p>
 
@@ -341,9 +341,11 @@ jugador. Se colocan así para que en todo momento se puedan ver todas las cartas
 </div>
 <hr>
 <div class="noseparar">
-<p align="center"><em>El objetivo es ser el primer jugador en lograr obtener una mano <b>válida</b>, <b>completa</b>, compuesta por <b>4 juegos y un par</b>.</em></p>
+<p align="center"><em>El objetivo es ser el primer jugador en obtener una mano <b>válida</b>, <b>completa</b>, compuesta por <b>4 juegos y un par</b>.<br>Cuando esto ocurre, hay que cantar <b>¡Mahjong!</b> y la ronda termina.</em></p>
 <hr>
-<p>Una mano <i>completa</i> se hace con 13 cartas (cuentan <u>tanto las que están en la mano como las que están en juegos bajados</u>, se explicará más adelante) más 1 carta robada del pozo, o robada del descarte de otro jugador. O sea que con la carta robada se completa la mano, de <b>14 cartas en total</b> (Cuatro juegos de 3 cartas cada uno, mas 2 cartas que hacen el par).</p>
+<p>Una mano <i>completa</i> se hace con <b>14 cartas</b>. O sea las <b>13 cartas</b> que tenemos en la mano (o en juegos bajados en mesa, se explicará más adelante) más una <b>última carta</b> robada del pozo, o del último descarte de otro jugador.</p>
+
+<p>Estas 14 cartas son <b>cuatro juegos</b> de <b>3</b> cartas cada uno, mas <b>2</b> cartas que hacen el par.</p>
 
 
 <div align="center" style="border: 1pt solid black; padding: 1pt 4pt; margin-left: 35.4pt; margin-right: 42.45pt;">
@@ -369,7 +371,7 @@ Los juegos pueden ser de estos tres tipos:
 <p style="border: medium none ; padding: 0cm;">Las piernas y escaleras
 son <b><u>siempre</u></b> de <b>3</b> cartas, y <b><u>las 3 cartas deben ser del mismo palo</u></b>.
 <br><small>Los cuartetos son un caso especial que se explicará mas adelante.</small><br>
-<br>Los palos son tres: oros, bastos, y espadas (no hay copas, salvo los reyes).<br><i>¡No se puede hacer juegos con cartas de palos distintos!</i></p>
+<br>Los palos son tres: oros, bastos, y espadas (no hay copas, salvo los reyes).<br><i>¡No se puede hacer un juego con cartas de palos distintos!</i></p>
 
 <table width="100%" align="center">
 	<tr>
@@ -439,7 +441,7 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 </td>
 </tr></table>
 
-<p>Hay una pierna de reyes y un cuarteto de sietes en mesa (con dos boca abajo para indicar que es todo cartas propias), dos escaleras en mano, y un par de dos de oros. Aquí se acaba de alzar un <b>tres de espadas</b>, completando la escalera que faltaba. <em>Nótese que a pesar de que el cuarteto tiene 4 cartas en vez de 3, igual se considera <b>un</b> juego, cumpliendo así el requisito de tener 4 juegos y <span data-ssml-sub-alias="un par">1 par</span>.</em></p>
+<p>Hay una pierna de reyes y un cuarteto de sietes en mesa (con dos boca abajo para indicar que es todo cartas propias), dos escaleras en mano, y un par de dos de oros. Aquí se acaba de alzar un <b>tres de espadas</b>, completando la escalera que faltaba. <em>Nótese que a pesar de que el cuarteto tiene 4 cartas en vez de 3, igual se considera <b>un</b> juego, cumpliendo así el requisito de tener 4 juegos y <span data-ssml-sub-alias="un par">un par</span>.</em></p>
 
 <p>En la siguiente sección se explicará como funciona el mecanismo de bajar juegos en mesa. Su única función es poder formar juegos con los descartes de otros jugadores, o para bajar cuartetos de la mano.</p>
 </div>
@@ -479,7 +481,9 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 </tr></table>
 </div>
 </div><div class="noseparar">
-<p><strong>&iexcl;Mahjong!</strong> <span class="jp">(ron)</span> &ndash; Se canta cuando cualquier otro jugador descarta la última carta que falta para completar la mano del jugador. Al igual que la pierna, <u>se puede cantar durante el turno de cualquier jugador, inclusive si es para completar una <b>última</b> escalera</u>. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. Ahí <b>la ronda termina</b> y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos (Ver <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a>).</p>
+<p><strong>&iexcl;Mahjong!</strong> <span class="jp">(ron)</span> &ndash; Se canta cuando cualquier otro jugador descarta la última carta que falta para completar la mano del jugador. Al igual que la pierna, <u>se puede cantar durante el turno de cualquier jugador, inclusive si es para completar una <b>última</b> escalera</u>. Inmediatamente el jugador muestra la mano completa en mesa y toma el descarte para completar la mano. El jugador que canta Mahjong <b>gana la ronda</b>.</p>
+
+<p>Ahí <i>la ronda termina</i> y se pasa a contar los tantos y las yapas de la mano ganadora para determinar cuántos puntos debe pagar el jugador que descartó la carta ganadora, al ganador. También se lleva los puntos de apuestas de envido, así que cada jugador que haya cantado envido debe pagarle 1000 puntos (Ver <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a>).</p>
 
 <p><i>Importante:</i> Cantar Mahjong <b>no</b> hace que una mano cerrada se vuelva abierta, como ocurre con los otros cantos.</p>
 
@@ -504,7 +508,7 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 
 <p>Consultar luego la sección <a href="#como_calcular_los_puntos">&ldquo;Cómo calcular los puntos&rdquo;</a> para más información sobre como se reparten los puntos.</p>
 
-<p  style="margin-left: 35.4pt;"><em>Atención: </em>No sólo hace falta que la mano esté completa (cuatro juegos y un par). Es <u>muy</u> importante además que la mano valga <strong>al menos <span data-ssml-sub-alias="un tanto">1 tanto</span></strong>. Si no es así, el jugador que cante Mahjong con una mano con 0 tantos será penalizado y la ronda se deberá jugar de nuevo. Consultar la sección <a href="#por_que_no_robar">&ldquo;¿Por qué no robar todos los juegos posibles?&rdquo;</a> y <a href="#lista_de_tantos">&ldquo;Lista de tantos&rdquo;</a> para más información.</p>
+<p  style="margin-left: 35.4pt;"><em>Atención: </em>No sólo hace falta que la mano esté completa (cuatro juegos y un par). Es <u>muy</u> importante además que la mano valga <strong>al menos <span data-ssml-sub-alias="un tanto">1 tanto</span></strong>. Si no es así, el jugador que cante Mahjong con una mano con 0 tantos será penalizado y la ronda se deberá jugar de nuevo. Se explicará mas adelante en las secciones <a href="#por_que_no_robar">&ldquo;¿Por qué no robar todos los juegos posibles?&rdquo;</a> y <a href="#lista_de_tantos">&ldquo;Lista de tantos&rdquo;</a>.</p>
 </div><div class="noseparar">
 <p><strong>&iexcl;Envido!</strong> <span class="jp">(riichi)</span> &ndash; Se puede cantar al momento de descartar una carta, y <u>sólo cuando la mano es &ldquo;cerrada&rdquo;</u> (No tiene ningún juego bajado con descartes de otros jugadores). A partir de ese momento la mano de este jugador queda &ldquo;congelada&rdquo;, o sea que no se puede cambiar ningún juego ni ninguna carta de la mano (ni siquiera para bajar cuartetos).</p>
 
@@ -543,7 +547,7 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 <td><p align="center"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\2o.png" style="transform: rotate(90deg);"><br>Robada del jugador a la derecha</p></td>
 </tr></table>
 
-<p>Ahora bien, el cuarteto es un caso especial porque un juego compuesto por 4 cartas rompe con la condición de que una mano válida tiene que ser de 14 cartas: 4 juegos de 3 cartas cada uno + <span data-ssml-sub-alias="un par">1 par</span> de dos cartas iguales (o sea las 13 cartas de la mano y en mesa, y la última carta robada del pozo o de un descarte para cantar Mahjong).</p>
+<p>Ahora bien, el cuarteto es un caso especial porque un juego compuesto por 4 cartas rompe con la condición de que una mano válida tiene que ser de 14 cartas: 4 juegos de 3 cartas cada uno + <span data-ssml-sub-alias="un par">un par</span> de dos cartas iguales (o sea las 13 cartas de la mano y en mesa, y la última carta robada del pozo o de un descarte para cantar Mahjong).</p>
 <p align="center"><img src="tiles\3o.png"> &larr; <img src="tiles\pozo.png"> <img src="tiles\10o.png"></p>
 <p>Para compensar la carta que falta, hay que robar una carta del &ldquo;pozo muerto&rdquo;. Para hacer esto, se aparta a un costado la carta bonus boca arriba (sigue en juego), se roba una carta del pozo muerto y se agrega a la mano. Luego se da vuelta una nueva carta boca arriba para reemplazar a la carta apartada. Esto quiere decir que ahora hay <u>dos</u> cartas bonificadas.</p>
 <p align="center"><img src="tiles\3o.png">&nbsp;&nbsp;&nbsp;<img src="tiles\pozo_7.png"> <img src="tiles\10o.png"></p>
@@ -983,7 +987,7 @@ descartes</u> (Mano abierta).</p>
 
 
 <p id="siete_pares"><b>Siete pares</b> &#8211; Mano <u>especial</u> compuesta por siete pares <i>distintos</i>. <u>Sólo vale en mano</u>, porque no se pueden bajar pares. Nótese que <u>se puede cantar envido con esta mano</u> a pesar de no ser una mano
-estándar (No está formada por 4 juegos y <span data-ssml-sub-alias="un par">1 par</span>).</p>
+estándar (No está formada por 4 juegos y <span data-ssml-sub-alias="un par">un par</span>).</p>
 
 
 <p><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\3o.png"><img src="tiles\3o.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\11e.png"><img src="tiles\11e.png"><img src="tiles\12o.png"><img src="tiles\12o.png"></p>
@@ -1146,7 +1150,7 @@ verdes, mientras que el 1,5,7,9 no lo son. Esta mano <b>puede</b> ser abierta, o
 
 
 <div class="noseparar"><p id="nueve_puertas"><b><i>Nueve puertas</i></b> &#8211; Mano formada por
-1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9 del mismo palo, más una carta cualquiera del 1 al 9 del mismo palo. Esta mano es especial, y <b>sólo vale con mano cerrada</b>, pero si se abre la mano igual cuenta como Color Puro (5 tantos) ya que es una mano completa (Está compuesta por 4 juegos y 1 par).</p>
+1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9 del mismo palo, más una carta cualquiera del 1 al 9 del mismo palo. Esta mano es especial, y <b>sólo vale con mano cerrada</b>, pero si se abre la mano igual cuenta como Color Puro (5 tantos) ya que es una mano completa (Está compuesta por 4 juegos y un par).</p>
 
 
 <p><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\6o.png"><img src="tiles\7o.png"><img src="tiles\8o.png"><img src="tiles\9o.png"><img src="tiles\9o.png"><img src="tiles\9o.png">
@@ -3059,7 +3063,7 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 </div><div class="noseparar">
 <hr><h3 id="ronda_de_practica">Ronda de práctica sin tantos.</h3>
 
-<p>Para aprender la dinámica del juego, los jugadores principiantes pueden optar primero por hacer una ronda de práctica en donde no importa si la mano llega a tener un tanto o no, y en donde el objetivo es simplemente ser el primero en obtener una mano compuesta por 4 juegos y <span data-ssml-sub-alias="un par">1 par</span> (Se ignora por completo la lista de tantos y el cálculo de puntajes). Esto es útil para aprender como hacer cantos, y como bajar juegos, y como se altera el orden de los turnos si alguien canta pierna o cuarteto.</p>
+<p>Para aprender la dinámica del juego, los jugadores principiantes pueden optar primero por hacer una ronda de práctica en donde no importa si la mano llega a tener un tanto o no, y en donde el objetivo es simplemente ser el primero en obtener una mano compuesta por 4 juegos y <span data-ssml-sub-alias="un par">un par</span> (Se ignora por completo la lista de tantos y el cálculo de puntajes). Esto es útil para aprender como hacer cantos, y como bajar juegos, y como se altera el orden de los turnos si alguien canta pierna o cuarteto.</p>
 </div>
 <hr>
 <h2 id="2o3_jugadores">Jugando de a menos o más jugadores</h2>
@@ -3426,7 +3430,7 @@ pintas (el borde de las cartas) se usa el orden oro, copa, espada, y basto.</p>
 
 <p>Recomiendo siempre usar los términos españolizados, para hacer más sencilla la explicación del juego, pero también puse en gris clarito varios de los términos originales utilizados en japonés para hacer la eventual transición a Mahjong Riichi lo más directa posible.</p>
 
-<p>Para jugadores avanzados que quieran jugar Mahjong Riichi original, existe una traducción al español del libro "Riichi-Libro 1" escrito por Daina Chiba que puede leer en línea haciendo <a href="https://dainachiba.github.io/RiichiBooks/RiichiLibroI.pdf">clic aquí</a>, que contiene estrategias y métodos avanzados para jugar como un experto. Estas estrategias también aplican al Mahjong con cartas españolas. Solamente es necesario mentalmente traducir los nombres de los palos, pero la dinámica del juego es exactamente la misma.</p>
+<p>Para jugadores avanzados que quieran jugar Mahjong Riichi original, existe una traducción al español del libro "Riichi-Libro 1" escrito por Daina Chiba<span class="no-imprimir"> que puede leer en línea haciendo <a href="https://dainachiba.github.io/RiichiBooks/RiichiLibroI.pdf">clic aquí</a></span>, que contiene estrategias y métodos avanzados para jugar como un experto. Estas estrategias también aplican al Mahjong con cartas españolas. Solamente es necesario mentalmente traducir los nombres de los palos, pero la dinámica del juego es exactamente la misma.</p>
 
 <p>La siguiente tabla es para jugadores familiarizados con Mahjong Riichi, para aclarar que reglas se usan en esta variante estandarizada (Mahjong con Cartas Españolas).</p>
 <ul>
@@ -3598,6 +3602,7 @@ explicar.</p>
 <div class="no-imprimir">
 <p style="font-size:8pt;">Lista de cambios:
 <ul style="font-size:8pt;">
+<li>(v1.9.4) Corrijo errores de gramática y ortografía. Y aclaro que el jugador que canta Mahjong gana la ronda.</li>
 <li>(v1.9.3) Corrijo imagen de cartas de 7, 8, y 9 de oros. Preguntas frecuentes.</li>
 <li>(v1.9.2) Errores de tipeo y curiosidad sobre nueve puertas siendo una mano completa</li>
 <li>Corregido machete, para que esten bien las explicaciones de los tantos.</li>
