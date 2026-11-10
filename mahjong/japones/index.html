@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.9.4, (00:57, 9-11-2026)</small></p>
+<p align="right"><small>Versión 1.9.5, (20:53, 9-11-2026)</small></p>
 
 <hr>
 
@@ -145,6 +145,7 @@ th{
 <li><a href="#puntuacion_simplificada">Variantes: Puntuación simplificada</a></li>
 <li><a href="#2o3_jugadores">Variantes: jugando de a menos o más jugadores</a></li>
 <li><a href="#preguntas_frecuentes"><b>Preguntas frecuentes</b></a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
+<li><a href="#ejemplos_de_manos">Anexo: Ejemplos de manos</a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li></li>
 <li><a href="#anexo">Anexo: Notas y cambios del Mahjong Riichi</a></li>
 </ol>
 <hr>
@@ -516,7 +517,7 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 
 <p><u>No</u> se puede cantar envido si no se tiene la mano lista, y luego de cantar envido no se puede cambiar la mano de ninguna forma.</p>
 
-<p class="no-separar" align="center"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
+<p class="noseparar" align="center"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
 <img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
 <img src="tiles\3o.png"><img src="tiles\4o.png">
 <img src="tiles\5o.png"><img src="tiles\12c.png"><img src="tiles\12c.png">
@@ -1178,6 +1179,8 @@ descartado únicamente unos, nueves, caballos, y reyes; y sin que nadie le haya 
 
 <p><b>Mano servida </b>&#8211; Ganar en el primer turno con el descarte de otro jugador.</p>
 
+<p>Consulta el anexo <a href="#ejemplos_de_manos">"Ejemplos de manos"</a> al final de este documento para ver algunos ejemplos de manos y entender mejor como se acumulan los tantos.</p>
+
 <hr>
 <div class="noseparar">
 <h2 id="estrategias_para_principiantes">Estrategias para principiantes</h2>
@@ -1223,9 +1226,10 @@ descartado únicamente unos, nueves, caballos, y reyes; y sin que nadie le haya 
 
 <p>Más allá de estas "manos fáciles", vale la pena identificar si una mano se encuentra cerca de convertirse en <b>Color y negras</b> si la mayoría de cartas <i>numeradas</i> (del 1 al 9) son del mismo palo. En cuyo caso, hay que deshacerse de las cartas que sean de palos distintos (se pueden conservar las negras), y tratar de robar cartas para bajar juegos del mismo palo.</p>
 
-<p>Lo mismo ocurre si la mayoría de las cartas en mano son casi-<b>piernas</b>: hay que descartar todas las escaleras y robar todas las piernas posibles. Estas manos son más complejas y hay mucha suerte involucrada, pero hay que ser hábil y prestar atención a los descartes para saber que cartas ir juntando.</p>
+<p>Lo mismo ocurre si la mayoría de las cartas en mano son casi-<b>piernas</b>: hay que descartar todas las escaleras y robar todas las piernas posibles. O sino, no robar nada e ir juntando pares para hacer <b>Siete pares</b>. Estas manos son más complejas y hay mucha suerte involucrada, pero hay que ser hábil y prestar atención a los descartes para saber que cartas ir juntando.</p>
 <hr>
 </div>
+
 <h1 id="esperas">Mano lista, y Esperas</h1>
 
 <p>Cuando una mano está "casi completa", o sea que le falta solo 1 carta para completar los cuatro juegos y el par (o una mano especial), se dice que tiene una <b>mano lista</b> <span class="jp">(Tenpai)</span>.</p>
@@ -1391,7 +1395,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 		<th colspan="2">Yapas</th>
 	</tr>
 	<tr>
-		<td>Por ganar robando del pozo</td>
+		<td>Por ganar robando del pozo*</td>
 		<td colspan="2">+2</td>
 	</tr>	
 	<tr>
@@ -1403,7 +1407,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 		<th colspan="2"></th>
 	</tr>
 	<tr>
-		<td>Si <em>el par</em> es de caballos o reyes</td>
+		<td>Si <em>el par</em> es de caballos o rey de ronda/propio</td>
 		<td colspan="2">+2</td>
 	</tr>
 	<tr>
@@ -1457,6 +1461,8 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <p>Luego de obtener esta suma, se <b>redondea el valor hacia arriba a la decena</b> (número terminado en cero). O sea que si la cuenta da 12, el valor redondeado es 20, si la cuenta da 6, el valor redondeado es 10, si la cuenta da 0, el valor redondeado es 0 (<a href="#cero_yapas">Cero yapas</a>).</p>
 
 <p>Hay una excepción, si la mano ganadora es la de <a href="#siete_pares">Siete Pares</a>, la yapa vale siempre 5 y no se calcula ninguna otra yapa ni se redondea el valor. Vale siempre 5, como valor fijo.</p>
+
+<p>Otra excepción es que si se gana robando del pozo pero la mano tiene el tanto de Cero Yapas, las 2 yapas por ganar robando del pozo no se cuentan. Si se gana con el descarte de otro jugador entonces <i>sí</i> se suman las 10 yapas, pero a pesar de esto el tanto de Cero Yapas sigue siendo válido.</p>
 </div>
 
 <p>Esta es una tabla alternativa para simplificar el recuento de yapas:</p>
@@ -1480,7 +1486,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 	<th colspan="2">Juegos</th>
 	</tr>
 	<tr>
-		<td>Par de negras</td>
+		<td>Par de caballos/rey propio/de ronda</td>
 		<td>+2</td>
 	</tr>
 	<tr>
@@ -1506,6 +1512,8 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 	</tr>
 </tbody>
 </table></p>
+<hr>
+
 
 <hr>
 <h1 id="repartida_de_puntos">Repartida de puntos</h1>
@@ -2697,8 +2705,10 @@ y
 
 
 <p>Nota: si el cálculo de puntuación es muy tedioso y complicado y no se está interesado en aprender la forma tradicional de calcular los puntos, el autor sugiere usar una <a href="#puntuacion_simplificada">variante con puntuación simplificada</a>.</p>
-<hr>
 
+
+
+<hr>
 
 
 <h1 id="siguiente_ronda">Siguiente ronda, y pozo vacante</h1>
@@ -3144,7 +3154,7 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 <h3>5 jugadores</h3>
 <p>Jugar de a 5 jugadores es básicamente jugar de a 4 pero en cada ronda hay un jugador que no juega. Primero se elige al azar un jugador. Este jugador no participará en la primera ronda. Luego al finalizar la primera ronda, antes de rotar el repartidor, el repartidor actual se levanta, y en su lugar se sienta el jugador que no jugó la primera ronda. Luego se rota el repartidor a la derecha. Esto se repite cada vez que cambie el repartidor.</p>
 <p>Otra alternativa es en vez de hacer que se levante el repartidor, hacer que se levante el jugador que ganó la mano. Así el jugador que no jugó ocupa el asiento del jugador que cantó Mahjong, y le da chance para descansar, mirar, ir al baño, o preparar un mate :-)</p>
-
+</div>
 <hr>
 
 <h2 id="preguntas_frecuentes"><span>Preguntas frecuentes</span></h2>
@@ -3205,11 +3215,11 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 <p><b>P: ¿Qué pasa si dos jugadores cantan Mahjong a la vez?</b>
 <br>R: Esto es válido, y ¡ambos jugadores ganan! El jugador que descartó la carta que hizo que los otros dos cantaran Mahjong <a href="#doble_mahjong">debe pagarle los puntos a ambos.</a> Además el jugador restante, que no cantó Mahjong, debe mostrar su mano porque si el también <i>podía</i> cantar Mahjong en ese instante, la ronda se anula por ser Mahjong Triple.</p>
 
-<p><b>P: ¿Puedo bajar un cuarteto <u>propio</u> luego de cantar envido, aún si esto no cambia la mano?</b>
-<br>R: <b>No.</b> Si bien la mayoría de variantes del Mahjong Riichi permiten bajar un cuarteto cerrado luego de haber cantado envido siempre y cuanto no se modifique la estructura de la mano y no se cambie la espera, como esto es difícil de explicar y además se presta para cometer errores o hacer trampa, es preferible no permitir que se baje ningún juego luego de haber cantado envido, para asegurar que la mano quede <u>congelada</u>.</p>
-
 <p><b>P: ¿Qué pasa si canto envido pero no tengo la <a href="#esperas">mano lista</a>?</b>
 <br>R: <i>No se puede cantar envido si no tenés la mano lista porque cantar envido <u>deja la mano congelada</u></i>, o sea que a partir de ese momento no se puede cambiar ninguna carta de la mano. Esto quiere decir que se tiene que poder cantar Mahjong con una carta del pozo, o robando de un descarte. Si cantas Envido sin tener la mano lista, podrás ser penalizado, porque si la ronda termina en empate, hay que mostrar las manos para demostrar que estaba la mano lista. Como cantaste envido pero la mano no estaba lista, <a href="#penalizaciones">recibís una penalización y la ronda debe jugarse de nuevo</a>.</p>
+
+<p><b>P: ¿Puedo bajar un cuarteto <u>propio</u> luego de cantar envido?</b>
+<br>R: La mayoría de variantes del Mahjong Riichi permiten bajar un cuarteto cerrado luego de haber cantado envido siempre y cuanto no se modifique la estructura de la mano y <u>no se cambie la espera</u>, pero <b>como esto es difícil de explicar y además se presta para cometer errores o hacer trampa</b>, es preferible <b>no</b> permitir que se baje ningún juego luego de haber cantado envido, para asegurar que la mano quede <u>congelada</u> y no pierda la condición de "mano lista". Si se puede comprobar que la espera <b>cambió</b> al momento de bajar el cuarteto, o si la ronda termina en empate y se descubre que el jugador ya no tiene la mano lista, el jugador puede quedar penalizado y la ronda deberá jugarse de nuevo. Por lo tanto, en reglas generales <b>no está permitido</b>, <i><b>pero</b></i> puede permitirse como regla de la casa.</p>
 
 <p><b>P: ¿En qué situaciones pasa el repartidor a ser el jugador a su derecha?</b>
 <br>R: El repartidor pasa a la derecha cuando la ronda la gana un jugador que no sea el repartidor, o cuando la ronda termine en empate. Excepto cuando la ronda se anule por <b>penalidades</b>, en ese caso la ronda debe repetirse tal y como está. Cuando se cambia el repartidor se dice que la ronda avanza.</p>
@@ -3225,6 +3235,261 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 <p><img src="tiles\12c.png"><img src="tiles\12c.png"><img src="tiles\11b.png"><img src="tiles\11b.png"><img style="outline: 4px solid red;" src="tiles\11b.png"> &nbsp;-&nbsp; <img src="tiles\11o.png" style="transform: rotate(90deg);"><img src="tiles\11o.png"><img src="tiles\11o.png">&nbsp;&nbsp&nbsp;&nbsp;&nbsp;<img src="tiles\11e.png" style="transform: rotate(90deg);"><img src="tiles\11e.png"><img src="tiles\11e.png">&nbsp;&nbsp;<img src="tiles\12b.png"><img src="tiles\12b.png"><img src="tiles\12b.png" style="transform: rotate(90deg);"></p>
 
 R: <b>No</b>, vale solo 13 tantos. Si bien merece un aplauso, la cantidad máxima de tantos es 13. Algunas variantes de Mahjong permiten acumular tantos máximos ("múltiples yakuman") pero por lo general la esto resulta en una victoria instantánea ya que los puntajes tan altos suelen hacer que al menos un jugador entre en bancarrota, acabando la partida inmediatamente. En este caso esta mano valdría "dos Yakuman", o "dos tantos máximos". Lo que duplica el puntaje mostrado en la tabla. Pero bueno, en estas reglas de Mahjong el máximo de tantos por mano es 13, y no se acumulan tantos máximos. Así que esta mano vale 13 tantos, y un aplauso.</p>
+
+<hr>
+
+
+
+<h1 id="ejemplos_de_manos">Anexo: Ejemplos de manos</h1>
+
+<p>Estas son algunas manos de ejemplo para darse una idea de como se suman los tantos. La carta con borde rojo es la carta con la que se cantó Mahjong. A la derecha de la mano se encuentran los juegos en mesa.</p>
+
+<p>A la izquierda del pozo se encuentran las cartas bonificadas. A la derecha del pozo se encuentra el indicador de rey de la ronda, y las fichas de pozo vacante (si aplican). A la derecha del todo se encuentra el indicador de rey propio.</p>
+
+<p>Recordar que si el rey propio es de oros <img src="tiles\10o.png">, quiere decir que el ganador es el <i>repartidor</i>.</p>
+
+<style>
+.ejemplos, .ejemplos2
+{
+	width: 100%;
+	border: 1px dotted grey;
+	margin: 4px;
+	padding: 4px; 
+	
+	td, th
+	{
+		padding: 4px; 
+	}
+}
+
+.mano_de_ejemplo
+{
+	break-inside: avoid;
+}
+
+
+.ejemplos2
+{
+	table-layout: fixed;
+}
+
+.ejemplos2 img:not(.pozo, .honba, .riichi)
+{
+	width: 27px;
+}
+
+.ejemplos img:not(.pozo, .honba, .riichi)
+{
+	width: 40px;
+}
+.ejemplos .pozo
+{
+	width: 108px;
+}
+.ejemplos .riichi
+{
+	width: 60px;
+}
+.ejemplos .honba
+{
+	width: 11.25px;
+}
+</style>
+
+<div class="mano_de_ejemplo"><hr style="border: none; border-top: 1px dashed;">
+<p>Ejemplo 1:</p><table class="ejemplos">
+	<tr><td align="center" colspan="2">↓ Cartas bonificadas, pozo, y rey de ronda.</td></tr>
+	<tr>
+		<td align="center" colspan="2"><img src="tiles\2e.png"><img src="tiles\7b.png"> <img src="tiles\pozo.png" class="pozo">
+		<img src="tiles\10o.png">
+		</td>
+	</tr>
+	<tr>
+	<td align="left"><img src="tiles\riichi.png" class="riichi"> Ganó robando de un <u>descarte</u>:<br>↓ Mano<br>
+<img src="tiles\5e.png"><img src="tiles\5er.png">
+<img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png">
+<img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\6o.png">
+<img src="tiles\9o.png"><img src="tiles\9o.png"><img src="tiles\9o.png">
+
+<img src="tiles\7b.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\8b.png"><img src="tiles\9b.png">
+	</td><td><br><br>Rey propio: <img src="tiles\10b.png"></td>
+	</tr>
+</table>
+<table class="ejemplos2">
+	<tr>
+		<td>
+			<b>Tantos:</b><br>
+			<img src="tiles\riichi.png" class="riichi"> 1 por envido<br>
+			<img src="tiles\5er.png"> 1 por cinco rojo<br>
+			<img src="tiles\8b.png"> 1 por carta bonificada (bonificación oculta)<br>
+			<b>Total: 3 tantos</b>
+		</td><td>
+			<b>Yapas:</b><br>
+			10 por ganar robando un descarte con la mano cerrada<br>
+			<img src="tiles\9o.png"><img src="tiles\9o.png"><img src="tiles\9o.png"> 8 por pierna de puntas toda propia<br>
+			<img src="tiles\7b.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles\8b.png"><img src="tiles\9b.png"> 2 por esperar un 7 en una escalera de punta<br>
+			<b>Total:</b> 20 yapas, se redondea a <b>20 yapas</b>.
+		</td>
+	</tr>
+	<tr><td colspan="2" align="center"><big>Puntaje final: 3 tantos, 20 yapas. El perdedor paga 5200.</big></td></tr>
+</table></div>
+
+<div class="mano_de_ejemplo"><hr style="border: none; border-top: 1px dashed;">
+<p>Ejemplo 2:</p><table class="ejemplos">
+	<tr>
+		<td align="center" colspan="2"><img src="tiles\8b.png"> <img src="tiles\pozo.png" class="pozo">
+		<img src="tiles\10o.png"> <img src="tiles\honba_v.png" class="honba">
+		</td>
+	</tr>
+	<tr>
+	<td align="left">Ganó robando de un <u>descarte</u>:<br>↓ Mano<br>
+<img src="tiles\4e.png"><img src="tiles\5e.png"><img src="tiles\6e.png">
+<img src="tiles\7e.png"><img src="tiles\7e.png"><img src="tiles\7e.png" style="outline: 2px solid red; outline-offset: -1px;">
+<img src="tiles\6o.png"><img src="tiles\7o.png"><img src="tiles\8o.png">
+<img src="tiles\12e.png"><img src="tiles\12e.png">
+	</td><td  align="right"><br>
+<img src="tiles\11b.png" style="transform: rotate(90deg);"><img src="tiles\11b.png" ><img src="tiles\11b.png" > Rey propio: <img src="tiles\10c.png">
+	</td>
+	</tr>
+</table>
+<table class="ejemplos2">
+	<tr>
+		<td>
+			<b>Tantos:</b><br>
+			<img src="tiles\11b.png" style="transform: rotate(90deg);"><img src="tiles\11b.png" ><img src="tiles\11b.png"> 1 por Pierna de caballos de basto<br>
+			<b>Total: 1 tanto</b>
+		</td><td>
+			<b>Yapas:</b><br>
+			<img src="tiles\11b.png" style="transform: rotate(90deg);"><img src="tiles\11b.png" ><img src="tiles\11b.png">
+			4 por pierna de negras (robada)<br>
+			<img src="tiles\7e.png"><img src="tiles\7e.png"><img src="tiles\7e.png" style="outline: 2px solid red; outline-offset: -1px;">
+			2 por pierna (robada)<br>
+			<b>Total:</b> 6 yapas, se redondea a <b>10 yapas</b>.
+		</td>
+	</tr>
+	<tr><td colspan="2" align="center"><big>Puntaje final: 1 tanto, 10 yapas. El perdedor paga 3900 puntos + 300 puntos del pozo vacante. En total 4200 puntos.</big></td></tr>
+</table></div>
+
+<div class="mano_de_ejemplo"><hr style="border: none; border-top: 1px dashed;">
+<p>Ejemplo 3:</p><table class="ejemplos">
+	<tr>
+		<td align="center" colspan="2"><img src="tiles\11b.png"> <img src="tiles\pozo.png" class="pozo">
+		<img src="tiles\10o.png">
+		</td>
+	</tr>
+	<tr>
+	<td align="left">Ganó robando del <u>pozo</u>:<br>
+<img src="tiles\1e.png"><img src="tiles\2e.png"><img src="tiles\3e.png">
+<img src="tiles\4e.png"><img src="tiles\4e.png" style="outline: 2px solid red; outline-offset: -1px;">
+<img src="tiles\7o.png"><img src="tiles\8o.png"><img src="tiles\9o.png">
+<img src="tiles\1b.png"><img src="tiles\1b.png"><img src="tiles\1b.png">
+	</td><td  align="right"><br>
+<img src="tiles\12o.png" style="transform: rotate(90deg);"><img src="tiles\12o.png" ><img src="tiles\12o.png" > Rey propio: <img src="tiles\10o.png">
+	</td>
+	</tr>
+</table>
+<table class="ejemplos2">
+	<tr>
+		<td>
+			<b>Tantos:</b><br>
+			 <img src="tiles\12o.png" style="transform: rotate(90deg);"><img src="tiles\12o.png" ><img src="tiles\12o.png" > 1 por Pierna de rey de ronda<br>
+			 <img src="tiles\12o.png" style="transform: rotate(90deg);"><img src="tiles\12o.png" ><img src="tiles\12o.png" > 1 por Pierna de rey propio<br>
+			<b>Total: 2 tantos</b>
+		</td><td>
+			<b>Yapas:</b><br>
+			<img src="tiles\1b.png"><img src="tiles\1b.png"><img src="tiles\1b.png"> 8 por pierna de puntas toda propia<br>
+			<img src="tiles\12o.png" style="transform: rotate(90deg);"><img src="tiles\12o.png" ><img src="tiles\12o.png" > 4 por pierna de negras (robada)<br>
+			<img src="tiles\4e.png"><img src="tiles\4e.png" style="outline: 2px solid red; outline-offset: -1px;"> 2 por esperar un par<br>
+			<small>(Nótese que se esperaba un 1 o un 4 de espadas)</small><br>
+			<img src="tiles\c.png"> 2 por ganar robando del pozo<br>
+			<b>Total:</b> 16 yapas, se redondea a <b>20 yapas</b>.
+		</td>
+	</tr>
+	<tr><td colspan="2" align="center"><big>Puntaje final: 2 tantos, 20 yapas. Todos pagan 1300 puntos al ganador.</big></td></tr>
+</table></div>
+
+<div class="mano_de_ejemplo"><hr style="border: none; border-top: 1px dashed;">
+<p>Ejemplo 4:</p><table class="ejemplos">
+	<tr>
+		<td align="center" colspan="2"><img src="tiles\5or.png"><img src="tiles\12b.png"> <img src="tiles\pozo.png" class="pozo">
+		<img src="tiles\10o.png">
+		</td>
+	</tr>
+	<tr>
+	<td align="left"><img src="tiles\riichi.png" class="riichi"> Ganó robando del <u>pozo</u>:<br>
+<img src="tiles\2e.png"><img src="tiles\3e.png"><img src="tiles\4e.png">
+<img src="tiles\7e.png"><img src="tiles\8e.png"><img src="tiles\9e.png" style="outline: 2px solid red; outline-offset: -1px;">
+<img src="tiles\2o.png"><img src="tiles\2o.png">
+<img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png">
+<img src="tiles\3b.png"><img src="tiles\4b.png"><img src="tiles\5b.png">
+
+	</td><td  align="right">
+		<br>Rey propio: <img src="tiles\10b.png">
+	</td>
+	</tr>
+</table>
+<table class="ejemplos2">
+	<tr>
+		<td>
+			<b>Tantos:</b><br>
+			 <img src="tiles\riichi.png" class="riichi" > 1 por envido<br>
+			 <img src="tiles\c.png"> 1 por Todo Propio<br>
+			 1 por Cero yapas (espera abierta, y todas escaleras)<br>
+			<b>Total: 3 tantos</b>
+		</td><td>
+			<b>Yapas:</b><br>
+			0<br>
+			<b>Total:</b> 0 yapas, se redondea a <b>0 yapas</b>.
+		</td>
+	</tr>
+	<tr><td colspan="2" align="center"><big>Puntaje final: 3 tantos, 0 yapas. El repartidor paga 1300, los otros dos jugadores pagan 700.</big></td></tr>
+</table></div>
+
+<div class="mano_de_ejemplo"><hr style="border: none; border-top: 1px dashed;">
+<p>Ejemplo 5:</p><table class="ejemplos">
+	<tr>
+		<td align="center" colspan="2"><img src="tiles\9b.png"><img src="tiles\7o.png"> <img src="tiles\pozo.png" class="pozo">
+		<img src="tiles\10c.png">
+		</td>
+	</tr>
+	<tr>
+	<td align="left">Ganó robando de un <u>descarte</u>:<br>
+<img src="tiles\4o.png"><img src="tiles\4o.png"><img src="tiles\4o.png" style="outline: 2px solid red; outline-offset: -1px;">
+<img src="tiles\5or.png"><img src="tiles\5o.png">
+
+	</td><td  align="right"><br>
+
+<img src="tiles\c.png"><img src="tiles\3e.png" ><img src="tiles\3e.png" ><img src="tiles\c.png">
+<img src="tiles\6e.png" ><img src="tiles\6e.png" ><img src="tiles\6e.png" style="transform: rotate(90deg);">
+<img src="tiles\11o.png" ><img src="tiles\11o.png" style="transform: rotate(90deg);"><img src="tiles\11o.png" >
+	Rey propio: <img src="tiles\10o.png">
+	</td>
+	</tr>
+</table>
+<table class="ejemplos2">
+	<tr>
+		<td>
+			<b>Tantos:</b><br>
+			 <img src="tiles\11o.png" ><img src="tiles\11o.png" style="transform: rotate(90deg);"><img src="tiles\11o.png" > 1 por pierna de caballos<br>
+			 2 por todas piernas<br>
+			 <img src="tiles\5or.png"> 1 por cinco rojo<br>
+			<b>Total: 4 tantos</b>
+		</td><td>
+			<b>Yapas:</b><br>
+			
+			<img src="tiles\4o.png"><img src="tiles\4o.png"><img src="tiles\4o.png" style="outline: 2px solid red; outline-offset: -1px;"> 2 por pierna (robada)<br>
+			<img src="tiles\c.png"><img src="tiles\3e.png" ><img src="tiles\3e.png" ><img src="tiles\c.png"> 16 por cuarteto cerrado<br>
+			<img src="tiles\6e.png" ><img src="tiles\6e.png" ><img src="tiles\6e.png" style="transform: rotate(90deg);"> &nbsp; 2 por pierna (robada) <br>
+			<img src="tiles\11o.png" ><img src="tiles\11o.png" style="transform: rotate(90deg);"><img src="tiles\11o.png" > 4 por pierna de negras (robada)<br>
+			
+			<b>Total:</b> 24 yapas, se redondea a <b>30 yapas</b>.
+		</td>
+	</tr>
+	<tr><td colspan="2" align="center">Una mano de 4 tantos y 20 yapas o más, cuenta como de 5 tantos.<br><big>Puntaje final: <b>5 tantos</b>. El perdedor paga 12000.</big></td></tr>
+</table></div>
+
+
+
 
 <hr>
 
@@ -3602,6 +3867,9 @@ explicar.</p>
 <div class="no-imprimir">
 <p style="font-size:8pt;">Lista de cambios:
 <ul style="font-size:8pt;">
+<li>(v1.9.5) Corrección: la yapa de +2 por par de negras solo cuenta si las negras otorgarían 1 tanto de ser una pierna: o sea si son caballos, o rey de ronda, o rey propio.</li>
+<li>Corrección: Si se gana robando del pozo con el tanto de Cero Yapas, las 2 yapas por ganar robando del pozo no cuentan.</li>
+<li>Agrego seccion con manos de ejemplo, calculando tantos, yapas, y puntaje final.</li>
 <li>(v1.9.4) Corrijo errores de gramática y ortografía. Y aclaro que el jugador que canta Mahjong gana la ronda.</li>
 <li>(v1.9.3) Corrijo imagen de cartas de 7, 8, y 9 de oros. Preguntas frecuentes.</li>
 <li>(v1.9.2) Errores de tipeo y curiosidad sobre nueve puertas siendo una mano completa</li>
