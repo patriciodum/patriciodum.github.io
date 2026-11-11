@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.9.9, (13:28, 10-11-2026)</small></p>
+<p align="right"><small>Versión 1.10.1, (09:57, 11-11-2026)</small></p>
 
 <hr>
 
@@ -141,7 +141,7 @@ th{
 <li><a href="#tabla_de_puntajes">Tablas de puntajes precalculadas</a></li>
 <li><a href="#siguiente_ronda">Siguiente ronda, y pozo vacante</a></li>
 <li><a href="#empate">Empate</a></li>
-<li><a href="#penalizaciones">Penalizaciones y equivocaciones</a></li>
+<li><a href="#penalizaciones">Penalizaciones y equivocaciones. Ley de descarte</a> <i class="no-imprimir" style="color: red">←¡Actualizado (v1.10)!</i></li>
 <li><a href="#puntuacion_simplificada">Variantes: Puntuación simplificada</a></li>
 <li><a href="#2o3_jugadores">Variantes: jugando de a menos o más jugadores</a></li>
 <li><a href="#preguntas_frecuentes"><b>Preguntas frecuentes</b></a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
@@ -926,9 +926,7 @@ descarte de otro jugador en esta ronda.</u> Esto se llama tener una <b>mano cerr
 </div><div class="noseparar"><p id="cero_yapas"><b>Cero yapas </b><span class="jp">(Pinfu)</span>&#8211; Mano que da en total <a href="#tabla_de_yapas">cero puntos por yapas</a>. O sea que está compuesta solo por escaleras, sin caballos, ni rey de ronda, ni rey propio, y tiene que estar esperando para completar una escalera por cualquiera de los dos lados (<a href="#esperas">Espera abierta</a>).</p>
 
 
-<p><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"> <img src="tiles\4o.png"><img src="tiles\5o.png"> <img src="tiles\8b.png"><img src="tiles\8b.png">
-<br>&#8211; y
-necesito <img src="tiles\6o.png" width="39"> ó <img src="tiles\3o.png" width="39"></p>
+<p><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"> <img src="tiles\4o.png"><img src="tiles\5o.png"> <img src="tiles\8b.png"><img src="tiles\8b.png"></p>
 <p><b>Nota</b>: Como excepción, esta mano también vale si se canta Mahjong por robar un descarte a pesar que esto otorga 10 yapas.</p>
 
 </div><div class="noseparar"><p id="escaleras_identicas"><b>Escaleras idénticas </b>&#8211; Dos escaleras idénticas (mismo
@@ -2913,58 +2911,125 @@ baja un juego de forma incorrecta, o si en algún momento no tiene la cantidad c
 
 <p>Si es una partida casual, se puede optar por ignorar las penalidades y corregir las equivocaciones arbitrariamente si todos los jugadores se ponen de acuerdo, por ejemplo seguir jugando la ronda a pesar de que alguien cantó Mahjong con una mano no válida.</p>
 
-<h2>Ley de descarte (<i>furiten)</i></h2>
+<h2 id="furiten">Ley de descarte <span class="jp">(furiten)</span></h2>
 
-<p>Un jugador no puede cantar <b>Mahjong</b> por una carta
-descartada <i>por otro jugador</i> si esa carta <b><u>YA</u></b> se encuentra
-en la <b>propia</b> zona de descarte.</p>
+<p>Un jugador no puede cantar <b>Mahjong</b> por una carta descartada <i>por otro jugador</i> si alguna de las cartas en su <b>propia</b> zona de descarte servía para <b>completar</b> la mano.</p>
 
+<p>Si esto ocurre, se dice que la mano se encuentra <b>bloqueada</b>, por la Ley de Descarte, y se considera no válida (o, en japonés, decimos que está en <span class="jp">Furiten</span>).</p>
 
-<p>La razón de esta regla es para garantizar que las cartas en
-la zona de descarte de un jugador son cartas <b>seguras</b> que otros jugadores
-pueden descartar sin miedo a que <i>ese</i> jugador cante Mahjong por tales
-descartes (porque por la ley de descarte, no sería válido).</p>
+<p>Esta regla es <i>un poco difícil</i> de explicar pero básicamente quiere decir que si en algún momento <a href="#esperas">la mano se encuentra lista</a>, pero se podría completar con <b>alguna</b> de las cartas que se encuentran en el descarte propio, entonces este jugador no puede ganar cantando Mahjong sobre <b>ningún</b> descarte, no importa cual sea la carta, hasta que no cambie la situación.</p>
+
+<p>Dicho de otra forma, si alguna de las cartas en nuestra <a href="#esperas">espera actual</a> se encuentra en nuestra propia zona de descarte, <i>sin importar si otorga un tanto o no</i>, la mano entera queda inhabilitada para cantar Mahjong sobre un descarte hasta que se modifique la mano para cambiar la espera.</p>
+
+<p>Ahora bien, si la carta es obtenida robando del pozo, entonces sí puede cantar Mahjong, sin ningún inconveniente. Esta regla sólo aplica para cantar Mahjong sobre descartes ajenos <span class="jp">(ron)</span>, no para cantar Mahjong robando del pozo <span class="jp">(tsumo)</span>.</p>
+
 <div class="noseparar">
 <p>Un ejemplo:</p>
 
 <p align="center">Si esta es mi zona de descarte:</p>
 <p style="text-align: center;" align="center">
-<img src="tiles\12b.png"><img src="tiles\11e.png"><img src="tiles\9o.png"><img src="tiles\12b.png"><img src="tiles\1o.png"><img src="tiles\6e.png"><br>
+<img src="tiles\12b.png"><img src="tiles\11e.png"><img src="tiles\9o.png"><img src="tiles\12b.png"><img src="tiles\1o.png"><img src="tiles\6o.png"><br>
 <img src="tiles\4e.png" style="outline: 5px solid red; outline-offset: -5px;"><img src="tiles\8b.png"><img src="tiles\11e.png"><img src="tiles\7b.png"><img src="tiles\v.png"><img src="tiles\v.png"></p>
 
 <p align="center">Y esta es mi mano actual:<br><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
 <img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
 <img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png">
 <img src="tiles\12c.png"><img src="tiles\12c.png">
-<img src="tiles\5e.png"><img src="tiles\6e.png"></p>
+<img src="tiles\5e.png"><img src="tiles\6e.png"><br>La mano está lista. Estoy esperando un <b>4 de espadas</b>, o un <b>7 de espadas</b> para completar la mano (espera abierta).
+</p>
 
-<p>Si alguien tira un 4 de espadas, yo <b>NO</b> puedo cantar Mahjong en ese momento, porque el 4 de espadas está en mi propia zona de descarte. Entonces decimos que el 4 lo tengo bloqueado por la ley de descarte (o, en japonés, está en <span class="jp">Furiten</span>).</p>
+<p>Si alguien tira un 4 de espadas, yo <b>NO</b> puedo cantar Mahjong en ese momento, porque el 4 de espadas está en mi propia zona de descarte. Mi mano se encuentra <b>bloqueada</b> por la ley de descarte.</p>
 
-<p>Ahora bien, si esta carta es obtenida robando del pozo,
-entonces sí puede cantar Mahjong, sin ningún inconveniente.</p>
+<p>Es muy importante destacar que <u>esto aplica a cualquier carta que complete la mano</u>, no solo al <b>4 de espadas</b>.</p>
 
-<p>Cabe aclarar que en este ejemplo esto solo aplica para el 4 de espadas. Si alguien tira un <b>7 de espadas</b> (Que aquí también completa la escalera que falta), puedo cantar Mahjong sin problemas, porque esa carta no está en mi área de descarte.</p>
+<p>O sea que si alguien tira un <b>7 de espadas</b>, <b>TAMPOCO</b> puedo cantar Mahjong, porque <b>la mano completa</b> se encuentra bloqueada por la ley de descarte, y no solamente el <b>4 de espadas</b>.</p>
+
+<p><i>Si se canta Mahjong con la mano bloqueada por la ley de descarte, el Mahjong se considera no válido y se recibe una penalización.</i></p>
+</div><div class="noseparar">
+
+<h2>¿Qué hago si mi mano se encuentra bloqueada?</h2>
+
+<p>Una opción es no hacer nada y esperar a que nos llegue la carta del pozo, porque ahí sí se puede cantar Mahjong sin importar que la mano esté bloqueada. Pero la otra opción es <b>cambiar la mano</b> para que no se necesite más del 4 de espadas. O sea, <b>cambiar la espera</b>.</p>
+
+<p>Entonces siguiendo con nuestro ejemplo:</p>
+
+<p style="text-align: center;" align="center">
+<img src="tiles\12b.png"><img src="tiles\11e.png"><img src="tiles\9o.png"><img src="tiles\12b.png"><img src="tiles\1o.png"><img src="tiles\6o.png"><br>
+<img src="tiles\4e.png"><img src="tiles\8b.png"><img src="tiles\11e.png"><img src="tiles\7b.png"><img src="tiles\v.png"><img src="tiles\v.png"></p>
+
+<p align="center">Aquí robamos del pozo un 5 de oros, pero descartamos el 5 de espadas:<br><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png">
+<img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
+<img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png">
+<img src="tiles\12c.png"><img src="tiles\12c.png">
+<img src="tiles\5e.png" style="outline: 5px solid red; outline-offset: -5px;"><img src="tiles\6e.png"> + <img src="tiles\5o.png"><br>
+La mano ya no está lista, pero como ahora el <b>4 de espadas</b> ya no nos sirve para completar la mano, ya no está bloqueada la mano entera por la ley de descarte.</p>
+</div><div class="noseparar">
+<p>Luego en el siguiente turno:</p>
+
+<p style="text-align: center;" align="center">
+<img src="tiles\12b.png"><img src="tiles\11e.png"><img src="tiles\9o.png"><img src="tiles\12b.png"><img src="tiles\1o.png"><img src="tiles\6o.png"><br>
+<img src="tiles\4e.png"><img src="tiles\8b.png"><img src="tiles\11e.png"><img src="tiles\7b.png"><img src="tiles\5e.png"><img src="tiles\v.png"></p>
+
+<p align="center">Si tenemos suerte y robamos un 6 de espadas del pozo:<br>
+<img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\5o.png" style="outline: 5px solid red; outline-offset: -5px;">
+<img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
+<img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png">
+<img src="tiles\12c.png"><img src="tiles\12c.png">
+<img src="tiles\6e.png"> + <img src="tiles\6e.png"><br>
+¡Ahora tenemos una espera distinta (par doble)! Si descartamos el 2 de oros ahora necesitamos un <b>6 de espadas</b>, o un <b>rey de copas</b> para completar una pierna. La mano ya no se encuentra bloqueada porque ninguna de esas dos cartas se encuentran en nuestro descarte.</p>
+</div><div class="noseparar">
+<p align="center">Lo mismo ocurre si robamos un 8 de espadas del pozo:<br>
+<img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\5o.png" style="outline: 5px solid red; outline-offset: -5px;">
+<img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
+<img src="tiles\11b.png"><img src="tiles\11b.png"><img src="tiles\11b.png">
+<img src="tiles\12c.png"><img src="tiles\12c.png">
+<img src="tiles\6e.png"> + <img src="tiles\8e.png"><br>
+Ahora la única carta que nos sirve para completar la mano es un <b>7 de espadas</b>, que también lo necesitábamos antes. Pero como el 4 de espadas ya no nos sirve más, ¡la mano ya no se encuentra bloqueada!</p>
+
+<p>Nótese que si en vez de un 6 de espadas hubiéramos alzado un 7 de espadas, la mano volvería a estar bloqueada porque ahora está el 5 de espadas entre los descartes (¡lo descartamos en el turno anterior!), y el 5 de espadas hubiera servido para completar la escalera.</p>
+</div><div class="noseparar">
+<p>Otro dato muy importante, <b>no importa que la carta que se encuentra en el descarte no haga que la mano sea válida</b>, o sea que no haga que la mano cumpla con el requisito de valer al menos <b>un</b> tanto. Lo único que importa es que la carta es una de las posibles cartas en la espera actual, y esto hace que la mano entera esté bloqueada por la ley de descarte.</p>
+
+<p>Aquí tenemos otro ejemplo, tenemos esta mano y alzamos un 7 de espadas del pozo</p>
+
+<p align="center"><img src="tiles\3e.png"><img src="tiles\4e.png"><img src="tiles\5e.png">
+<img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
+<img src="tiles\12o.png"><img src="tiles\12o.png">
+<img src="tiles\7e.png"><img src="tiles\7e.png"> + <img src="tiles\7e.png"> &nbsp;&nbsp;&nbsp;&nbsp;<img src="tiles\9b.png"><img src="tiles\9b.png" style="transform:rotate(90deg);"><img src="tiles\9b.png"></p>
+<p>En este caso, la única carta que nos servía para otorgar 1 tanto es el <b>rey de oros</b>, así que si bien el <b>7 de espadas</b> completa la mano (son cuatro juegos y un par), no se puede cantar Mahjong porque la mano vale 0 tantos. Esto se denomina <span class="jp">Atozuke</span> en japonés, o sea cuando no todas las cartas en la espera resultan en una mano válida. En este caso es una espera de <b>par doble</b>, a pesar de que solo una de esas opciones resulta en una mano válida.</p>
+</div><div class="noseparar">
+<p>Pero ¡Ojo! si descartamos el 7 de espadas, cometemos un grave error, porque ahora nuestra mano se encuentra bloqueada por la ley de descarte.</p>
+
+<p style="text-align: center;" align="center">
+<img src="tiles\1b.png"><img src="tiles\11o.png"><img src="tiles\11o.png"><img src="tiles\9o.png"><img src="tiles\8o.png"><img src="tiles\12c.png"><br>
+<img src="tiles\12e.png"><img src="tiles\3b.png"><img src="tiles\1o.png"><img src="tiles\7e.png" style="outline: 5px solid red; outline-offset: -5px;"><img src="tiles\v.png"><img src="tiles\v.png"></p>
+
+<p align="center"><img src="tiles\3e.png"><img src="tiles\4e.png"><img src="tiles\5e.png">
+<img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\4b.png">
+<img src="tiles\12o.png"><img src="tiles\12o.png">
+<img src="tiles\7e.png"><img src="tiles\7e.png"> &nbsp;&nbsp;&nbsp;&nbsp;<img src="tiles\9b.png"><img src="tiles\9b.png" style="transform:rotate(90deg);"><img src="tiles\9b.png"><br>
+¿Por qué? Porque no importa si se podía o no ganar con esa carta. Lo que importa es que el <b>7 de espadas</b> era una de las esperas para <u>completar</u> la mano. Por lo tanto, la mano ahora se encuentra bloqueada por la ley de descarte. Y si alguien tira un <b>rey de oros</b>, ¡<b>NO</b> se puede cantar Mahjong!</p>
+
+<p>Hay que prestar atención al tener la mano lista para asegurarse que ninguna de las cartas que completan la mano se encuentra en la propia zona de descarte, para evitar cometer el error de luego cantar Mahjong con una mano que no es válida. Especialmente antes de cantar envido, porque la mano congelada impide que se pueda cambiar la espera.</p>
+
 </div><div class="noseparar">
 <h2>Ley de alpiste (<i>Perdiste</i>)</h2>
 
-<p>Si un jugador podía cantar <b>Mahjong</b> con un descarte de
-otro jugador, pero <u>no se dio cuenta</u> o lo <u>dejó pasar</u>, y otro
-jugador tira <b>la misma carta</b>, el jugador en cuestión <b><i><u>NO</u></i></b>
-podrá cantar<b> Mahjong </b>con esa carta.</p>
+<p>Si un jugador podía cantar <b>Mahjong</b> con un descarte de otro jugador, pero <u>no se dio cuenta</u> o lo <u>dejó pasar</u>, el jugador en cuestión <b><i><u>NO</u></i></b> podrá cantar <b>Mahjong</b> en esta vuelta.</p>
 
-<p>Esto es válido hasta que vuelva a ser el turno del jugador
-en cuestión y robe una carta del pozo. A partir de este momento, la restricción
-sobre esta carta ya no cuenta, y si alguien descarta esa carta en un turno
-siguiente, ahora <i>sí</i> puede cantar Mahjong sobre ese descarte, <u>a menos
-que lo vuelva a dejar pasar</u>.</p>
+<p>Esto es válido hasta que vuelva a ser el turno del jugador en cuestión. A partir de este momento, la restricción ya no cuenta, y si alguien descarta esa carta en un turno siguiente, ahora <i>sí</i> puede cantar Mahjong, <u>a menos que lo vuelva a dejar pasar</u>.</p>
 
-<p>Si un jugador deja pasar una chance de <b>Mahjong</b> <u>habiendo
-cantado envido</u>, entonces este jugador <b>ya no puede ganar robando un
-descarte</b>, y <i>sólo</i> podrá ganar si roba la carta que está esperando <b>desde
-el pozo</b>. Esto es válido hasta el final de la ronda.</p>
+<p>Esto es en parte para fomentar que se gane ante la primera oportunidad y para no permitir a los jugadores evitar que un jugador entre en bancarrota como estrategia para extender la partida.</p>
 
-<p>En el idioma japonés estas situaciones se conocen con el nombre de <i>furiten</i> temporal y <i>furiten</i> permanente, respectivamente.</p>
-</div><div class="noseparar">
+<p>Además, si un jugador deja pasar una chance de <b>Mahjong</b> <u>habiendo cantado envido</u>, entonces este jugador <b>ya no puede ganar robando un
+descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que está esperando <b>desde el pozo</b>. Esto es válido hasta el final de la ronda.</p>
+
+<p>En el idioma japonés estas situaciones se conocen con el nombre de <span class="jp">furiten</span> temporal y <span class="jp">furiten</span> permanente, respectivamente.</p>
+</div>
+
+<p>La ley de descarte (y la ley de alpiste) son muy importantes porque permiten determinar que cartas se pueden descartar sin problema cuando un jugador canta envido, ya que no puede cantar Mahjong con ninguna carta que se encuentre en su zona de descare propia. Y además, cualquier carta que otro jugador descarte a partir del momento en que ese jugador cantó envido, esas también se pueden descartar sin temor. Porque si el jugador que cantó envido podía cantar Mahjong sobre alguno de esos descartes, <i>lo habría hecho</i>, o quedaría bloqueado permanentemente por la ley de alpiste, y su única alternativa entonces sería ganar robando del pozo.</p>
+
+<div class="noseparar">
 <hr><h2 id="puntuacion_simplificada">Variantes: Puntuación simplificada.</h2>
 <h2>Puntuación con tantos</h2>
 
@@ -3240,6 +3305,9 @@ el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 
 <p><b>P: ¿Puedo bajar un cuarteto <u>propio</u> luego de cantar envido?</b>
 <br>R: La mayoría de variantes del Mahjong Riichi permiten bajar un cuarteto cerrado luego de haber cantado envido siempre y cuanto no se modifique la estructura de la mano y <u>no se cambie la espera</u>, pero <b>como esto es difícil de explicar y además se presta para cometer errores o hacer trampa</b>, es preferible <b>no</b> permitir que se baje ningún juego luego de haber cantado envido, para asegurar que la mano quede <u>congelada</u> y no pierda la condición de "mano lista". Si se puede comprobar que la espera <b>cambió</b> al momento de bajar el cuarteto, o si la ronda termina en empate y se descubre que el jugador ya no tiene la mano lista, el jugador puede quedar penalizado y la ronda deberá jugarse de nuevo. Por lo tanto, en reglas generales <b>no está permitido</b>, <i><b>pero</b></i> puede permitirse como regla de la casa.</p>
+
+<p><b>P: La ley de descarte es difícil de entender ¿Se puede jugar sin esa regla?</b>
+<br>R: Hay que recordar que esta regla está presente en el Mahjong Riichi original, y que el objetivo de este reglamento es hacer que las reglas sean lo más parecidas posible a eso, para facilitar la transición. Además, la razón de ser de esta regla es poder saber que cartas son seguras para descartar cuando otro jugador canta envido. Una forma simple de entender esto es entender cuáles cartas completan la mano actual, mas allá de que otorguen 1 tanto o no. Si alguna de esas cartas se encuentra en la zona de descarte propia, entonces no se puede cantar Mahjong sobre un descarte. Si <u>ninguno</u> de los jugadores entiende esa regla, se puede jugar sin esa regla, pero sería una variante distinta y las estrategias cambiarían mucho.</p>
 
 <p><b>P: ¿En qué situaciones pasa el repartidor a ser el jugador a su derecha?</b>
 <br>R: El repartidor pasa a la derecha cuando la ronda la gana un jugador que no sea el repartidor, o cuando la ronda termine en empate. Excepto cuando la ronda se anule por <b>penalidades</b>, en ese caso la ronda debe repetirse tal y como está. Cuando se cambia el repartidor se dice que la ronda avanza.</p>
@@ -4005,6 +4073,8 @@ explicar.</p>
 <div class="no-imprimir">
 <p style="font-size:8pt;">Lista de cambios:
 <ul style="font-size:8pt;">
+<li>(v1.10.0) Cambio en las reglas de ley de descarte. Estaba mal explicado. Si una de las cartas en el descarte propio sirve para completar la mano entonces la mano completa se encuentra bloqueada. O sea que no se puede ganar con NINGÚN descarte ajeno, ni siquiera los que no están en el descarte.</li>
+<li>Agrego una buena explicación con ejemplos de como funciona la ley de descarte.</li>
 <li>(v1.9.9) Aclaración: Cero yapas también cuenta si el par es de reyes que no son ni rey de la ronda ni rey propio.</li>
 <li>(v1.9.8) Aclaración: no se debe agregar la carta a la mano si se alza del pozo y se canta Mahjong, para que no parezca que se está haciendo trampa (Para hacer parecer que fué otra la carta robada del pozo).</li>
 <li>Aclaración: el pozo vacante se puede representar de a 1 o de a 3 fichas, según se decida.</li>
@@ -4121,7 +4191,7 @@ La verdadera mano Chanta es sencillamente una mano donde todos los juegos contie
 	</tr>
 </table>
 <hr>
-<p>Redacción (C) 2026, <a href="https://patriciocomputacion.com/">PatricioComputacion.com</a></p>
+<p>Redacción (C) 2026, PatricioComputacion.com &#127462;&#127479;</p>
 
 <script src="parametros.js"></script>
 <script>
