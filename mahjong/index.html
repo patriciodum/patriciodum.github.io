@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.10.4, (11:32, 12-11-2026)</small></p>
+<p align="right"><small>Versión 1.10.5, (17:47, 12-11-2026)</small></p>
 
 <hr>
 
@@ -144,8 +144,9 @@ th{
 <li><a href="#penalizaciones">Penalizaciones y equivocaciones. Ley de descarte</a> <i class="no-imprimir" style="color: red">←¡Actualizado (v1.10)!</i></li>
 <li><a href="#puntuacion_simplificada">Variantes: Puntuación simplificada</a></li>
 <li><a href="#2o3_jugadores">Variantes: jugando de a menos o más jugadores</a></li>
-<li><a href="#preguntas_frecuentes"><b>Preguntas frecuentes</b></a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
-<li><a href="#ejemplos_de_manos">Anexo: Ejemplos de manos</a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li></li>
+<li><a href="#tibet"><b>Mahjong fácil para principiantes (Método Tíbet)</b></a> <b class="no-imprimir" style="color: red">¡Nuevo! (v1.10.5)</b></li>
+<li><a href="#preguntas_frecuentes">Preguntas frecuentes</a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
+<li><a href="#ejemplos_de_manos">Anexo: Ejemplos de manos</a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
 <li><a href="#anexo">Anexo: Notas y cambios del Mahjong Riichi</a></li>
 </ol>
 <hr>
@@ -539,7 +540,7 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 
 <p><b>Importante:</b> Si alguien canta Mahjong sobre <b><u>ese</u></b> descarte, inmediatamente después, el Envido no cuenta y la ficha vuelve al jugador sin pérdida. Por eso la costumbre es colocar la ficha luego de que el siguiente jugador robe del pozo, o si roba ese descarte para bajar un juego. Si esta carta es robada, entonces el siguiente descarte que haga el jugador que cantó Envido se deberá poner de forma horizontal en reemplazo de esta.</p>
 </div><div class="noseparar">
-<p><strong>&iexcl;Cuarteto!</strong> <span class="jp">(kan)</span> &ndash; Igual que con la pierna, pero para juegos de cuatro cartas idénticas en vez de tres, y también se puede cantar durante el turno de cualquier jugador. El procedimiento es casi el mismo, se enuncia en voz alta, se toma el descarte, se baja el cuarteto completo en mesa todo boca arriba, y la mano se considera &ldquo;abierta&rdquo;. Como fue hecho robando de un descarte ajeno, se dice que es un <b>Cuarteto Abierto</b>.</p>
+<p id="cuarteto"><strong>&iexcl;Cuarteto!</strong> <span class="jp">(kan)</span> &ndash; Igual que con la pierna, pero para juegos de cuatro cartas idénticas en vez de tres, y también se puede cantar durante el turno de cualquier jugador. El procedimiento es casi el mismo, se enuncia en voz alta, se toma el descarte, se baja el cuarteto completo en mesa todo boca arriba, y la mano se considera &ldquo;abierta&rdquo;. Como fue hecho robando de un descarte ajeno, se dice que es un <b>Cuarteto Abierto</b>.</p>
 
 <p>Al igual que con la pierna, se debe colocar una carta de forma horizontal para indicar de donde vino el descarte.</p>
 <table width="100%"><tr>
@@ -637,7 +638,7 @@ En mesa<br>
 </td>
 </tr></table>
 <p>En este caso, la mano tiene también dos escaleras idénticas del mismo palo y del mismo número (2-3-4 de espadas), y solo necesita un 3 o un 7 de oro para completar una pierna y así tener una mano completa. Pero <b>¡ojo!</b> esta mano es abierta porque una de las escaleras esta en mesa, o sea que fue lograda con el descarte de otro jugador (específicamente, el 3 de espadas fue robado del jugador de la izquierda). El tanto de "escaleras idénticas" sólo cuenta si la mano es cerrada, por lo tanto, esta mano vale 0 tantos, ¡y no se puede cantar Mahjong!</p>
-<p>Es más, si alguien tira un 3 de oros, y se canta Mahjong con esta mano (que no es válida, porque vale 0 tantos) se le dará una <a href="penalizaciones">penalización</a>, y la ronda deberá jugarse de nuevo porque legalmente no se puede seguir jugando con la mano ya revelada.</p>
+<p>Es más, si alguien tira un 3 de oros, y se canta Mahjong con esta mano (que no es válida, porque vale 0 tantos) se le dará una <a href="#penalizaciones">penalización</a>, y la ronda deberá jugarse de nuevo porque legalmente no se puede seguir jugando con la mano ya revelada.</p>
 
 <p><small>Cabe aclarar que en este caso no importa si las dos escaleras idénticas están en la mano. Si hay un juego cualquiera bajado en mesa, la mano se considera abierta y el tanto de Escaleras Idénticas ya no vale.</small></p>
 </div>
@@ -3156,12 +3157,10 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 <p>Con esto, la suma de todas las fichas en juego siempre es 100000 (25000 para cada jugador al inicio del juego). Como excepción, las fichas de 100 <img src="tiles\honba.png"> que se usan para indicar el pozo vacante provienen de la banca, y sólo se usan para indicar cuantos puntos extra deben pagar los perdedores al ganador de la ronda, pero nadie gana <u>esas</u> fichas en particular, sino que vuelven a la banca.</p>
 
 <p>No es necesario que estas fichas sean palitos. Pueden ser fichas de póquer redondas, o cualquier cosa que pueda indicar 100 puntos (que es el valor mínimo de puntos), el único requisito es que cada jugador tenga siempre al menos una ficha de 1000 puntos que se pueda usar para cantar envido <span class="jp">(Riichi)</span>, o en su defecto, tener una ficha distinta para indicar el envido que no provenga de las reservas propias.</p>
-</div><div class="noseparar">
-<hr><h3 id="ronda_de_practica">Ronda de práctica sin tantos.</h3>
-
-<p>Para aprender la dinámica del juego, los jugadores principiantes pueden optar primero por hacer una ronda de práctica en donde no importa si la mano llega a tener un tanto o no, y en donde el objetivo es simplemente ser el primero en obtener una mano compuesta por 4 juegos y <span data-ssml-sub-alias="un par">un par</span> (Se ignora por completo la lista de tantos y el cálculo de puntajes). Esto es útil para aprender como hacer cantos, y como bajar juegos, y como se altera el orden de los turnos si alguien canta pierna o cuarteto.</p>
 </div>
 <hr>
+
+
 <h2 id="2o3_jugadores">Jugando de a menos o más jugadores</h2>
 <p>El Mahjong se puede jugar de a 2 o 3 jugadores también, con algunos ajustes. El orden de las rondas se reduce, ya que se hace una rotación completa de repartidor mucho antes.</p>
 
@@ -3241,7 +3240,212 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 <p>Jugar de a 5 jugadores es básicamente jugar de a 4 pero en cada ronda hay un jugador que no juega. Primero se elige al azar un jugador. Este jugador no participará en la primera ronda. Luego al finalizar la primera ronda, antes de rotar el repartidor, el repartidor actual se levanta, y en su lugar se sienta el jugador que no jugó la primera ronda. Luego se rota el repartidor a la derecha. Esto se repite cada vez que cambie el repartidor.</p>
 <p>Otra alternativa es en vez de hacer que se levante el repartidor, hacer que se levante el jugador que ganó la mano. Así el jugador que no jugó ocupa el asiento del jugador que cantó Mahjong, y le da chance para descansar, mirar, ir al baño, o preparar un mate :-)</p>
 </div>
+
 <hr>
+
+
+
+<span id="reglas_de_tibet">
+<div class="noseparar">
+
+<h1 id="tibet">Variantes: Mahjong fácil para principiantes (Método Tíbet)</h1>
+<hr>
+
+<p>Para aprender la dinámica del juego, los jugadores principiantes pueden optar primero por hacer una ronda de práctica en donde no importa si la mano llega a tener un tanto o no, y en donde el objetivo es simplemente ser el primero en obtener una mano compuesta por 4 juegos y <span data-ssml-sub-alias="un par">un par</span> (Se ignora por completo la lista de tantos y el cálculo de puntajes). Esto es útil para aprender como hacer cantos, y como bajar juegos, y como se altera el orden de los turnos si alguien canta pierna o cuarteto.</p>
+
+<p>Si aún así parece difícil, o un salto muy grande, existe una forma mucho más metódica de enseñar las reglas de Mahjong llamada "Reglas del Tíbet" o "Método Tibet". Donde la idea es ir jugando varias rondas, empezando por una versión súper simplificada del Mahjong, y luego en siguientes rondas ir incorporando nuevas reglas, hasta acabar en una partida normal de Mahjong con Cartas Españolas.</p>
+</div>
+<hr>
+<div class="noseparar">
+
+<p>El <b>método Tíbet</b> es una forma simplificada de enseñar Mahjong paso a paso, incrementando en dificultad de a poquito, ideal para enseñar a novatos, o a cualquiera que se sienta abrumado por las reglas complicadas del Mahjong Japonés. Se empieza jugando simple, con solo un palo, sin puntos ni nada, y paso a paso se van agregando nuevas cosas, hasta finalmente llegar a jugar una ronda completa de Mahjong.</p>
+
+<h3>Etapa 1: Sólo un palo, 5 cartas.</h3>
+
+<p>El mazo para jugar la primer partida consiste en un solo palo, con cuatro copias de cada uno. Si ya tenemos un mazo de Mahjong preparado con las 136 cartas, entonces para no desarmar este mazo podemos usar...</p>
+
+</div><div class="noseparar">
+<p align="center"><img src="tiles\1c.png"><img src="tiles\2c.png"><img src="tiles\3c.png"><img src="tiles\4c.png"><img src="tiles\5c.png"><img src="tiles\6c.png"><img src="tiles\7c.png"><img src="tiles\8c.png"><img src="tiles\9c.png"> <img src="tiles\11c.png"><br>¡Las copas! O sea que el mazo completo deben ser 40 cartas (Los numeros del 1 al 9, mas los caballos de copas), 4 copias de cada carta.</p>
+</div><div class="noseparar">
+
+<p>El objetivo del juego es ser el primer jugador en conseguir armar una mano completa, de 5 cartas, formadas por un juego y un par.</p>
+
+<p>Un juego puede ser o una <b>pierna</b> (Tres cartas iguales, por ejemplo 3-3-3) o una <b>escalera</b> (Secuencia de 3 cartas en orden, por ejemplo 2-3-4). El <b>par</b> son dos cartas iguales (Una pierna con una carta menos).</p>
+
+<table width="100%" style="table-layout: fixed;" align="center"><tr>
+<td align="center"><img src="tiles\3c.png"><img src="tiles\4c.png"><img src="tiles\5c.png"><br><b>Una escalera</b> (Secuencia de cartas)</td>
+<td align="center"><img src="tiles\3c.png"><img src="tiles\2c.png"><img src="tiles\2c.png"><br><b>Una pierna</b> (Tres cartas iguales)</td>
+<td align="center"><img src="tiles\6c.png"><img src="tiles\6c.png"><br><b>Un par</b> (Dos cartas iguales)</td>
+</tr></table>
+<ul>Cosas para tener en cuenta:
+<li>La escalera <b>NO</b> puede pegar la vuelta (8-9-1 no es una escalera valida, tampoco lo es 9-1-2).</li>
+<li>Con los <b>caballos</b> no se pueden hacer escaleras, solo piernas.</li></ul>
+
+<p>O sea que las manos completas posibles son, o <b>una pierna y un par</b>, o <b>una escalera y un par</b>.</p>
+
+</div><div class="noseparar">
+
+<p>Ejemplos de manos completas</p>
+<table width="100%" style="table-layout: fixed;" align="center"><tr>
+<td colspan="2" align="center"><img src="tiles\9c.png"><img src="tiles\9c.png"> - <img src="tiles\3c.png"><img src="tiles\4c.png"><img src="tiles\5c.png"><br>
+Una escalera y un par.</td>
+<td colspan="2" align="center"><img src="tiles\2c.png"><img src="tiles\2c.png"><img src="tiles\2c.png"> - <img src="tiles\7c.png"><img src="tiles\7c.png"><br>Una pierna y un par</td>
+</tr><tr>
+<td>&nbsp;</td>
+<td colspan="2" align="center">
+<img src="tiles\6c.png"><img src="tiles\6c.png"> - <img src="tiles\6c.png"><img src="tiles\7c.png"><img src="tiles\8c.png"><br>Una escalera y un par<br><small>Nótese como a pesar de que hay tres cartas iguales (6 de copas), lo tomamos como un par porque usamos una de esas cartas para hacer la escalera.</small></td>
+<td>&nbsp;</td></tr></table>
+</div><div class="noseparar">
+<p>Ahora bien, la mano completa son 5 cartas, pero los jugadores van a tener siempre 4 cartas en su mano. Al principio del juego se barajan todas las cartas y se reparten 4 cartas a cada uno de los jugadores. En Mahjong, el que barajó y repartió juega primero, o sea que es su turno.</p>
+
+<p>En su turno, el jugador tiene que robar una carta del mazo, para tener 5.</p>
+
+<p>Si luego de alzar esa carta el jugador logra <b>completar la mano</b> (Armó un juego y un par en su mano), canta <b>"Mahjong!"</b>, muestra la mano, y será el ganador de la ronda.</p>
+<p>Si no, tiene que descartarse una de las 5 cartas en su mano, boca arriba. Esta puede ser cualquier carta de la mano, no solamente la que acaba de alzar. La carta descartada debe ponerse boca arriba, en su área de descarte.</p>
+</div><div class="noseparar">
+<p>Cada jugador tiene su propia "zona de descartes". Debe organizarse en una cuadrícula de 6x3 al frente de cada jugador, y se colocan de izquierda a derecha, de arriba a abajo.</p>
+<p align="center"><img src="tiles\pozo_s.png"></p>
+<p align="center"><img src="tiles\11c.png"><img src="tiles\9c.png"><img src="tiles\1c.png"><img src="tiles\5c.png"><img src="tiles\3c.png"><img src="tiles\4c.png"><br>
+<img src="tiles\9c.png"><img src="tiles\3c.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><br>
+<img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"><img src="tiles\v.png"></p>
+</div><div class="noseparar">
+<p>Luego de hacer un descarte, si alguien se da cuenta que esa carta es justo es la <b>última</b> carta que necesitan para completar la mano, puede cantar "Mahjong!" y mostrar la mano para ganar la ronda. Esto se puede hacer en cualquier momento, ¡aunque no sea su turno! así que hay que prestar mucha atención a todos los descartes en todo momento.</p>
+
+<p>Si nadie canta Mahjong, entonces es ahora el turno del jugador de la derecha. Esta carta ya no puede ser reclamada por nadie y permanece boca arriba en la mesa. Le toca robar una carta del mazo, y se repite el proceso hasta que no queden mas cartas en el mazo, o hasta que alguien cante Mahjong.</p>
+
+<p>Entonces, se canta Mahjong cuando:</p>
+<ul><li>Se completa la mano luego de robar una carta del pozo</li>
+<li>Alguien más descarta una carta que completa la mano propia</li></ul>
+
+<p>Para eso hay que estar atento y darse cuenta cuando solo falta una carta para completar la mano. Esto se llama tener la <b>mano lista</b>, porque está esperando que llegue la carta final para ganar.</p>
+</div><div class="noseparar">
+<p>Vamos con algunos ejemplos de manos listas:</p>
+
+<p><img src="tiles\2c.png"><img src="tiles\3c.png"><img src="tiles\4c.png"> <img src="tiles\11c.png"> &mdash; Necesita un <img src="tiles\11c.png"> para completar el par</p>
+<p><img src="tiles\4c.png"><img src="tiles\6c.png"> <img src="tiles\9c.png"><img src="tiles\9c.png"> &mdash; Necesita un <img src="tiles\5c.png"> para completar el medio de la escalera</p>
+</div><div class="noseparar">
+
+<p>Puede pasar que <b>más de una carta</b> sirva para completar la mano. En ese caso, cualquiera de ellas sirve para ganar.</p>
+
+<p><img src="tiles\1c.png"><img src="tiles\1c.png"> <img src="tiles\4c.png"><img src="tiles\5c.png"> &mdash; Necesita un <img src="tiles\3c.png"> ó un <img src="tiles\6c.png"> para completar el borde de una escalera.</p>
+<p><img src="tiles\2c.png"><img src="tiles\2c.png"> <img src="tiles\8c.png"><img src="tiles\8c.png"> &mdash; Necesita un <img src="tiles\2c.png"> ó un <img src="tiles\8c.png"> para completar una pierna (son dos pares).</p>
+
+</div><div class="noseparar">
+
+<p>También puede pasar que <b>el juego cambie de forma</b> según la carta que se use para completar la mano:</p>
+
+<p><img src="tiles\3c.png"><img src="tiles\4c.png"><img src="tiles\5c.png"><img src="tiles\6c.png"> &mdash; Necesita un <img src="tiles\3c.png"> ó un <img src="tiles\6c.png"> para completar el par.<br>Nótese que la escalera final puede ser o bien 3-4-5, o 4-5-6, según el par que se forme.</p>
+<p><img src="tiles\5c.png"><img src="tiles\6c.png"><img src="tiles\6c.png"><img src="tiles\6c.png"> &mdash; Necesita un <img src="tiles\4c.png"> ó un <img src="tiles\5c.png"> ó un <img src="tiles\7c.png">.<br>Aquí se nota la complejidad, porque con un 5 se completa el par y la mano es una pierna de 6. Con un 4 se completa una escalera de 4-5-6 y el par es de 6. Y finalmente con un 7 la escalera es 5-6-7 y el par es de 6. ¡Esta mano tiene muchas chances para cantar Mahjong!</p>
+
+</div><div class="noseparar">
+
+<p>¿Qué ocurre si tengo <b>cuatro cartas iguales</b> en la mano?</p>
+<p><img src="tiles\2c.png"><img src="tiles\2c.png"><img src="tiles\2c.png"><img src="tiles\2c.png"> &mdash; ?</p>
+<p>Pues por ahora <b>nada</b>, porque en esta variante <i>no hay cuartetos</i>... y solamente hay 4 copias de cada carta, asi que no se pueden tener 5 cartas iguales en la mano. Hay que deshacerse de una de ellas y tratar de armar un par con otra carta.</p>
+
+</div><div class="noseparar">
+
+<p>Ahora, supongamos que alguien cantó <b>Mahjong</b>, y se consagró ganador de la ronda, y se anota <b>1</b> punto. Si son el repartidor, entonces les toca ser repartidor de nuevo. Si no, le toca repartir al jugador de la derecha. El juego continúa hasta que se haya dado una vuelta completa con los repartidores (o sea que le toque de nuevo al que fue el primer repartidor).</p>
+
+<p>¿Qué ocurre si se acaban las cartas del pozo y nadie logró cantar Mahjong? Entonces la ronda termina en empate. Como ejercicio, los jugadores que tengan la <b>mano lista</b> (los que ya estaban esperando por la última carta para cantar Mahjong) deben <b>mostrar su mano</b>, y los que no tengan la mano lista no deberán hacerlo. Esto será importante más adelante. Como no hubo ningún ganador, le toca repartir al jugador de la derecha del repartidor.</p>
+
+<p>¡Y listo! Esas son todas las reglas para jugar esta variante de Mahjong. Luego de familiarizarse con estas reglas se puede pasar a la siguiente variante.</p>
+
+</div><div class="noseparar">
+
+<h3>Etapa 2: Sólo un palo, 8 cartas.</h3>
+
+<p>Si ya se entiende bien como jugar con manos completas de 5 cartas, el próximo paso es jugar con <b>manos completas de 8 cartas</b>. O sea que ahora el objetivo es ser el primer jugador en armar una mano completa, compuesta por <b>dos</b> juegos, y un par.</p>
+
+</div><div class="noseparar">
+
+<p>Las reglas son exactamente las mismas, y se usa el mismo mazo. Pero en lugar de repartirse 4 cartas, se deben repartir 7 cartas para cada uno. Como ahora se tienen que armar dos juegos en vez de uno, las <b>manos listas</b> son bastante mas variadas y complicadas.</p>
+
+<p>Por ejemplo:</p>
+
+<p><img src="tiles\2c.png"><img src="tiles\3c.png"><img src="tiles\4c.png">
+<img src="tiles\7c.png"><img src="tiles\7c.png">
+<img src="tiles\8c.png"><img src="tiles\8c.png"> &mdash; Necesita un <img src="tiles\7c.png"> ó un <img src="tiles\8c.png"> para completar 1 pierna.</p>
+
+<p><img src="tiles\1c.png"><img src="tiles\1c.png">
+<img src="tiles\3c.png"><img src="tiles\4c.png"><img src="tiles\5c.png">
+<img src="tiles\6c.png"><img src="tiles\7c.png"> &mdash; Necesita un <img src="tiles\2c.png"> ó un <img src="tiles\5c.png"> ó un <img src="tiles\8c.png"> para completar la escalera, que puede ser 6-7-8, 5-6-7, o 2-3-4.</p>
+
+<p>El resto del juego transcurre de la misma forma, que en la etapa anterior.</p>
+
+</div><div class="noseparar">
+
+<h3>Etapa 3: Dos palos, 8 cartas.</h3>
+
+<p>Jugar con un solo palo puede verse complicado si hay 4 jugadores porque quizá no alcancen las cartas para hacer todos los juegos, por eso en esta etapa lo que vamos a hacer es incorporar un palo más.</p>
+
+<p align="center"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\6o.png"><img src="tiles\7o.png"><img src="tiles\8o.png"><img src="tiles\9o.png"> <img src="tiles\11o.png"><br>Agregamos los oros al mazo. O sea que el mazo completo deben ser 80 cartas (Las copas que teníamos antes, mas los oros del 1 al 9, mas los caballos de oros), 4 copias de cada carta.</p>
+
+</div><div class="noseparar">
+
+<p>Como hay ahora dos palos en el mazo, hay que aclarar que los juegos <b>no pueden mezclar palos</b>. O sea que las tres cartas tienen que ser del mismo palo, si no no cuenta. Esto cuenta tanto para las escaleras, como para las piernas y los pares.</p>
+
+<table width="100%" align="center">
+	<tr>
+		<td align="center"><b>Esta es una Pierna válida</b><br>
+		<img src="tiles\3c.png"><img src="tiles\3c.png"><img src="tiles\3c.png"><br>
+		Son todas del mismo palo.
+		</td>
+		
+		<td align="center"><b>¡Esta <u>NO</u> es una pierna válida!</b><br>
+		<img src="tiles\3c.png"><img src="tiles\3o.png"><img src="tiles\3o.png"><br>
+		¡Tienen que ser del mismo palo!
+		</td>
+	</tr>
+</table>
+
+</div><div class="noseparar">
+
+<p>Las demás reglas siguen siendo las mismas.</p>
+
+<h3>Etapa 4: Mazo completo (3 palos, 14 cartas). Sin cuartetos, ni tantos.</h3>
+
+<p>Si ya llegamos a este punto, ya estamos listos para jugar con el mazo completo, con 3 palos, e incluyendo los Reyes (funcionan igual que los caballos, sólo sirven para hacer piernas, no escaleras). Para hacer esto hay que fabricar el mazo, ahora sí, como se explica en la primer sección de este documento, quitando las copas, y agregando las espadas y los bastos (Recordar que las sotas no se usan).</p>
+
+<p>Si se ha salteado el reglamento para ver directamente esta sección, <a href="#inicio_del_juego"><b>ahora es momento de volver atrás y darle una leída a las reglas desde el principio</b></a>, al menos a las principales (no hace falta entender los tantos, las cartas bonificadas, las yapas, o como calcular los puntos) pero si todavía se siente muy abrumador se pueden ir introduciendo reglas poco a poco.</p>
+
+<p>Primero hay que explicar lo que son los <b>cantos</b>. O sea que en vez de sólo poder cantar Mahjong cuando alguien tira la última carta, ahora tenemos la posibilidad de "bajar un juego en mesa". Ver la sección <a href="#cantos_y_juegos">Cantos y juegos</a> para entender como funciona esa mecánica.</p>
+
+<p>Para esta partida de práctica, los únicos cantos posibles son <b>Escalera</b>, <b>Pierna</b>, y <b>Mahjong</b>. Los <b>cuartetos</b> por ahora no valen nada, y tampoco es necesario hacer un pozo muerto, ni revelar una carta bonificada. Recordar además que <u>cualquiera</u> puede cantar <b>pierna</b> en cualquier turno (y se saltean turnos), pero sólo puede cantar <b>escalera</b> un jugador durante su turno.</p>
+
+<p>Como es una <i>partida de práctica</i>, el único requisito para poder cantar Mahjong es <b>tener una mano completa, compuesta de 4 juegos y 1 par</b>. No hace falta que la mano valga 1 tanto, y no hace falta calcular los puntos ni las yapas de la mano. Tampoco hace falta cantar <b>envido</b>, y la <b>ley de descarte</b> no cuenta.</p>
+
+<h3>Etapa 6: Cuartetos y pozo muerto.</h3>
+
+<p>Esta sería exactamente lo mismo que la etapa anterior, pero ahora vamos a introducir el concepto de <a href="#cuarteto"><b>Cuarteto</b></a>, y el pozo muerto con las <b>cartas bonificadas</b>.</p>
+
+<p align="center"><img src="tiles\pozo_3.png"></p>
+
+<p>El pozo muerto es el pozo de donde se debe robar una carta cada vez que se baje un <b>cuarteto</b> en mesa, para reponer la "carta que falta" de la mano (Como se bajó un juego de 4 cartas en vez de 3, faltaría una carta en mano para poder hacer el resto de los juegos).</p>
+
+<p>En esta etapa las cartas bonificadas no significan nada, porque todavía estamos jugando sin tantos, pero sirve para entender la dinámica del pozo muerto (Hay 14 cartas que están fuera del pozo, y la única forma de verlas es con los cuartetos).</p>
+
+<h3>Etapa 5: ¡Mahjong con Cartas Españolas!</h3>
+
+<p>Ahora solo resta introducir el concepto de tantos, y el <b>envido</b> cómo método alternativo de garantizar 1 tanto. Tal y como se explica en la sección de <a href="#cantos_y_juegos">Cantos y juegos</a>, la mano comienza siendo <b>cerrada</b>, pero se considera <b>abierta</b> si en algún momento se canta escalera, o pierna, bajando un juego en la mesa. Si la mano está lista, y no se bajó ningún juego en mesa, se puede cantar envido, lo que hace que la mano quede <b>congelada</b>.</p>
+
+<p>Ahora <i>ya no hay vuelta que darle</i>, es momento de usar los <a href="#lista_de_tantos">tantos</a>, y las <a href="#tabla_de_yapas">yapas</a>, y empezar a calcular los puntos igual que como se hace en el Mahjong original (usando <a href="#tabla_de_puntajes">las tablas de puntajes</a>). En vez de contar los puntos de la forma simplificada (1 punto al ganador de la ronda), se usa la puntuación tradicional, donde todos comienzan con 25000 puntos y "el perdedor le paga al ganador". La partida finaliza cuando un jugador entra en bancarrota (puntaje por debajo de los 0 puntos) o cuando se haya dado una vuelta completa de repartidores.</p>
+
+<p>Ya sabemos que <b>una pierna de caballos otorga un tanto siempre</b>, pero ahora también hay que introducir el concepto de <b>rey de ronda</b> y <b>rey propio</b>, ya que <b>una pierna de reyes otorga un tanto sólo si es uno de estos dos casos</b>, así que hay que usar las <b>sotas</b> para indicar quién es quién. Al repartidor le toca siempre la sota de oros, y se distribuyen en sentido antihorario la sota de copas, la sota de espadas, y la sota de bastos. Y cada vez que cambie el repartidor, se deberán rotar las sotas a la izquierda también.</p>
+
+<p>Consultar la sección <a href="#por_que_no_robar">"¿Por qué no robar todos los juegos posibles?"</a> para entender mejor como garantizar un tanto sin complicarse mucho con la lista de tantos.</p>
+
+<p>¡Y ya está! Mahjong con Cartas Españolas, en todo su esplendor.</p>
+
+</div>
+
+</span>
+
+
+
+<hr>
+
+
 
 <h2 id="preguntas_frecuentes"><span>Preguntas frecuentes</span></h2>
 
@@ -3586,12 +3790,8 @@ R: <b>No</b>, vale solo 13 tantos. Si bien merece un aplauso, la cantidad máxim
 	</tr>
 	<tr><td colspan="2" align="center">Una mano de 4 tantos y 20 yapas o más, cuenta como de 5 tantos.<br><big>Puntaje final: <b>5 tantos</b>. El perdedor paga 12000.</big></td></tr>
 </table></div>
-
-
-
-
+<br>
 <hr>
-
 <h1 id="anexo">Anexo: Notas y cambios del Mahjong Riichi</h1>
 
 
@@ -4085,6 +4285,7 @@ explicar.</p>
 <div class="no-imprimir">
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.10.5) Agrego sección Método Tíbet, para enseñar a jugar con un mazo reducido (¡las copas!).</li>
 <li>(v1.10.4) 12/11/2026 Aclaración sobre la mano siete pares. Como es una mano especial, ninguno de los juegos en la mano cuenta.</li>
 <li>La sección de cambios ahora se puede expandir y contraer, para que ocupe menos espacio visual en la página.</li>
 <li>(v1.10.3) Cambios de formato en la descripción de escalera triple mixta, y escalera completa.</li>
