@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.10.6, (23:34, 12-11-2026)</small></p>
+<p align="right"><small>Versión 1.10.7, (10:25, 13-11-2026)</small></p>
 
 <hr>
 
@@ -1404,12 +1404,16 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 		<td>Por ganar robando un descarte<br>con <b>mano cerrada</b></td>
 		<td colspan="2">+10</td>
 	</tr>
-		<tr>
+	<tr>
 		<th colspan="1">Juego</th>
 		<th colspan="2"></th>
 	</tr>
 	<tr>
 		<td>Si <em>el par</em> es de caballos o rey de ronda/propio</td>
+		<td colspan="2">+2</td>
+	</tr>
+	<tr>
+		<td>Mano de "cero yapas" con <b>mano abierta</b><br><small>(Todo escaleras, espera abierta, par sin yapas.)</small></td>
 		<td colspan="2">+2</td>
 	</tr>
 	<tr>
@@ -1431,9 +1435,14 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 		<td colspan="2">+2</td>
 	</tr>
 	<tr>
-		<th>Por cada pierna...</th>
+		<th>Por cada juego...</th>
 		<th>Con carta<br>robada<br></th>
 		<th>Todas<br>propias<br></th>
+	</tr>
+	<tr>
+		<td>Escalera</td>
+		<td>+0</td>
+		<td>+0</td>
 	</tr>
 	<tr>
 		<td>Pierna común (del 2 al 8)</td>
@@ -1464,7 +1473,9 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 
 <p>Hay una excepción, si la mano ganadora es la de <a href="#siete_pares">Siete Pares</a>, la yapa vale siempre 5 y no se calcula ninguna otra yapa ni se redondea el valor. Vale siempre 5, como valor fijo.</p>
 
-<p>Otra excepción es que si se gana robando del pozo pero la mano tiene el tanto de Cero Yapas, las 2 yapas por ganar robando del pozo no se cuentan. Si se gana con el descarte de otro jugador entonces <i>sí</i> se suman las 10 yapas, pero a pesar de esto el tanto de Cero Yapas sigue siendo válido.</p>
+<p>Otra excepción es que si se gana robando del pozo pero la mano tiene el tanto de <b>Cero Yapas</b> (todo escaleras, par sin puntos, espera abierta), las 2 yapas por ganar robando del pozo no se cuentan. Si se gana con el descarte de otro jugador entonces <i>sí</i> se suman las 10 yapas, pero a pesar de esto el tanto de Cero Yapas sigue siendo válido.</p>
+
+<p>Dicho esto, si la mano es Cero Yapas, pero en vez de ser cerradas es una mano abierta, se le otorgan 2 yapas  extras, para que de redondeado de un total de 10. Recordar que el tanto de cero yapas en este caso <b>no cuenta</b>, por ser una mano <b>abierta</b>, así que "Cero Yapas Abierta" no es una mano válida, pero esta forma puede otorgar yapas si la mano es, por ejemplo, <b>Todo Intermedias</b>.</p>
 </div>
 
 <p>Esta es una tabla alternativa para simplificar el recuento de yapas:</p>
@@ -1492,6 +1503,10 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 		<td>+2</td>
 	</tr>
 	<tr>
+		<td>"Cero yapas" abierta</td>
+		<td>+2</td>
+	</tr>
+	<tr>
 		<th>Espera simple</th>
 		<th align="left">+2</th>
 	</tr>
@@ -1514,7 +1529,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 	</tr>
 </tbody>
 </table></p>
-<hr>
+
 
 
 <hr>
@@ -4351,6 +4366,7 @@ function ocultar_cambios()
 <div class="no-imprimir">
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.10.7) Corrección, una mano abierta con el aspecto de Cero Yapas (Pinfu) agrega 2 yapas, para garantizar que se redondee a 10 y no cuente como 0 yapas.</li>
 <li>(v1.10.6) Corrección: al tomar una carta del pozo muerto se debe agregar otra del pozo común, para que siempre hayan 14 cartas ahí.</li>
 <li>Aclaración, la mano de cero yapas todavía cuenta si vale 10 yapas por ganar robando de un descarte.</li>
 <li>Corregidos errores de división de página en versión para imprimir (algunos diagramas aparecían en páginas separadas)</li>
