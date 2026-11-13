@@ -50,7 +50,7 @@ th{
 <p align="center">
 <img src="tiles\1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles\1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles\1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles\1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles\1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.10.5, (17:47, 12-11-2026)</small></p>
+<p align="right"><small>Versión 1.10.6, (23:34, 12-11-2026)</small></p>
 
 <hr>
 
@@ -551,19 +551,20 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles\5
 
 <p>Ahora bien, el cuarteto es un caso especial porque un juego compuesto por 4 cartas rompe con la condición de que una mano válida tiene que ser de 14 cartas: 4 juegos de 3 cartas cada uno + <span data-ssml-sub-alias="un par">un par</span> de dos cartas iguales (o sea las 13 cartas de la mano y en mesa, y la última carta robada del pozo o de un descarte para cantar Mahjong).</p>
 <p align="center"><img src="tiles\3o.png"> &larr; <img src="tiles\pozo.png"> <img src="tiles\10o.png"></p>
-<p>Para compensar la carta que falta, hay que robar una carta del &ldquo;pozo muerto&rdquo;. Para hacer esto, se aparta a un costado la carta bonus boca arriba (sigue en juego), se roba una carta del pozo muerto y se agrega a la mano. Luego se da vuelta una nueva carta boca arriba para reemplazar a la carta apartada. Esto quiere decir que ahora hay <u>dos</u> cartas bonificadas.</p>
+<p>Para compensar la carta que falta, hay que robar una carta del &ldquo;pozo muerto&rdquo;. Para hacer esto, se aparta a un costado la carta bonus boca arriba (sigue en juego), se roba una carta del pozo muerto y se agrega a la mano. Luego se da vuelta una nueva carta boca arriba para reemplazar a la carta apartada. Esto quiere decir que ahora hay <u>dos</u> cartas bonificadas. Además, se debe tomar una carta del <b>pozo normal</b> y, <u>sin mirarla</u>, <b>colocarla abajo del todo del pozo muerto</b>, para reponer la faltante.</p>
+
 <p align="center"><img src="tiles\3o.png">&nbsp;&nbsp;&nbsp;<img src="tiles\pozo_7.png"> <img src="tiles\10o.png"></p>
 <p>Puede pasar que la carta robada del pozo muerto justo complete la mano, en cuyo caso se puede cantar Mahjong, si la mano es válida.</p>
 <p>Finalmente, le toca descartar una carta y el juego continúa con el jugador de la derecha.</p>
-<p>Sólo puede haber un máximo de 5 cartas bonificadas por ronda, si se bajan más de 4 cuartetos en la misma ronda, la ronda por lo general se considera nula y se reinicia. O se puede hacer una excepción si es un juego casual y robar del pozo normal en su lugar, pero no se dan vuelta más cartas bonificadas.</p>
+<p>Sólo puede haber un máximo de 5 cartas bonificadas por ronda, si se bajan <i>más</i> de 4 cuartetos en la misma ronda, la ronda por lo general se considera nula y se reinicia. O se puede hacer una excepción si es un juego casual y robar del pozo normal en su lugar, pero no se dan vuelta más cartas bonificadas.</p>
 
 </div><div class="noseparar">
 <p id="cuarteto_en_mano"><strong>&iexcl;Cuarteto! (en mano)</strong> &ndash; En general, los juegos bajados en mesa solo se pueden realizar con descartes ajenos. La <u>única</u> excepción es tener un cuarteto completo en la mano. El jugador que tenga un cuarteto en su mano, <i>si así lo desea</i>, puede enunciarlo y bajarlo en la mesa en su turno, luego de robar una carta del pozo. La diferencia es que luego de bajar un cuarteto de esta forma, la mano todavía se considera &ldquo;cerrada&rdquo;, ya que no se usó ningún descarte ajeno para completar un juego (son todas cartas propias). Por esta razón se lo llama <b>Cuarteto Cerrado</b>, y para distinguirlo de un cuarteto abierto, se coloca boca abajo en la mesa, con las dos cartas centrales boca arriba.</p>
 <p><img src="tiles\c.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\c.png"></p>
-<p>Luego el procedimiento para reponer la carta faltante es el mismo que si fuera un cuarteto robado (apartar la carta bonus, robar una carta del pozo muerto, y dar vuelta una nueva carta de bonus para que ahora haya una más en juego).</p>
+<p>Luego el procedimiento para reponer la carta faltante es el mismo que si fuera un cuarteto robado (apartar la carta bonus, robar una carta del pozo muerto, dar vuelta una nueva carta de bonus para que ahora haya una más en juego, y colocar una carta del pozo común abajo del todo del pozo muerto).</p>
 
 
-<p><p id="cuarteto_en_mano"><strong>&iexcl;Cuarteto! (aumentando una pierna)</strong> &ndash;  Otra excepción es que, si un jugador tiene bajada una <b>pierna</b>, pero luego roba del pozo la cuarta carta, puede convertir la pierna en un cuarteto agregando esa carta a la pierna. Luego el procedimiento es el mismo como si hubiera robado un descarte para formar un cuarteto (carta bonus, robar del pozo muerto, etc.). Este cuarteto también se suele llamar <b>"cuarteto agregado"</b> pero es efectivamente un cuarteto abierto.</p>
+<p><p id="cuarteto_agregado"><strong>&iexcl;Cuarteto! (aumentando una pierna)</strong> &ndash;  Otra excepción es que, si un jugador tiene bajada una <b>pierna</b>, pero luego roba del pozo la cuarta carta, puede convertir la pierna en un cuarteto agregando esa carta a la pierna. Luego el procedimiento es el mismo como si hubiera robado un descarte para formar un cuarteto (carta bonus, robar del pozo muerto, agregar una carta del pozo común, etc.). Este cuarteto también se suele llamar <b>"cuarteto agregado"</b> pero es efectivamente un cuarteto abierto.</p>
 
 <p>La carta adicional debe colocarse arriba de la carta horizontal en la pierna.</p>
 <table width="100%"><tr>
@@ -930,7 +931,7 @@ descarte de otro jugador en esta ronda.</u> Esto se llama tener una <b>mano cerr
 
 
 <p><img src="tiles\1b.png"><img src="tiles\2b.png"><img src="tiles\3b.png"><img src="tiles\3o.png"><img src="tiles\4o.png"><img src="tiles\5o.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\7e.png"> <img src="tiles\4o.png"><img src="tiles\5o.png"> <img src="tiles\8b.png"><img src="tiles\8b.png"></p>
-<p><b>Nota</b>: Como excepción, esta mano también vale si se canta Mahjong por robar un descarte a pesar que esto otorga 10 yapas.</p>
+<p><b>Nota</b>: Esta mano también puede valer 10 yapas como caso excepcional, si se ganó robando de un descarte ajeno, pero igual vale 1 tanto.</p>
 
 </div><div class="noseparar"><p id="escaleras_identicas"><b>Escaleras idénticas </b>&#8211; Dos escaleras idénticas (mismo
 palo y mismos números) en mano.</p>
@@ -3446,6 +3447,8 @@ Una escalera y un par.</td>
 <hr>
 
 
+<div class="noseparar">
+
 
 <h2 id="preguntas_frecuentes"><span>Preguntas frecuentes</span></h2>
 
@@ -3455,43 +3458,65 @@ Una escalera y un par.</td>
 <p><b>P: ¿Puedo jugar con menos de 4 mazos, o con mazos de 40 cartas en vez de 50?</b>
 <br>R: <b>No.</b> Es necesario que sean 4 mazos para que hayan 4 copias de cada carta, y es necesario que hayan ochos y nueves. Por eso hay que usar los mazos de 50 cartas.</p>
 
+
 <p><b>P: ¿Se puede jugar sin fichas ni palitos?</b>
 <br>R: Sí, pero es conveniente que tengan una piedrita o algo para indicar cuando se cante envido, y tiene que haber una para cada jugador. Se puede saber si un jugador cantó envido si hay un descarte horizontal en su pila de descarte, pero puede pasar que alguien robe justo ese descarte y luego el jugador se olvide que había cantado envido, u olvide colocar su siguiente descarte de forma horizontal. Por eso es recomendable tener al menos un palito para cada uno. Puede ser un lápiz, o una moneda, o lo que sea.</p>
 
 <p><b>P: ¿Se puede jugar de a 6 jugadores?</b>
 <br>R: Si hay 6 jugadores que quieren jugar Mahjong es más conveniente que se jueguen dos partidas separadas de Mahjong de a 3.</p>
 
+</div><div class="noseparar">
+
 <p><b>P: Si yo canto Mahjong con el descarte de alguien, ¿entonces mi mano se considera abierta porque robé de un descarte?</b>
 <br>R: <b>No.</b> Cantar Mahjong no abre la mano porque no se considera como "robar de un descarte". Si la mano era cerrada al momento de cantar Mahjong entonces la mano sigue siendo cerrada. La mano solo se abre si se canta Escalera,  Pierna, o Cuarteto porque <u>se baja un juego</u> con un <u>descarte ajeno</u>. Bajar un cuarteto propio de la mano no hace que una mano deje de ser cerrada. Para lo único que esto no cuenta es para el tanto de <a href="#todo_propio">Todo Propio</a> porque este tanto Sí requiere que todas las cartas de la mano completa sean propias.</p>
+
 
 <p><b>P: ¿Puedo cantar Mahjong para completar una escalera si no la descartó el jugador de la izquierda?</b>
 <br>R: <b>Sí</b>, por supuesto. <u>Se puede cantar Mahjong en el turno de cualquier jugador</u>, no importa si el Mahjong es para completar una escalera. La restricción del jugador de la izquierda es sólo para <a href="#cantos_y_juegos">cantar Escalera</a>, pero no para cantar Mahjong.</p>
 
+</div><div class="noseparar">
+
 <p><b>P: ¿Qué pasa si un jugador canta Escalera pero otro jugador canta Pierna o Cuarteto?</b>
 <br>R: El canto de escalera queda invalidado y sólo cuenta el de Pierna o el de Cuarteto.</p>
+
+</div><div class="noseparar">
 
 <p><b>P: ¿Qué pasa si un jugador canta Pierna, Escalera, o Cuarteto, pero otro jugador canta Mahjong al mismo tiempo o inmediatamente después?</b>
 <br>R: Estos cantos quedan invalidados y sólo cuenta el de Mahjong.</p>
 
+</div><div class="noseparar">
+
 <p><b>P: ¿Puedo bajar dos cuartetos seguidos, o sea, si justo la carta que robé del pozo muerto me sirve para completar otro cuarteto más?</b>
 <br>R: Sí, por supuesto. Se sigue el procedimiento normal como si se hubiera bajado otro cuarteto cerrado, se da vuelta otra carta bonificada, se roba otra carta del pozo muerto.</p>
+
+</div><div class="noseparar">
 
 <p><b>P: ¿Un cuarteto cuenta si me quedo con las cuatro cartas escondidas en la mano?</b>
 <br>R: <b>No.</b> <a href="#cuarteto_en_mano">Sólo cuenta como cuarteto si se baja en mesa</a>. Si permanece en mano solo cuenta cuando mucho como una pierna, y una carta extra. </p>
 
+</div><div class="noseparar">
+
 <p><b>P: ¿Puedo bajar un cuarteto en mano aún si la mano ya es una mano abierta?</b>
 <br>R: Sí por supuesto, el cuarteto se considera un cuarteto cerrado a pesar de que la mano esté abierta.</p>
+
+</div><div class="noseparar">
 
 <p><b>P: Si bajo un cuarteto cerrado ¿La mano se convierte nuevamente en una mano cerrada?</b>
 <br>R: No. Si la mano ya se abrió en un turno anterior por haber bajado un juego (escalera, pierna, o cuarteto abierto), la mano no se puede volver a cerrar. Eso sí, el cuarteto se puede bajar de todas formas y cuenta como cuarteto cerrado.</p>
 
+</div><div class="noseparar">
+
 <p><b>P: ¿Puedo cantar envido si tengo un cuarteto en mesa?</b>
 <br>R: Depende. Si es un cuarteto cerrado (formado todo con cartas propias, no robadas), entonces sí, porque la mano sigue siendo cerrada. Pero si es un cuarteto abierto (formado robando de un descarte, o por aumentar una pierna), entonces no, porque la mano se considera abierta por usar un descarte ajeno. Los cuartetos propios se representan en mesa con las dos cartas de los extremos puestas boca abajo.</p>
+
+</div><div class="noseparar">
 
 <p><b>P: Si tengo un cuarteto cerrado en mesa y dos piernas ocultas en mano ¿Cuenta como Tres piernas en mano?</b>
 <br>R: Sí. Los cuartetos cuentan como piernas, y el cuarteto cerrado cuenta como una pierna en mano.</p>
 
 <p><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\2b.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"> &nbsp; <img src="tiles\c.png"><img src="tiles\8o.png"><img src="tiles\8o.png"><img src="tiles\c.png"></p>
+
+</div><div class="noseparar">
 
 <p><b>P: Si dos jugadores cantan Pierna al mismo tiempo, ¿quién se queda con la carta?</b>
 <br>R: Esto nunca puede ocurrir porque sólo hay 4 copias de cada carta. Si un jugador canta pierna pero otro canta Mahjong, tiene prioridad el Mahjong por sobre la pierna.</p>
@@ -3499,14 +3524,25 @@ Una escalera y un par.</td>
 <p><b>P: Si dos jugadores cantan Escalera al mismo tiempo, ¿quién se queda con la carta?</b>
 <br>R: Esto nunca puede ocurrir porque sólo el jugador a la derecha del que descartó la carta puede cantar Escalera.</p>
 
+</div><div class="noseparar">
+
 <p><b>P: Si bajo o robo un cuarteto, ¿la nueva carta bonificada se muestra antes o después de hacer el descarte?</b>
-<br>R: La carta bonificada se debe dar vuelta <b>antes</b> de hacer un descarte, o sea justo después de robar la carta del pozo muerto. En algunas variantes la carta bonificada se revela después del descarte.</p>
+<br>R: La carta bonificada se debe dar vuelta <b>antes</b> de hacer un descarte, o sea justo después de robar la carta del pozo muerto. En algunas variantes la carta bonificada se revela después del descarte. Recordar que de cualquier forma, antes o después de robar una carta del pozo muerto, hay que agregar una carta del pozo común abajo del todo del pozo muerto. </p>
+
+</div><div class="noseparar">
 
 <p><b>P: ¿Qué pasa si dos jugadores cantan Mahjong a la vez?</b>
 <br>R: Esto es válido, y ¡ambos jugadores ganan! El jugador que descartó la carta que hizo que los otros dos cantaran Mahjong <a href="#doble_mahjong">debe pagarle los puntos a ambos.</a> Además el jugador restante, que no cantó Mahjong, debe mostrar su mano porque si el también <i>podía</i> cantar Mahjong en ese instante, la ronda se anula por ser Mahjong Triple.</p>
 
 <p><b>P: Mi mano puede tener múltiples interpretaciones según como arme los juegos ¿Cuál es la que debo usar?</b>
 <br>R: Si la mano tiene múltiples interpretaciones entonces debe tomarse la que dé el puntaje más alto. Es decir, primero la que otorgue la mayor cantidad de tantos, y luego si sigue habiendo dudas, la que otorgue la mayor cantidad de yapas.</p>
+
+</div><div class="noseparar">
+
+<p><b>P: Si mi mano tiene un tanto por <a href="#cero_yapas">Cero yapas</a> pero gané por un descarte ¿La mano vale 0 yapas o vale 10 yapas?</b>
+<br>R: La mano vale efectivamente 10 yapas. Aún cuenta como "Cero Yapas" pero las yapas por ganar robando de un descarte es la única excepción.</p>
+
+</div><div class="noseparar">
 
 <p><b>P: Gané una mano con Siete Pares ¿Cuenta también como Escaleras Idénticas?</b>
 <br>R: <b>No</b>. La mano de siete pares es una mano especial. Los juegos en mano deben ser interpretados como pares, <i>no escaleras</i>. Salvo que se tenga la mano Doble Escaleras idénticas, donde ocurre el caso contrario: deben ser interpretadas como cuatro escaleras y un par, porque a pesar de poder interpretarse también como siete pares, la mano de doble escaleras idénticas tiene un puntaje más alto.</p>
@@ -3515,14 +3551,20 @@ Una escalera y un par.</td>
 
 <p><i>Doble escaleras idénticas</i> (No cuenta ni como Siete Pares, ni como Escaleras Idénticas) <br><img src="tiles\1o.png"><img src="tiles\1o.png"><img src="tiles\2o.png"><img src="tiles\2o.png"><img src="tiles\3o.png"><img src="tiles\3o.png"><img src="tiles\4e.png"><img src="tiles\4e.png"><img src="tiles\5e.png"><img src="tiles\5e.png"><img src="tiles\6e.png"><img src="tiles\6e.png"><img src="tiles\12c.png"><img src="tiles\12c.png"></p>
 
+</div><div class="noseparar">
+
 <p><b>P: ¿Qué pasa si canto envido pero no tengo la <a href="#esperas">mano lista</a>?</b>
 <br>R: <i>No se puede cantar envido si no tenés la mano lista porque cantar envido <u>deja la mano congelada</u></i>, o sea que a partir de ese momento no se puede cambiar ninguna carta de la mano. Esto quiere decir que se tiene que poder cantar Mahjong con una carta del pozo, o robando de un descarte. Si cantas Envido sin tener la mano lista, podrás ser penalizado, porque si la ronda termina en empate, hay que mostrar las manos para demostrar que estaba la mano lista. Como cantaste envido pero la mano no estaba lista, <a href="#penalizaciones">recibís una penalización y la ronda debe jugarse de nuevo</a>.</p>
 
 <p><b>P: ¿Puedo bajar un cuarteto <u>propio</u> luego de cantar envido?</b>
 <br>R: La mayoría de variantes del Mahjong Riichi permiten bajar un cuarteto cerrado luego de haber cantado envido siempre y cuanto no se modifique la estructura de la mano y <u>no se cambie la espera</u>, pero <b>como esto es difícil de explicar y además se presta para cometer errores o hacer trampa</b>, es preferible <b>no</b> permitir que se baje ningún juego luego de haber cantado envido, para asegurar que la mano quede <u>congelada</u> y no pierda la condición de "mano lista". Si se puede comprobar que la espera <b>cambió</b> al momento de bajar el cuarteto, o si la ronda termina en empate y se descubre que el jugador ya no tiene la mano lista, el jugador puede quedar penalizado y la ronda deberá jugarse de nuevo. Por lo tanto, en reglas generales <b>no está permitido</b>, <i><b>pero</b></i> puede permitirse como regla de la casa.</p>
 
+</div><div class="noseparar">
+
 <p><b>P: La ley de descarte es difícil de entender ¿Se puede jugar sin esa regla?</b>
 <br>R: Hay que recordar que esta regla está presente en el Mahjong Riichi original, y que el objetivo de este reglamento es hacer que las reglas sean lo más parecidas posible a eso, para facilitar la transición. Además, la razón de ser de esta regla es poder saber que cartas son seguras para descartar cuando otro jugador canta envido. Una forma simple de entender esto es entender cuáles cartas completan la mano actual, mas allá de que otorguen 1 tanto o no. Si alguna de esas cartas se encuentra en la zona de descarte propia, entonces no se puede cantar Mahjong sobre un descarte. Si <u>ninguno</u> de los jugadores entiende esa regla, se puede jugar sin esa regla, pero sería una variante distinta y las estrategias cambiarían mucho.</p>
+
+</div><div class="noseparar">
 
 <p><b>P: ¿En qué situaciones pasa el repartidor a ser el jugador a su derecha?</b>
 <br>R: El repartidor pasa a la derecha cuando la ronda la gana un jugador que no sea el repartidor, o cuando la ronda termine en empate. Excepto cuando la ronda se anule por <b>penalidades</b>, en ese caso la ronda debe repetirse tal y como está. Cuando se cambia el repartidor se dice que la ronda avanza.</p>
@@ -3530,8 +3572,12 @@ Una escalera y un par.</td>
 <p><b>P: ¿Puede avanzar la ronda sin que roten las sotas?</b>
 <br>R: No. Las sotas y el numero de la ronda van siempre de la mano. Justamente la posición de las sotas es la que determina en que ronda se está actualmente. El jugador que tenga la sota de oros es el repartidor. Y cuando ya todos los jugadores fueron repartidor (se dio una vuelta completa), se cambia la sota del medio si se está jugando a Copas (O sea que pasa de ser la ronda Oros-4 a ser Copas-1) o si es una partida corta la partida finaliza.</p>
 
+</div><div class="noseparar">
+
 <p><b>P: ¿Qué ocurre si alguien baja un cuarteto pero no quedan más cartas en el pozo muerto?</b>
 <br>R: Si se acaban las cartas en el pozo muerto entonces en vez de tomar una carta del pozo muerto se toma una carta del pozo normal, no se da vuelta ninguna otra carta bonificada, y el juego continúa normalmente.</p>
+
+</div><div class="noseparar">
 
 <p><b>P: Supongamos que gané con esta mano que cuenta como 2 manos distintas de tantos máximos (Todas negras + Tres caballos). ¿Los tantos máximos se acumulan?</b>
 
@@ -3539,9 +3585,12 @@ Una escalera y un par.</td>
 
 R: <b>No</b>, vale solo 13 tantos. Si bien merece un aplauso, la cantidad máxima de tantos es 13. Algunas variantes de Mahjong permiten acumular tantos máximos ("múltiples yakuman") pero por lo general la esto resulta en una victoria instantánea ya que los puntajes tan altos suelen hacer que al menos un jugador entre en bancarrota, acabando la partida inmediatamente. En este caso esta mano valdría "dos Yakuman", o "dos tantos máximos". Lo que duplica el puntaje mostrado en la tabla. Pero bueno, en estas reglas de Mahjong el máximo de tantos por mano es 13, y no se acumulan tantos máximos. Así que esta mano vale 13 tantos, y un aplauso.</p>
 
+</div>
+
 <hr>
 
 
+<div class="noseparar">
 
 <h1 id="ejemplos_de_manos">Anexo: Ejemplos de manos</h1>
 
@@ -3550,6 +3599,9 @@ R: <b>No</b>, vale solo 13 tantos. Si bien merece un aplauso, la cantidad máxim
 <p>A la izquierda del pozo se encuentran las cartas bonificadas. A la derecha del pozo se encuentra el indicador de rey de la ronda, y las fichas de pozo vacante (si aplican). A la derecha del todo se encuentra el indicador de rey propio.</p>
 
 <p>Recordar que si el rey propio es de oros <img src="tiles\10o.png">, quiere decir que el ganador es el <i>repartidor</i>.</p>
+
+</div>
+
 
 <style>
 .ejemplos, .ejemplos2
@@ -4282,19 +4334,6 @@ explicar.</p>
 <hr>
 
 
-<div class="no-imprimir">
-<p style="font-size:7pt;">Lista de cambios:
-<ul style="font-size:7pt;">
-<li>(v1.10.5) Agrego sección Método Tíbet, para enseñar a jugar con un mazo reducido (¡las copas!).</li>
-<li>(v1.10.4) 12/11/2026 Aclaración sobre la mano siete pares. Como es una mano especial, ninguno de los juegos en la mano cuenta.</li>
-<li>La sección de cambios ahora se puede expandir y contraer, para que ocupe menos espacio visual en la página.</li>
-<li>(v1.10.3) Cambios de formato en la descripción de escalera triple mixta, y escalera completa.</li>
-<li>Aclaración en la sección de esperas, para destacar que es importante por la ley de descarte, y por las yapas.</li>
-<li>(v1.10.2) Aclaración en preguntas frecuentes sobre el puntaje de una mano.</li>
-<li>(v1.10.1) Quito la opcion de Family Game por ahora.</li>
-<li>(v1.10.0) Cambio en las reglas de ley de descarte. Estaba mal explicado. Si una de las cartas en el descarte propio sirve para completar la mano entonces la mano completa se encuentra bloqueada. O sea que no se puede ganar con NINGÚN descarte ajeno, ni siquiera los que no están en el descarte.</li>
-<li>Agrego una buena explicación con ejemplos de como funciona la ley de descarte.</li>
-</ul>
 <script>
 function mostrar_cambios()
 {
@@ -4309,6 +4348,22 @@ function ocultar_cambios()
 </script>
 
 
+<div class="no-imprimir">
+<p style="font-size:7pt;">Lista de cambios:
+<ul style="font-size:7pt;">
+<li>(v1.10.6) Corrección: al tomar una carta del pozo muerto se debe agregar otra del pozo común, para que siempre hayan 14 cartas ahí.</li>
+<li>Aclaración, la mano de cero yapas todavía cuenta si vale 10 yapas por ganar robando de un descarte.</li>
+<li>Corregidos errores de división de página en versión para imprimir (algunos diagramas aparecían en páginas separadas)</li>
+<li>(v1.10.5) Agrego sección Método Tíbet, para enseñar a jugar con un mazo reducido (¡las copas!).</li>
+<li>(v1.10.4) 12/11/2026 Aclaración sobre la mano siete pares. Como es una mano especial, ninguno de los juegos en la mano cuenta.</li>
+<li>La sección de cambios ahora se puede expandir y contraer, para que ocupe menos espacio visual en la página.</li>
+<li>(v1.10.3) Cambios de formato en la descripción de escalera triple mixta, y escalera completa.</li>
+<li>Aclaración en la sección de esperas, para destacar que es importante por la ley de descarte, y por las yapas.</li>
+<li>(v1.10.2) Aclaración en preguntas frecuentes sobre el puntaje de una mano.</li>
+<li>(v1.10.1) Quito la opción de Family Game por ahora ;-)</li>
+<li>(v1.10.0) Cambio en las reglas de ley de descarte. Estaba mal explicado. Si una de las cartas en el descarte propio sirve para completar la mano entonces la mano completa se encuentra bloqueada. O sea que no se puede ganar con NINGÚN descarte ajeno, ni siquiera los que no están en el descarte.</li>
+<li>Agrego una buena explicación con ejemplos de como funciona la ley de descarte.</li>
+</ul>
 <span id="lista_de_cambios_expandir">Cambios anteriores <a href="#lista_de_cambios" onclick="mostrar_cambios();">(&#9660; Expandir)</a></span>
 <span hidden id="lista_de_cambios">Cambios anteriores <a href="#lista_de_cambios_expandir" onclick="ocultar_cambios();">(&#9650; Ocultar)</a><br>
 <ul style="font-size:7pt;"><li>(v1.9.9) Aclaración: Cero yapas también cuenta si el par es de reyes que no son ni rey de la ronda ni rey propio.</li>
