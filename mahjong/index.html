@@ -50,16 +50,55 @@ th{
 <p align="center">
 <img src="tiles/1o.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img src="tiles/1o.png" style="transform: translateX(4px) rotate(-10deg);"><img src="tiles/1e.png" style="transform:translateX(-4px)translateY(-6px);"><img src="tiles/1e.png" style="transform:translateX(-8px) rotate(10deg);"><img src="tiles/1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 
-<p align="right"><small>Versión 1.10.9, (18:37, 13-11-2026)</small></p>
+<p align="right"><small>Versión 1.10.11, (12:47, 17-11-2026)</small></p>
 
 <hr>
+
+<script>
+function cambiar_a(n)
+{
+	if (n==1)
+	{
+		document.getElementById("cambiar_a_japonesas").hidden = true;
+
+		document.getElementById("cambiar_a_espanolas").hidden = false;
+		document.getElementById("nota_en_japonesas").hidden = false;
+		
+		document.getElementById("machete_japones").hidden = false;
+		document.getElementById("machete_espanol").hidden = true;
+		
+		document.querySelectorAll('img').forEach((img)  => {
+		  if (img.getAttribute('src').substring(0,6) == "tiles/" ) img.setAttribute('src',"japones/"+img.getAttribute('src'));
+		  if (img.getAttribute('src').substring(0,4) == "img/" )   img.setAttribute('src',"japones/"+img.getAttribute('src'));
+		});
+	}
+	if (n==0)
+	{
+		document.getElementById("cambiar_a_japonesas").hidden = false;
+		document.getElementById("cambiar_a_espanolas").hidden = true;
+		document.getElementById("nota_en_japonesas").hidden = true;
+		
+		document.getElementById("machete_japones").hidden = true;
+		document.getElementById("machete_espanol").hidden = false;
+		
+		document.querySelectorAll('img').forEach((img)  => {
+		  if (img.getAttribute('src').substring(0,6+8) == "japones/tiles/" ) img.setAttribute('src',img.getAttribute('src').substring(8));
+		  if (img.getAttribute('src').substring(0,4+8) == "japones/img/" )   img.setAttribute('src',img.getAttribute('src').substring(8));
+		});
+	}
+	
+}
+</script>
 
 <table align="center" width="100%" style="table-layout: fixed;" class="no-imprimir">
 	<tr>
 		<th colspan="4" align="center">Menú Rápido:</th>
 	</tr>
 	<tr>
-		<td align="center"><a href="machete.html"><b>Hoja de Referencia</b><br><small>(Machete simplificado)</small></a></td>
+		<td align="center">
+			<a href="machete.html" id="machete_espanol"><b>Hoja de Referencia</b><br><small>(Machete simplificado)</small></a>
+			<a href="japones/machete.html" id="machete_japones" hidden><b>Hoja de Referencia</b><br><small>(Machete simplificado)</small></a>
+		</td>
 		<td align="center"><a href="#lista_de_tantos">Lista de tantos</a></td>
 		<td align="center"><a href="#tabla_de_yapas">Tabla de yapas</a></td>
 		<td align="center"><a href="#tabla_de_puntajes">Tablas de puntajes</a></td>
@@ -72,8 +111,12 @@ th{
 			<p><a href="#" onclick="window.print()">🖨 Versión para Imprimir<br><small>(Guardar como PDF)</small></a></p>
 		</td>
 		<td align="center">	
-			<p><a href="japones">Cambiar a fichas de Mahjong &rarr;</a>.</p>
-			<p hidden><a href="..">Cambiar a cartas Españolas &rarr;</a>.</p>
+			<p id="cambiar_a_japonesas"><a href="#en_japones" onclick="cambiar_a(1);">Cambiar a fichas de Mahjong &rarr;</a>.</p>
+			<p hidden id="cambiar_a_espanolas"><a href="#en_espanol" onclick="cambiar_a(0);">Cambiar a cartas Españolas &rarr;</a>.</p>
+			<!--
+			<p id="cambiar_a_japonesas"><a href="japones">Cambiar a fichas de Mahjong &rarr;</a>.</p>
+			<p hidden id="cambiar_a_espanolas"><a href="..">Cambiar a cartas Españolas &rarr;</a>.</p>
+			-->
 		</td>
 	</tr>
 	<tr>
@@ -97,7 +140,7 @@ th{
 	</tr>
 </table>
 
-<p hidden><b>Importante:</b> Este documento fué diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera. Para ver esta misma página con cartas españolas, <a href="..">haga clic aquí</a>.</p>
+<p hidden id="nota_en_japonesas"><b>Importante:</b> Este documento fué diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera. Para ver esta misma página con cartas españolas, <a href="#en_espanol" onclick="cambiar_a(0);">haga clic aquí</a>.</p>
 
 <div  class="imprimir">
 <table width="100%"><tr>
@@ -405,7 +448,7 @@ hay caballos de oros, bastos y espadas.</p><p>
 <p>Con los reyes y los caballos sólo se pueden formar piernas, o cuartetos. <b>No se pueden hacer escaleras</b>.</p>
 <hr>
 <p style="border: medium none ; padding: 0cm;">El <b>par</b> es
-sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles/5o.png"><img src="tiles/5o.png"><br>Todas las manos tienen que tener un par.</p>
+sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles/5o.png"><img src="tiles/5o.png"><br><u>Todas las manos completas tienen un par</u>.</p>
 
 </div>
 <p>Nótese que no hay ninguna correlación entre el palo de los reyes y los palos de las cartas numeradas del 1 al 9. Tampoco se pueden hacer escaleras de caballos o reyes, porque las sotas no se usan como cartas en juego, y <b><u>no</u></b> se puede hacer una escalera con caballos, reyes, y ases. <b>Solo se pueden hacer escaleras con las cartas del uno al nueve.</b></p>
@@ -552,7 +595,7 @@ sencillamente <b>dos cartas iguales,</b> de cualquier tipo.<br><img src="tiles/5
 
 <p>Ahora bien, el cuarteto es un caso especial porque un juego compuesto por 4 cartas rompe con la condición de que una mano válida tiene que ser de 14 cartas: 4 juegos de 3 cartas cada uno + <span data-ssml-sub-alias="un par">un par</span> de dos cartas iguales (o sea las 13 cartas de la mano y en mesa, y la última carta robada del pozo o de un descarte para cantar Mahjong).</p>
 <p align="center"><img src="tiles/3o.png"> &larr; <img src="tiles/pozo.png"> <img src="tiles/10o.png"></p>
-<p>Para compensar la carta que falta, hay que robar una carta del &ldquo;pozo muerto&rdquo;. Para hacer esto, se aparta a un costado la carta bonus boca arriba (sigue en juego), se roba una carta del pozo muerto y se agrega a la mano. Luego se da vuelta una nueva carta boca arriba para reemplazar a la carta apartada. Esto quiere decir que ahora hay <u>dos</u> cartas bonificadas. Además, se debe tomar una carta del <b>pozo normal</b> y, <u>sin mirarla</u>, <b>colocarla abajo del todo del pozo muerto</b>, para reponer la faltante.</p>
+<p>Para compensar la carta que falta, hay que robar una carta del &ldquo;pozo muerto&rdquo;. Para hacer esto, se aparta a un costado la carta bonus boca arriba (sigue en juego), se roba una carta del pozo muerto y se agrega a la mano. Luego se da vuelta una nueva carta boca arriba para reemplazar a la carta apartada. Esto quiere decir que ahora hay <u>dos</u> cartas bonificadas. Además, se debe tomar una carta del <b>pozo normal</b> y, <u>sin mirarla</u>, <b>colocarla abajo del todo del pozo muerto</b>, para reponer la faltante. En el pozo muerto deben haber <u>siempre 14 cartas</u>, contando también las que están boca arriba indicando las cartas bonificadas.</p>
 
 <p align="center"><img src="tiles/3o.png">&nbsp;&nbsp;&nbsp;<img src="tiles/pozo_7.png"> <img src="tiles/10o.png"></p>
 <p>Puede pasar que la carta robada del pozo muerto justo complete la mano, en cuyo caso se puede cantar Mahjong, si la mano es válida.</p>
@@ -653,11 +696,11 @@ En mesa<br>
 <img src="tiles/1e.png"><img src="tiles/2e.png" style="opacity: 0.66;"><img src="tiles/3e.png" style="opacity: 0.33;"></p>
 
 <p>El jugador de la izquierda se acaba de descartar un 4 de oros, y el jugador actual tiene una pierna de 4 de oros en mano.</p>
-</div><div class="noseparar">
+
 <p>Un jugador principiante puede verse tentado a robar un descarte para bajar un cuarteto si se tiene una pierna completa en la mano. Pero esto <i> puede jugarle en contra</i>, ya que esto no sólo hace que la mano pase de ser cerrada a <b>abierta</b>, sino que además hay varias manos que otorgan puntos solo si las piernas se encuentran ocultas en la mano, por ejemplo <a href="#tres_piernas_en_mano">"Tres piernas en mano"</a>. Así que en este caso, es mejor dejar pasar ese descarte, y quedarse con la pierna en la mano.</p>
 
 <p>Además si se baja un juego, este ya queda fijo y no se puede modificar. Por eso hay que tener cuidado de sólo bajar juegos que estés seguro que van a ayudar a la larga, y que no se volverán un problema luego.</p>
-
+</div><div class="noseparar">
 <p><b>Otro detalle:</b> en el caso de los cuartetos completos <b>en mano</b>, bajarlos es totalmente <b>opcional</b>. Si bien los cuartetos en mano no valen como tal si no se bajan en mesa (solo cuenta como una pierna, y sobra una carta), ningún jugador está obligado a bajar juegos si no quiere o si estas cartas le convienen más para formar <i>otros juegos distintos</i>, por ejemplo, una escalera y una pierna</p>
 <p align="center">
 <img src="tiles/2o.png"><img src="tiles/3o.png"><img src="tiles/4o.png">
@@ -672,6 +715,7 @@ En mesa<br>
 
 <p>Lo mismo ocurre con una <a href="#pierna_de_rey_de_ronda">pierna de reyes</a>, pero <i>solamente si es el rey de la ronda</i> o el rey propio.</p>
 <p><img src="tiles/12o.png"><img src="tiles/12o.png"><img src="tiles/12o.png"></p>
+
 <div class="noseparar">
 <p>En las primeras cuatro rondas del juego, el rey de la ronda es el rey de oros, luego las siguientes 4 es el rey de copas, luego el rey de espadas, y luego el rey de bastos.</p>
 
@@ -691,14 +735,17 @@ En mesa<br>
 		<td colspan="4">&nbsp;<img src="tiles/12b.png"><br>Rey de Bastos&nbsp;</td>
 	</tr>
 </tbody></table></p>
-
 <p>O sea que, si es la quinta ronda, el rey de la ronda es el <b>rey
 de copas</b>. Entonces, <b>para cualquier jugador en esta ronda</b>, una pierna
 de rey de copas le otorgará <span data-ssml-sub-alias="un tanto">1 tanto</span> a su mano.</p>
 
+</div><div class="noseparar">
+
 <p>Además, a cada jugador le corresponde un "Rey Propio" según su ubicación en la mesa, relativo al repartidor. Recordar que cada jugador tiene de su lado de la mesa la sota que representa el rey propio, como recordatorio (Si no se juega con sotas, el repartidor tiene al frente suyo la ficha de repartidor <img src="tiles/mano.png">, que juega primero).</p>
 
 <p>A él le corresponde el rey de oros como rey propio. Al jugador de su derecha le corresponde el rey de copas, al que sigue le corresponde el rey de espadas, y al pie (el que va último en el orden de los turnos) le corresponde el rey de bastos como rey propio.</p>
+
+</div><div class="noseparar">
 
 <p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
 	<tr>
@@ -723,7 +770,7 @@ de rey de copas le otorgará <span data-ssml-sub-alias="un tanto">1 tanto</span>
 entonces la pierna vale <b>2 tantos</b>. 1 por ser el rey de la ronda, y 1 por
 ser el rey propio. Por ejemplo, si en la ronda uno yo soy el repartidor, una pierna del <b>rey de Oros</b> equivale a 2 tantos.</p>
 
-</div>
+</div><div class="noseparar">
 <hr>
 
 <h1 id="ejemplo_de_partida">Ejemplo de partida en curso</h1>
@@ -857,7 +904,7 @@ Cartas en mesa &nearr; &nbsp;&nbsp;&nbsp;
 
 <p>En este momento es el turno del jugador Espadas (al frente) y tiene que hacer un descarte. Nótese que tiene 14 cartas en mano, y la de mas a su derecha es la que acaba de alzar del pozo.</p>
 
-
+</div>
 <hr>
 
 <h1 id="lista_de_tantos">Lista de Tantos <span class="jp">(Yakus)</span></h1>
@@ -1311,7 +1358,6 @@ Necesita un <img src="tiles/1o.png">, ó un
 <p>Las esperas son importantes porque la carta final que complete el juego determinará si recibe puntos extras dependiendo de que tipo de espera se considera, como se explicará en la sección siguiente. Además son muy importantes para evitar quedar bloqueado por la <a href="#penalizaciones">ley de descarte</a> (se explicará más cerca del final de este documento) que impide que se pueda ganar cantando Mahjong sobre <b>cualquier</b> descarte ajeno si al menos <b>una</b> de las cartas de la espera actual ya se encuentra en la propia zona de descarte.</p>
 
 
-
 <hr>
 <h1 id="como_calcular_los_puntos">Cómo calcular los puntos</h1>
 
@@ -1467,7 +1513,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 	</tr>
 </tbody>
 </table></p>
-
+</div><div class="noseparar">
 <p>Nótese que si la mano se completó cantando Mahjong para completar una pierna, para el recuento de Yapas esta contará como un juego con una carta robada.</p>
 
 <p>Luego de obtener esta suma, se <b>redondea el valor hacia arriba a la decena</b> (número terminado en cero). O sea que si la cuenta da 12, el valor redondeado es 20, si la cuenta da 6, el valor redondeado es 10, si la cuenta da 0, el valor redondeado es 0 (<a href="#cero_yapas">Cero yapas</a>).</p>
@@ -1479,7 +1525,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <p>Dicho esto, si la mano es Cero Yapas, pero en vez de ser cerrada es una <b>mano abierta</b>, se le otorgan 2 yapas extras (como está indicado en la tabla), para que de redondeado de un total de 10. Recordar que si la mano es abierta, el <b>tanto</b> de cero yapas <b>no vale</b>, por ser una mano <b>abierta</b>, así que "Cero Yapas Abierta" no es una mano válida, pero esta forma puede otorgar yapas si la mano es, por ejemplo, <b>Todo Intermedias</b> (Hay un ejemplo en la sección <a href="#preguntas_frecuentes">preguntas frecuentes</a>).</p>
 
 <p>Con todo esto, podemos decir que las únicas dos manos que son de menos de 10 yapas son Cero Yapas (0 yapas, robando del pozo) y Siete Pares (Vale 5 yapas). Todas las demás manos posibles valen 10 yapas o más.</p>
-</div>
+</div><div class="noseparar">
 
 <p>Esta es una tabla alternativa para simplificar el recuento de yapas:</p>
 
@@ -1533,7 +1579,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 </tbody>
 </table></p>
 
-
+</div>
 
 <hr>
 <h1 id="repartida_de_puntos">Repartida de puntos</h1>
@@ -1623,7 +1669,7 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 <img src="img/puntajes_compacta.png">
 </p>
 
-<p>La siguiente tabla tiene la misma información pero desglosada.</p>
+<p>Las siguientes tablas tiene la misma información pero desglosada.</p>
 
 <span align="center">
 
@@ -2740,7 +2786,7 @@ y
 <p>El <b>pozo vacante</b> son puntos que permanecen entre rondas.</p>
 
 <p>Cada vez que se <b>ocurra un empate</b>, o <b>gane el repartidor</b>, este pozo se aumenta en 300 puntos. El próximo jugador que gane se llevará puntos extras equivalentes a los puntos del pozo vacante. <b>El pozo vacante solo se vuelve a cero cuando gane algún jugador que no sea el repartidor de la ronda.</b></p>
-
+<div class="noseparar">
 <p>Este pozo se representa colocando tres fichitas de 100 puntos <img src="tiles/honba.png">, o anotando en la hoja de puntajes como si fuera un quinto jugador.</p>
 
 <p align="center"><img src="tiles/pozo_3.png"> <img src="tiles/10o.png">&nbsp;<img src="tiles/honba_v.png"> <img src="tiles/honba_v.png"> <img src="tiles/honba_v.png"></p>
@@ -2750,7 +2796,7 @@ y
 <p align="center"><img src="tiles/pozo_3.png"> <img src="tiles/10o.png">&nbsp;<img src="tiles/honba_v.png"></p>
 
 <p> Recordar que el ganador de la ronda no se lleva <i>esas fichas</i>, sino que simplemente están ahí para indicar el extra que deben pagar el o los perdedores de la ronda al ganador.</p>
-
+</div>
 <p>Si el ganador de la ronda ganó robando de un descarte de otro jugador, este otro jugador deberá pagar el <b>total del pozo vacante</b> (<b>300</b> en este caso). Si no, si el ganador gana robando del pozo, <b>los otros tres jugadores deberán pagar un tercio cada uno</b> (100). Cabe aclarar que estos puntos se contabilizan al final como puntos extras, luego de haber sacado las cuentas de los tantos y yapas de la mano.</p>
 
 <p>Si el repartidor gana la ronda, el repartidor <u>sigue siendo repartidor y la ronda se "vuelve a jugar"</u> <span class="jp">(Renchan)</span>, o sea que <b>no se avanza el contador de rondas y no se rotan las sotas</b>.</p>
@@ -2758,7 +2804,7 @@ y
 <p style="margin-left: 35.4pt;"><b>Nota:</b> El estándar de estas reglas es que la ronda <b>sólo</b> se repite si gana el repartidor <span class="jp">(Agari Renchan)</span> y la ronda avanza en cualquier otra situación. En algunas variantes de Mahjong Riichi, el repartidor sigue siendo el mismo <u>en caso de empate</u> <span class="jp">(Ryuukyoku Renchan)</span> pero la variante más común es que esto ocurra sólo si el repartidor tenía la mano lista al momento del empate <span class="jp">(Tenpai Renchan)</span>. La otra alternativa, para evitar que esto resulte en partidas muy largas (especialmente si ningún jugador se acerca a los cero puntos) es <b>optar por hacer que la ronda avance de todas formas</b> sin importar como termine la ronda. Esto hará que la partida dure el total de rondas como máximo, ya que no se repetirá ninguna ronda.</p>
 
 <p>Ahora bien, si la ronda la gana cualquier otro jugador que no sea el repartidor, entonces, luego de que se calculen y se descuenten los puntos correspondientes, <u>el pozo vacante vuelve a cero</u> y <b>se avanza a la siguiente ronda</b>:</p>
-
+<div class="noseparar">
 <p>Pasa a ser <b>repartidor</b> el jugador de la derecha, y se <b>rotan</b> las sotas. O sea que las sotas de cada jugador se pasan al jugador de su derecha.</p>
 
 <p style="text-align: center;" align="center">
@@ -2773,7 +2819,8 @@ y
 <br>
 <img src="tiles/arrowdownright.png"> <img src="tiles/10b.png"> <img src="tiles/arrowupright.png"></p>
 
-<div class="noseparar">
+</div><div class="noseparar">
+
 <p><b>La ronda <u>avanza</u> cuando rota la mano, o sea cuando cambia el repartidor.</b> Una partida de 8 rondas son 2 rotaciones completas (Se puede jugar nada más a 4 si se hace muy largo).</p><p>Además, cada 4 rondas <u>cambia el rey de la ronda</u>. O sea <b>cuando el repartidor vuelve a ser el mismo que cuando arrancó la partida</b>, esto se aplica así <a href="#2o3_jugadores">si se juega con menos de 4 jugadores</a>.</p>
 
 <p>Cuando esto ocurre, se debe cambiar también la sota que se encuentra al lado del pozo, para indicar que el Rey de la Ronda es de otro palo (En este caso, Rey de Copas)</p>
@@ -2783,7 +2830,7 @@ y
 <p>Las rondas se llaman <b>Oros-1</b>, Oros-2, Oros-3, Oros-4, <b>Copas-1</b>, Copas-2, Copas-3, Copas-4, <b>Espadas-1</b>, Espadas-2, Espadas-3, Espadas-4, <b>Bastos-1</b>, Bastos-2, Bastos-3, y Bastos-4.</p>
 
 <p>Una partida corta se juega a 4 rondas, y se dice que se juega "a Oros". Una partida estándar se juega a 8 rondas, y se dice que se juega "a Copas". A 12 rondas se juega "a Espadas", y una partida larga de 16 rondas se juega "a Bastos".</p>
-
+</div><div class="noseparar">
 <p>Lo más común es jugar a Oros (partida corta/4 rondas) o a Copas (partida estándar/8 rondas). Casi nunca se juega a Espadas o a Bastos, y sólo está reservado para sesiones maratónicas, ya que puede durar varias horas, <i>sobre todo si se repiten rondas</i>.</p>
 
 <p style="text-align: center;" align="center">
@@ -2800,7 +2847,7 @@ y
 <p>El juego se termina cuando algún jugador llega a tener <i>menos</i> de cero puntos (bancarrota), o luego de que se jueguen el total de las rondas. En ese momento, el jugador con más puntos se considera el ganador de la partida. Una persona que tiene <b>exactamente</b> 0 puntos puede seguir jugando.</p>
 
 <p>Algunas variantes también exigen que el ganador tiene que tener al menos 30000 puntos para ganar. Si nadie llega a tener 30000, se sigue jugando <u>hasta que un jugador alcance los 30000 puntos</u>, o un jugador entre en bancarrota (Se pasa a Copas-1).</p>
-
+</div><div class="noseparar">
 <p>Es importante ir anotando por qué ronda van para saber cuál es el rey de la ronda, cuya pierna otorga un tanto extra a la mano.</p>
 <p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
 	<tr>
@@ -2893,7 +2940,7 @@ o nadie mostró la mano, entonces no se reparte nada.</p>
 <img src="tiles/3e.png"><img src="tiles/5e.png"><img src="tiles/8e.png"><img src="tiles/1b.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/3b.png"><img src="tiles/6b.png"><img src="tiles/9b.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/11o.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/11e.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/12o.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/12c.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/12e.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/12b.png" style="outline: 2px solid red; outline-offset: -1px;"> - <img src="tiles/9o.png" style="outline: 2px solid red; outline-offset: -1px;">
 <br>Como tengo nueve cartas distintas que son o bien unos, nueves, reyes, o caballos, entonces puedo declarar empate y se pasa a la siguiente ronda.</p>
 
-<div class="noseparar"><h3>Cuatro reyes idénticos en el primer descarte</h3>
+</div><div class="noseparar"><h3>Cuatro reyes idénticos en el primer descarte</h3>
 <p>Otra situación que resulta en <b>empate</b> es si los <b>primeros cuatro descartes</b> del juego son <u>el mismo rey del mismo palo</u>. Esto tradicionalmente se considera mal augurio, y se pasa a la siguiente ronda automáticamente. Si alguien roba un descarte, o <b>baja un cuarteto</b>, esto no cuenta y la partida sigue normalmente.</p>
 
 <p style="text-align: center;" align="center">
@@ -3070,6 +3117,7 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 
 <p>Además, cada vez que se repita la ronda (por empate, o si gana el repartidor) en vez de agregarse 300 puntos al pozo vacante, se agregará una ficha <img src="tiles/honba.png"> representando <b>un tanto adicional</b>, y el jugador que gane se lo llevará.</p>
 
+<div class="noseparar">
 <p>Esta forma de anotar puntos <b>NO es compatible con la forma de anotar puntos original utilizada en el Mahjong Riichi</b> y solamente se incluye como alternativa para jugar de forma casual, sin tener que andar sacando calculadoras.</p>
 <table width="100%"><tr><td align="center">
 
@@ -3187,7 +3235,7 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 </div>
 <hr>
 
-
+<div class="noseparar">
 <h2 id="2o3_jugadores">Jugando de a menos o más jugadores</h2>
 <p>El Mahjong se puede jugar de a 2 o 3 jugadores también, con algunos ajustes. El orden de las rondas se reduce, ya que se hace una rotación completa de repartidor mucho antes.</p>
 
@@ -3218,7 +3266,7 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 
 <p>Se debe usar la siguiente tabla para calcular los puntos. El repartidor y el no-repartidor usarán los mismos valores.</p>
 <p align="center"><img src="img/puntajes_2j.png"></p>
-<div class="noseparar">
+</div><div class="noseparar">
 <h3>3 jugadores, estándar</h3>
 <p>La partida de 3 jugadores se juega casi de la misma forma que una partida de 4, solo que uno de los asientos debe quedar vacío (Nadie juega en el asiento de <b>bastos</b>). Se utiliza la misma tabla de puntajes que para cuatro jugadores.</p>
 <p>Orden de turnos para 3 jugadores:</p>
@@ -3257,7 +3305,7 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 		<td>A</td><td>B</td><td>C</td>
 	</tr>
 </tbody></table></p>
-</div>
+</div><div class="noseparar">
 <h3>3 jugadores, con mazo reducido <span class="jp">(Sanma)</span></h3>
 <p>Para cambiar la dinámica de una partida de 3 jugadores se pueden quitar del mazo todas las cartas de espadas numeradas del 2 al 8. Y se prohíbe bajar escaleras.</p>
 <p align="center"><img src="tiles/12b.png"><img src="tiles/12b.png"><img src="tiles/12b.png"></p>
@@ -3267,6 +3315,11 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 <p>Jugar de a 5 jugadores es básicamente jugar de a 4 pero en cada ronda hay un jugador que no juega. Primero se elige al azar un jugador. Este jugador no participará en la primera ronda. Luego al finalizar la primera ronda, antes de rotar el repartidor, el repartidor actual se levanta, y en su lugar se sienta el jugador que no jugó la primera ronda. Luego se rota el repartidor a la derecha. Esto se repite cada vez que cambie el repartidor.</p>
 <p>Otra alternativa es en vez de hacer que se levante el repartidor, hacer que se levante el jugador que ganó la mano. Así el jugador que no jugó ocupa el asiento del jugador que cantó Mahjong, y le da chance para descansar, mirar, ir al baño, o preparar un mate :-)</p>
 </div>
+
+<h3>6 o más jugadores</h3>
+<p>Si son muchos jugadores, lo mejor es dividir el juego en partidas de menos jugadores. 6 jugadores pueden jugar dos partidas de a 3. 7 jugadores pueden jugar una partida de a 4 y una de a 3. 8 jugadores son simplemente 2 partidas de 4, etcétera.</p>
+
+<p>No existe una variante general para jugar Mahjong con Cartas Españolas en solitario (1 jugador) pero se puede jugar solo para practicar descartes, simulando una mano de un rival que simplemente roba y descarta, a ver si se puede alcanzar una mano válida antes que se alcancen los descartes máximos.</p>
 
 <hr>
 
@@ -3280,12 +3333,14 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 
 <p>Para aprender la dinámica del juego, los jugadores principiantes pueden optar primero por hacer una ronda de práctica en donde no importa si la mano llega a tener un tanto o no, y en donde el objetivo es simplemente ser el primero en obtener una mano compuesta por 4 juegos y <span data-ssml-sub-alias="un par">un par</span> (Se ignora por completo la lista de tantos y el cálculo de puntajes). Esto es útil para aprender como hacer cantos, y como bajar juegos, y como se altera el orden de los turnos si alguien canta pierna o cuarteto.</p>
 
-<p>Si aún así parece difícil, o un salto muy grande, existe una forma mucho más metódica de enseñar las reglas de Mahjong llamada "Reglas del Tíbet" o "Método Tibet". Donde la idea es ir jugando varias rondas, empezando por una versión súper simplificada del Mahjong, y luego en siguientes rondas ir incorporando nuevas reglas, hasta acabar en una partida normal de Mahjong con Cartas Españolas.</p>
+<p>Si aún así parece difícil, o un salto muy grande, existe una forma mucho más metódica de enseñar las reglas de Mahjong llamada "Reglas del Tíbet", "Método Tibet", o Mahjong Tibetano. Donde la idea es ir jugando varias rondas, empezando por una versión súper simplificada del Mahjong, y luego en siguientes rondas ir incorporando nuevas reglas, hasta acabar en una partida normal de Mahjong con Cartas Españolas.</p>
 </div>
 <hr>
 <div class="noseparar">
 
 <p>El <b>método Tíbet</b> es una forma simplificada de enseñar Mahjong paso a paso, incrementando en dificultad de a poquito, ideal para enseñar a novatos, o a cualquiera que se sienta abrumado por las reglas complicadas del Mahjong Japonés. Se empieza jugando simple, con solo un palo, sin puntos ni nada, y paso a paso se van agregando nuevas cosas, hasta finalmente llegar a jugar una ronda completa de Mahjong.</p>
+
+<p>El <b>Mahjong</b> es parecido al <b>Chinchón</b>, al <b>Rummy</b>, y otros juegos de cartas en donde el objetivo es formar juegos en mano; pero hay unas cuantas diferencias que se van a ir explicando paso a paso a continuación.</p>
 
 <h3>Etapa 1: Sólo un palo, 5 cartas.</h3>
 
@@ -3298,6 +3353,8 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 <p>El objetivo del juego es ser el primer jugador en conseguir armar una mano completa, de 5 cartas, formadas por un juego y un par.</p>
 
 <p>Un juego puede ser o una <b>pierna</b> (Tres cartas iguales, por ejemplo 3-3-3) o una <b>escalera</b> (Secuencia de 3 cartas en orden, por ejemplo 2-3-4). El <b>par</b> son dos cartas iguales (Una pierna con una carta menos).</p>
+
+<p>Una mano completa debe tener siempre <b>un</b> par.</p>
 
 <table width="100%" style="table-layout: fixed;" align="center"><tr>
 <td align="center"><img src="tiles/3c.png"><img src="tiles/4c.png"><img src="tiles/5c.png"><br><b>Una escalera</b> (Secuencia de cartas)</td>
@@ -3482,7 +3539,7 @@ Una escalera y un par.</td>
 <br>R: Sí, pero no es recomendable porque los colores pueden confundir. Hay que asegurarse que hayan la cantidad correcta de cartas en el mazo Hay que quitar también los dieces y las jotas ocupan el lugar de las sotas. Los aces cuentan como unos.</p>
 
 <p><b>P: ¿Puedo jugar con menos de 4 mazos, o con mazos de 40 cartas en vez de 50?</b>
-<br>R: <b>No.</b> Es necesario que sean 4 mazos para que hayan 4 copias de cada carta, y es necesario que hayan ochos y nueves. Por eso hay que usar los mazos de 50 cartas.</p>
+<br>R: <b>No.</b> Es necesario que sean 4 mazos para que hayan 4 copias de cada carta, y es necesario que hayan ochos y nueves. Por eso hay que usar los mazos de 50 cartas. Los mazos de <b>48 cartas</b> también sirven porque son iguales a los de 50 cartas pero sin comodines.</p>
 
 
 <p><b>P: ¿Se puede jugar sin fichas ni palitos?</b>
@@ -3509,7 +3566,7 @@ Una escalera y un par.</td>
 <p><b>P: ¿Qué pasa si un jugador canta Escalera pero otro jugador canta Pierna o Cuarteto?</b>
 <br>R: El canto de escalera queda invalidado y sólo cuenta el de Pierna o el de Cuarteto.</p>
 
-</div><div class="noseparar">
+</div><div class="noseparar" id="si_canto_pierna_y_mahjong">
 
 <p><b>P: ¿Qué pasa si un jugador canta Pierna, Escalera, o Cuarteto, pero otro jugador canta Mahjong al mismo tiempo o inmediatamente después?</b>
 <br>R: Estos cantos quedan invalidados y sólo cuenta el de Mahjong.</p>
@@ -3549,10 +3606,10 @@ Una escalera y un par.</td>
 </div><div class="noseparar">
 
 <p><b>P: Si dos jugadores cantan Pierna al mismo tiempo, ¿quién se queda con la carta?</b>
-<br>R: Esto nunca puede ocurrir porque sólo hay 4 copias de cada carta. Si un jugador canta pierna pero otro canta Mahjong, tiene prioridad el Mahjong por sobre la pierna.</p>
+<br>R: Esto nunca puede ocurrir porque sólo hay 4 copias de cada carta. Si <a href="#si_canto_pierna_y_mahjong">un jugador canta pierna pero otro canta Mahjong</a>, tiene prioridad el Mahjong por sobre la pierna. </p>
 
 <p><b>P: Si dos jugadores cantan Escalera al mismo tiempo, ¿quién se queda con la carta?</b>
-<br>R: Esto nunca puede ocurrir porque sólo el jugador a la derecha del que descartó la carta puede cantar Escalera.</p>
+<br>R: Esto nunca puede ocurrir porque sólo el jugador a la derecha del que descartó la carta puede cantar Escalera. No confundir el canto de Escalera con el canto de Mahjong (<a href="#si_canto_pierna_y_mahjong">ver las preguntas de más arriba</a>).</p>
 
 </div><div class="noseparar">
 
@@ -3600,6 +3657,13 @@ Una escalera y un par.</td>
 
 <p><b>P: La ley de descarte es difícil de entender ¿Se puede jugar sin esa regla?</b>
 <br>R: Hay que recordar que esta regla está presente en el Mahjong Riichi original, y que el objetivo de este reglamento es hacer que las reglas sean lo más parecidas posible a eso, para facilitar la transición. Además, la razón de ser de esta regla es poder saber que cartas son seguras para descartar cuando otro jugador canta envido. Una forma simple de entender esto es entender cuáles cartas completan la mano actual, mas allá de que otorguen 1 tanto o no. Si alguna de esas cartas se encuentra en la zona de descarte propia, entonces no se puede cantar Mahjong sobre un descarte. Si <u>ninguno</u> de los jugadores entiende esa regla, se puede jugar sin esa regla, pero sería una variante distinta y las estrategias cambiarían mucho.</p>
+
+</div><div class="noseparar">
+
+<p><b>P: ¿Se puede jugar al Mahjong <a href="#tibet">Tibetano</a> con un mazo común de 40 cartas?</b>
+<br>R: Técnicamente sí, pero solo hasta la etapa 2, porque todas las cartas son del mismo palo. Así que se puede usar un mazo común y corriente de 40 cartas, o uno de 50 sin las sotas ni los reyes, ni los comodines, y simplemente ignorar los palos y asumir que son todas del mismo palo.</p>
+
+<p>En la Etapa 3 hay que incorporar un nuevo palo, así que lo que se puede hacer es mezclar 2 mazos de cartas idénticos, y asumir que las espadas y los bastos son el mismo palo, y que los oros y las copas son el mismo palo. De cualquier forma, el objetivo del Método Tíbet es explicar de forma progresiva las reglas del Mahjong para finalmente acabar jugando una partida completa del Mahjong, así que ya se debería tener un mazo de Mahjong preparado con 4 mazos de 50 cartas de antemano, con lo cual hacer el mazo de Tíber con las copas sobrantes debería ser más simple que andar juntando mazos extras.</p>
 
 </div><div class="noseparar">
 
@@ -4241,7 +4305,6 @@ pintas (el borde de las cartas) se usa el orden oro, copa, espada, y basto.</p>
 
 </ul>
 
-<div class="noseparar">
 <p>Estos son los términos que se adaptaron y localizaron para
 jugar al Mahjong con cartas de la baraja española, para hacerlo más fácil de
 explicar.</p>
@@ -4365,7 +4428,6 @@ explicar.</p>
     <td>Bendición</td>
   </tr>
 </tbody></table>
-</div>
 
 
 <hr>
@@ -4388,6 +4450,10 @@ function ocultar_cambios()
 <div class="no-imprimir">
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.10.11) Agregado código javascript para convertir las imágenes de cartas españolas a fichas de Mahjong sin tener que cargar otro sitio web. Para simplificar actualizaciones futuras.</li>
+<li>(v1.10.10) Preguntas frecuentes: Se puede usar un mazo común y corriente para jugar Mahjong Tíbet.</li>
+<li>Más arreglos en el formato y divs de HTML.</li>
+<li>Aclaración para más jugadores en la sección de variantes.</li>
 <li>(v1.10.9) Errores de página en versión para imprimir y varias correcciones de HTML.</li>
 <li>(v1.10.8) Agregada otra aclaración sobre Cero Yapas, y pregunta relevante en la sección preguntas frecuentes.</li>
 <li>Agrego una aclaración al principio de todo, para saltear a la sección Tíbet si las reglas son complicadas.</li>
@@ -4532,7 +4598,7 @@ La verdadera mano Chanta es sencillamente una mano donde todos los juegos contie
 
 <script src="parametros.js"></script>
 <script>
-console.log("Script loaded successfully");
+console.log("Script cargado con éxito.");
 if (hayParametro("wide"))
 {
 	document.children[0].children[1].style.maxWidth = "98%";
@@ -4541,6 +4607,11 @@ if (hayParametro("zoom"))
 {
 	document.children[0].children[1].style.zoom = "160%";
 }
+
+//Si se carga con el parámetro #en_japones, usar fichas japonesas.
+if (window.location.href.slice(-10) == "en_japones") cambiar_a(1);
+
+
 </script>
 
 </body></html>
