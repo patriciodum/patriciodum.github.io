@@ -130,8 +130,7 @@ function cambiar_a(n)
 			<p><a href="#" onclick="window.print()">🖨 Versión para Imprimir<br><small>(Guardar como PDF)</small></a></p>
 		</td>
 		<td align="center">	
-			<p id="cambiar_a_japonesas"><a href="#en_japones" onclick="cambiar_a(1);">Cambiar a fichas de Mahjong &rarr;</a>.</p>
-			<p hidden id="cambiar_a_espanolas"><a href="#en_espanol" onclick="cambiar_a(0);">Cambiar a cartas Españolas &rarr;</a>.</p>
+			<p id="cambiar_a_espanolas"><a href="..">Cambiar a cartas Españolas &rarr;</a>.</p>
 			<!--
 			<p id="cambiar_a_japonesas"><a href="japones">Cambiar a fichas de Mahjong &rarr;</a>.</p>
 			<p hidden id="cambiar_a_espanolas"><a href="..">Cambiar a cartas Españolas &rarr;</a>.</p>
@@ -159,9 +158,7 @@ function cambiar_a(n)
 	</tr>
 </table>
 
-<p hidden id="nota_en_japonesas"><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera.<span class="no-imprimir">Para ver esta misma página con cartas españolas, <a href="#en_espanol" onclick="cambiar_a(0);">haga clic aquí</a>.<br>
-
-Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga clic aquí para ver una versión anterior sin Javascript.</a></span></p>
+<p><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera.<span class="no-imprimir">Para ver esta misma página con cartas españolas, <a href="..">haga clic aquí</a>.<br></span></p>
 
 <p hidden class="texto-vertical-no-soportado" style="color:red;"><b>Atención:</b> Este navegador web no está actualizado, y las tablas con texto vertical se mostrarán mal (Rey de ronda).</p>
 
@@ -4793,11 +4790,6 @@ if (hayParametro("zoom"))
 {
 	document.children[0].children[1].style.zoom = "160%";
 }
-
-//Si se carga con el parámetro #en_japones, usar fichas japonesas.
-if (window.location.href.slice(-10) == "en_japones") cambiar_a(1);
-
-
 </script>
 
 </body></html>
