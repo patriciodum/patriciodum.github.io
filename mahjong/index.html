@@ -50,7 +50,6 @@ th{
 	display: inline;
 }
 
-
 @supports (writing-mode: vertical-lr)
 {
 	.texto-vertical-no-soportado
@@ -70,7 +69,7 @@ th{
 <img src="tiles/1o.png" width="52" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img width="52" src="tiles/1o.png" style="transform: translateX(4px) rotate(-10deg);"><img width="52" src="tiles/1e.png" style="transform:translateX(-4px)translateY(-6px);"><img width="52" src="tiles/1e.png" style="transform:translateX(-8px) rotate(10deg);"><img width="52" src="tiles/1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 </td></tr></table>
 
-<p align="right"><small>Versión 1.10.13, (11:34, 18-11-2026)</small></p>
+<p align="right"><small>Versión 1.10.14, (13:45, 18-11-2026)</small></p>
 
 <hr>
 
@@ -160,7 +159,9 @@ function cambiar_a(n)
 	</tr>
 </table>
 
-<p hidden id="nota_en_japonesas"><b>Importante:</b> Este documento fué diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera. Para ver esta misma página con cartas españolas, <a href="#en_espanol" onclick="cambiar_a(0);">haga clic aquí</a>.</p>
+<p hidden id="nota_en_japonesas"><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera.<span class="no-imprimir">Para ver esta misma página con cartas españolas, <a href="#en_espanol" onclick="cambiar_a(0);">haga clic aquí</a>.<br>
+<br>
+Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga clic aquí para ver una versión anterior sin Javascript.</a></span></p>
 
 <p hidden class="texto-vertical-no-soportado" style="color:red;"><b>Atención:</b> Este navegador web no está actualizado, y las tablas con texto vertical se mostrarán mal (Rey de ronda).</p>
 
@@ -194,22 +195,27 @@ function cambiar_a(n)
 <li><a href="#inicio_del_juego">Inicio del juego</a></li>
 <li><a href="#su_turno">Su turno</a></li>
 <li><a href="#cantos_y_juegos">Cantos y juegos</a></li>
+<br>
 <li><a href="#por_que_no_robar"><b>¿Por qué no robar todos los juegos posibles?</b></a></li>
 <li><a href="#ejemplo_de_partida">Ejemplo de partida en curso</a></li>
 <li><a href="#lista_de_tantos"><b>Lista de tantos</b></a> <i class="no-imprimir" style="color: red">←¡Actualizado (v1.9)!</i></li>
 <li><a href="#estrategias_para_principiantes"><b>Estrategias para principiantes</b></a></li>
 <li><a href="#esperas">Mano lista y Esperas</a></li>
+<br>
 <li><a href="#como_calcular_los_puntos">Cómo calcular los puntos</a></li>
 <li><a href="#bonificaciones">Bonificaciones</a></li>
 <li><a href="#tabla_de_yapas">Yapas</a></li>
 <li><a href="#repartida_de_puntos">Repartida de puntos</a></li>
 <li><a href="#tabla_de_puntajes">Tablas de puntajes precalculadas</a></li>
+<br>
 <li><a href="#siguiente_ronda">Siguiente ronda, y pozo vacante</a></li>
 <li><a href="#empate">Empate</a></li>
 <li><a href="#penalizaciones">Penalizaciones y equivocaciones. Ley de descarte</a> <i class="no-imprimir" style="color: red">←¡Actualizado (v1.10)!</i></li>
+<br>
 <li><a href="#puntuacion_simplificada">Variantes: Puntuación simplificada</a></li>
 <li><a href="#2o3_jugadores">Variantes: jugando de a menos o más jugadores</a></li>
 <li><a href="#tibet"><b>Mahjong fácil para principiantes (Método Tíbet)</b></a> <b class="no-imprimir" style="color: red">¡Nuevo! (v1.10.5)</b></li>
+<br>
 <li><a href="#preguntas_frecuentes">Preguntas frecuentes</a></li>
 <li><a href="#ejemplos_de_manos">Anexo: Ejemplos de manos</a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
 <li><a href="#anexo">Anexo: Notas y cambios del Mahjong Riichi</a></li>
@@ -696,10 +702,16 @@ Aquí se colocan los juegos bajados<br>&darr; &darr; &darr;<br><img src="tiles/1
 </p>
 
 <p>Un dato: las manos de los jugadores son siempre de 13 o 14 cartas, sumando los juegos bajados y las cartas en mano (los cuartetos se consideran de 3 cartas, para que dé esta cuenta). El jugador que tiene <b>14</b> cartas, es porque es su turno y le toca descartarse una, mientras que los demás tienen <b>13</b> cartas.</p></div>
+<hr>
+
+<p>Si se han entendido las reglas bien hasta ahora, se puede hacer una <a href="#partida_de_practica">"partida de práctica"</a>, en donde los tantos no importan y el objetivo es simplemente ser el primer jugador en armar una mano completa, compuesta por 4 juegos y 1 par, para cantar <b>Mahjong</b> y ganar la ronda.</p>
+
+<p>En esta partida de práctica, lo más coherente sería robar siempre todos los juegos posibles para completar la mano lo antes posible, pero <i>en el juego real</i> tener solo una mano completa <u>no es suficiente</u>.</p>
 
 <hr>
+
 <h1 id="por_que_no_robar">¿Por qué no robar todos los juegos posibles?</h1>
-<!-- ROBAR ES MALO!!-->
+<!-- -->
 <p>Una mano puede estar <i>completa</i> (tener los cuatro juegos y el par ya formados) pero solo se considerara una <b>mano válida</b> si tiene al menos <b>1 tanto</b>.</p>
 
 <p>Los tantos son el <b>valor</b> de la mano, y hay diferentes formas y grupos de juegos que otorgan tantos a la mano.</p>
@@ -3592,17 +3604,17 @@ Una escalera y un par.</td>
 
 <p>Las demás reglas siguen siendo las mismas.</p>
 
-<h3>Etapa 4: Mazo completo (3 palos, 14 cartas). Sin cuartetos, ni tantos.</h3>
+<h3 id="partida_de_practica">Etapa 4: Mazo completo (3 palos, 14 cartas). Sin cuartetos, ni tantos.</h3>
 
 <p>Si ya llegamos a este punto, ya estamos listos para jugar con el mazo completo, con 3 palos, e incluyendo los Reyes (funcionan igual que los caballos, sólo sirven para hacer piernas, no escaleras). Para hacer esto hay que fabricar el mazo, ahora sí, como se explica en la primer sección de este documento, quitando las copas, y agregando las espadas y los bastos (Recordar que las sotas no se usan).</p>
 
-<p>Si se ha salteado el reglamento para ver directamente esta sección, <a href="#inicio_del_juego"><b>ahora es momento de volver atrás y darle una leída a las reglas desde el principio</b></a>, al menos a las principales (no hace falta entender los tantos, las cartas bonificadas, las yapas, o como calcular los puntos) pero si todavía se siente muy abrumador se pueden ir introduciendo reglas poco a poco.</p>
-
-<p>Primero hay que explicar lo que son los <b>cantos</b>. O sea que en vez de sólo poder cantar Mahjong cuando alguien tira la última carta, ahora tenemos la posibilidad de "bajar un juego en mesa". Ver la sección <a href="#cantos_y_juegos">Cantos y juegos</a> para entender como funciona esa mecánica.</p>
+<p>Si se ha salteado el reglamento para ver directamente esta sección, <a href="#inicio_del_juego"><b>ahora es momento de volver atrás y darle una leída a las reglas desde el principio</b></a>, al menos hasta la sección de "Cantos y juegos" para entender lo que son los <b>cantos</b>. O sea que en vez de sólo poder cantar Mahjong cuando alguien tira la última carta, ahora tenemos la posibilidad de "bajar un juego en mesa".</p>
 
 <p>Para esta partida de práctica, los únicos cantos posibles son <b>Escalera</b>, <b>Pierna</b>, y <b>Mahjong</b>. Los <b>cuartetos</b> por ahora no valen nada, y tampoco es necesario hacer un pozo muerto, ni revelar una carta bonificada. Recordar además que <u>cualquiera</u> puede cantar <b>pierna</b> en cualquier turno (y se saltean turnos), pero sólo puede cantar <b>escalera</b> un jugador durante su turno.</p>
 
 <p>Como es una <i>partida de práctica</i>, el único requisito para poder cantar Mahjong es <b>tener una mano completa, compuesta de 4 juegos y 1 par</b>. No hace falta que la mano valga 1 tanto, y no hace falta calcular los puntos ni las yapas de la mano. Tampoco hace falta cantar <b>envido</b>, y la <b>ley de descarte</b> no cuenta.</p>
+
+<p>Las <b>sotas</b> no son necesarias tampoco, pero está bien explicarlas para que se entienda el concepto de repartidor y rotación de rondas como se explica en la sección <a href="#siguiente_ronda">"Siguiente ronda, y pozo vacante"</a>. De todas formas el concepto de Rey Propio y Rey de Ronda sólo será relevante cuando se expliquen como se calculan los "Tantos" de la mano, que en esta etapa no son necesarios (Porque el único objetivo es tener una mano completa, sin importar cuantos tantos vale).</p>
 
 <h3>Etapa 6: Cuartetos y pozo muerto.</h3>
 
@@ -4614,6 +4626,7 @@ function ocultar_cambios()
 <div class="no-imprimir">
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.10.14) Pequeñas aclaraciones sobre Partidas de práctica.</li>
 <li>(v1.10.13) Quito un par de enlaces en el medio del texto para hacer la lectura menos intimidante con tantos saltos y llamadas.</li>
 <li>Correcciones HTML. Agrego un disclaimer y fallback para navegadores web desactualizados que no soporten texto vertical.</li>
 <li>(v1.10.12) Preguntas frecuentes: Aclaro que "al mismo tiempo" no tiene que ser al instante, sino que también se puede permitir que haya unos segundos de diferencia.</li>
