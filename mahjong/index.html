@@ -20,6 +20,18 @@
   }
 }
 
+
+a.link_imporante{
+  color: brown;
+}
+a.link_imporante:visited {
+  color: brown;
+}
+a.link_imporante:active {
+  color: red;
+}
+
+
 @media print {
   img, .noseparar {
     break-inside: avoid;
@@ -69,7 +81,7 @@ th{
 <img src="tiles/1o.png" width="52" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img width="52" src="tiles/1o.png" style="transform: translateX(4px) rotate(-10deg);"><img width="52" src="tiles/1e.png" style="transform:translateX(-4px)translateY(-6px);"><img width="52" src="tiles/1e.png" style="transform:translateX(-8px) rotate(10deg);"><img width="52" src="tiles/1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 </td></tr></table>
 
-<p align="right"><small>Versión 1.10.14, (13:45, 18-11-2026)</small></p>
+<p align="right"><small>Versión 1.10.15, (00:52, 19-11-2026)</small></p>
 
 <hr>
 
@@ -132,6 +144,7 @@ function cambiar_a(n)
 		<td align="center">	
 			<p id="cambiar_a_japonesas"><a href="#en_japones" onclick="cambiar_a(1);">Cambiar a fichas de Mahjong &rarr;</a>.</p>
 			<p hidden id="cambiar_a_espanolas"><a href="#en_espanol" onclick="cambiar_a(0);">Cambiar a cartas Españolas &rarr;</a>.</p>
+			<p hidden><a href="..">Cambiar a cartas Españolas &rarr;</a>.</p>
 			<!--
 			<p id="cambiar_a_japonesas"><a href="japones">Cambiar a fichas de Mahjong &rarr;</a>.</p>
 			<p hidden id="cambiar_a_espanolas"><a href="..">Cambiar a cartas Españolas &rarr;</a>.</p>
@@ -146,11 +159,13 @@ function cambiar_a(n)
 			<p><a href="https://patriciocomputacion.com/mahjong/nes/" target="_blank"><b>Jugar&nbsp;en&nbsp;la Family Game</b></a></p>
 		</td>   <!-->
 		
-		<td align="center" colspan="2">	
+		<td align="center">	
 				<p><a href="https://riichi.onecomp.one" title="Usa fichas de Mahjong Japonés" target="_blank">Calculadora de Riichi (Mahjong Japonés)</a></p>
 		</td>
-		
-		<td  align="center">	
+		<td align="center">	
+				<p><a href="diferencias_con_1_4_7.html" class="link_imporante"><b>Resumen de cambios</b><br><small>Versión 1.7.4 a 1.10.14</small></a></p>
+		</td>
+		<td align="center">	
 				<p><a href="https://patriciocomputacion.com/mahjong/EMA_Riichi_Rules_2008_es.pdf" title="Reglas oficiales usadas en Europa" target="_blank">Reglas oficiales de Mahjong Japonés</a></p>
 		</td>
 		<td align="center">	
@@ -158,6 +173,7 @@ function cambiar_a(n)
 		</td>
 	</tr>
 </table>
+<p hidden><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera.<span class="no-imprimir">Para ver esta misma página con cartas españolas, <a href="..">haga clic aquí</a>.<br></p>
 
 <p hidden id="nota_en_japonesas"><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera.<span class="no-imprimir">Para ver esta misma página con cartas españolas, <a href="#en_espanol" onclick="cambiar_a(0);">haga clic aquí</a>.<br>
 <br>
@@ -1338,7 +1354,7 @@ verdes, mientras que el 1,5,7,9 no lo son. Esta mano <b>puede</b> ser abierta, o
 descartado únicamente unos, nueves, caballos, y reyes; y sin que nadie le haya robado ninguno de <i>esos</i> descartes. Esta victoria es especial y requiere que la ronda termine en empate. Se le otorga una victoria de 5 tantos al jugador que logre esto.</p>
 
 
-<p><b>Mano servida </b><span class="jp">(Renhou)</span> &#8211; Ganar en el primer turno posible con el descarte de otro jugador. Este tanto no vale si alguien en esta ronda cantó Escalera, Pierna o Cuarteto. Como excepción, esta mano vale siempre 5 tantos y no se suma nada más.</p>
+<p><b>Mano servida </b><span class="jp">(Renhou)</span> &#8211; Ganar en el primer turno posible con el descarte de otro jugador. Este tanto no vale si alguien en esta ronda cantó Escalera, Pierna o Cuarteto. Esta mano vale siempre 5 tantos a menos que la mano de por sí sume más de cinco tantos, en cuyo caso se ignoran los cinco tantos de Mano servida y se usan los tantos de la mano en su lugar.</p>
 
 <hr>
 
@@ -1496,6 +1512,8 @@ de la ronda. Los demás jugadores no deben contar nada.</p>
 <img src="tiles/2e.png"><img src="tiles/2e.png"><br>Por ejemplo, esta mano tiene tres 4 de oros, así que se le suman TRES tantos extras.</p>
 </div>
 <p>En caso que haya un nueve en el indicador de bonus, la carta bonificada será el uno.</p>
+
+<p>Si una carta bonificada aparece <i>repetida</i> en el indicador de bonus, entonces la bonificación se debe repetir también. O sea que si hay <b>dos</b> 7 de bastos en el indicador de bonus, cada 8 de bastos en la mano ganadora añadirá <b>dos</b> tantos a la mano.</p>
 
 <p><b>Ojo:</b> es muy importante aclarar que estos tantos extras solo valen si la mano YA tenía al menos <span data-ssml-sub-alias="un tanto">1 tanto</span>. Las bonificaciones no sirven para hacer que una mano de 0 tantos sea una mano válida.</p>
 
@@ -4626,6 +4644,8 @@ function ocultar_cambios()
 <div class="no-imprimir">
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.10.15)Agregada sección de cambios con 1.7.4, aclarando la mayor parte de los cambios radicales a las reglas del juego. Para jugadores que vuelven a leer el manual después de la primera publicación.</li>
+<li>Aclaración: si aparece una carta bonificada varias veces, entonces la bonificación vale un tanto por CADA vez que aparece.</li>
 <li>(v1.10.14) Pequeñas aclaraciones sobre Partidas de práctica.</li>
 <li>(v1.10.13) Quito un par de enlaces en el medio del texto para hacer la lectura menos intimidante con tantos saltos y llamadas.</li>
 <li>Correcciones HTML. Agrego un disclaimer y fallback para navegadores web desactualizados que no soporten texto vertical.</li>

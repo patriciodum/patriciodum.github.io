@@ -1,0 +1,175 @@
+<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>Mahjong con Cartas Españolas</title>
+
+<link rel="icon" type="image/x-icon" href="./oro.ico">
+<meta name="description" content="Lista de diferencias entre la version 1.7.4 y la version 1.10.14.">
+<meta name="keywords" content="Cartas,Españolas,Mahjong,Riichi,麻雀計算機">
+</head>
+
+<body style="font-size: 11pt; font-family: &quot;Segoe UI&quot;,sans-serif; color: rgb(51, 61, 66);">
+<style>
+.imprimir {
+	display: none; 
+}
+
+@media print {
+  .no-imprimir {
+    display: none;
+  }
+  .imprimir {
+	display: block; 
+  }
+}
+
+@media print {
+  img, .noseparar {
+    break-inside: avoid;
+  }
+  h1, .pagina-nueva {
+    break-before: page;
+  }
+  .saltar-de-pagina {
+	break-after: page;
+  }
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto; 
+}
+.jp
+{
+  color: #8080FF;
+  font-style: italic;
+}
+th{
+	color: black;
+	background-color: rgb(200,200,255);
+}
+
+.texto-vertical-no-soportado {
+	display: inline;
+}
+
+@supports (writing-mode: vertical-lr)
+{
+	.texto-vertical-no-soportado
+	{
+		display: none;
+	}
+	.texto-vertical
+	{
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
+	}
+}
+</style>
+<h3 align="center">Mahjong con cartas españolas</h3>
+<table width="100%" height="100"><tr><td>
+<p align="center">
+<img src="tiles/1o.png" width="52" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img width="52" src="tiles/1o.png" style="transform: translateX(4px) rotate(-10deg);"><img width="52" src="tiles/1e.png" style="transform:translateX(-4px)translateY(-6px);"><img width="52" src="tiles/1e.png" style="transform:translateX(-8px) rotate(10deg);"><img width="52" src="tiles/1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
+</td></tr></table>
+
+<h1 align="center">Cambios en las reglas (1.7.4 -> 1.10.14).</h1>
+
+<hr>
+<h1><a href=".">Haga clic aquí para volver al manual...</a></h1>
+<hr>
+
+<p>Esta es una lista de cambios de las reglas del juego de Mahjong con Cartas Españolas más importantes desde la versión <b>1.7.4</b> hasta la versión <b>1.10.14</b> que es la más nueva al momento de editar esta página.</p>
+
+<p>Estos cambios críticos surgieron al darme cuenta que <b>habían errores en mi interpretación de las reglas de Mahjong Riichi</b>, que necesitaban ser corregidos de inmediato para garantizar que el juego sea compatible con el juego original.</p>
+
+<p>Pasó mucho tiempo entre la versión 1.7.4 y la versión 1.7.5 (¡Como 7 meses más o menos!), así que esta página es para destacar las diferencias si alguien ya había aprendido o enseñado a jugar Mahjong con Cartas Españolas con esa versión.</p>
+
+<ul>
+<h2>Cambios en la Ley de descarte <span class="jp">(furiten)</span></h2>
+<li>
+<p>Se modificó críticamente la ley de descarte porque estaba mal explicada. Anteriormente las reglas decían que la ley de descarte solo aplicaba para un descarte en particular, pero la realidad es que la ley de descarte aplica para TODA la mano.</p>
+
+<p>En resumen: Un jugador no puede cantar <b>Mahjong</b> por una carta descartada <i>por otro jugador</i> si <b>alguna</b> de las cartas en su <b>propia</b> zona de descarte servía para <b>completar</b> la mano.</p>
+
+<p>Si esto ocurre, se dice que la mano se encuentra <b>bloqueada</b>, por la Ley de Descarte, y se considera no válida (o, en japonés, decimos que está en <span class="jp">Furiten</span>).</p>
+</div>
+<p>Esta regla es <i>un poco difícil</i> de explicar pero básicamente quiere decir que si en algún momento <a href="./#esperas">la mano se encuentra lista</a>, pero se podría completar con <b>alguna</b> de las cartas que se encuentran en el descarte propio, entonces este jugador no puede ganar cantando Mahjong sobre <b>ningún</b> descarte, no importa cual sea la carta, hasta que no cambie la situación.</p>
+
+<p>Dicho de otra forma, si alguna de las cartas en nuestra <a href="./#esperas">espera actual</a> se encuentra en nuestra propia zona de descarte, <i>sin importar si otorga un tanto o no</i>, la mano entera queda inhabilitada para cantar Mahjong sobre un descarte hasta que se modifique la mano para cambiar la espera.</p>
+
+<p>Ahora bien, si la carta es obtenida robando del pozo, entonces sí puede cantar Mahjong, sin ningún inconveniente. Esta regla sólo aplica para cantar Mahjong sobre descartes ajenos <span class="jp">(ron)</span>, no para cantar Mahjong robando del pozo <span class="jp">(tsumo)</span>.</p>
+
+<p><a href="./#furiten">Véase la sección correspondiente en el manual para ver ejemplos y una explicación más precisa.</a></p>
+
+</li><hr>
+<li>Se agregó la regla de <span class="jp">Atozuke:</span> La mano se puede considerar lista aún si necesita la última carta para llegar a tener 1 tanto (Por ejemplo si está esperando para completar una pierna de caballos, y no tiene ningún otro tanto). Es decir, que se puede cantar Mahjong si sólo la última carta es la que otorga 1 tanto.</li>
+<hr>
+<h2>Nuevo empate técnico</h2>
+<li>Se agregó una regla de Mulligan, a modo de empate técnico, llamado Nueve puntas y nueve negras <span class="jp">(Kyuushu kyuuhai)</span>
+<p>Si en su primer turno, luego de alzar una carta, un jugador tiene al menos nueve cartas <b>distintas</b> que sean todas puntas o negras, puede invocar esta regla para terminar la ronda y pasar a la siguiente.</p>
+
+<p align="center">Por ejemplo si esta es mi mano en mi primer turno, luego de alzar del pozo:
+<br>
+<img src="tiles/3e.png"><img src="tiles/5e.png"><img src="tiles/8e.png"><img src="tiles/1b.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/3b.png"><img src="tiles/6b.png"><img src="tiles/9b.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/11o.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/11e.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/12o.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/12c.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/12e.png" style="outline: 2px solid red; outline-offset: -1px;"><img src="tiles/12b.png" style="outline: 2px solid red; outline-offset: -1px;"> - <img src="tiles/9o.png" style="outline: 2px solid red; outline-offset: -1px;">
+<br>Como tengo nueve cartas distintas que son o bien unos, nueves, reyes, o caballos, entonces puedo declarar empate y se pasa a la siguiente ronda.</p>
+
+</li><hr>
+
+<li>Si alguien baja un cuarteto cerrado, o si hace algún canto de Escalera o Pierna, los empates técnicos no cuentan y la partida continúa normalmente.</li><hr>
+<h2>Cambios en la lista de tantos</h2>
+<li><b>Se cambiaron varias de las manos válidas.</b> Las manos "Puntas en todo", "Puntas y negras en todo", "Solo puntas y negras" fueron cambiadas/añadidas.<br>
+La mano "Solo puntas y negras" no existe como tal.<br>
+
+<div class="noseparar"><p id="chanta"><b>2 tantos con mano cerrada (1 si es abierta)</b> &#8211; <b>Puntas y negras en todo</b> <span class="jp">(Chanta)</span> &#8211; Mano donde todos los juegos tienen al menos una carta negra o una punta (1 o 9), incluyendo el par</i>. La mano <u>debe tener</u> al menos una carta negra y al menos una punta. Vale sólo 1 tanto si la mano es abierta. Si <a href="#puntas_en_todo">no tiene negras</a> o <a href="#solo_puntas_y_negras">no tiene intermedias</a>, esta mano no cuenta y se considera "Puntas en todo" o "Sólo puntas y negras" respectivamente.</p>
+</div><div class="noseparar">
+<p id="puntas_en_todo"><p><b>3 tantos con mano cerrada, (2 si es abierta)</b> &#8211;  <b>Puntas en todo </b><span class="jp">(Junchan)</span> &#8211; Mano donde todos los juegos
+contienen puntas. O sea, todas las escaleras (si las hay) tienen al menos un
+uno o un nueve, todas las piernas (si las hay) son de unos o nueves, y el par
+es un par de unos o un par de nueves. <u>Vale <b>solo <span data-ssml-sub-alias="un tanto">2 tantos</span></b> si la mano es abierta.</u></p>
+
+<p id="solo_puntas_y_negras"><img src="tiles/1o.png"><img src="tiles/2o.png"><img src="tiles/3o.png"><img src="tiles/9b.png"><img src="tiles/9b.png"><img src="tiles/9b.png"><img src="tiles/12b.png"><img src="tiles/12b.png"><img src="tiles/1e.png"><img src="tiles/2e.png"><img src="tiles/3e.png"><img src="tiles/7e.png"><img src="tiles/8e.png"><img src="tiles/9e.png"></p></div>
+
+<div class="noseparar"><p><b>2 tantos</b> &#8211; <b>Sólo puntas y negras</b> <span class="jp">(Honrotou)</span> &#8211; Mano formada únicamente por
+puntas (unos y nueves) y cartas negras (Reyes y caballos). Nota: esta mano vale técnicamente <b>4 tantos</b> porque también cuenta como "Todas piernas".</p>
+
+<p><img src="tiles/1e.png"><img src="tiles/1e.png"><img src="tiles/1e.png"><img src="tiles/9e.png"><img src="tiles/9e.png"><img src="tiles/9e.png"><img src="tiles/1o.png"><img src="tiles/1o.png"><img src="tiles/1o.png"><img src="tiles/1b.png"><img src="tiles/1b.png"><img src="tiles/1b.png"><img src="tiles/11e.png"><img src="tiles/11e.png"></p>
+
+
+</div>
+
+</li><hr>
+<li>Escalera triple ahora se llama <b>Escalera triple mixta</b>, para que tenga correlación con la mano "Pierna triple mixta", donde son tres piernas del mismo número y distinto palo. La escalera triple mixta son tres veces la misma escalera en los tres palos distintos.</li><hr>
+
+<h2>Aclaraciones sobre algunas manos</h2>
+<li>El tanto de <b>dos caballos y medio</b> vale en realidad 4 tantos, porque se suman también los 2 tantos de las 2 piernas de caballos necesarias.</li><hr>
+<li><b>Mano servida</b> vale siempre 5 tantos <i>a menos que la mano de por sí sume más de cinco tantos</i>. En ese caso, se ignoran los cinco tantos de Mano servida y se usan los tantos de la mano en su lugar. Este tanto no vale si alguien en esta ronda cantó Escalera, Pierna o Cuarteto.</li><hr>
+<li><b>Nueve puertas</b> es una mano completa, así que si no es una mano cerrada, igual cuenta como <b>Color Puro</b></li><hr>
+<li><b>Siete Pares</b> es una mano especial. Ninguno de los juegos puede considerarse una escalera porque deben ser interpretados como pares. La única excepción es que se tenga <b>Doble Escaleras Idénticas</b> porque es una mano que otorga un puntaje mayor, y siempre debe interpretarse la mano de la forma que entregue el mayor puntaje posible.</li><hr>
+
+<h2>Cambios en las Yapas referidos a la mano Cero Yapas</h2>
+<li><a href="./#tabla_de_yapas">Varias correcciones relacionadas con el tanto de "Cero Yapas" fueron agregadas a la sección de Yapas:</a></li><hr>
+<li>El par de negras no otorga +2 yapas si es de reyes que no son ni rey de ronda ni rey propio.</li><hr>
+<li>Las +10 yapas por ganar robando de un descarte solo cuentan si se ganó con una mano cerrada.</li><hr>
+<li>Las +2 yapas por ganar robando del pozo <b>No cuentan si se ganó con el tanto Cero Yapas</b>.</li><hr>
+<li>Las +10 yapas por ganar robando de un descarte se suman igual a pesar de haber ganado con el tanto Cero Yapas.</li><hr>
+<li>Hay un nuevo bonus de yapas llamado <i>Mano de "cero yapas" con <b>mano abierta</b> (Todo escaleras, espera abierta, par sin yapas)</i> que otorga +2 yapas si la mano es una mano que cumple con todos los requisitos para ser cero yapas, excepto que la mano es abierta. Esto puede ocurrir con una mano de <b>Todo intermedias</b>, y el resultado es que esta mano vale 2 yapas en vez de valer 0, y se redondea a 10, para evitar que sea una mano con 0 yapas, y así garantizar que la única mano que pueda tener 0 yapas en total es la mano de "Cero Yapas".</li><hr>
+
+<li>Si hay varios ganadores y habían apuestas de envido en juego, el jugador de <b>más a la izquierda</b> será quien se lleve los puntos de las apuestas de envido (no se dividen).</li><hr>
+<h2>Aclaraciones sobre los cuartetos, el pozo muerto, y las cartas bonificadas</h2>
+<li>El pozo muerto debe tener <b>siempre 14 cartas</b>. Cada vez que se robe una carta del pozo muerto <b>se debe reponer una abajo del todo, agregándola sin mirar del pozo común.</b></li><hr>
+<li>Los <b>cuartetos</b> ahora se distinguen por nombre, entre cuarteto cerrado (Todo propio, bajado en mesa), cuarteto abierto (Robado de un descarte), y cuarteto agregado (Pierna robada que se convirtió en cuarteto por agregar la cuarta carta de la mano)</li><hr>
+<li>Si una carta bonificada aparece repetida en el indicador de bonus, entonces los bonuses se acumulan y la carta bonificada también vale más tantos como veces aparezca el indicador. O sea que si hay <b>dos</b> 7 de bastos en el indicador de bonus, cada 8 de bastos en la mano ganadora añadirá <b>dos</b> tantos a la mano.</li><hr>
+<h2>Otros cambios</h2>
+<li>No se debe agregar la carta a la mano si la mano está congelada por cantar envido, ni antes de cantar Mahjong, porque sino puede parecer que se está haciendo trampa. La carta que se usó para cantar Mahjong es <b>importante</b> y determinante en el cálculo de yapas, lo cual puede ser crucial para determinar si la mano es válida o no en determinados casos (Como por ejemplo Cero Yapas).</li><hr>
+<li>Los palitos para indicar el pozo vacante se pueden colocar de a 1 en 1 en vez de 3 en 3, ya que siempre se incrementa de a 300 puntos.</li><hr>
+<li>Se agregó una variante simplificada para enseñar a jugar Mahjong con Cartas Españolas llamada "Método Tíbet" que se juega con el mazo de copas del 1-9 mas los caballos de copas; que son justo las cartas que NO se usan para construir el mazo de Mahjong, sin contar las sotas y los comodines.</li><hr>
+<li>Se agregó una variante para jugar de a 5 jugadores, que es esencialmente jugar de a 4 pero un jugador se queda mirando, y cuando se rotan las sotas, el jugador que hizo de repartidor se levanta y le deja el lugar al que estaba parado esperando, así se repite durante toda la partida.</li></hr>
+
+
+</ul>
+
+<h1><a href=".">Volver al manual...</a></h1>
+
+<hr>
+<p>Redacción (C) 2026, PatricioComputacion.com &#127462;&#127479;</p>
+
+<script src="parametros.js"></script>
+
+</body></html>
