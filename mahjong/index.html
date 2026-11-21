@@ -20,6 +20,9 @@
   }
 }
 
+a:visited{
+  color: blue;
+}
 
 a.link_imporante{
   color: brown;
@@ -81,7 +84,7 @@ th{
 <img src="tiles/1o.png" width="52" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img width="52" src="tiles/1o.png" style="transform: translateX(4px) rotate(-10deg);"><img width="52" src="tiles/1e.png" style="transform:translateX(-4px)translateY(-6px);"><img width="52" src="tiles/1e.png" style="transform:translateX(-8px) rotate(10deg);"><img width="52" src="tiles/1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 </td></tr></table>
 
-<p align="right"><small>Versión 1.10.15, (00:52, 19-11-2026)</small></p>
+<p align="right"><small>Versión 1.10.16, (15:11, 21-11-2026)</small></p>
 
 <hr>
 
@@ -173,9 +176,9 @@ function cambiar_a(n)
 		</td>
 	</tr>
 </table>
-<p hidden><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera.<span class="no-imprimir">Para ver esta misma página con cartas españolas, <a href="..">haga clic aquí</a>.<br></p>
+<p hidden><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera. Para ver esta misma página con cartas españolas, <a href="..">haga clic aquí</a>.<br></p>
 
-<p hidden id="nota_en_japonesas"><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera.<span class="no-imprimir">Para ver esta misma página con cartas españolas, <a href="#en_espanol" onclick="cambiar_a(0);">haga clic aquí</a>.<br>
+<p hidden id="nota_en_japonesas"><b>Importante:</b> Este documento fue diseñado para ser leído con las imágenes de cartas españolas. Esta versión muestra las fichas de Mahjong originales a modo de comparación, pero sigue utilizando los nombres españolizados de las cartas. Donde dice Caballos debe leerse Dragones, donde dice Reyes debe leerse vientos, Oros es Círculos, Bastos es Bambúes, Espadas es Caracteres, etcétera.<span class="no-imprimir"> Para ver esta misma página con cartas españolas, <a href="#en_espanol" onclick="cambiar_a(0);">haga clic aquí</a>.<br>
 <br>
 Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga clic aquí para ver una versión anterior sin Javascript.</a></span></p>
 
@@ -192,22 +195,18 @@ Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga 
 </td>
 </tr></table>
 </div>
+<div class="noseparar"><hr>
+<h3 id="prefacio">Prefacio</h3>
+<p>El objetivo de este documento es poder jugar al Mahjong Riichi con cuatro mazos de 50 cartas españolas comunes y corrientes, sin tener que tener un set de fichas de Mahjong ni ninguna clase de equipamiento especializado.</p>
 
-<hr>
-<h1 style="break-before: auto;">Requisitos para jugar</h1>
-<p>Para jugar al Mahjong con cartas españolas necesitamos:</p>
-<ul>
-<li>2-4 jugadores.</li>
-<li>4 mazos de cartas españolas de 50 cartas cada uno.</li>
-<li>Papel y lápiz o algo para anotar puntos.</li>
-<li>Cuatro fichas para cantar envido.</li>
-<li>Fichas para el pozo vacante. <span class="jp">(Opcionales)</span></li>
-</ul>
+<p>O sea, <b>Mahjong</b>, con las <u>mismas</u> reglas, pero con cartas comunes y corrientes, así no hay que andar explicando los números en chino, o símbolos y palabras extranjeras, y tomando conceptos de juegos más conocidos para hacer el juego más fácil de explicar. Además, al usar las mismas reglas que el Mahjong Riichi, esto garantiza que cualquiera que aprenda a jugar al Mahjong con Cartas Españolas, pueda luego aprender a jugar al juego real con fichas de Mahjong, sin cambios en las dinámicas.</p>
+</div><div class="noseparar">
 
 <hr>
 <h2>Tabla de contenidos</h2>
 <ol>
-<li><a href="#construyendo_el_mazo">Construyendo el Mazo</a></li>
+<li><a href="#construyendo_el_mazo">Preparación</a></li>
+<br>
 <li><a href="#inicio_del_juego">Inicio del juego</a></li>
 <li><a href="#su_turno">Su turno</a></li>
 <li><a href="#cantos_y_juegos">Cantos y juegos</a></li>
@@ -236,13 +235,22 @@ Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga 
 <li><a href="#ejemplos_de_manos">Anexo: Ejemplos de manos</a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
 <li><a href="#anexo">Anexo: Notas y cambios del Mahjong Riichi</a></li>
 </ol>
-<hr>
-<div class="noseparar">
-<h3>Prefacio</h3>
-<p>El objetivo de este documento es poder jugar al Mahjong Riichi con cuatro mazos de 50 cartas españolas comunes y corrientes, sin tener que tener un set de fichas de Mahjong ni ninguna clase de equipamiento especializado; poder enseñar a jugar a otras personas sin tener que andar explicando los números en chino, o símbolos y palabras extranjeras, tomando conceptos de juegos más conocidos para hacer el juego más fácil de explicar; pero a su vez manteniendo todas las reglas originales del Mahjong Riichi, garantizando que se pueda luego aprender a jugar Mahjong Riichi real, sin cambios en las dinámicas.</p>
-</div><div class="noseparar">
-<h2 id="construyendo_el_mazo">Construyendo el mazo de cartas</h2>
 
+</div><div class="noseparar">
+<hr>
+<h1 id="construyendo_el_mazo">Preparación</h1>
+<p>Para jugar al Mahjong con cartas españolas necesitamos:</p>
+<ul>
+<li>2-4 jugadores.</li>
+<li>4 mazos de cartas españolas de 50 cartas cada uno.</li>
+<li>Papel y lápiz o algo para anotar puntos.</li>
+<li>Cuatro fichas para cantar envido.</li>
+<li>Fichas para el pozo vacante. <span class="jp">(Opcionales)</span></li>
+</ul>
+
+</div><div class="noseparar">
+<hr>
+<h2>Construyendo el Mazo</h2>
 <p>El mazo está compuesto de <b>136 cartas</b>. Se construye con <b>cuatro mazos de cartas españolas</b> de <b>50 cartas</b> (Los mazos de 40 no sirven porque necesitamos que hayan ochos y nueves). Hay que quitar todas las <b>copas del 1 al 11</b>, los <b>comodines</b>, y las <b>sotas </b>(los 10). De forma que queden <i>cuatro mazos</i> con las siguientes cartas:</p>
 
 
@@ -251,12 +259,12 @@ Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga 
 <img src="tiles/1e.png" width="39"><img src="tiles/2e.png" width="39"><img src="tiles/3e.png" width="39"><img src="tiles/4e.png" width="39"><img src="tiles/5e.png" width="39"><img src="tiles/6e.png" width="39"><img src="tiles/7e.png" width="39"><img src="tiles/8e.png" width="39"><img src="tiles/9e.png" width="39"><img src="tiles/11e.png" width="39"> - <img src="tiles/12o.png" width="39"><img src="tiles/12c.png" width="39"><img src="tiles/12e.png" width="39"><img src="tiles/12b.png" width="39"></p>
 
 <p>Luego hay que mezclar estos cuatro mazos todos juntos, para que quede formado un mazo de 136 cartas.</p>
-</div>
+</div><div class="noseparar">
 <p>De esta forma el mazo está compuesto por cartas numeradas
 del 1 al 9 de tres palos distintos (oros, espadas, y bastos), y las cartas
 negras, que son los caballos y los reyes. Hay reyes de 4 palos, y caballos de 3
 palos (no hay caballos de copas).</p>
-
+</div><div class="noseparar">
 <p>O sea que en todo el mazo, hay 4 copias idénticas de <b>cada carta</b>, incluidos los reyes y los caballos.</p>
 
 <p align="center"><img src="tiles/1e.png"><img src="tiles/1e.png"><img src="tiles/1e.png"><img src="tiles/1e.png"> &ndash; 
@@ -271,7 +279,7 @@ bastos, y un cinco de espadas, y pintarlos de rojo, o hacerles una marquita en a
 <img src="tiles/5br.png"><img src="tiles/5b.png"><img src="tiles/5b.png"><img src="tiles/5b.png">, 
 <img src="tiles/5er.png"><img src="tiles/5e.png"><img src="tiles/5e.png"><img src="tiles/5e.png">.</p>
 <p>Esto es opcional, y cabe aclarar que a efectos de hacer juegos, los cincos rojos también sirven como cincos comunes.</p>
-
+</div><div class="noseparar">
 <h2 class="pagina-nueva">Otras fichas opcionales para jugar</h2>
 
 <p>Además de las cartas, es necesario tener papel y lápiz para anotar los puntos. Y opcionalmente algunas fichas que servirán para hacer las apuestas de envido. Estas fichas pueden tener cualquier forma o tamaño (pueden ser fichas de póquer o palitos, o <b>lápices</b>, o cualquier cosa que se vea y no se vuele) pero deben haber por lo menos <b>cuatro</b> de éstas <img alt="Fila horizontal con un punto rojo" src="tiles/riichi.png"> (Una para cada jugador).</p>
@@ -293,7 +301,7 @@ bastos, y un cinco de espadas, y pintarlos de rojo, o hacerles una marquita en a
 <img src="tiles/honba_v.png">
 <img src="tiles/honba_v.png">
 <img src="tiles/honba_v.png"></p>
-
+</div><div class="noseparar">
 <p>Por último, hay que tomar dos sotas de cada palo, o sea los dieces, de las cartas que apartamos previamente:</p>
 <p><img src="tiles/10o.png"><img src="tiles/10c.png"><img src="tiles/10e.png"><img src="tiles/10b.png"> 
 <img src="tiles/10o.png"><img src="tiles/10c.png"><img src="tiles/10e.png"><img src="tiles/10b.png"> 
@@ -301,7 +309,7 @@ bastos, y un cinco de espadas, y pintarlos de rojo, o hacerles una marquita en a
 <p>Las primeras cuatro se van a usar como indicador de Rey de ronda. Las otras cuatro sotas son para colocarlas adelante de cada jugador, para que recuerden cual es su rey propio.</p>
 
 <p>Se recomienda ponerlas <u>contra el borde de la mesa, a la derecha de cada jugador</u>, o en cualquier lugar que se vean y no molesten.</p>
-
+</div><div class="noseparar">
 <p>Por ejemplo las sotas pueden colocarse así. Así cada jugador sabe cuál es su Rey Propio (La sota que está a su derecha), y cual es el Rey de la Ronda (La sota al lado del pozo, Oros en este caso).</p>
 <p style="text-align: center;" align="center">
 
@@ -338,8 +346,7 @@ bastos, y un cinco de espadas, y pintarlos de rojo, o hacerles una marquita en a
 </p>
 
 <p><b>Es muy importante que no se mezclen las sotas con el resto del mazo, ya que no son cartas para jugar, sino solamente indicadores para saber quien es quién. </b>El autor recomienda ponerlas en una bolsita aparte, o pintar el dorso, para evitar barajarlas junto con las otras por accidente.</p>
-
-<p><a href="#ejemplo_de_partida">Vea la sección "ejemplo de partida en curso" para ver donde se pueden colocar las sotas de los jugadores.</a></p>
+</div>
 
 <p>Nótese que estas fichas y sotas no son <i>esenciales</i> para jugar, y se puede compensar usando papel y lápiz para ir llevando la cuenta de quién es repartidor, y qué ronda se está jugando. Pero tenerlas hace que sea más fácil jugar.</p>
 
@@ -1027,9 +1034,7 @@ Cartas en mesa &nearr; &nbsp;&nbsp;&nbsp;
 
 <p>De nuevo, solamente se cuentan los puntos de la mano del jugador que cantó Mahjong. Las manos de los demás jugadores no cuentan para nada, y todo el cálculo de puntaje se basa en <u>esa</u> mano.</p>
 
-<p>La mayoría de las manos que figuran en esta lista son <i>parciales</i>, o sea que el resto de los juegos de la mano pueden estar formados de cualquier manera, <b>siempre y cuando la mano entera esté compuesta de 4 juegos y un par</b>. A excepción de algunas <u>manos especiales</u> como la mano de <a href="#siete_pares">&#8220;siete pares&#8221;</a> que tienen una conformación diferente de cartas.</p>
-
-<p>Si la mano puede tener varias interpretaciones según como se agrupen las cartas, la interpretación correcta será la que otorgue el puntaje más alto posible.</p>
+<p>La mayoría de las manos que figuran en esta lista son <i>parciales</i>, o sea que el resto de los juegos de la mano pueden estar formados de cualquier manera, <b>siempre y cuando la mano entera esté compuesta de 4 juegos y un par</b>. A excepción de algunas <u>manos especiales</u> como la mano de <a href="#siete_pares">&#8220;siete pares&#8221;</a> que tienen una conformación diferente de cartas. Si la mano puede tener varias interpretaciones según como se agrupen las cartas, la interpretación correcta será la que otorgue el puntaje más alto posible.</p>
 
 <p>Para jugadores principiantes, es recomendable tener siempre esta lista a mano para poder consultar a todo momento y saber si una mano es válida o no.</p>
 <p class="no-imprimir">Una versión compacta de esta lista se puede ver haciendo clic en <a href="machete.html">este enlace</a>.</p>
@@ -1056,7 +1061,7 @@ Cartas en mesa &nearr; &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Sota propia &rarr; <img src="tiles/10b.png">
 )</p>
 
-
+</div><div class="noseparar">
 <p id="pierna_de_rey_de_ronda"><b>Pierna de Rey de ronda</b> &#8211; Tres del rey de la ronda.
 Por ejemplo, tres reyes de oro, si es de la primera a la cuarta ronda (Oros-1 a Oros-4). O tres reyes de copa si
 es de la quinta a la octaba ronda (Copas-1 a Copas-4). (Ver la sección <a href="#siguiente_ronda">Siguiente ronda</a> para más
@@ -1078,7 +1083,7 @@ información)</p>
 <p><b>Todo intermedias </b><span class="jp">(Tanyao)</span>
 &#8211; Mano sin puntas ni caballos ni reyes. O sea, formado solo por cartas del <b>2</b> al <b>8</b>, de cualquier palo.</p>
 
-<p><img src="tiles/2b.png"><img src="tiles/3b.png"><img src="tiles/4b.png"><img src="tiles/6b.png"><img src="tiles/6b.png"><img src="tiles/6b.png"><img src="tiles/5e.png"><img src="tiles/6e.png"><img src="tiles/7e.png"><img src="tiles/4o.png"><img src="tiles/5o.png"><img src="tiles/8o.png"><img src="tiles/8o.png"></p>
+<p><img src="tiles/2b.png"><img src="tiles/3b.png"><img src="tiles/4b.png"><img src="tiles/6b.png"><img src="tiles/6b.png"><img src="tiles/6b.png"><img src="tiles/5e.png"><img src="tiles/6e.png"><img src="tiles/7e.png"><img src="tiles/3o.png"><img src="tiles/4o.png"><img src="tiles/5o.png"><img src="tiles/8o.png"><img src="tiles/8o.png"></p>
 
 <p>Algunas variantes establecen que esta mano solo vale si la <i>mano es cerrada</i>, pero en general esta mano vale igual aún si es <b>abierta</b>.</p>
 
@@ -4642,8 +4647,14 @@ function ocultar_cambios()
 <div class="no-imprimir">
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
-<li>(v1.10.15)Agregada sección de cambios con 1.7.4, aclarando la mayor parte de los cambios radicales a las reglas del juego. Para jugadores que vuelven a leer el manual después de la primera publicación.</li>
+<li>(v1.10.16) Cambio de lugar el prefacio y los requisitos para jugar.</li>
+<li>Faltaba una carta en la mano de ejemplo de Tanyao</li>
+<li>(v1.10.15c) Quito aclaración de envido en trece huérfanos, no sirve de nada cantar envido si la mano ya vale tantos máximos.
+</li>
+<li>Etapa 5 y Etapa 6 estaban intercambiados en la sección de Mahjong Tibetano </li>
+<li>(v1.10.15) Agregada sección de cambios con 1.7.4, aclarando la mayor parte de los cambios radicales a las reglas del juego. Para jugadores que vuelven a leer el manual después de la primera publicación.</li>
 <li>Aclaración: si aparece una carta bonificada varias veces, entonces la bonificación vale un tanto por CADA vez que aparece.</li>
+<li>La mano trece huérfanos aclaraba la salvedad de poder cantar envido, pero esto no sirve de nada y hace congelar la mano, lo cual es todo negativo.</li>
 <li>(v1.10.14) Pequeñas aclaraciones sobre Partidas de práctica.</li>
 <li>(v1.10.13) Quito un par de enlaces en el medio del texto para hacer la lectura menos intimidante con tantos saltos y llamadas.</li>
 <li>Correcciones HTML. Agrego un disclaimer y fallback para navegadores web desactualizados que no soporten texto vertical.</li>
