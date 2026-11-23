@@ -84,7 +84,7 @@ th{
 <img src="tiles/1o.png" width="52" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img width="52" src="tiles/1o.png" style="transform: translateX(4px) rotate(-10deg);"><img width="52" src="tiles/1e.png" style="transform:translateX(-4px)translateY(-6px);"><img width="52" src="tiles/1e.png" style="transform:translateX(-8px) rotate(10deg);"><img width="52" src="tiles/1e.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"></p>
 </td></tr></table>
 
-<p align="right"><small>Versión 1.10.16, (15:11, 21-11-2026)</small></p>
+<p align="right"><small>Versión 1.11.0, (01:57, 23-11-2026)</small></p>
 
 <hr>
 
@@ -194,17 +194,12 @@ Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga 
 	<img src="img/qr-code.png" width="128">
 </td>
 </tr></table>
-</div>
-<div class="noseparar"><hr>
-<h3 id="prefacio">Prefacio</h3>
-<p>El objetivo de este documento es poder jugar al Mahjong Riichi con cuatro mazos de 50 cartas españolas comunes y corrientes, sin tener que tener un set de fichas de Mahjong ni ninguna clase de equipamiento especializado.</p>
-
-<p>O sea, <b>Mahjong</b>, con las <u>mismas</u> reglas, pero con cartas comunes y corrientes, así no hay que andar explicando los números en chino, o símbolos y palabras extranjeras, y tomando conceptos de juegos más conocidos para hacer el juego más fácil de explicar. Además, al usar las mismas reglas que el Mahjong Riichi, esto garantiza que cualquiera que aprenda a jugar al Mahjong con Cartas Españolas, pueda luego aprender a jugar al juego real con fichas de Mahjong, sin cambios en las dinámicas.</p>
 </div><div class="noseparar">
 
 <hr>
-<h2>Tabla de contenidos</h2>
+<h2 style="break-inside: avoid; break-after: avoid;">Tabla de contenidos</h2>
 <ol>
+<li><a href="#prefacio">Prefacio</a></li>
 <li><a href="#construyendo_el_mazo">Preparación</a></li>
 <br>
 <li><a href="#inicio_del_juego">Inicio del juego</a></li>
@@ -213,7 +208,7 @@ Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga 
 <br>
 <li><a href="#por_que_no_robar"><b>¿Por qué no robar todos los juegos posibles?</b></a></li>
 <li><a href="#ejemplo_de_partida">Ejemplo de partida en curso</a></li>
-<li><a href="#lista_de_tantos"><b>Lista de tantos</b></a> <i class="no-imprimir" style="color: red">←¡Actualizado (v1.9)!</i></li>
+<li><a href="#lista_de_tantos"><b>Lista de tantos</b></a></li>
 <li><a href="#estrategias_para_principiantes"><b>Estrategias para principiantes</b></a></li>
 <li><a href="#esperas">Mano lista y Esperas</a></li>
 <br>
@@ -225,11 +220,16 @@ Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga 
 <br>
 <li><a href="#siguiente_ronda">Siguiente ronda, y pozo vacante</a></li>
 <li><a href="#empate">Empate</a></li>
-<li><a href="#penalizaciones">Penalizaciones y equivocaciones. Ley de descarte</a> <i class="no-imprimir" style="color: red">←¡Actualizado (v1.10)!</i></li>
+<li><a href="#penalizaciones">Penalizaciones y equivocaciones. Ley de descarte</a></li>
+<li><a href="#fin_de_partida">¿Cuándo se termina la partida?</a></li>
+<br>&mdash; Anexo &mdash;
+<li><a href="#reglas_de_la_casa">Variantes: Reglas de la casa</a></li>
+<li><a href="#puntuacion_simplificada">Puntuación simplificada</a></li>
+<li><a href="#tenbou">Puntuación con fichas o palitos (Tenbou)</a></li>
+<li><a href="#oka_uma">Apuestas iniciales (Oka y Uma)</a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
 <br>
-<li><a href="#puntuacion_simplificada">Variantes: Puntuación simplificada</a></li>
-<li><a href="#2o3_jugadores">Variantes: jugando de a menos o más jugadores</a></li>
-<li><a href="#tibet"><b>Mahjong fácil para principiantes (Método Tíbet)</b></a> <b class="no-imprimir" style="color: red">¡Nuevo! (v1.10.5)</b></li>
+<li><a href="#2o3_jugadores">Variantes: Jugando de a menos o más jugadores</a></li>
+<li><a href="#tibet"><b>Mahjong fácil para principiantes (Método Tíbet)</b></a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
 <br>
 <li><a href="#preguntas_frecuentes">Preguntas frecuentes</a></li>
 <li><a href="#ejemplos_de_manos">Anexo: Ejemplos de manos</a> <b class="no-imprimir" style="color: red">¡Nuevo!</b></li>
@@ -237,6 +237,14 @@ Si el texto no se muestra correctamente, <a href="japones/compatible.html">haga 
 </ol>
 
 </div><div class="noseparar">
+<hr>
+<h2 id="prefacio">Prefacio</h2>
+<p>El objetivo de este documento es poder jugar al Mahjong Riichi con cuatro mazos de 50 cartas españolas comunes y corrientes, sin tener que tener un set de fichas de Mahjong ni ninguna clase de equipamiento especializado.</p>
+
+<p>O sea, <b>Mahjong</b>, con las <u>mismas</u> reglas, pero con cartas comunes y corrientes, así no hay que andar explicando los números en chino, o símbolos y palabras extranjeras, y tomando conceptos de juegos más conocidos para hacer el juego más fácil de explicar. Además, al usar las mismas reglas que el Mahjong Riichi, esto garantiza que cualquiera que aprenda a jugar al Mahjong con Cartas Españolas, pueda luego aprender a jugar al juego real con fichas de Mahjong, sin cambios en las dinámicas.</p>
+
+<p align="center"><img src="img/ejemplo.png" width="800"><br><small>Ejemplo de una partida de Mahjong con Cartas Españolas en curso. Se juega de a 4 jugadores, y cada jugador tiene su propia zona de descarte, y algunos jugadores tienen juegos bajados en mesa.</small></p>
+
 <hr>
 <h1 id="construyendo_el_mazo">Preparación</h1>
 <p>Para jugar al Mahjong con cartas españolas necesitamos:</p>
@@ -450,7 +458,7 @@ la primera carta del <b>indicador de bonus</b>. Este pozo va colocado al lado de
 <hr>
 </div><div class="noseparar">
 <h2 id="su_turno">Su turno</h2>
-<p>En <b>su turno</b>, un jugador puede o bien <b>robar una carta del pozo</b>, o bien <b>bajar un juego robando el último descarte del jugador de su izquierda</b> (Se explicará más adelante). Luego de hacer cualquiera de estas dos cosas, se debe <i>descartar una carta</i> en su zona de descarte, boca arriba, y pasa a ser el turno del jugador de su derecha.</p><p>La zona de descarte se ordena de izquierda a derecha, de arriba abajo, en una cuadrícula de 6x3, al frente del
+<p>En <b>su turno</b>, un jugador puede o bien <b>robar una carta del pozo</b>, o bien <b>bajar un juego robando el último descarte del jugador de su izquierda</b> (Se explicará más adelante). Luego de hacer cualquiera de estas dos cosas, se debe <i>descartar una carta</i> en su zona de descarte, boca arriba, y pasa a ser el turno del jugador de su derecha.</p><p>La zona de descarte se ordena de izquierda a derecha, de arriba abajo, en una cuadrícula de 6&times;3, al frente del
 jugador. Se colocan así para que en todo momento se puedan ver todas las cartas descartadas por ese jugador en orden.</p>
 
 <p align="center">Por ejemplo aquí, el jugador acaba de descartarse el 5 de bastos, y es ahora el turno del jugador de su derecha.<br></p>
@@ -893,7 +901,7 @@ ser el rey propio. Por ejemplo, si en la ronda uno yo soy el repartidor, una pie
 
 
 
-<p>Así es como se podría ver la mesa completa durante una partida, desde el punto de vista de el jugador Oro (identificado con la sota de oros a la derecha de su lado de la mesa).</p>
+<p>Volvamos a ver la imagen del principio. Así es como se podría ver la mesa completa durante una partida, desde el punto de vista de el jugador Oro (identificado con la sota de oros a la derecha de su lado de la mesa).</p>
 
 <p class="no-imprimir">Hacer clic <a href="img/ejemplo.png" target="_blank">aquí para ver una imagen completa</a>, si el diagrama no se muestra correctamente.</p>
 
@@ -911,7 +919,7 @@ ser el rey propio. Por ejemplo, si en la ronda uno yo soy el repartidor, una pie
 														
 																	
 <!-- Diagrama de partida -->
-<span hidden>
+<span id="diagrama_de_partida_html" hidden>
 
 <div style="transform: rotate(180deg)">
 <p align="center">
@@ -1017,7 +1025,7 @@ Cartas en mesa &nearr; &nbsp;&nbsp;&nbsp;
 
 <p>Véase que hay varios juegos bajados en mesa: oro (el jugador de abajo, cuya mano esta visible en el diagrama) bajó una escalera de espadas y una pierna de caballos, y copa (jugador de la derecha) bajó una escalera de bastos y una escalera de oros. Incluso el jugador de la izquierda (Bastos) ha cantado envido hace un par de vueltas y ahora está esperando la última carta para completar su mano. La carta en el indicador de bonus es un 6 de bastos, o sea que la <a href="#bonificaciones">carta bonificada</a> es el 7 de bastos (La siguiente del 6 de bastos).</p>
 
-<p>En este momento es el turno del jugador Espadas (al frente) y tiene que hacer un descarte. Nótese que tiene 14 cartas en mano, y la de mas a su derecha es la que acaba de alzar del pozo.</p>
+<p>En este momento es el turno del jugador Espadas (el que está arriba, al frente del jugador que es Oros) y tiene que hacer un descarte. Nótese que tiene 14 cartas en mano, y la de mas a su derecha es la que acaba de alzar del pozo.</p>
 
 </div>
 <hr>
@@ -1355,7 +1363,7 @@ verdes, mientras que el 1,5,7,9 no lo son. Esta mano <b>puede</b> ser abierta, o
 <h2>Otros tantos especiales (5 tantos)</h2>
 
 
-<p><b>Solo puntas y negras en descarte</b> <span class="jp">(Nagashi mangan)</span>&#8211; Alcanzar el empate (cartas del pozo agotadas) habiendo
+<p><b>Empate con solo puntas y negras en descarte</b> <span class="jp">(Nagashi mangan)</span>&#8211; Alcanzar el empate (cartas del pozo agotadas) habiendo
 descartado únicamente unos, nueves, caballos, y reyes; y sin que nadie le haya robado ninguno de <i>esos</i> descartes. Esta victoria es especial y requiere que la ronda termine en empate. Se le otorga una victoria de 5 tantos al jugador que logre esto.</p>
 
 
@@ -1783,13 +1791,13 @@ de cartas bonus</b>. Es decir, si había solo 1 carta bonus, ahora deben haber
 	</tr>
 	<tr>
 		<th>Ganó por robar del pozo <span class="jp">(Tsumo)</span></th>
-		<td>Todos pagan el doble (x2)</td>
-		<td>Repartidor paga doble (x2)<br>los demás pagan simple (x1)</td>
+		<td>Todos pagan el doble (&times;2)</td>
+		<td>Repartidor paga doble (&times;2)<br>los demás pagan simple (&times;1)</td>
 	</tr>
 	<tr>
 		<th>Ganó por robar un descarte <span class="jp">(Ron)</span></th>
-		<td>El que la descartó<br>paga seis veces (x6)</td>
-		<td>El que la descartó<br>paga el cuádruple (x4)</td>
+		<td>El que la descartó<br>paga seis veces (&times;6)</td>
+		<td>El que la descartó<br>paga el cuádruple (&times;4)</td>
 	</tr>
 </tbody></table></p>
 
@@ -2984,7 +2992,6 @@ y
 
 <p>El juego se termina cuando algún jugador llega a tener <i>menos</i> de cero puntos (bancarrota), o luego de que se jueguen el total de las rondas. En ese momento, el jugador con más puntos se considera el ganador de la partida. Una persona que tiene <b>exactamente</b> 0 puntos puede seguir jugando.</p>
 
-<p>Algunas variantes también exigen que el ganador tiene que tener al menos 30000 puntos para ganar. Si nadie llega a tener 30000, se sigue jugando <u>hasta que un jugador alcance los 30000 puntos</u>, o un jugador entre en bancarrota (Se pasa a Copas-1).</p>
 </div><div class="noseparar">
 <p>Es importante ir anotando por qué ronda van para saber cuál es el rey de la ronda, cuya pierna otorga un tanto extra a la mano.</p>
 <p align="center"><table class="MsoNormalTable" border="1"><tbody align="center">
@@ -3236,16 +3243,49 @@ Ahora la única carta que nos sirve para completar la mano es un <b>7 de espadas
 descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que está esperando <b>desde el pozo</b>. Esto es válido hasta el final de la ronda.</p>
 
 <p>En el idioma japonés estas situaciones se conocen con el nombre de <span class="jp">furiten</span> temporal y <span class="jp">furiten</span> permanente, respectivamente.</p>
-</div>
 
 <p>La ley de descarte (y la ley de alpiste) son muy importantes porque permiten determinar que cartas se pueden descartar sin problema cuando un jugador canta envido, ya que no puede cantar Mahjong con ninguna carta que se encuentre en su zona de descare propia. Y además, cualquier carta que otro jugador descarte a partir del momento en que ese jugador cantó envido, esas también se pueden descartar sin temor. Porque si el jugador que cantó envido podía cantar Mahjong sobre alguno de esos descartes, <i>lo habría hecho</i>, o quedaría bloqueado permanentemente por la ley de alpiste, y su única alternativa entonces sería ganar robando del pozo.</p>
-
+</div>
 <hr>
+<div class="noseparar">
+<h2 id="fin_de_partida">¿Cuándo se termina la partida?</h2>
 
-<p align="center"><br>
+<p>La partida de Mahjong termina cuando ocurre una de las siguientes cosas:</p>
+<ul><li>Un jugador cae en bancarrota. O sea llega a tener puntos negativos.</li>
+<li>Se juega la <b>última ronda</b> y no la gana el repartidor (Termina en empate, o la gana otro jugador).</li>
+<li>Se juega la última ronda y la gana el repartidor, y es el jugador que más puntos tiene en total. <span class="jp">(Agari yame)</span></li></ul>
+
+<p>Se le llama la <b>última ronda</b> a la ronda "final" de una partida de Mahjong. O sea si es una partida corta esta ronda corresponde a la cuarta ronda (Oros-4), si es una partida normal corresponde a la octava ronda (Copas-4).</p>
+
+<h2>Muerte súbita</h2>
+
+<p>Algunas variantes también exigen que el ganador tiene que tener <b>al menos 30000 puntos para ganar</b>. Si nadie llega a tener 30000, se jugaran <i>rondas extra</i> <u>hasta que un jugador alcance los 30000 puntos</u>, o un jugador entre en bancarrota.</p>
+
+<p>Por ejemplo si es una partida corta (A oros) y luego de jugarse la ronda Oros-4 ningún jugador alcanzó los 30000 puntos, se juega la ronda Copas-1, y esta pasa a ser la última ronda. Si todavía nadie supera los 30000 puntos, o nadie cae por debajo de los 0 puntos, se juega la ronda siguiente (Copas-2). Y así sucesivamente hasta que alguien supere los 30000 puntos, o hasta que alguien caiga por debajo de 0 puntos, lo que ocurra primero.</p>
+
+</div>
+<hr>
+<p style="break-before: page;" align="center"><br>
 <img width="52" src="tiles/11e.png" style="transform:translateY(16px) translateX(12px) rotate(-25deg);"><img width="52" src="tiles/11e.png" style="transform: translateX(4px) rotate(-10deg);"><img width="52" src="tiles/5o.png" style="transform:translateX(-4px)translateY(-6px);"><img width="52" src="tiles/6o.png" style="transform:translateX(-8px) rotate(10deg);"><img width="52" src="tiles/7o.png" style="transform:translateY(15px) translateX(-17px) rotate(25deg);"><br><br>&mdash; Anexo &mdash;<br></p>
 
+
+<hr><h2 id="reglas_de_la_casa">Reglas de la casa</h2>
+
+<p>Si bien todo lo explicado en este documento es Mahjong Riichi estándar, algunas personas prefieren jugar con algunas reglas cambiadas. Es preferible aclarar que se vale y que no se vale al principio del juego antes de comenzar a jugar para estar seguros que todos están jugando con las mismas reglas.</p>
+
+<ul>
+<li>Una regla común en las competencias profesionales de Mahjong Riichi es jugar sin cincos rojos, de forma que todos los cincos cuentan como cincos normales, sin otorgar tantos extras.</li>
+<br>
+<li>Otra regla común es jugar sin empates técnicos. O sea por ejemplo, que la partida continúa de forma normal a pesar que se tiren cuatro reyes idénticos, o a pesar que se canten cuatro envidos. Esto puede hacer que las partidas sean más largas.</li>
+<br>
+<li>Como se explicó en la sección "Siguiente ronda", en algunas variantes, la ronda se repite si gana el repartidor, o si el repartidor tenía la mano lista al momento del empate <span class="jp">(Tenpai Renchan)</span>. Otra alternativa es que si la ronda termina en empate esta se repita sin rotar el repartidor, mas allá de que haya tenido la mano lista o no <span class="jp">(Ryuukyoku Renchan)</span>. Recordamos que el estándar para este reglamento es que la ronda se repita únicamente si gana el repartidor, y que en caso de empate se avance a la siguiente ronda <span class="jp">(Agari Renchan)</span>.</li>
+<br>
+<li>A propósito de esto, la regla de que la partida termine si la última ronda la gana el repartidor y este es el jugador con más puntos en total a veces no se toma y se considera que la ronda debe repetirse pues la ganó el repartidor. Esto puede hacer que la partida se extienda innecesariamente pero es una regla común en algunos torneos internacionales.</li>
+<br>
+<li>Algunas variantes cambian la validez de algunos tantos especiales. Por ejemplo no considerar "Puntas y negras en descarte" y "Mano servida" como tantos válidos. O hacer que no se pueda cantar Mahjong si la mano no vale un tanto sin la carta final <span class="jp">(Atozuke)</span>.</li>
+</ul>
 <div class="noseparar">
+
 <hr><h2 id="puntuacion_simplificada">Variantes: Puntuación simplificada.</h2>
 <h2>Puntuación con tantos</h2>
 
@@ -3257,7 +3297,6 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 
 <p>Además, cada vez que se repita la ronda (por empate, o si gana el repartidor) en vez de agregarse 300 puntos al pozo vacante, se agregará una ficha <img src="tiles/honba.png"> representando <b>un tanto adicional</b>, y el jugador que gane se lo llevará.</p>
 
-<div class="noseparar">
 <p>Esta forma de anotar puntos <b>NO es compatible con la forma de anotar puntos original utilizada en el Mahjong Riichi</b> y solamente se incluye como alternativa para jugar de forma casual, sin tener que andar sacando calculadoras.</p>
 <table width="100%"><tr><td align="center">
 
@@ -3342,8 +3381,8 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 </p>
 </td></tr></table>
 
-</div><div class="noseparar">
-<h2>Puntuación con fichas o palitos <span class="jp">(Tenbou)</span></h2>
+</div><div class="noseparar"><hr>
+<h2 id="tenbou">Puntuación con fichas o palitos <span class="jp">(Tenbou)</span></h2>
 
 <p>Si se tienen fichas de póquer, se pueden usar fichas para llevar el recuento de puntos en lugar de usar papel y lápiz. Es práctico porque los puntos siempre van de un jugador a otro según quien gane o pierda, y no es necesaria una banca.</p>
 
@@ -3361,21 +3400,171 @@ descarte</b> en toda la ronda, y <i>sólo</i> podrá ganar si roba la carta que 
 <p>También se los puede encontrar en colores.</p>
 <table width="100%" style="table-layout: fixed;">
 <tr>
-<td align="center"><img src="tiles/color\100.png"><br>100 puntos</td>
-<td align="center"><img src="tiles/color\500.png"><br>500 puntos</td>
-<td align="center"><img src="tiles/color\1000.png"><br>1000 puntos</td>
-<td align="center"><img src="tiles/color\5000.png"><br>5000 puntos</td>
-<td align="center"><img src="tiles/color\10000.png"><br>10000 puntos</td>
+<td align="center"><img src="tiles/color/100.png"><br>100 puntos</td>
+<td align="center"><img src="tiles/color/500.png"><br>500 puntos</td>
+<td align="center"><img src="tiles/color/1000.png"><br>1000 puntos</td>
+<td align="center"><img src="tiles/color/5000.png"><br>5000 puntos</td>
+<td align="center"><img src="tiles/color/10000.png"><br>10000 puntos</td>
 </tr>
 </table>
 
-<p>Con esto, la suma de todas las fichas en juego siempre es 100000 (25000 para cada jugador al inicio del juego). Como excepción, las fichas de 100 <img src="tiles/honba.png"> que se usan para indicar el pozo vacante provienen de la banca, y sólo se usan para indicar cuantos puntos extra deben pagar los perdedores al ganador de la ronda, pero nadie gana <u>esas</u> fichas en particular, sino que vuelven a la banca.</p>
+<p>Con esto, la suma de todas las fichas en juego siempre es 100000 (25000 para cada jugador al inicio del juego). Como excepción, las fichas de 100 <img src="tiles/honba.png"> que se usan para indicar el pozo vacante provienen de la banca, y sólo se usan para indicar cuantos puntos extra deben pagar los perdedores al ganador de la ronda, pero nadie gana <u>esas</u> fichas en particular, sino que vuelven a la banca. Si no hay suficientes fichas, el repartidor pondrá las fichas de 100 correspondientes; pero cuando cambie el repartidor, volverá a tomarlas, y el nuevo repartidor las reemplazará por las suyas.</p>
+
+<p>Así se puede sumar 25000 con palitos. 1&times;10000, 2&times;5000, 4&times;1000, 10&times;100</p>
+<table style="table-layout: fixed;" align="center">
+	<tr>
+		<th align="center">
+		Sin palitos de 500.
+		</th>
+		<th align="center">
+		...
+		</th>
+		<th align="center">
+		Con palitos de 500.
+		</th>
+	</tr>
+	<tr>
+		<td align="center">
+			<img src="tiles/color/10000.png"> <img src="tiles/color/10000.png"> <img src="tiles/color/10000.png"> <img src="tiles/color/10000.png">
+			<br><img src="tiles/color/5000.png"> <img src="tiles/color/5000.png"> <img src="tiles/color/5000.png"> <img src="tiles/color/5000.png">
+			<br><img src="tiles/color/5000.png"> <img src="tiles/color/5000.png"> <img src="tiles/color/5000.png"> <img src="tiles/color/5000.png">
+			<br><img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png">
+			<br><img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png">
+			<br><img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png">
+			<br><img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+		</td>	
+		<td align="center">
+		</td>
+		<td align="center">
+			<img src="tiles/color/10000.png"> <img src="tiles/color/10000.png"> <img src="tiles/color/10000.png"> <img src="tiles/color/10000.png">
+			<br><img src="tiles/color/5000.png"> <img src="tiles/color/5000.png"> <img src="tiles/color/5000.png"> <img src="tiles/color/5000.png">
+			<br><img src="tiles/color/5000.png"> <img src="tiles/color/5000.png"> <img src="tiles/color/5000.png"> <img src="tiles/color/5000.png">
+			<br><img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png">
+			<br><img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png">
+			<br><img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png">
+			<br><img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png"> <img src="tiles/color/1000.png">
+			<br><img src="tiles/color/500.png"> <img src="tiles/color/500.png"> <img src="tiles/color/500.png"> <img src="tiles/color/500.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+			<br><img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png"> <img src="tiles/color/100.png">
+		</td>	
+	</tr>
+	<tr>
+		<td align="center">4&times; 10000, 8&times; 5000, 16&times; 1000, 40&times; 100<br>Total: 68 palitos.</td>
+		<td align="center"></td>
+		<td align="center">4&times; 10000, 8&times; 5000, 16&times; 1000, 4&times; 500, 20&times; 100<br>Total: 52 palitos.</td>
+	</tr>
+</table>
+
+<p>Es conveniente tener más fichas de las necesarias en caso de que haga falta cambiar una ficha grande por algunas más pequeñas.</p>
 
 <p>No es necesario que estas fichas sean palitos. Pueden ser fichas de póquer redondas, o cualquier cosa que pueda indicar 100 puntos (que es el valor mínimo de puntos), el único requisito es que cada jugador tenga siempre al menos una ficha de 1000 puntos que se pueda usar para cantar envido <span class="jp">(Riichi)</span>, o en su defecto, tener una ficha distinta para indicar el envido que no provenga de las reservas propias.</p>
-</div>
+</div><div class="noseparar">
 <hr>
+<h2 id="oka_uma">Apuestas iniciales, "Oka" y "Uma"</h2>
 
-<div class="noseparar">
+<p>El Mahjong original surgió como un juego de apuestas, por eso los puntos totales siempre suman cero. El total de puntos en juego suman siempre 100000 (25000 &times; 4).</p>
+
+<p>Para esta adaptación de las reglas de Mahjong Riichi, se ha omitido por completo el cálculo de puntos de <b>Oka</b> y <b>Uma</b> ya que estos son puramente diferencias de puntaje que sirven para premiar más al ganador y castigar más a los perdedores, agregando y quitando puntos según las posiciones finales en el tablero de puntajes. De cualquier forma se describen a continuación para saciar la curiosidad del lector.</p>
+
+<p>Los puntos <b>Oka</b> no son más que una "apuesta inicial" implícita de 5000 puntos de cada jugador.</p>
+
+<p align="center"><img src="tiles/5000.png"> <img src="tiles/5000.png"> <img src="tiles/5000.png"> <img src="tiles/5000.png"><br><small>Como es una apuesta implícita, no necesita representarse con fichas, pero equivaldría a una de estas de cada jugador.</small></p>
+
+<p>Los puntos de las apuestas iniciales van a parar al ganador de la partida y se suman al final. Esto quiere decir en cierto modo que los jugadores en realidad apuestan <b>30000</b> puntos al principio del juego, y <b>5000</b> de esos son la apuesta inicial, mientras que los otros <b>25000</b> son los puntos anotados en juego. Nótese que es por esta razón que se suele considerar 30000 como la puntuación "objetivo" que se debe alcanzar antes de que un jugador pueda considerarse ganador (Si se usa un número distinto, entonces también debe cambiar la apuesta inicial).</p>
+
+<p>En resumen, todo lo que esto significa es que luego de que se termina la partida y se determina en qué posición terminó cada jugador (1°, 2°, 3° y 4°), el jugador que ganó la partida (1°) recibe <b>15000 puntos adicionales</b>, que son los equivalentes a unas apuestas iniciales de <b>5000</b> de cada jugador participante.</p>
+
+<p>Cabe recordar que en caso de empate en puntos al final de la partida, el ganador será el jugador de más a la izquierda en la ronda (O sea el más cercano al repartidor inicial).</p>
+
+<p>Luego de sumar el total de las apuestas iniciales al ganador, los puntos <b>Uma</b> son un ajuste extra de puntos que se hace para darle más puntos al ganador y quitarle puntos a los perdedores. Esto tiene el único propósito de distanciar más los puntajes en caso de que se haya ganado por pocos puntos de diferencia.</p>
+
+<p>Los valores que se agregan o quitan deben establecerse al principio de la partida, antes que se hagan las apuestas. Lo más común es que estén distribuidos en la forma <b>+A/+B/-B/-A</b>, o sea que el que acabe 4° le paga una cantidad "A" al 1°, y el que acabe 3° le paga una cantidad "B" al 2°. Por ejemplo <b>+20000</b>/+10000/-10000/<b>-20000</b>.</p>
+
+<p>Esta cantidad no tiene por qué ser simétrica y puede ser que todos le paguen al ganador (Por ejemplo <b>+30000</b>/-10000/-10000/-10000). El único requisito es que estos puntos deben cancelarse entre sí para garantizar que se pueda pagar con los puntos que hay en juego (La suma debe dar 0).</p>
+
+<p>Por último, el estándar es dividir estos resultados finales por 1000, y restarle 30, para obtener así el puntaje más/menos (+/-) que sirve para calcular el ranking del jugador, en caso que se lleve un registro historial de partidas (Esto es muy común en el Mahjong jugado en línea).</p>
+
+<p>Un ejemplo de cómo calcular los puntos Oka y Uma:</p>
+
+<p align="center">
+	<table class="MsoNormalTable" border="1" width="500">
+		<tr align="center">
+			<th></th>
+			<th>Marcelo</th>
+			<th>Noemí</th>
+			<th>Olivia</th>
+			<th>Patricio</th>
+			
+		</tr>
+		<tr align="center">
+			<th>Puntajes al finalizar la partida</th>
+			<td>35600</td>
+			<td>32900</td>
+			<td>21800</td>
+			<td>9700</td>	
+		</tr>
+		<tr align="center">
+			<th>Oka</th>
+			<td style="color:blue;font-size:small;">+15000</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr align="center">
+			<th></th>
+			<td>50600</td>
+			<td>32900</td>
+			<td>21800</td>
+			<td>9700</td>
+		</tr>
+		<tr align="center">
+			<th>Uma</th>
+			<td style="color:blue;font-size:small;">+20000</td>
+			<td style="color:blue;font-size:small;">+10000</td>
+			<td style="color:red;font-size:small;">-10000</td>
+			<td style="color:red;font-size:small;">-20000</td>
+		</tr>
+		<tr align="center">
+			<th>Puntajes finales</th>
+			<td style="font-weight:bold;">70600</td>
+			<td style="font-weight:bold;">42900</td>
+			<td style="font-weight:bold;">11800</td>
+			<td style="font-weight:bold;">-10300</td>
+		</tr>
+		<tr align="center">
+			<th></th>
+			<td style="font-size:small;" colspan="4">Dividido 1000 menos 30...</td>
+		</tr>
+		<tr align="center">
+			<th>Ranking final</th>
+			<td style="color:blue;font-size:small;">+40.6</td>
+			<td style="color:blue;font-size:small;">+12.9</td>
+			<td style="color:red;font-size:small;">-18.2</td>
+			<td style="color:red;font-size:small;">-40.3</td>
+		</tr>
+	</table>
+</p>
+
+<p>En este ejemplo, Patricio finalizó la partida en 4° puesto con 9700 puntos, pero luego de calcular los puntos Oka y Uma, resulta que ahora quedó con puntos negativos, o sea que le debe a los demás jugadores un total de 10300 puntos que, si fuera dinero real, tiene que pagarlos como adicionales.</p>
+
+<p>Ahora bien, todo esto de los puntos "Oka y Uma" solamente es relevante si se está jugando por plata, pues se puede hacer una conversión directa entre los puntos y un valor monetario preestablecido. Lo mismo ocurre si se debe calcular un "ranking" para sumar o restarle al valor histórico de cada participante.</p>
+
+<p>En cualquier caso, se recomienda jugar Mahjong con Cartas Españolas por placer y no por dinero ;)</p>
+
+</div><div class="noseparar"><hr>
 <h2 id="2o3_jugadores">Jugando de a menos o más jugadores</h2>
 <p>El Mahjong se puede jugar de a 2 o 3 jugadores también, con algunos ajustes. El orden de las rondas se reduce, ya que se hace una rotación completa de repartidor mucho antes.</p>
 
@@ -3527,7 +3716,7 @@ Una escalera y un par.</td>
 <p>Si luego de alzar esa carta el jugador logra <b>completar la mano</b> (Armó un juego y un par en su mano), canta <b>"Mahjong!"</b>, muestra la mano, y será el ganador de la ronda.</p>
 <p>Si no, tiene que descartarse una de las 5 cartas en su mano, boca arriba. Esta puede ser cualquier carta de la mano, no solamente la que acaba de alzar. La carta descartada debe ponerse boca arriba, en su área de descarte.</p>
 </div><div class="noseparar">
-<p>Cada jugador tiene su propia "zona de descartes". Debe organizarse en una cuadrícula de 6x3 al frente de cada jugador, y se colocan de izquierda a derecha, de arriba a abajo.</p>
+<p>Cada jugador tiene su propia "zona de descartes". Debe organizarse en una cuadrícula de 6&times;3 al frente de cada jugador, y se colocan de izquierda a derecha, de arriba a abajo.</p>
 <p align="center"><img src="tiles/pozo_s.png"></p>
 <p align="center"><img src="tiles/11c.png"><img src="tiles/9c.png"><img src="tiles/1c.png"><img src="tiles/5c.png"><img src="tiles/3c.png"><img src="tiles/4c.png"><br>
 <img src="tiles/9c.png"><img src="tiles/3c.png"><img src="tiles/v.png"><img src="tiles/v.png"><img src="tiles/v.png"><img src="tiles/v.png"><br>
@@ -3746,6 +3935,10 @@ Una escalera y un par.</td>
 <br>R: Sí. Los cuartetos cuentan como piernas, y el cuarteto cerrado cuenta como una pierna en mano.</p>
 
 <p><img src="tiles/2b.png"><img src="tiles/2b.png"><img src="tiles/2b.png"><img src="tiles/6e.png"><img src="tiles/6e.png"><img src="tiles/6e.png"> &nbsp; <img src="tiles/c.png"><img src="tiles/8o.png"><img src="tiles/8o.png"><img src="tiles/c.png"></p>
+
+</div><div class="noseparar">
+<p><b>P: ¿Puedo cantar envido si tengo menos de 1000 puntos a favor?</b>
+<br>R: <b>Sí.</b> Algunas variantes obligan a que el jugador tenga al menos 1000 puntos principalmente porque si se juega con palitos para indicar los puntos, entonces si no se tiene el palito para hacer la apuesta de envido, esta no se puede hacer. Pero en reglas estándares se puede cantar envido igual.</p>
 
 </div><div class="noseparar">
 
@@ -4165,12 +4358,16 @@ lo mismo, y no altera la jugabilidad.</p>
 
 <p>Consideré cambiar el nombre del juego y el nombre del canto de "Mahjong" por otra cosa, y "españolizarlo" al igual que el resto de los términos japoneses (riichi pasó a ser envido, y chii-pon-kan pasó a ser escalera-pierna-cuarteto). Incluso en el juego original no se canta "Mahjong", sino "Ron" o "Tsumo" dependiendo del origen de la carta ganadora (descarte o pozo respectivamente), pero es mejor que se mencione la palabra Mahjong en el juego y no se reemplace por ninguna otra palabra. Esto es para que la gente recuerde todo el tiempo que el juego que están jugando es literalmente una variante precisa de Mahjong Riichi, que respeta las reglas originales, y no un invento raro con reglas estrafalarias.</p>
 
+<h3>Fu vs. Yapas</h3>
 
-<p>El cálculo de <b>Yapas</b> en el Mahjong Japonés se denomina <b>Fu</b>, y parten de 20 en vez de 0. Esto reemplaza el "20+" que se encuentra en la fórmula para calcular los puntos base. Además, los tantos se denominan Han. La fórmula equivalente resulta entonces de la siguiente forma:</p>
+<p>El cálculo de <b>Yapas</b> en el Mahjong Japonés se denomina <b>Fu</b> (o mini-puntos), y parten de 20 en vez de 0. Esto reemplaza el "20+" que se encuentra en la fórmula para calcular los puntos base. Además, los tantos se denominan Han. La fórmula equivalente resulta entonces de la siguiente forma:</p>
 
 <p align="center" style="font-weight: bold;"><i>Puntuación de la mano = (Fu) × 2 <sup>(2 + Han)</sup></i></p>
 
 <p>Cabe aclarar que el resultado de los puntajes es el mismo, sólo cambia que en vez de decir 0,5,10,20,30 yapas, dice 20,25,30,40,50 fu, y las tablas se ven reflejadas de manera acorde.</p>
+
+<h3>Cartas vs. Fichas</h3>
+
 <div class="noseparar">
 Este es el aspecto de las cartas:
 
@@ -4461,6 +4658,8 @@ reyes y los palos de las demás cartas porque los vientos en el Mahjong original
 no tienen color alguno, pero por conveniencia, y para respetar el orden de las
 pintas (el borde de las cartas) se usa el orden oro, copa, espada, y basto.</p>
 
+<h3>Sobre los términos traducidos al Español</h3>
+
 <p>Recomiendo siempre usar los términos españolizados, para hacer más sencilla la explicación del juego, pero también puse en gris clarito varios de los términos originales utilizados en japonés para hacer la eventual transición a Mahjong Riichi lo más directa posible.</p>
 
 <p>Para jugadores avanzados que quieran jugar Mahjong Riichi original, existe una traducción al español del libro "Riichi-Libro 1" escrito por Daina Chiba<span class="no-imprimir"> que puede leer en línea haciendo <a href="https://dainachiba.github.io/RiichiBooks/RiichiLibroI.pdf">clic aquí</a></span>, que contiene estrategias y métodos avanzados para jugar como un experto. Estas estrategias también aplican al Mahjong con cartas españolas. Solamente es necesario mentalmente traducir los nombres de los palos, pero la dinámica del juego es exactamente la misma.</p>
@@ -4477,7 +4676,7 @@ pintas (el borde de las cartas) se usa el orden oro, copa, espada, y basto.</p>
 <li><span class="jp">Oka/Uma:</span> No se calculan puntos "Oka" ni "Uma". O sea que no hay "apuesta inicial" y los puntos finales son los que quedan.</li>
 <br>
 <li><span class="jp">Hanchan shuuryoutoki no riichibou:</span> Las apuestas de Envido (Riichi) no se agregan al pozo vacante en caso de empate, sino que vuelven a los jugadores.</li>
-<li><span class="jp">Tsumibou:</span> En caso de empate, el pozo vacante (Honba) aumenta en 300 (3x100)</li>
+<li><span class="jp">Tsumibou:</span> En caso de empate, el pozo vacante (Honba) aumenta en 300 (3&times;100)</li>
 <li><span class="jp">Agari Renchan:</span> El repartidor solo repite si gana la ronda. Sino se pasa para la derecha.</li>
 <br>
 <li><span class="jp">Noten batsufu:</span> El costo por no tener la mano lista son 3000 puntos, que se dividen equitativamente entre los que no tenían la mano lista, para pagarle a los que tienen la mano lista.</li>
@@ -4647,6 +4846,10 @@ function ocultar_cambios()
 <div class="no-imprimir">
 <p style="font-size:7pt;">Lista de cambios:
 <ul style="font-size:7pt;">
+<li>(v1.11.0) Agrego sección de reglas de la casa, para aclarar que algunas personas pueden cambiar algunas reglas según lo consideren más práctico.</li>
+<li>Agregada sección de "Apuestas iniciales (Oka y Uma)" al anexo. No es necesario para jugar pero explica el sistema de puntos y apuestas.</li>
+<li>Agregadas más imágenes a la sección de Tenbou (Palitos).</li>
+<li>Pequeños ajustes al prefacio y al índice. Agrego imagen de partida de ejemplo en el prefacio, a modo de introducción.</li>
 <li>(v1.10.16) Cambio de lugar el prefacio y los requisitos para jugar.</li>
 <li>Faltaba una carta en la mano de ejemplo de Tanyao</li>
 <li>(v1.10.15c) Quito aclaración de envido en trece huérfanos, no sirve de nada cantar envido si la mano ya vale tantos máximos.
